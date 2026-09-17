@@ -1,0 +1,5 @@
+mcp-observatory/v1
+size 324759
+root m9hIsKyWvg6UmEHy7G/E7jsUJv/kvHWGzXlDNMVZaz8=
+time 2026-09-17T06:16:03Z
+sig  lzh+m61CCOPX9OxiOTuo84UvOEgccw7epKGijczeA1mNSJ/fHM+Rg+koYa10MquRDGFFWFObUkNFLmFmsmyzDA==
