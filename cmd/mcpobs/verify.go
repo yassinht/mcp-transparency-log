@@ -20,7 +20,7 @@ import (
 // operator wrote proves nothing: the hashes and the lie would be produced by
 // the same hand. Rebuilding from the records and arriving at the signed root is
 // the check that has teeth.
-func cmdVerify(dataDir, logDir, headsDir, pubPath string) error {
+func cmdVerify(dataDir, logDir, headsDir, pubPath, leavesDir string) error {
 	pub, err := mlog.LoadPublicKey(pubPath)
 	if err != nil {
 		return fmt.Errorf("public key: %w", err)
@@ -34,10 +34,28 @@ func cmdVerify(dataDir, logDir, headsDir, pubPath string) error {
 		return fmt.Errorf("no signed heads found in %s", headsDir)
 	}
 
-	fmt.Printf("recomputing the tree from the observation records...\n")
-	size, root, err := mlog.Recompute(logDir, dataDir)
+	// Two ways in, and which one you get depends on what you hold.
+	//
+	// With the records (the operator, or anyone who downloaded the archive) the
+	// tree is rebuilt from the observations themselves. With only the published
+	// leaf hashes -- 32 bytes each, in git -- it is rebuilt from those. The
+	// second is the path that matters, because it is the one a stranger can
+	// take: before leaf hashes were published, an outsider could check that a
+	// head carried a valid signature and nothing else, which proves only that
+	// the operator owns a key.
+	var (
+		size int64
+		root string
+	)
+	if leavesDir != "" {
+		fmt.Printf("rebuilding the tree from published leaf hashes...\n")
+		size, root, err = mlog.VerifyFromLeaves(leavesDir)
+	} else {
+		fmt.Printf("recomputing the tree from the observation records...\n")
+		size, root, err = mlog.Recompute(logDir, dataDir)
+	}
 	if err != nil {
-		return fmt.Errorf("recompute: %w", err)
+		return fmt.Errorf("rebuild: %w", err)
 	}
 	fmt.Printf("  %d observations\n  root %s\n\n", size, root)
 

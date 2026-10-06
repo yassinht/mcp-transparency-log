@@ -26,6 +26,7 @@ func main() {
 	logDir := flag.String("tlog", "", "merkle log directory (default <data>/tlog)")
 	headsDir := flag.String("heads", "heads", "directory of signed tree heads")
 	pubKey := flag.String("pubkey", "heads/key.pub", "public key that signs the heads")
+	leaves := flag.String("leaves", "", "published leaf-hash directory; verify from these instead of the records")
 	flag.Parse()
 
 	if *logDir == "" {
@@ -58,7 +59,7 @@ func main() {
 		}
 		err = cmdShow(*dataDir, args[1])
 	case "verify":
-		err = cmdVerify(*dataDir, *logDir, *headsDir, *pubKey)
+		err = cmdVerify(*dataDir, *logDir, *headsDir, *pubKey, *leaves)
 	case "heads":
 		err = cmdHeads(*headsDir)
 	case "export":
@@ -93,6 +94,7 @@ flags:
   --tlog <dir>                 merkle log (default <data>/tlog)
   --heads <dir>                signed heads (default "heads")
   --pubkey <file>              signing public key (default "heads/key.pub")
+  --leaves <dir>               published leaf hashes; verify with no archive
 `)
 }
 

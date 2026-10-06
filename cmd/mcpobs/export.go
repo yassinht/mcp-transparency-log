@@ -7,6 +7,7 @@ import (
 	"path/filepath"
 	"sort"
 
+	"github.com/yassinht/mcp-transparency-log/internal/mlog"
 	"github.com/yassinht/mcp-transparency-log/internal/store"
 )
 
@@ -175,6 +176,22 @@ func cmdExport(dataDir, outDir string) error {
 	}
 	fmt.Printf("servers.json     %d endpoints\n", len(rows))
 	fmt.Printf("changes/         %d days\n", len(runs)-1)
+
+	// Leaf hashes last, and separately from everything above: the files in
+	// data/ are a convenience for the site and can be regenerated any way I
+	// like, while these are what a stranger checks the signed heads against.
+	// Past runs re-export byte-identically, so git stores only the new day.
+	logDir := filepath.Join(dataDir, "tlog")
+	if _, err := os.Stat(filepath.Join(logDir, "size")); err == nil {
+		man, lerr := mlog.ExportLeaves(logDir, filepath.Join(outDir, "data", "leaves"))
+		if lerr != nil {
+			fmt.Printf("leaves/          skipped: %v\n", lerr)
+		} else {
+			fmt.Printf("leaves/          %d leaves across %d files (%.1f MB)\n",
+				man.Size, len(man.Runs), float64(man.Size*32)/(1<<20))
+		}
+	}
+
 	fmt.Printf("\nwrote to %s\n", outDir)
 	return nil
 }

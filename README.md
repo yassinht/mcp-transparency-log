@@ -178,11 +178,29 @@ go install github.com/yassinht/mcp-transparency-log/cmd/mcpobs@latest
 mcpobs verify
 ```
 
+There are two ways to check it, and which one applies depends on what you hold.
+
+**From the published leaf hashes — no archive needed.** Each census publishes its leaf hashes to [`docs/data/leaves/`](docs/data/leaves/), 32 bytes per observation, about 800 KB a day. Clone the repository and run:
+
+```bash
+mcpobs verify --leaves docs/data/leaves --heads heads --pubkey heads/key.pub
+```
+
+That rebuilds the whole tree from those hashes and checks the root against every signed head. It proves the heads describe exactly this sequence of leaves, that a given leaf is included, and that each day's tree extends the previous day's rather than replacing it.
+
+**From the records.** The operator, or anyone holding the archive, can rebuild from the observations themselves — `mcpobs verify` with no `--leaves`.
+
 `verify` rebuilds the tree from the observation records and checks the result against every published head. It deliberately ignores the stored hash file: verifying a log against hashes its own operator wrote proves nothing, since the hashes and the lie would come from the same hand. It also rejects any head that shrinks the log, because publishing fewer observations than yesterday is a deletion of history that no valid signature excuses.
 
 The tree is what makes the operator — me — untrusted rather than trusted. A signature alone cannot do this: I hold the key, so a forged head will always verify under it. What cannot be forged is the tree. If I edit one archived observation from last month, the records stop reproducing the root I signed at the time, and anyone holding that older head can prove it. [`internal/mlog/commit_test.go`](internal/mlog/commit_test.go) is that scenario as an executable test.
 
-**One honest limitation.** The first head, signed 2026-09-07, covers 136,225 observations taken over the nine days before the log existed. It attests that those observations are in the log *as of that date* — not that each was taken on the day it records. Only heads signed the day their observations were taken carry the stronger claim. Every head from 2026-09-08 onward does.
+### What verification does not establish
+
+Rebuilding the tree proves the log has not been rewritten. It does not prove the observations are genuine: nothing here stops an operator from inventing a consistent history and signing it. Only independent observation closes that gap, which is what witnesses are for and why they are on the roadmap rather than done.
+
+Until the leaf hashes were published, this was worse than it needed to be — an outsider could verify that a head carried a valid signature and nothing else, which proves only that the operator owns a key. That limitation stood for a month before someone asked the right question about it.
+
+**One further caveat.** The first head, signed 2026-09-07, covers 136,225 observations taken over the nine days before the log existed. It attests that those observations are in the log *as of that date* — not that each was taken on the day it records. Only heads signed the day their observations were taken carry the stronger claim. Every head from 2026-09-08 onward does.
 
 ## Deployment
 

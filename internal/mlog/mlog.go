@@ -230,5 +230,55 @@ func (l *Log) ProveTree(oldN int64) (tlog.TreeProof, error) {
 // record against a proof without importing tlog themselves.
 func RecordHash(data []byte) tlog.Hash { return tlog.RecordHash(data) }
 
+// LeafHashes returns the hashes of leaves [first, first+count).
+//
+// These are what makes the log checkable by someone who is not me. The records
+// themselves are ~20 GB and stay on the crawler's disk; the leaf hashes are 32
+// bytes each, and from them anyone can rebuild the tree, arrive at the root I
+// signed, and check that one day's tree really does extend the previous day's.
+// Without them a reader can verify that a head carries a valid signature and
+// nothing else -- which is to say, they can verify that I own a key.
+func (l *Log) LeafHashes(first, count int64) ([]tlog.Hash, error) {
+	if first < 0 || count < 0 || first+count > l.n {
+		return nil, fmt.Errorf("mlog: leaves [%d,%d) out of range (size %d)", first, first+count, l.n)
+	}
+	idx := make([]int64, count)
+	for i := int64(0); i < count; i++ {
+		idx[i] = tlog.StoredHashIndex(0, first+i)
+	}
+	return l.ReadHashes(idx)
+}
+
+// AppendHashes adds records given only their leaf hashes, for a verifier
+// rebuilding the tree from published hashes rather than from records.
+func (l *Log) AppendHashes(hashes []tlog.Hash) (int64, error) {
+	if len(hashes) == 0 {
+		return l.n, nil
+	}
+	base := tlog.StoredHashCount(l.n)
+	pend := &pending{log: l, base: base}
+	n := l.n
+	for _, h := range hashes {
+		hs, err := tlog.StoredHashesForRecordHash(n, h, pend)
+		if err != nil {
+			return 0, err
+		}
+		pend.hashes = append(pend.hashes, hs...)
+		n++
+	}
+	buf := make([]byte, 0, len(pend.hashes)*hashSize)
+	for _, h := range pend.hashes {
+		buf = append(buf, h[:]...)
+	}
+	if _, err := l.hashes.WriteAt(buf, base*hashSize); err != nil {
+		return 0, err
+	}
+	if err := l.writeSize(n); err != nil {
+		return 0, err
+	}
+	l.n = n
+	return n, nil
+}
+
 var _ tlog.HashReader = (*Log)(nil)
 var _ = io.Discard
