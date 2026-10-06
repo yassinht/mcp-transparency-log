@@ -80,7 +80,11 @@ unpushed=$(git rev-list --count @{u}..HEAD 2>/dev/null || echo 0)
 # growth without losing anything: the daily change files already carry what moved.
 if [ -x "$APP_DIR/mcpobs" ]; then
   if "$APP_DIR/mcpobs" --data "$APP_DIR/data" export "$CLONE/docs" >/dev/null 2>&1; then
-    git add docs/data/census.json docs/data/changes 2>/dev/null || true
+    # Leaves are the load-bearing part: without them nobody outside can check
+    # a head against anything. They must be staged every run, unlike
+    # servers.json below, because a missing day breaks the chain for everyone.
+    # Past runs re-export byte-identically, so git stores only the new day.
+    git add docs/data/census.json docs/data/changes docs/data/leaves 2>/dev/null || true
     last=$(git log -1 --format=%ct -- docs/data/servers.json 2>/dev/null || echo 0)
     if [ "$(( ($(date +%s) - last) / 86400 ))" -ge 7 ]; then
       git add docs/data/servers.json 2>/dev/null || true
