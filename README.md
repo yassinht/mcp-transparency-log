@@ -18,19 +18,21 @@ The value is the accumulated history. A stranger can clone this repository in a 
 
 ## Status
 
-Early. Phase 1 of 4.
+Running. Phases 0 through 3 complete.
 
 | Phase | Scope | State |
 | --- | --- | --- |
 | 0 | Falsification test — is the ecosystem observable at all? | done, passed |
 | 1 | Crawler, raw observation archive, daily census | done, running |
 | 2 | RFC 6962 Merkle log, signed tree heads, verify CLI | done |
-| 3 | Public static site | not started |
+| 3 | Public static site and published leaf hashes | done |
 | 4 | Witnesses and gossip for split-view detection | not started |
 
-Nine consecutive daily censuses as of 2026-09-07, no gaps. A systemd timer fetches the registry, probes every endpoint, archives the raw bytes, appends to the tree, signs a head and publishes it — with no human in the loop.
+**38 consecutive daily censuses as of 2026-10-06, no gaps, 755,221 observations.** A systemd timer fetches the registry, probes every endpoint, archives the raw bytes, appends to the tree, signs a head, publishes it and regenerates the site — with no human in the loop. It has run unattended for five weeks.
 
-Phase 4 is the end state, not the entry ticket. A single-operator log is still useful — Go's own checksum database ran that way for years.
+**The daily figures are at [yassinht.github.io/mcp-transparency-log](https://yassinht.github.io/mcp-transparency-log/).**
+
+Phase 4 is the end state, not the entry ticket. A witness is not something I can build: it is a second party running their own crawler against the same servers and signing what they see, so that a log which invented its history could be contradicted. That needs someone else to care enough to run infrastructure, which is not a dependency worth waiting on. A single-operator log is still useful in the meantime — Go's own checksum database ran that way for years.
 
 ## First census — 2026-08-27
 
