@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "size": 755221,
-  "root": "l5dw5MCaFZz1wkH2hABE8nPZRQ6rLKflpkcL7MrVd3I=",
+  "size": 780777,
+  "root": "xv2Yhnpyr196Z5N0S/2hWqG3+UOvuhwzamR+qKF2+jI=",
   "runs": [
     {
       "run": "2026-08-30T091258Z",
@@ -230,6 +230,12 @@
       "first_leaf": 729960,
       "leaves": 25261,
       "file": "2026-10-06T030717Z.bin"
+    },
+    {
+      "run": "2026-10-07T030345Z",
+      "first_leaf": 755221,
+      "leaves": 25556,
+      "file": "2026-10-07T030345Z.bin"
     }
   ]
 }
