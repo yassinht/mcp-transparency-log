@@ -27,6 +27,7 @@ func main() {
 	headsDir := flag.String("heads", "heads", "directory of signed tree heads")
 	pubKey := flag.String("pubkey", "heads/key.pub", "public key that signs the heads")
 	leaves := flag.String("leaves", "", "published leaf-hash directory; verify from these instead of the records")
+	scanJSON := flag.String("scan-json", "", "scan: also write per-server flags to this JSON file")
 	flag.Parse()
 
 	if *logDir == "" {
@@ -62,6 +63,12 @@ func main() {
 		err = cmdVerify(*dataDir, *logDir, *headsDir, *pubKey, *leaves)
 	case "heads":
 		err = cmdHeads(*headsDir)
+	case "scan":
+		run := ""
+		if len(args) >= 2 {
+			run = args[1]
+		}
+		err = cmdScan(*dataDir, run, *scanJSON)
 	case "export":
 		out := "docs"
 		if len(args) == 2 {
@@ -87,6 +94,8 @@ func usage() {
   mcpobs verify                rebuild the tree from the records and check
                                it against every signed head
   mcpobs heads                 list the published tree heads
+  mcpobs scan [run]            rule-based scan of tool text for model-directed
+                               instructions, steering, exfil, secrets, hidden content
   mcpobs export [dir]          write static JSON for the site (default "docs")
 
 flags:
