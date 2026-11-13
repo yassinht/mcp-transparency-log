@@ -1,0 +1,5 @@
+mcp-observatory/v1
+size 1991004
+root WFli+Qu/pMUc91pSLc92H7rClLDg4SDv4CA1PhK0BiA=
+time 2026-11-13T03:46:54Z
+sig  1/iLbi0gMyqVAO29IW1FWEAZN3J66UXF0cZxw/guOu8nrSIY6+/BlDM0qy5IdU14LjiAGkOg8vqf3uZ9600MCg==
