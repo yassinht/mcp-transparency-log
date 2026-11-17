@@ -451,6 +451,11 @@ func writePeersList(dataOut, runID string, latest map[string]obs, rep *scanRepor
 			if o.Outcome == "ok" {
 				r.Outcome = "undigestible"
 				r.Reason = rep.Undigestible[o.Endpoint]
+				if r.Reason == "" {
+					// The scan skipped it: no archived tool page, or one that
+					// would not parse. Say so rather than leave a reader guessing.
+					r.Reason = "tool pages not readable from the archive"
+				}
 			}
 		}
 		rows = append(rows, r)
