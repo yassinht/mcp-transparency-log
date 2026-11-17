@@ -1,0 +1,1 @@
+{"slug":"c95b0070815d9d55","names":["io.github.ericlovold/sanction"],"host":"getsanction.com","endpoint":"https://getsanction.com/mcp","first_seen":"2026-10-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-03","kind":"first_seen","outcome":"auth_required"}]}

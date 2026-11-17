@@ -1,0 +1,1 @@
+{"slug":"c81b122ecd002bb1","names":["com.dividenddata/terminal"],"host":"www.dividenddata.com","endpoint":"https://www.dividenddata.com/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

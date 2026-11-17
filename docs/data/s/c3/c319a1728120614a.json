@@ -1,0 +1,1 @@
+{"slug":"c319a1728120614a","names":["io.github.doc2mcp/lightfield"],"host":"doc2mcp.site","endpoint":"https://doc2mcp.site/api/mcp/24fd8d23-16a6-4eb9-bee0-f8080a6b31b2/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

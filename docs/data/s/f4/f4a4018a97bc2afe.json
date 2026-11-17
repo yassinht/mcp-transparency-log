@@ -1,0 +1,1 @@
+{"slug":"f4a4018a97bc2afe","names":["com.monday/monday.com"],"host":"mcp.monday.com","endpoint":"https://mcp.monday.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

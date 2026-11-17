@@ -1,0 +1,1 @@
+{"slug":"50d02716d820af26","names":["io.github.ebrunet001/mcp-server-lol"],"host":"mrbridge--lol-mcp-server.apify.actor","endpoint":"https://mrbridge--lol-mcp-server.apify.actor/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

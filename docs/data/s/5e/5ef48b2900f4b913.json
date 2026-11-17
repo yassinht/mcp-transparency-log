@@ -1,0 +1,1 @@
+{"slug":"5ef48b2900f4b913","names":["io.github.doc2mcp/cavalry"],"host":"doc2mcp.site","endpoint":"https://doc2mcp.site/api/mcp/2b3751c9-893e-49b2-b627-da208f631cbb/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"b3a72b9a69acf60e","names":["io.github.sarkars/campfyrr"],"host":"campfyrr.vercel.app","endpoint":"https://campfyrr.vercel.app/api/mcp","first_seen":"2026-10-22","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

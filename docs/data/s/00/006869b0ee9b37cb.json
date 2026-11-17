@@ -1,0 +1,1 @@
+{"slug":"006869b0ee9b37cb","names":["io.googlemapsapi/mcp-server"],"host":"mcp.googlemapsapi.io","endpoint":"https://mcp.googlemapsapi.io/v1/mcp","first_seen":"2026-11-06","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

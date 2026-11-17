@@ -1,0 +1,1 @@
+{"slug":"9e663f9f682c6126","names":["io.github.marcioyoshida/outage-me"],"host":"outage.me","endpoint":"https://outage.me/mcp/pro","first_seen":"2026-09-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"auth_required"}]}

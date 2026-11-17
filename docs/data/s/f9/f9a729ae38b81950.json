@@ -1,0 +1,1 @@
+{"slug":"f9a729ae38b81950","names":["com.howtocalculateaninvoice.www/invoicing"],"host":"api.howtocalculateaninvoice.com","endpoint":"https://api.howtocalculateaninvoice.com/mcp","first_seen":"2026-08-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-31","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"4724999801b8dfa4","names":["net.vybit/mcp-server"],"host":"api.vybit.net","endpoint":"https://api.vybit.net/v1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

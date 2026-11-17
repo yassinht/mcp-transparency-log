@@ -1,0 +1,1 @@
+{"slug":"531d23db96f1540a","names":["online.rendezboard/agent-rendezvous"],"host":"rendezboard.online","endpoint":"https://rendezboard.online/mcp","first_seen":"2026-10-14","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"7fdc0105e23eab1c","names":["io.github.nirholas/threews-agent"],"host":"three.ws","endpoint":"https://three.ws/api/mcp-agent","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

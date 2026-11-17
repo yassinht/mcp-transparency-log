@@ -1,0 +1,1 @@
+{"slug":"053cabf6c50a4b76","names":["fyi.byline/byline"],"host":"byline.fyi","endpoint":"https://byline.fyi/api/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

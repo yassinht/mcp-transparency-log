@@ -1,0 +1,1 @@
+{"slug":"8564d31a34a2071e","names":["io.github.cracked-collective/agentlaunch"],"host":"www.agentlaun.ch","endpoint":"https://www.agentlaun.ch/mcp","first_seen":"2026-09-28","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-05","kind":"delisted"}]}

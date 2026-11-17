@@ -1,0 +1,1 @@
+{"slug":"fd7564bf8f2b6ac2","names":["finance.midni/midni"],"host":"mcp.midni.finance","endpoint":"https://mcp.midni.finance/mcp","first_seen":"2026-11-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-01","kind":"first_seen","outcome":"auth_required"}]}

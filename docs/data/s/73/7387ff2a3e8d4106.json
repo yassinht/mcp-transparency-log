@@ -1,0 +1,1 @@
+{"slug":"7387ff2a3e8d4106","names":["io.github.mikeslone/storylayer"],"host":"app.storylayer.ai","endpoint":"https://app.storylayer.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

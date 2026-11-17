@@ -1,0 +1,1 @@
+{"slug":"37218cbf24914d1e","names":["ai.payments.managed/payments-ai-mcp"],"host":"managed.payments.ai","endpoint":"https://managed.payments.ai/api/mcp","first_seen":"2026-09-05","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-05","kind":"first_seen","outcome":"auth_required"}]}

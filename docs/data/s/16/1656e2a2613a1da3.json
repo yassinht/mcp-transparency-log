@@ -1,0 +1,1 @@
+{"slug":"1656e2a2613a1da3","names":["app.mailsocket/mailsocket-mcp"],"host":"mcp.mailsocket.app","endpoint":"https://mcp.mailsocket.app/mcp","first_seen":"2026-10-01","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

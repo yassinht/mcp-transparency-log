@@ -1,0 +1,1 @@
+{"slug":"5f20607a7f9fd6db","names":["io.github.elishosh687-spec/api-supp"],"host":"app.api-supp.com","endpoint":"https://app.api-supp.com/api/mcp","first_seen":"2026-11-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-15","kind":"first_seen","outcome":"auth_required"}]}

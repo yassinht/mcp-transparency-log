@@ -1,0 +1,1 @@
+{"slug":"02eec044a70e9b89","names":["io.github.JerryYangAI/taoyuan-mcp"],"host":"api.musicsforyou.com","endpoint":"https://api.musicsforyou.com/mcp","first_seen":"2026-10-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

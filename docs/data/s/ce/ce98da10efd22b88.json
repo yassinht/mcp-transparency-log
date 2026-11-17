@@ -1,0 +1,1 @@
+{"slug":"ce98da10efd22b88","names":["ai.targetwise/targetwise"],"host":"targetwise.ai","endpoint":"https://targetwise.ai/api/mcp","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"8957c8e227978b99","names":["com.fixty/fixty"],"host":"api.fixty.com","endpoint":"https://api.fixty.com/api/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

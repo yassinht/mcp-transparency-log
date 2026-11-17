@@ -1,0 +1,1 @@
+{"slug":"214b8e1fedb4473c","names":["io.github.Athron-new/compass"],"host":"app.compassagents.io","endpoint":"https://app.compassagents.io/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

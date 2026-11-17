@@ -1,0 +1,1 @@
+{"slug":"1cdeed7bf0be0e40","names":["co.pulselake/simulation-research"],"host":"ai-consultants.pulselake.co","endpoint":"https://ai-consultants.pulselake.co/oauth/simulation-research-chat","first_seen":"2026-10-07","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

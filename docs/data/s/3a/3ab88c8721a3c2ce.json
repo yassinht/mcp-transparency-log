@@ -1,0 +1,1 @@
+{"slug":"3ab88c8721a3c2ce","names":["com.webupcheck/protect"],"host":"app.webupcheck.com","endpoint":"https://app.webupcheck.com/mcp","first_seen":"2026-10-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-26","kind":"first_seen","outcome":"auth_required"}]}

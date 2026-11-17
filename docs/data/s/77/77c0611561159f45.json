@@ -1,0 +1,1 @@
+{"slug":"77c0611561159f45","names":["estate.kvadrum/kvadrum"],"host":"kvadrum.estate","endpoint":"https://kvadrum.estate/api/v1/mcp","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

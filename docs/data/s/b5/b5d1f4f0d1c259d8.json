@@ -1,0 +1,1 @@
+{"slug":"b5d1f4f0d1c259d8","names":["com.corenexis/cashly"],"host":"cashly.corenexis.com","endpoint":"https://cashly.corenexis.com/api/mcp","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

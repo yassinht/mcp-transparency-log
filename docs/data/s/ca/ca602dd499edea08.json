@@ -1,0 +1,1 @@
+{"slug":"ca602dd499edea08","names":["io.github.github/github-mcp-server"],"host":"api.githubcopilot.com","endpoint":"https://api.githubcopilot.com/mcp/","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

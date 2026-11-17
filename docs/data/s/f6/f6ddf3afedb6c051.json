@@ -1,0 +1,1 @@
+{"slug":"f6ddf3afedb6c051","names":["io.github.superlistapp/superlist"],"host":"app.superlist.com","endpoint":"https://app.superlist.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

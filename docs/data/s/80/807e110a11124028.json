@@ -1,0 +1,1 @@
+{"slug":"807e110a11124028","names":["io.github.FindDataTechnology/fd-daas-mcp-cust1"],"host":"mcp.finddatatech.cloud","endpoint":"https://mcp.finddatatech.cloud/fd-daas-mcp-cust1/mcp","first_seen":"2026-10-31","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

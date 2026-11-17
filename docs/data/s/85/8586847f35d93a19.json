@@ -1,0 +1,1 @@
+{"slug":"8586847f35d93a19","names":["sh.openad/openad"],"host":"openad.sh","endpoint":"https://openad.sh/mcp","first_seen":"2026-10-08","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"67370db730fa5fc5","names":["io.github.GeminiGeorge22/sports-odds-api"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=publicrecords/sports-odds-api","first_seen":"2026-10-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-24","kind":"first_seen","outcome":"auth_required"}]}

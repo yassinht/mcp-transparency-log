@@ -1,0 +1,1 @@
+{"slug":"d2fd25cc8c4ead5e","names":["io.github.tylerscomic-lab/cron-schedule-audit-mcp"],"host":"cron-schedule-audit-mcp.mcpize.run","endpoint":"https://cron-schedule-audit-mcp.mcpize.run/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

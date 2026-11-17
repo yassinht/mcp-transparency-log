@@ -1,0 +1,1 @@
+{"slug":"59e8abd7d126ec17","names":["kr.co.klisten.api/schemashield"],"host":"api.klisten.co.kr","endpoint":"https://api.klisten.co.kr/mcp/schemashield","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

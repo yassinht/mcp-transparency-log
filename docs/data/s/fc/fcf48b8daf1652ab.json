@@ -1,0 +1,1 @@
+{"slug":"fcf48b8daf1652ab","names":["io.github.richiedc95/job-search"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=richiedc95/job-search-api","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

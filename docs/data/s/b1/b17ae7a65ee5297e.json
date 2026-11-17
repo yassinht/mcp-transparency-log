@@ -1,0 +1,1 @@
+{"slug":"b17ae7a65ee5297e","names":["com.see-geo/seegeo"],"host":"see-geo.com","endpoint":"https://see-geo.com/mcp","first_seen":"2026-09-10","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-10","kind":"first_seen","outcome":"auth_required"}]}

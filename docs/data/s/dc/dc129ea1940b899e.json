@@ -1,0 +1,1 @@
+{"slug":"dc129ea1940b899e","names":["ai.astrofabric/mcp"],"host":"www.astrofabric.ai","endpoint":"https://www.astrofabric.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"593d35836b70c083","names":["com.partnershipintel/radar"],"host":"app.partnershipintel.com","endpoint":"https://app.partnershipintel.com/api/mcp/radar","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

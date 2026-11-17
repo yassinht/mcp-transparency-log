@@ -1,0 +1,1 @@
+{"slug":"6151932d4b180f66","names":["io.github.hexiaochun/xskill-ai"],"host":"api.xskill.ai","endpoint":"https://api.xskill.ai/api/v3/mcp-http","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

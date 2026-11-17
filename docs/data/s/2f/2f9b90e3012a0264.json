@@ -1,0 +1,1 @@
+{"slug":"2f9b90e3012a0264","names":["io.github.sarduine13-star/agent-teller"],"host":"agent-teller-production.up.railway.app","endpoint":"https://agent-teller-production.up.railway.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

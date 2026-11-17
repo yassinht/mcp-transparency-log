@@ -1,0 +1,1 @@
+{"slug":"00383e710e8f3c04","names":["com.ranovam/rippling-scraper"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=enezli/rippling-scraper","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"auth_required"}]}

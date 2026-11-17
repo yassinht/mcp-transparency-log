@@ -1,0 +1,1 @@
+{"slug":"5aa0961283f8e5f7","names":["finance.double.agent4/knowledge-base"],"host":"agent4.double.finance","endpoint":"https://agent4.double.finance/mcp/message","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

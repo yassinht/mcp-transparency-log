@@ -1,0 +1,1 @@
+{"slug":"29d07776d1a28468","names":["io.github.npolicano/jesse"],"host":"jesse-api.azurewebsites.net","endpoint":"https://jesse-api.azurewebsites.net/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

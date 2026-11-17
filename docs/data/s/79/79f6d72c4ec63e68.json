@@ -1,0 +1,1 @@
+{"slug":"79f6d72c4ec63e68","names":["com.kipper/quickbooks"],"host":"mcp.kipper.com","endpoint":"https://mcp.kipper.com/quickbooks/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

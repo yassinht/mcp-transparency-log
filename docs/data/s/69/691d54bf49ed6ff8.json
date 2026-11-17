@@ -1,0 +1,1 @@
+{"slug":"691d54bf49ed6ff8","names":["app.bottomup/foxy-pro"],"host":"foxy-api.bottomup.app","endpoint":"https://foxy-api.bottomup.app/mcp","first_seen":"2026-10-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-26","kind":"first_seen","outcome":"auth_required"}]}

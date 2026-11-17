@@ -1,0 +1,1 @@
+{"slug":"1610bd5f451d201b","names":["dev.workers.cybermax-tools.cybermax/hacker-news"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=cybermax/hacker-news\u0026via=mcp-registry","first_seen":"2026-10-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-30","kind":"first_seen","outcome":"auth_required"}]}

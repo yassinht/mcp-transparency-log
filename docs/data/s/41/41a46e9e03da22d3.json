@@ -1,0 +1,1 @@
+{"slug":"41a46e9e03da22d3","names":["ai.createprints/createprints"],"host":"mcp.createprints.ai","endpoint":"https://mcp.createprints.ai/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"79c8e089a48e6555","names":["com.thetavantage/mcp"],"host":"thetavantage.com","endpoint":"https://thetavantage.com/api/mcp","first_seen":"2026-09-02","listed":false,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-02","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-16","kind":"delisted"}]}

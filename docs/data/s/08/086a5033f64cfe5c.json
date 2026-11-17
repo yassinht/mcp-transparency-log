@@ -1,0 +1,1 @@
+{"slug":"086a5033f64cfe5c","names":["net.nexlab/corporate-money-trail"],"host":"mcp.nexlab.net","endpoint":"https://mcp.nexlab.net/mcp/corporate-money-trail","first_seen":"2026-09-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-06","kind":"first_seen","outcome":"auth_required"}]}

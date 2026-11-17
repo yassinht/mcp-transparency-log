@@ -1,0 +1,1 @@
+{"slug":"ff48747a306996c6","names":["click.picale/picale-mcp"],"host":"mcp.picale.click","endpoint":"https://mcp.picale.click/mcp","first_seen":"2026-10-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-06","kind":"first_seen","outcome":"auth_required"}]}

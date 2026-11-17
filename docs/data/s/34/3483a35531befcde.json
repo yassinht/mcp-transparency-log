@@ -1,0 +1,1 @@
+{"slug":"3483a35531befcde","names":["app.selis.mcp/pmo"],"host":"mcp-demo.selis.app","endpoint":"https://mcp-demo.selis.app/tmis/sse","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

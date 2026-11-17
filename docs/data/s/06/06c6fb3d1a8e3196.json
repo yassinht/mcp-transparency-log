@@ -1,0 +1,1 @@
+{"slug":"06c6fb3d1a8e3196","names":["io.github.popnow-ai/popnow-api-mcp"],"host":"api.popnow.ai","endpoint":"https://api.popnow.ai/api/v1/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

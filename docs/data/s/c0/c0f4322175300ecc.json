@@ -1,0 +1,1 @@
+{"slug":"c0f4322175300ecc","names":["tech.searlo/searlo"],"host":"api.searlo.tech","endpoint":"https://api.searlo.tech/api/v1/mcp","first_seen":"2026-10-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-02","kind":"first_seen","outcome":"auth_required"}]}

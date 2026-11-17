@@ -1,0 +1,1 @@
+{"slug":"0eee59d5184a16f9","names":["io.github.ducflair/scopture"],"host":"api.scopture.com","endpoint":"https://api.scopture.com/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

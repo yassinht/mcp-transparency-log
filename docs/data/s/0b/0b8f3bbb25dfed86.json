@@ -1,0 +1,1 @@
+{"slug":"0b8f3bbb25dfed86","names":["io.github.connected-paths/paid-ads"],"host":"paidads-mcp.connectedpaths.com","endpoint":"https://paidads-mcp.connectedpaths.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

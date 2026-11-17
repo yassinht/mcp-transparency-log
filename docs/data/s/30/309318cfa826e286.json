@@ -1,0 +1,1 @@
+{"slug":"309318cfa826e286","names":["it.elsas/security-intel"],"host":"elsas.it","endpoint":"https://elsas.it/mcp","first_seen":"2026-08-30","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"e8aa0e8e9348c9e9","names":["dev.cotlet/angi"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/angi/connect","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

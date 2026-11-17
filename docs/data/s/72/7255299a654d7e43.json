@@ -1,0 +1,1 @@
+{"slug":"7255299a654d7e43","names":["fr.mt-transition.cv/cv-booster"],"host":"cv.mt-transition.fr","endpoint":"https://cv.mt-transition.fr/api/v1/mcp","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

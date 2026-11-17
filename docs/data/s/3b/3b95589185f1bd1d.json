@@ -1,0 +1,1 @@
+{"slug":"3b95589185f1bd1d","names":["dev.queryscope/mcp"],"host":"mcp.queryscope.dev","endpoint":"https://mcp.queryscope.dev/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"2574d9a2e40aeb77","names":["net.bananasplit/mcp"],"host":"api.bananasplit.net","endpoint":"https://api.bananasplit.net/mcp","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

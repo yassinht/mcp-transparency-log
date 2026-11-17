@@ -1,0 +1,1 @@
+{"slug":"03ec750bcf6ed912","names":["com.lowlanddata/app-stores"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?actors=lowlanddata/app-store-scraper","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

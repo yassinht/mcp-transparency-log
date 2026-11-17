@@ -1,0 +1,1 @@
+{"slug":"140fa5f86884914e","names":["com.nvidia.ngc.nsight.copilot.api/cuda-docs"],"host":"api.copilot.nsight.ngc.nvidia.com","endpoint":"https://api.copilot.nsight.ngc.nvidia.com/mcp/cuda-docs","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

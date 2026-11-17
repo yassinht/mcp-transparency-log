@@ -1,0 +1,1 @@
+{"slug":"de13321b1ed0b55b","names":["io.github.RyanV1304/krewbill-mcp"],"host":"www.krewbill.com","endpoint":"https://www.krewbill.com/api/mcp","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

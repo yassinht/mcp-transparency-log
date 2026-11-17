@@ -1,0 +1,1 @@
+{"slug":"eb046eb559b0c57c","names":["eu.taxxy/taxy"],"host":"api.taxxy.eu","endpoint":"https://api.taxxy.eu/v1/mcp","first_seen":"2026-10-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-27","kind":"first_seen","outcome":"auth_required"}]}

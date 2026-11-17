@@ -1,0 +1,1 @@
+{"slug":"fbfc20766991b515","names":["io.hydori/hydori"],"host":"hydori.io","endpoint":"https://hydori.io/mcp","first_seen":"2026-10-05","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

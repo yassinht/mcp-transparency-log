@@ -1,0 +1,1 @@
+{"slug":"14a4c6224c0a3b64","names":["io.github.scottconfusedgorilla/sncro"],"host":"relay.sncro.net","endpoint":"https://relay.sncro.net/tools/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"timeout"}]}

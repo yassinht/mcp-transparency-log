@@ -1,0 +1,1 @@
+{"slug":"2fd4514c03af2d85","names":["io.github.whisper-sec/whisper-graph"],"host":"mcp.whisper.security","endpoint":"https://mcp.whisper.security","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

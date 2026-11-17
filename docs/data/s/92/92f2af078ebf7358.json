@@ -1,0 +1,1 @@
+{"slug":"92f2af078ebf7358","names":["com.opzyai/scan"],"host":"www.opzyai.com","endpoint":"https://www.opzyai.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

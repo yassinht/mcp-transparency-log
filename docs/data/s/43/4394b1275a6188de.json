@@ -1,0 +1,1 @@
+{"slug":"4394b1275a6188de","names":["io.github.tylerscomic-lab/claude-cost-audit-mcp"],"host":"claude-cost-audit-mcp.mcpize.run","endpoint":"https://claude-cost-audit-mcp.mcpize.run/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

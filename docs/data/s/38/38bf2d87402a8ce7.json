@@ -1,0 +1,1 @@
+{"slug":"38bf2d87402a8ce7","names":["io.github.doc2mcp/opencode"],"host":"doc2mcp.site","endpoint":"https://doc2mcp.site/api/mcp/3f20f9f1-6c33-4679-8d37-613e07293a1d/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

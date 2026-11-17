@@ -1,0 +1,1 @@
+{"slug":"ef639ccfd9dc9f4b","names":["ai.cirra/salesforce-mcp"],"host":"mcp.cirra.ai","endpoint":"https://mcp.cirra.ai/sfdc/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

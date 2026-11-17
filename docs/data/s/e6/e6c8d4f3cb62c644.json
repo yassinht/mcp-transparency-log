@@ -1,0 +1,1 @@
+{"slug":"e6c8d4f3cb62c644","names":["io.conttrole/mcp"],"host":"mcp.conttrole.io","endpoint":"https://mcp.conttrole.io/mcp","first_seen":"2026-10-30","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-06","kind":"delisted"}]}

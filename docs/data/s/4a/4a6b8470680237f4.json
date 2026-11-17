@@ -1,0 +1,1 @@
+{"slug":"4a6b8470680237f4","names":["com.jitprompt/jitprompt"],"host":"app.jitprompt.com","endpoint":"https://app.jitprompt.com/mcp","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

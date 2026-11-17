@@ -1,0 +1,1 @@
+{"slug":"7aef462e7fc2ee78","names":["com.cruise-itinerary/mcp"],"host":"cruise-itinerary.com","endpoint":"https://cruise-itinerary.com/mcp","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

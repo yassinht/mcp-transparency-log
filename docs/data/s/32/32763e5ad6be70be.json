@@ -1,0 +1,1 @@
+{"slug":"32763e5ad6be70be","names":["io.fly/fly-mcp"],"host":"mcp.fly.io","endpoint":"https://mcp.fly.io","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"d624536ed8e3e9bc","names":["mx.com.elcheff.portal/ejec2"],"host":"portal.elcheff.com.mx","endpoint":"https://portal.elcheff.com.mx/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

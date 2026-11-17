@@ -1,0 +1,1 @@
+{"slug":"06aab8093a005c3e","names":["app.ofia/latex"],"host":"ofia.app","endpoint":"https://ofia.app/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

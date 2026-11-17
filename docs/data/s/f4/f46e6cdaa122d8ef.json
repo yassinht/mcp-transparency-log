@@ -1,0 +1,1 @@
+{"slug":"f46e6cdaa122d8ef","names":["app.studiohaus/studiohaus"],"host":"platform.studiohaus.app","endpoint":"https://platform.studiohaus.app/api/mcp","first_seen":"2026-09-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-23","kind":"first_seen","outcome":"auth_required"}]}

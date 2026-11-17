@@ -1,0 +1,1 @@
+{"slug":"57901c4a8742e5b2","names":["io.github.dappros/ethora-mcp-server"],"host":"mcp.chat.ethora.com","endpoint":"https://mcp.chat.ethora.com/mcp/oauth","first_seen":"2026-09-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-16","kind":"first_seen","outcome":"auth_required"}]}

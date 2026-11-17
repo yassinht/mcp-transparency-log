@@ -1,0 +1,1 @@
+{"slug":"3b7d9b137064e135","names":["io.github.agnicpay-prog/agnicpay"],"host":"mcp.agnic.ai","endpoint":"https://mcp.agnic.ai/sse","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

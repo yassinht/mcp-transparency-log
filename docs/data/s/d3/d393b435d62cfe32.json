@@ -1,0 +1,1 @@
+{"slug":"d393b435d62cfe32","names":["com.find-ref/find-ref"],"host":"api.find-ref.com","endpoint":"https://api.find-ref.com/mcp","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

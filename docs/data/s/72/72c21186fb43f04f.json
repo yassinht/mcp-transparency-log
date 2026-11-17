@@ -1,0 +1,1 @@
+{"slug":"72c21186fb43f04f","names":["in.sovaria/sovaria"],"host":"api.sovaria.in","endpoint":"https://api.sovaria.in/mcp?mode=code","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"67d34a800ec36c16","names":["app.savehq/savehq"],"host":"savehq.app","endpoint":"https://savehq.app/api/mcp","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

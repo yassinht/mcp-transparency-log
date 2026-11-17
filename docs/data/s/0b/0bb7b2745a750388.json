@@ -1,0 +1,1 @@
+{"slug":"0bb7b2745a750388","names":["io.github.yeagoo/pkgseek"],"host":"api.pkgseek.com","endpoint":"https://api.pkgseek.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"f1d3e32bc3f2d84f","names":["com.smartling/smartling-mcp-server"],"host":"mcp.smartling.com","endpoint":"https://mcp.smartling.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

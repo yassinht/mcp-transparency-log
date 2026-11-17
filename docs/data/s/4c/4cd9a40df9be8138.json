@@ -1,0 +1,1 @@
+{"slug":"4cd9a40df9be8138","names":["ar.com.talo/mcp"],"host":"talo.com.ar","endpoint":"https://talo.com.ar/mcp","first_seen":"2026-10-28","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

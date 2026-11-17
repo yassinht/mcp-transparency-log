@@ -1,0 +1,1 @@
+{"slug":"9c4d1b7b25f69bcf","names":["io.github.CSOAI-ORG/meok-eu-ai-act-art-26-fria-mcp"],"host":"api.meok.ai","endpoint":"https://api.meok.ai/v1/governance/eu-ai-act-fria","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"unreachable"}]}

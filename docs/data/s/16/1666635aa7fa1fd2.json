@@ -1,0 +1,1 @@
+{"slug":"1666635aa7fa1fd2","names":["io.github.estevecastells/ads-lighthouse"],"host":"adslighthouse.com","endpoint":"https://adslighthouse.com/api/v1/mcp","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"2f6821708a5f7d25","names":["dev.cotlet/signupgenius"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/signupgenius/connect","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

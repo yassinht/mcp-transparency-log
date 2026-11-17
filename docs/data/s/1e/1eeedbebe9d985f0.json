@@ -1,0 +1,1 @@
+{"slug":"1eeedbebe9d985f0","names":["io.github.eliazv/scadenzario"],"host":"www.scadenzario.app","endpoint":"https://www.scadenzario.app/api/mcp","first_seen":"2026-10-12","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

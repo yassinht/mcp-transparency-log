@@ -1,0 +1,1 @@
+{"slug":"05be57d6b1d57d0a","names":["com.scripthaul/api"],"host":"api.scripthaul.com","endpoint":"https://api.scripthaul.com/mcp","first_seen":"2026-09-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-14","kind":"first_seen","outcome":"auth_required"}]}

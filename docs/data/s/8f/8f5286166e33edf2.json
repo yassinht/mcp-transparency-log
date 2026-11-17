@@ -1,0 +1,1 @@
+{"slug":"8f5286166e33edf2","names":["ai.dimetrics/dimetrics"],"host":"www.dimetrics.ai","endpoint":"https://www.dimetrics.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

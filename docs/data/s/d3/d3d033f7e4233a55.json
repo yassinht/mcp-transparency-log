@@ -1,0 +1,1 @@
+{"slug":"d3d033f7e4233a55","names":["com.wix/mcp"],"host":"mcp.wix.com","endpoint":"https://mcp.wix.com/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

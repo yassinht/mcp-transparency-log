@@ -1,0 +1,1 @@
+{"slug":"f0bc96393a36af04","names":["ai.secapi/secapi"],"host":"api.secapi.ai","endpoint":"https://api.secapi.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

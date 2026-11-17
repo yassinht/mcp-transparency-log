@@ -1,0 +1,1 @@
+{"slug":"059b8560d78c841b","names":["ai.note1/mcp"],"host":"api.note1.ai","endpoint":"https://api.note1.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

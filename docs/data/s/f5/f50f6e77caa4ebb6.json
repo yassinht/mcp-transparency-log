@@ -1,0 +1,1 @@
+{"slug":"f50f6e77caa4ebb6","names":["com.mewcp/mcp"],"host":"gateway.mewcp.com","endpoint":"https://gateway.mewcp.com/personal/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

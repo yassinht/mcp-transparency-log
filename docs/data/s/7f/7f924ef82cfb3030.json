@@ -1,0 +1,1 @@
+{"slug":"7f924ef82cfb3030","names":["com.investorshelf/investor-shelf"],"host":"investorshelf.com","endpoint":"https://investorshelf.com/api/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

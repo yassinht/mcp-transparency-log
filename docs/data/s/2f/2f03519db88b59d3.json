@@ -1,0 +1,1 @@
+{"slug":"2f03519db88b59d3","names":["com.whichsensor/products"],"host":"www.whichsensor.com","endpoint":"https://www.whichsensor.com/api/public-mcp","first_seen":"2026-10-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-26","kind":"first_seen","outcome":"auth_required"}]}

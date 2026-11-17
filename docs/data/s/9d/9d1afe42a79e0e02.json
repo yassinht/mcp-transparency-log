@@ -1,0 +1,1 @@
+{"slug":"9d1afe42a79e0e02","names":["io.rootstuff/sentinel"],"host":"sentinel.rootstuff.io","endpoint":"https://sentinel.rootstuff.io/mcp/sentinel-oauth","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

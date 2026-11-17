@@ -1,0 +1,1 @@
+{"slug":"30cf59f002a19924","names":["com.factiq/factiq"],"host":"api.factiq.com","endpoint":"https://api.factiq.com/mcp","first_seen":"2026-10-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-17","kind":"first_seen","outcome":"auth_required"}]}

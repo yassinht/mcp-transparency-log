@@ -1,0 +1,1 @@
+{"slug":"4a2214641809bcbb","names":["io.github.Wandersonjack/avocado"],"host":"mcp.avocadoai.co","endpoint":"https://mcp.avocadoai.co","first_seen":"2026-08-30","listed":false,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"},{"date":"2026-10-05","kind":"delisted"}]}

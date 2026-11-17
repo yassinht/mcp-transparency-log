@@ -1,0 +1,1 @@
+{"slug":"84d185eda8779fb2","names":["com.tastemakerdev/tastemaker"],"host":"tastemakerdev.com","endpoint":"https://tastemakerdev.com/mcp/","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

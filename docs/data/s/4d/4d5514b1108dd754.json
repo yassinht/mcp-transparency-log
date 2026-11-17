@@ -1,0 +1,1 @@
+{"slug":"4d5514b1108dd754","names":["com.gramscraper/mcp"],"host":"gramscraper.com","endpoint":"https://gramscraper.com/mcp","first_seen":"2026-09-24","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-24","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"0c32aa139ce2e594","names":["io.github.quack2025/surveycoder"],"host":"api.surveycoder.io","endpoint":"https://api.surveycoder.io/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

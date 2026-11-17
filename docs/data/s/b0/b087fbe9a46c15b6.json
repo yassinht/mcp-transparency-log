@@ -1,0 +1,1 @@
+{"slug":"b087fbe9a46c15b6","names":["io.github.jmbremer/manymeet"],"host":"app.getmanymeet.com","endpoint":"https://app.getmanymeet.com/mcp/","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

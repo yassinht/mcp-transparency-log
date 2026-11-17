@@ -1,0 +1,1 @@
+{"slug":"8b04d8950d0a0fd2","names":["com.zenitya/mcp"],"host":"api.zenitya.com","endpoint":"https://api.zenitya.com/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

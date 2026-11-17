@@ -1,0 +1,1 @@
+{"slug":"517560278f2b7034","names":["com.hasdata/yelp"],"host":"mcp.hasdata.com","endpoint":"https://mcp.hasdata.com/api/mcp?apis=yelp","first_seen":"2026-09-10","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-10","kind":"first_seen","outcome":"auth_required"},{"date":"2026-09-23","kind":"delisted"}]}

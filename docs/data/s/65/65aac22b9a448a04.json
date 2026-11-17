@@ -1,0 +1,1 @@
+{"slug":"65aac22b9a448a04","names":["io.metricport/metricport"],"host":"metricport.io","endpoint":"https://metricport.io/api/mcp","first_seen":"2026-10-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-19","kind":"first_seen","outcome":"auth_required"}]}

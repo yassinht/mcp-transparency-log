@@ -1,0 +1,1 @@
+{"slug":"b6524adfcfd056b5","names":["io.github.BRANCHERMIGHT/token-safety-scanner"],"host":"agent-micro-api.onrender.com","endpoint":"https://agent-micro-api.onrender.com/","first_seen":"2026-11-04","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"unreachable"}]}

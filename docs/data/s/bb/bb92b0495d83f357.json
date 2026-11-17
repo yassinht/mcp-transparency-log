@@ -1,0 +1,1 @@
+{"slug":"bb92b0495d83f357","names":["app.fplai/fplai"],"host":"mcp.fplai.app","endpoint":"https://mcp.fplai.app/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

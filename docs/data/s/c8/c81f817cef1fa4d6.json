@@ -1,0 +1,1 @@
+{"slug":"c81f817cef1fa4d6","names":["io.github.mercadosclaro-eng/payguard"],"host":"payguard-production-abfe.up.railway.app","endpoint":"https://payguard-production-abfe.up.railway.app/mcp","first_seen":"2026-09-24","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-24","kind":"first_seen","outcome":"auth_required"}]}

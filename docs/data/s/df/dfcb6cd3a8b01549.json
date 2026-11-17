@@ -1,0 +1,1 @@
+{"slug":"dfcb6cd3a8b01549","names":["com.casafari/locations"],"host":"platform.casafari.com","endpoint":"https://platform.casafari.com/mcp/locations","first_seen":"2026-10-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-17","kind":"first_seen","outcome":"auth_required"}]}

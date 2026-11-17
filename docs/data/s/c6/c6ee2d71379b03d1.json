@@ -1,0 +1,1 @@
+{"slug":"c6ee2d71379b03d1","names":["com.zyte/mcp"],"host":"mcp.zyte.com","endpoint":"https://mcp.zyte.com/v1/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

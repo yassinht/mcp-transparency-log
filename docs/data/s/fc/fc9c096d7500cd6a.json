@@ -1,0 +1,1 @@
+{"slug":"fc9c096d7500cd6a","names":["io.github.CedricKouma/facturx-toolkit"],"host":"apim-agentforge-6lfm33.azure-api.net","endpoint":"https://apim-agentforge-6lfm33.azure-api.net/facturx/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"4b16e9c164af2a07","names":["io.github.speakmancip/speakmanai"],"host":"speakman.ai","endpoint":"https://speakman.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

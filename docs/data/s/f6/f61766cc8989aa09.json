@@ -1,0 +1,1 @@
+{"slug":"f61766cc8989aa09","names":["io.github.bepolabs/ats-jobs"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=bepolabs/ats-jobs","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"81c33664c5a593f5","names":["com.pdf-redaction/pdf-redaction-mcp"],"host":"api.pdf-redaction.com","endpoint":"https://api.pdf-redaction.com/mcp/","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

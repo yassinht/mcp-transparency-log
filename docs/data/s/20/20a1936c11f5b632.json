@@ -1,0 +1,1 @@
+{"slug":"20a1936c11f5b632","names":["io.github.sercanmetalore/company-enrichment-mcp"],"host":"mcp.boykaf.com","endpoint":"https://mcp.boykaf.com/company-enrichment/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

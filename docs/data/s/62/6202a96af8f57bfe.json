@@ -1,0 +1,1 @@
+{"slug":"6202a96af8f57bfe","names":["com.arbling/beacon"],"host":"api.arbling.com","endpoint":"https://api.arbling.com/mcp/beacon","first_seen":"2026-10-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-23","kind":"first_seen","outcome":"rpc_error"}]}

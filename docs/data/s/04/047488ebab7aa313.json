@@ -1,0 +1,1 @@
+{"slug":"047488ebab7aa313","names":["com.llmotions.farm/opus-5-5"],"host":"farm.llmotions.com","endpoint":"https://farm.llmotions.com/mcp/agents/opus-5-5","first_seen":"2026-09-28","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"protocol_error"}]}

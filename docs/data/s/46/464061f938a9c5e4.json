@@ -1,0 +1,1 @@
+{"slug":"464061f938a9c5e4","names":["com.tokencanopy/agentdrive"],"host":"drive.mcp.tokencanopy.com","endpoint":"https://drive.mcp.tokencanopy.com/mcp","first_seen":"2026-09-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-05","kind":"first_seen","outcome":"auth_required"}]}

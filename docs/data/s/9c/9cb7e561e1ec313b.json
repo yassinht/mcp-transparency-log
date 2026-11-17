@@ -1,0 +1,1 @@
+{"slug":"9cb7e561e1ec313b","names":["com.atlasburn/atlasburn"],"host":"app.atlasburn.com","endpoint":"https://app.atlasburn.com/api/mcp","first_seen":"2026-09-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-19","kind":"first_seen","outcome":"auth_required"}]}

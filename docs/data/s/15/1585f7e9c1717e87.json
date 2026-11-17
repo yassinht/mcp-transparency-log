@@ -1,0 +1,1 @@
+{"slug":"1585f7e9c1717e87","names":["ai.synlake/synlake"],"host":"api.synlake.ai","endpoint":"https://api.synlake.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"cfa0b62cb35a65cd","names":["io.github.jackyzhang69/formbro"],"host":"mcp.formbro.ca","endpoint":"https://mcp.formbro.ca/mcp?toolsets=system,read,validate","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

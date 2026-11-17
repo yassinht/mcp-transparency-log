@@ -1,0 +1,1 @@
+{"slug":"28bbacd60de21fd9","names":["io.github.sumitrmardy/image-to-text-ocr"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=sumitr_mardy/image-to-text-ocr","first_seen":"2026-10-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-27","kind":"first_seen","outcome":"auth_required"}]}

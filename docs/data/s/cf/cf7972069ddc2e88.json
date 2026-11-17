@@ -1,0 +1,1 @@
+{"slug":"cf7972069ddc2e88","names":["io.github.indicateio/indicate-mcp"],"host":"industry.indicate-data.io","endpoint":"https://industry.indicate-data.io/agent/semantic/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

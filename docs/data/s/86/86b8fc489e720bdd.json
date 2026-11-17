@@ -1,0 +1,1 @@
+{"slug":"86b8fc489e720bdd","names":["com.hasdata/shopify"],"host":"mcp.hasdata.com","endpoint":"https://mcp.hasdata.com/api/mcp?apis=shopify","first_seen":"2026-09-10","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-10","kind":"first_seen","outcome":"auth_required"},{"date":"2026-09-23","kind":"delisted"}]}

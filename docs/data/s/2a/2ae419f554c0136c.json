@@ -1,0 +1,1 @@
+{"slug":"2ae419f554c0136c","names":["br.com.music360.app/mcp-server"],"host":"app.music360.com.br","endpoint":"https://app.music360.com.br/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

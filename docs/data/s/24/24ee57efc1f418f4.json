@@ -1,0 +1,1 @@
+{"slug":"24ee57efc1f418f4","names":["io.github.Guava-Research/mcp-server"],"host":"api.guavaintel.com","endpoint":"https://api.guavaintel.com/mcp","first_seen":"2026-09-11","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-11","kind":"first_seen","outcome":"auth_required"}]}

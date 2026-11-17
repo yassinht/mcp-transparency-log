@@ -1,0 +1,1 @@
+{"slug":"5c50119434f2cc25","names":["app.notecube/notecube"],"host":"api.notecube.app","endpoint":"https://api.notecube.app/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

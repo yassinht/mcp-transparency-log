@@ -1,0 +1,1 @@
+{"slug":"5893c04b2a301154","names":["com.pricklymails/email-verification"],"host":"mcp.pricklymails.com","endpoint":"https://mcp.pricklymails.com/mcp","first_seen":"2026-10-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

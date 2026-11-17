@@ -1,0 +1,1 @@
+{"slug":"b0ca0526a0211fbc","names":["io.github.Zoominfo/zoominfo-mcp"],"host":"mcp.zoominfo.com","endpoint":"https://mcp.zoominfo.com/mcp","first_seen":"2026-09-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-04","kind":"first_seen","outcome":"auth_required"}]}

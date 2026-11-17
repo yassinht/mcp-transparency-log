@@ -1,0 +1,1 @@
+{"slug":"7403b15be8113836","names":["pl.cenogram/mcp-server"],"host":"mcp.cenogram.pl","endpoint":"https://mcp.cenogram.pl/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

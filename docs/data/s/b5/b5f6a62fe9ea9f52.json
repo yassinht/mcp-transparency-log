@@ -1,0 +1,1 @@
+{"slug":"b5f6a62fe9ea9f52","names":["io.github.quantumskils-arch/eligibility-mcp"],"host":"eligibility.opportunityradar.africa","endpoint":"https://eligibility.opportunityradar.africa/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

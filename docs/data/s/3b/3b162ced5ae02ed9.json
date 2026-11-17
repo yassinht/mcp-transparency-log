@@ -1,0 +1,1 @@
+{"slug":"3b162ced5ae02ed9","names":["com.639cloud/shell"],"host":"api.shell.639cloud.com","endpoint":"https://api.shell.639cloud.com/mcp","first_seen":"2026-11-14","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-17","kind":"delisted"}]}

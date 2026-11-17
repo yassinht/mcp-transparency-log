@@ -1,0 +1,1 @@
+{"slug":"e3666453ac223bf9","names":["fit.memory/memory-fit"],"host":"api.memory.fit","endpoint":"https://api.memory.fit/mcp","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

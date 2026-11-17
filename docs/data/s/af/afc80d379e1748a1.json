@@ -1,0 +1,1 @@
+{"slug":"afc80d379e1748a1","names":["com.educaplay/educaplay"],"host":"api.educaplay.com","endpoint":"https://api.educaplay.com/v1/agent/mcp/","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

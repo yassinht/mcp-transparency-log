@@ -1,0 +1,1 @@
+{"slug":"273c8b385c4f0ef5","names":["io.github.fernandoguiraud16-coder/youtube-search-transcripts"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=fguiraud/youtube-search-transcripts","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

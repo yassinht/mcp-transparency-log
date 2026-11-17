@@ -1,0 +1,1 @@
+{"slug":"95b88ab87d2827d1","names":["me.getservd/servd-merchant"],"host":"app.getservd.me","endpoint":"https://app.getservd.me/api/mcp","first_seen":"2026-08-30","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-09-07","kind":"delisted"}]}

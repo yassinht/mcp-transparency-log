@@ -1,0 +1,1 @@
+{"slug":"4f7553d04c135e13","names":["link.lots/lotslink"],"host":"api.lots.link","endpoint":"https://api.lots.link/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

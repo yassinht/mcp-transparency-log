@@ -1,0 +1,1 @@
+{"slug":"b5da877c1a45f3d8","names":["com.shinglesites/shingle"],"host":"shinglesites.com","endpoint":"https://shinglesites.com/api/v1/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

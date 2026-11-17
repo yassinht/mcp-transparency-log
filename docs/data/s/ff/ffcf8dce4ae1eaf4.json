@@ -1,0 +1,1 @@
+{"slug":"ffcf8dce4ae1eaf4","names":["io.github.ks0430/awesome-report"],"host":"www.awesome-report.app","endpoint":"https://www.awesome-report.app/api/mcp","first_seen":"2026-09-26","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-26","kind":"first_seen","outcome":"auth_required"}]}

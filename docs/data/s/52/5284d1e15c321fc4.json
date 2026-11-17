@@ -1,0 +1,1 @@
+{"slug":"5284d1e15c321fc4","names":["bi.suno/music-video-generator"],"host":"suno.bi","endpoint":"https://suno.bi/api/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

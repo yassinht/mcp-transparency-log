@@ -1,0 +1,1 @@
+{"slug":"5fdbd7ff52b50d65","names":["com.primerfp.scout/scout"],"host":"mcp.primerfp.com","endpoint":"https://mcp.primerfp.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

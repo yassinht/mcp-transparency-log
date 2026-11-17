@@ -1,0 +1,1 @@
+{"slug":"21da0d8b1170fd28","names":["app.superdocs/superdocs"],"host":"api.superdocs.app","endpoint":"https://api.superdocs.app/mcp/","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

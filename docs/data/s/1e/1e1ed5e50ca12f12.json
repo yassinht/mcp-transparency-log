@@ -1,0 +1,1 @@
+{"slug":"1e1ed5e50ca12f12","names":["io.github.srotzin/hive-mcp-wallet"],"host":"hive-mcp-gateway.onrender.com","endpoint":"https://hive-mcp-gateway.onrender.com/wallet/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"a63f580b478a274a","names":["io.github.sercanmetalore/visual-edit-mcp"],"host":"mcp.boykaf.com","endpoint":"https://mcp.boykaf.com/visual-edit/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"64f519c55f69a72d","names":["ai.openbash/openbash"],"host":"openbash.ai","endpoint":"https://openbash.ai/api/mcp","first_seen":"2026-09-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}

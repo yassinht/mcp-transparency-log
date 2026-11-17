@@ -1,0 +1,1 @@
+{"slug":"9be924c2a7041b76","names":["io.github.Plainfold/sam-gov-contract-opportunities"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=plainfold/sam-gov-contract-opportunities","first_seen":"2026-10-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

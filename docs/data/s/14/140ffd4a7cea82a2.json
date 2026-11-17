@@ -1,0 +1,1 @@
+{"slug":"140ffd4a7cea82a2","names":["io.github.Geornaden/datev-buchungsstapel-extf-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?actors=finops_studio/datev-buchungsstapel-generator","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

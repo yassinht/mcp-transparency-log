@@ -1,0 +1,1 @@
+{"slug":"0902e1c51c647a62","names":["ai.generaldispatch/general-dispatch"],"host":"api.generaldispatch.ai","endpoint":"https://api.generaldispatch.ai/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

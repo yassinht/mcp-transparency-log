@@ -1,0 +1,1 @@
+{"slug":"e7485577d9dccfa0","names":["blog.lots/lotsblog"],"host":"api.lots.blog","endpoint":"https://api.lots.blog/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

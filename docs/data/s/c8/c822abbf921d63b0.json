@@ -1,0 +1,1 @@
+{"slug":"c822abbf921d63b0","names":["ai.soundgen/soundgen"],"host":"soundgen.ai","endpoint":"https://soundgen.ai/api/mcp-server","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

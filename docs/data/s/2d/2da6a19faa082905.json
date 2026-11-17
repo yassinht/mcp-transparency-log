@@ -1,0 +1,1 @@
+{"slug":"2da6a19faa082905","names":["com.findticker/ticker"],"host":"api.findticker.com","endpoint":"https://api.findticker.com/mcp","first_seen":"2026-10-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-02","kind":"first_seen","outcome":"auth_required"}]}

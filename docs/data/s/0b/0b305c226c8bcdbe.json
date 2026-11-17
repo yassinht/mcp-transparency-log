@@ -1,0 +1,1 @@
+{"slug":"0b305c226c8bcdbe","names":["lol.postcards/postcards"],"host":"api.postcards.lol","endpoint":"https://api.postcards.lol/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

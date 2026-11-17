@@ -1,0 +1,1 @@
+{"slug":"523f2c5efef05ec9","names":["org.dpdns.clair/clair"],"host":"clair.dpdns.org","endpoint":"https://clair.dpdns.org/mcp","first_seen":"2026-10-03","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-03","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"2feffc1084a4a4e5","names":["app.smacros/macro-tracker"],"host":"app.smacros.app","endpoint":"https://app.smacros.app/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

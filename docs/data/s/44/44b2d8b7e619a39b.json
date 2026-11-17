@@ -1,0 +1,1 @@
+{"slug":"44b2d8b7e619a39b","names":["cloud.adal/adal-cloud"],"host":"mcp.adal.cloud","endpoint":"https://mcp.adal.cloud/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

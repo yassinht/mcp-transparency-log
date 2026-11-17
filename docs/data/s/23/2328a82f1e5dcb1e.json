@@ -1,0 +1,1 @@
+{"slug":"2328a82f1e5dcb1e","names":["com.useauditoria.pilot/auditor-ia"],"host":"pilot.useauditoria.com","endpoint":"https://pilot.useauditoria.com/mcp","first_seen":"2026-09-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"auth_required"}]}

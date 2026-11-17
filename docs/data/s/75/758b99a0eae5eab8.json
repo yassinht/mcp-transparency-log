@@ -1,0 +1,1 @@
+{"slug":"758b99a0eae5eab8","names":["fr.lead-radar/lead-radar"],"host":"lead-radar.fr","endpoint":"https://lead-radar.fr/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

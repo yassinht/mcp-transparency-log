@@ -1,0 +1,1 @@
+{"slug":"ba70ae5d786536ef","names":["com.fin3000/fin3000"],"host":"api.fin3000.com","endpoint":"https://api.fin3000.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

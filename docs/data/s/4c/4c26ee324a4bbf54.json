@@ -1,0 +1,1 @@
+{"slug":"4c26ee324a4bbf54","names":["app.taskford/taskford"],"host":"mcp.taskford.app","endpoint":"https://mcp.taskford.app/mcp","first_seen":"2026-11-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-11","kind":"first_seen","outcome":"auth_required"}]}

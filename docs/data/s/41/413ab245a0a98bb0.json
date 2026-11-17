@@ -1,0 +1,1 @@
+{"slug":"413ab245a0a98bb0","names":["io.github.nafadza14/apizie-finance"],"host":"www.apizie.tech","endpoint":"https://www.apizie.tech/mcp","first_seen":"2026-11-02","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

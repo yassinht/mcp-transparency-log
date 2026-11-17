@@ -1,0 +1,1 @@
+{"slug":"e8032c17b7405d90","names":["xyz.comparand/comparand"],"host":"api.comparand.xyz","endpoint":"https://api.comparand.xyz/mcp","first_seen":"2026-10-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-30","kind":"first_seen","outcome":"auth_required"}]}

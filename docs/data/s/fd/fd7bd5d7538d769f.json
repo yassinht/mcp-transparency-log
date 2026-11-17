@@ -1,0 +1,1 @@
+{"slug":"fd7bd5d7538d769f","names":["io.wordlift/mcp-server"],"host":"mcp.wordlift.io","endpoint":"https://mcp.wordlift.io/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

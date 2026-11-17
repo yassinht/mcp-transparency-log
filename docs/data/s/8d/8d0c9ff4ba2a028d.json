@@ -1,0 +1,1 @@
+{"slug":"8d0c9ff4ba2a028d","names":["io.github.kevin-lozada-santos/brain-scanner"],"host":"brainscanner.dev","endpoint":"https://brainscanner.dev/mcp/v2","first_seen":"2026-09-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-12","kind":"first_seen","outcome":"auth_required"}]}

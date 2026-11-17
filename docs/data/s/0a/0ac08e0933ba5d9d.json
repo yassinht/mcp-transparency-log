@@ -1,0 +1,1 @@
+{"slug":"0ac08e0933ba5d9d","names":["cloud.mynextadventure/trip-planner"],"host":"mcp.mynextadventure.cloud","endpoint":"https://mcp.mynextadventure.cloud/sse","first_seen":"2026-08-30","listed":false,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-06","kind":"delisted"}]}

@@ -1,0 +1,1 @@
+{"slug":"4dca64cb7e8a1dfc","names":["io.github.grtwo-jcansler/gryz"],"host":"www.gryz.ai","endpoint":"https://www.gryz.ai/api/mcp/","first_seen":"2026-08-30","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-09-10","kind":"delisted"}]}

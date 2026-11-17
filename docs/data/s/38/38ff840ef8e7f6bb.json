@@ -1,0 +1,1 @@
+{"slug":"38ff840ef8e7f6bb","names":["com.openworklabs/openwork"],"host":"api.openworklabs.com","endpoint":"https://api.openworklabs.com/mcp/agent","first_seen":"2026-09-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-27","kind":"first_seen","outcome":"auth_required"}]}

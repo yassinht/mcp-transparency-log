@@ -1,0 +1,1 @@
+{"slug":"e4e7d9a99bee491b","names":["ai.qureview/review"],"host":"app.qureview.ai","endpoint":"https://app.qureview.ai/mcp","first_seen":"2026-10-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

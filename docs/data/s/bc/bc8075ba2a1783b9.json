@@ -1,0 +1,1 @@
+{"slug":"bc8075ba2a1783b9","names":["io.github.pencilink/pencil"],"host":"app.pencil.ink","endpoint":"https://app.pencil.ink/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

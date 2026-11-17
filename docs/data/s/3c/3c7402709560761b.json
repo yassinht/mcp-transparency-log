@@ -1,0 +1,1 @@
+{"slug":"3c7402709560761b","names":["io.antaeus/antaeus"],"host":"api.antaeus.io","endpoint":"https://api.antaeus.io/mcp","first_seen":"2026-10-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-23","kind":"first_seen","outcome":"auth_required"}]}

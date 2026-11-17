@@ -1,0 +1,1 @@
+{"slug":"9256715170ce0678","names":["com.ayedesk/ayedesk"],"host":"app.ayedesk.com","endpoint":"https://app.ayedesk.com/mcp?profile=core","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

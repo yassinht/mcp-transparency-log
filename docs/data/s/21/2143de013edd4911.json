@@ -1,0 +1,1 @@
+{"slug":"2143de013edd4911","names":["io.magictranslate/mcp"],"host":"mcp.magictranslate.io","endpoint":"https://mcp.magictranslate.io/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

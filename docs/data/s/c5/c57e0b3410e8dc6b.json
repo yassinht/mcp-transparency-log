@@ -1,0 +1,1 @@
+{"slug":"c57e0b3410e8dc6b","names":["ai.huffl/huffl"],"host":"api.huffl.ai","endpoint":"https://api.huffl.ai/mcp","first_seen":"2026-11-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-11","kind":"first_seen","outcome":"auth_required"}]}

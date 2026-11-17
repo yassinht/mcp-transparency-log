@@ -1,0 +1,1 @@
+{"slug":"c41086b07d903b1b","names":["ai.kadenza/mcp"],"host":"app.kadenza.ai","endpoint":"https://app.kadenza.ai/api/mcp","first_seen":"2026-09-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-26","kind":"first_seen","outcome":"auth_required"}]}

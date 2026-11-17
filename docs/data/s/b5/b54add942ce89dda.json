@@ -1,0 +1,1 @@
+{"slug":"b54add942ce89dda","names":["pl.lentra/lentra"],"host":"app.lentra.pl","endpoint":"https://app.lentra.pl/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"9a8168abfa43779d","names":["com.noerrands/tables"],"host":"api.noerrands.com","endpoint":"https://api.noerrands.com/c/tables/mcp","first_seen":"2026-09-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-26","kind":"first_seen","outcome":"auth_required"}]}

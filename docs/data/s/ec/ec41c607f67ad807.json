@@ -1,0 +1,1 @@
+{"slug":"ec41c607f67ad807","names":["io.github.attestifyagent/attestify-os"],"host":"attestify-os.vercel.app","endpoint":"https://attestify-os.vercel.app/api/run","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

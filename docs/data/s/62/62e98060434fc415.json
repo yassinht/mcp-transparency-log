@@ -1,0 +1,1 @@
+{"slug":"62e98060434fc415","names":["run.dropto/drop2run"],"host":"mcp.dropto.run","endpoint":"https://mcp.dropto.run/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"7b735f76449f4e0b","names":["io.github.sivaguruayyadurai/lotssocial"],"host":"api.lots.social","endpoint":"https://api.lots.social/mcp","first_seen":"2026-09-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-22","kind":"first_seen","outcome":"auth_required"}]}

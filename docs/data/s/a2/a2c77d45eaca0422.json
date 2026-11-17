@@ -1,0 +1,1 @@
+{"slug":"a2c77d45eaca0422","names":["io.github.Rengon0x/noesis"],"host":"noesisapi.dev","endpoint":"https://noesisapi.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

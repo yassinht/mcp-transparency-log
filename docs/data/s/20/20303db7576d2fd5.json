@@ -1,0 +1,1 @@
+{"slug":"20303db7576d2fd5","names":["io.github.josephibra/shadowgate-mcp"],"host":"shadowgate-mcp.mcp.xpay.sh","endpoint":"https://shadowgate-mcp.mcp.xpay.sh/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"00d59ea7058a8610","names":["ai.shager/shager"],"host":"app.shager.ai","endpoint":"https://app.shager.ai/api/mcp","first_seen":"2026-10-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-24","kind":"first_seen","outcome":"auth_required"}]}

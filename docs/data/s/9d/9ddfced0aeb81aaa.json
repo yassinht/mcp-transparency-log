@@ -1,0 +1,1 @@
+{"slug":"9ddfced0aeb81aaa","names":["io.github.carlosdania/autopilots"],"host":"mcp.dania.ai","endpoint":"https://mcp.dania.ai/autopilots","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"unreachable"}]}

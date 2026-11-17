@@ -1,0 +1,1 @@
+{"slug":"7a4c9a6b5d8edf4f","names":["io.idntty/stash"],"host":"mcp.idntty.io","endpoint":"https://mcp.idntty.io/stash/","first_seen":"2026-09-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-01","kind":"first_seen","outcome":"auth_required"}]}

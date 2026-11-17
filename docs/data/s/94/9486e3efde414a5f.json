@@ -1,0 +1,1 @@
+{"slug":"9486e3efde414a5f","names":["com.nova-kommo/kommo"],"host":"sp1-nova.com","endpoint":"https://sp1-nova.com/api/mcp-server/mcp/","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"51050cbc3ad6cec1","names":["com.complexqa/cqa-mcp"],"host":"mcp.complexqa.com","endpoint":"https://mcp.complexqa.com/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

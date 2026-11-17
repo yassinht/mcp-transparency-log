@@ -1,0 +1,1 @@
+{"slug":"4bf25c3696a46384","names":["com.mobile-text-alerts/sms-mcp"],"host":"mcp.mobile-text-alerts.com","endpoint":"https://mcp.mobile-text-alerts.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

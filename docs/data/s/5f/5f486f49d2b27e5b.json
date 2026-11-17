@@ -1,0 +1,1 @@
+{"slug":"5f486f49d2b27e5b","names":["app.manilo/manilo"],"host":"api.manilo.app","endpoint":"https://api.manilo.app/mcp","first_seen":"2026-08-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-31","kind":"first_seen","outcome":"auth_required"}]}

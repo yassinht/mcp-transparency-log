@@ -1,0 +1,1 @@
+{"slug":"2dccea3f34eb2da4","names":["br.com.tribujus/tribujus"],"host":"www.tribujus.com.br","endpoint":"https://www.tribujus.com.br/api/mcp","first_seen":"2026-11-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-16","kind":"first_seen","outcome":"auth_required"}]}

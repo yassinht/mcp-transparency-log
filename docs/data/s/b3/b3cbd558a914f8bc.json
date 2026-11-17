@@ -1,0 +1,1 @@
+{"slug":"b3cbd558a914f8bc","names":["app.grailhound/marketplace-alerts"],"host":"grailhound.app","endpoint":"https://grailhound.app/mcp","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

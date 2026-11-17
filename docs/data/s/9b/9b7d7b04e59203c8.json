@@ -1,0 +1,1 @@
+{"slug":"9b7d7b04e59203c8","names":["io.github.zoom/zoom-workspaces"],"host":"mcp.zoom.us","endpoint":"https://mcp.zoom.us/mcp/workspace/streamable","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"3b55c601ff9d3ada","names":["com.ctriolab/google-hotels"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=ctriolab/google-hotels-scraper","first_seen":"2026-10-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-24","kind":"first_seen","outcome":"auth_required"}]}

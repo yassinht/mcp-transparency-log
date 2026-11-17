@@ -1,0 +1,1 @@
+{"slug":"f63b68938cc7aebe","names":["io.github.othepro211/contract-guard"],"host":"contract-guard-production.up.railway.app","endpoint":"https://contract-guard-production.up.railway.app/mcp","first_seen":"2026-10-01","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

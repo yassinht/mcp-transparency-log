@@ -1,0 +1,1 @@
+{"slug":"9c8da154c5540387","names":["com.mr-bridge/tft-mcp-server"],"host":"mrbridge--tft-mcp-server.apify.actor","endpoint":"https://mrbridge--tft-mcp-server.apify.actor/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

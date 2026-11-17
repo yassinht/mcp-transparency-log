@@ -1,0 +1,1 @@
+{"slug":"c304369d3dc9e66a","names":["br.app.anotae.dados/mcp"],"host":"dados.anotae.app.br","endpoint":"https://dados.anotae.app.br/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

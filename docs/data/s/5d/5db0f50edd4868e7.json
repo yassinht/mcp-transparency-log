@@ -1,0 +1,1 @@
+{"slug":"5db0f50edd4868e7","names":["io.github.grant1493-svg/italy-fuel-prices"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=shelly_fen/eu-fuel-prices-official","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

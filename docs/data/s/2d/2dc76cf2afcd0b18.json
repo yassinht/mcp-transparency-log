@@ -1,0 +1,1 @@
+{"slug":"2dc76cf2afcd0b18","names":["io.github.jfortier93/verified-numbers-mcp"],"host":"verified-numbers.mcpize.run","endpoint":"https://verified-numbers.mcpize.run","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"e04f18c9efb95670","names":["com.kestrelvoice/kestrelvoice"],"host":"kestrelvoice.com","endpoint":"https://kestrelvoice.com/api/mcp/v2","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

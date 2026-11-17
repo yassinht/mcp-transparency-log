@@ -1,0 +1,1 @@
+{"slug":"612373980c367308","names":["io.github.djtellado/nexus-legal"],"host":"legal.nexusquantum.legal","endpoint":"https://legal.nexusquantum.legal/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

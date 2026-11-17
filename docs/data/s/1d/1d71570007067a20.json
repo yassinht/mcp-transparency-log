@@ -1,0 +1,1 @@
+{"slug":"1d71570007067a20","names":["io.github.1powergrey/sios-gano-connector"],"host":"sios-gano-connector.vercel.app","endpoint":"https://sios-gano-connector.vercel.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

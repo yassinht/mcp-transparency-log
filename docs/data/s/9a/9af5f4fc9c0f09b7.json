@@ -1,0 +1,1 @@
+{"slug":"9af5f4fc9c0f09b7","names":["com.elvesora/enrichment"],"host":"enrichment.elvesora.com","endpoint":"https://enrichment.elvesora.com/api/mcp/enrichment","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

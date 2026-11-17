@@ -1,0 +1,1 @@
+{"slug":"80c8f30be8a3d779","names":["dev.jobspipe/mcp"],"host":"mcp.jobspipe.dev","endpoint":"https://mcp.jobspipe.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

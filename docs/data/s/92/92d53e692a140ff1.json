@@ -1,0 +1,1 @@
+{"slug":"92d53e692a140ff1","names":["io.github.juodoc/ap-control"],"host":"api-production-9502.up.railway.app","endpoint":"https://api-production-9502.up.railway.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

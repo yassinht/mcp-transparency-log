@@ -1,0 +1,1 @@
+{"slug":"cf844e2c6c82a9ab","names":["ai.buron/buron"],"host":"app.buron.ai","endpoint":"https://app.buron.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

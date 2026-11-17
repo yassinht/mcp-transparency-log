@@ -1,0 +1,1 @@
+{"slug":"efb962c38cb815e5","names":["io.github.marcepalacios12/mcp-poisoning-scanner"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=bigochelo/mcp-poisoning-scanner","first_seen":"2026-10-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-30","kind":"first_seen","outcome":"auth_required"}]}

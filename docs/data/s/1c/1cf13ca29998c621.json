@@ -1,0 +1,1 @@
+{"slug":"1cf13ca29998c621","names":["io.github.CognitiveCoreAI/the-remote-suite-dev"],"host":"dev.theremotesuite.com","endpoint":"https://dev.theremotesuite.com/api/mcp","first_seen":"2026-09-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-23","kind":"first_seen","outcome":"auth_required"}]}

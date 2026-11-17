@@ -1,0 +1,1 @@
+{"slug":"7442be7c2106fc3e","names":["estate.new/publish"],"host":"new.estate","endpoint":"https://new.estate/api/mcp/publish","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

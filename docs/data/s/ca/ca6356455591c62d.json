@@ -1,0 +1,1 @@
+{"slug":"ca6356455591c62d","names":["co.meterapp/meter-rides","co.meterapp/rides"],"host":"www.meterapp.co","endpoint":"https://www.meterapp.co/api/mcp/rider","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

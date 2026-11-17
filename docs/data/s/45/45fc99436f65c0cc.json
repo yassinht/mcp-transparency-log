@@ -1,0 +1,1 @@
+{"slug":"45fc99436f65c0cc","names":["dev.cotlet/livechat"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/livechat/connect","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

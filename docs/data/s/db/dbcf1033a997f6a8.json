@@ -1,0 +1,1 @@
+{"slug":"dbcf1033a997f6a8","names":["com.myinfluenceai/agents"],"host":"api.myinfluenceai.com","endpoint":"https://api.myinfluenceai.com/mcp","first_seen":"2026-09-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-06","kind":"first_seen","outcome":"auth_required"}]}

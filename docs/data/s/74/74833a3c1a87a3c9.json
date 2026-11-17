@@ -1,0 +1,1 @@
+{"slug":"74833a3c1a87a3c9","names":["io.github.pkhaninejad/smartmatch"],"host":"smartmatch.wallstrdev.com","endpoint":"https://smartmatch.wallstrdev.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

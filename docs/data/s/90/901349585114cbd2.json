@@ -1,0 +1,1 @@
+{"slug":"901349585114cbd2","names":["io.github.IndoTender/indonesia-regulatory"],"host":"indotender.com","endpoint":"https://indotender.com/mcp/regulatory","first_seen":"2026-09-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-02","kind":"first_seen","outcome":"auth_required"}]}

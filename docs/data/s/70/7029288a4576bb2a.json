@@ -1,0 +1,1 @@
+{"slug":"7029288a4576bb2a","names":["com.credentialcamp.app/credential-camp"],"host":"app.credentialcamp.com","endpoint":"https://app.credentialcamp.com/api/mcp","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

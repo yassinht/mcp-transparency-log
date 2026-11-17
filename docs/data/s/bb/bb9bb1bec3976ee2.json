@@ -1,0 +1,1 @@
+{"slug":"bb9bb1bec3976ee2","names":["net.casthost/radio"],"host":"dashboard.casthost.net","endpoint":"https://dashboard.casthost.net/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"e719f7da385a5076","names":["com.hi-daniel.techspy/techspy"],"host":"techspy.hi-daniel.com","endpoint":"https://techspy.hi-daniel.com/api/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

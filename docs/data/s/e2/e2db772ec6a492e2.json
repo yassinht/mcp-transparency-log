@@ -1,0 +1,1 @@
+{"slug":"e2db772ec6a492e2","names":["com.stockrow/mcp"],"host":"stockrow.com","endpoint":"https://stockrow.com/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

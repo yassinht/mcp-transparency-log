@@ -1,0 +1,1 @@
+{"slug":"160c9c0d7ec2c6d4","names":["io.github.JusticeUA/canada-company-check"],"host":"kyb-data--canada-company-check.apify.actor","endpoint":"https://kyb-data--canada-company-check.apify.actor/mcp","first_seen":"2026-11-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-07","kind":"first_seen","outcome":"auth_required"}]}

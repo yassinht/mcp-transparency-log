@@ -1,0 +1,1 @@
+{"slug":"4d070a3c7a776c9c","names":["io.github.antyser/wineauction"],"host":"wineauction.ai","endpoint":"https://wineauction.ai/api/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

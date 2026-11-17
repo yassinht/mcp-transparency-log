@@ -1,0 +1,1 @@
+{"slug":"8d243e2e8cb18818","names":["io.github.norcapp/norc-mcp"],"host":"mcp.norc.app","endpoint":"https://mcp.norc.app/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

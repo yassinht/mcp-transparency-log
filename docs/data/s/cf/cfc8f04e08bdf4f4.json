@@ -1,0 +1,1 @@
+{"slug":"cfc8f04e08bdf4f4","names":["io.github.FindDataTechnology/lex-ops-mcp"],"host":"mcp.finddatatech.cloud","endpoint":"https://mcp.finddatatech.cloud/lex-ops-mcp/mcp","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"protocol_error"}]}

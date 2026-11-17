@@ -1,0 +1,1 @@
+{"slug":"567c109a0e7d2c80","names":["com.gennons/gennons"],"host":"gennons.com","endpoint":"https://gennons.com/api/mcp","first_seen":"2026-09-14","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-14","kind":"first_seen","outcome":"auth_required"}]}

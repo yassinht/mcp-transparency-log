@@ -1,0 +1,1 @@
+{"slug":"5cf673727d9087de","names":["is.tafla/tafla"],"host":"www.tafla.is","endpoint":"https://www.tafla.is/api/mcp","first_seen":"2026-10-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

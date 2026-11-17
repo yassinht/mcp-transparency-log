@@ -1,0 +1,1 @@
+{"slug":"a9a9b145da49e092","names":["io.github.hostinger/hostinger-api-mcp"],"host":"mcp.hostinger.com","endpoint":"https://mcp.hostinger.com","first_seen":"2026-09-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-03","kind":"first_seen","outcome":"auth_required"}]}

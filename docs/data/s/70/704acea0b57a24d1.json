@@ -1,0 +1,1 @@
+{"slug":"704acea0b57a24d1","names":["to.lotsmail/lotsmail"],"host":"api.lotsmail.to","endpoint":"https://api.lotsmail.to/mcp","first_seen":"2026-10-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-19","kind":"first_seen","outcome":"auth_required"}]}

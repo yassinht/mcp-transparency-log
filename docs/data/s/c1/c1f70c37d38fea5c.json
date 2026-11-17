@@ -1,0 +1,1 @@
+{"slug":"c1f70c37d38fea5c","names":["io.github.POP24/lebonfoin-mcp"],"host":"lebonfoin-mcp-production.up.railway.app","endpoint":"https://lebonfoin-mcp-production.up.railway.app/sse","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

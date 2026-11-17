@@ -1,0 +1,1 @@
+{"slug":"73560bed6c205f83","names":["io.github.richbile/obsidian-regulatory-mcp"],"host":"mcp.obsidianri.com","endpoint":"https://mcp.obsidianri.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

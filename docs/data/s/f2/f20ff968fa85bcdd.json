@@ -1,0 +1,1 @@
+{"slug":"f20ff968fa85bcdd","names":["com.unity.mcp.acquire/server"],"host":"acquire.mcp.unity.com","endpoint":"https://acquire.mcp.unity.com","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

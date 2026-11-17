@@ -1,0 +1,1 @@
+{"slug":"5e4b0c3566df05e0","names":["com.fillfolio/mcp"],"host":"fillfolio.com","endpoint":"https://fillfolio.com/api/mcp","first_seen":"2026-09-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-05","kind":"first_seen","outcome":"auth_required"}]}

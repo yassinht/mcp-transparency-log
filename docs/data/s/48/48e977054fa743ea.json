@@ -1,0 +1,1 @@
+{"slug":"48e977054fa743ea","names":["com.gpt-video/gpt-video-full"],"host":"api.gpt-video.com","endpoint":"https://api.gpt-video.com/mcp","first_seen":"2026-10-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

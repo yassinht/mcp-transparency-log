@@ -1,0 +1,1 @@
+{"slug":"585376956787630d","names":["one.aisa/creator-discovery"],"host":"mcp.aisa.one","endpoint":"https://mcp.aisa.one/creator-discovery/mcp","first_seen":"2026-09-14","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-14","kind":"first_seen","outcome":"auth_required"}]}

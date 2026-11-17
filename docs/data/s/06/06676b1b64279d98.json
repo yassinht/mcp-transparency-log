@@ -1,0 +1,1 @@
+{"slug":"06676b1b64279d98","names":["io.github.AymanElhakim/wassel"],"host":"api.wassel.cloud","endpoint":"https://api.wassel.cloud/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

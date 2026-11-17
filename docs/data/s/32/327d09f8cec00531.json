@@ -1,0 +1,1 @@
+{"slug":"327d09f8cec00531","names":["com.hasdata/hasdata"],"host":"mcp.hasdata.com","endpoint":"https://mcp.hasdata.com/api/mcp","first_seen":"2026-08-30","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-09-26","kind":"delisted"}]}

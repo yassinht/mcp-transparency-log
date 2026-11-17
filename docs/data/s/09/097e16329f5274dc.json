@@ -1,0 +1,1 @@
+{"slug":"097e16329f5274dc","names":["com.jonakisoft/clinicdesk"],"host":"clinic.jonakisoft.com","endpoint":"https://clinic.jonakisoft.com/mcp","first_seen":"2026-10-25","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

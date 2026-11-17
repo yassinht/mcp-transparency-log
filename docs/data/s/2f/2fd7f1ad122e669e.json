@@ -1,0 +1,1 @@
+{"slug":"2fd7f1ad122e669e","names":["io.github.unshift-ai/unshift"],"host":"studio.unshift.ai","endpoint":"https://studio.unshift.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

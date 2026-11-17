@@ -1,0 +1,1 @@
+{"slug":"b9882f2528884157","names":["com.spendict/spendict"],"host":"www.spendict.com","endpoint":"https://www.spendict.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

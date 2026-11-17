@@ -1,0 +1,1 @@
+{"slug":"334a7fd143b2cdd8","names":["ai.dealsharp/dealsharp"],"host":"app.dealsharp.ai","endpoint":"https://app.dealsharp.ai/mcp","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

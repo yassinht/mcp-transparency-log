@@ -1,0 +1,1 @@
+{"slug":"e2a8937937b4473f","names":["com.webatola/app-store-trends"],"host":"webatola--app-store-trends-mcp-server.apify.actor","endpoint":"https://webatola--app-store-trends-mcp-server.apify.actor/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

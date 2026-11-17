@@ -1,0 +1,1 @@
+{"slug":"8c1f762d42cfdc48","names":["io.github.rankcontrol/rankcontrol"],"host":"api.rctrl.com","endpoint":"https://api.rctrl.com/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

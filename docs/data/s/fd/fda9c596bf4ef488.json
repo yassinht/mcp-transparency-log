@@ -1,0 +1,1 @@
+{"slug":"fda9c596bf4ef488","names":["com.noeixodigital/radar"],"host":"radar.noeixodigital.com","endpoint":"https://radar.noeixodigital.com/api/mcp","first_seen":"2026-10-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-23","kind":"first_seen","outcome":"auth_required"}]}

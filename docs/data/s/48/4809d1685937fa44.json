@@ -1,0 +1,1 @@
+{"slug":"4809d1685937fa44","names":["ai.bugtape/bugtape"],"host":"app.bugtape.ai","endpoint":"https://app.bugtape.ai/mcp","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

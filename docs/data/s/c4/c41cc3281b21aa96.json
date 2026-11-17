@@ -1,0 +1,1 @@
+{"slug":"c41cc3281b21aa96","names":["com.htagai/htag-spatial"],"host":"api.htagai.com","endpoint":"https://api.htagai.com/mcp/v1/servers/htag-spatial/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"02a2e6b5da791d73","names":["com.eutexa/crm"],"host":"api.eutexa.com","endpoint":"https://api.eutexa.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

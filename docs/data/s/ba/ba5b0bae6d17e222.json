@@ -1,0 +1,1 @@
+{"slug":"ba5b0bae6d17e222","names":["io.github.HeliumEdu/connector"],"host":"mcp.heliumedu.com","endpoint":"https://mcp.heliumedu.com/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

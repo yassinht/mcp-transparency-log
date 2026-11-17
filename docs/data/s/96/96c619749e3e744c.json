@@ -1,0 +1,1 @@
+{"slug":"96c619749e3e744c","names":["energy.isol/nepi"],"host":"mcp.isol.energy","endpoint":"https://mcp.isol.energy/nepi/mcp","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

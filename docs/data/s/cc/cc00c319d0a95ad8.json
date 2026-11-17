@@ -1,0 +1,1 @@
+{"slug":"cc00c319d0a95ad8","names":["company.lemma/telepath"],"host":"telepath.lemma.company","endpoint":"https://telepath.lemma.company/mcp","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"auth_required"}]}

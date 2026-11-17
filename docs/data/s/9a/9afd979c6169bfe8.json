@@ -1,0 +1,1 @@
+{"slug":"9afd979c6169bfe8","names":["us.inversolabs/x402-compatibility-intelligence"],"host":"intelligence.inversolabs.us","endpoint":"https://intelligence.inversolabs.us/mcp","first_seen":"2026-08-30","listed":true,"outcome":"rpc_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"d7a73bfd6664da8e","names":["app.simple-host/mcp"],"host":"mcp.simple-host.app","endpoint":"https://mcp.simple-host.app/mcp","first_seen":"2026-10-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-24","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"acda62f38583a7ff","names":["com.helloretail/hello-retail"],"host":"core.helloretail.com","endpoint":"https://core.helloretail.com/mcp","first_seen":"2026-09-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-12","kind":"first_seen","outcome":"auth_required"}]}

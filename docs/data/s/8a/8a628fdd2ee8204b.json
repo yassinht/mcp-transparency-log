@@ -1,0 +1,1 @@
+{"slug":"8a628fdd2ee8204b","names":["ly.clinical.api-prod/clinically-api"],"host":"api-prod.clinical.ly","endpoint":"https://api-prod.clinical.ly/mcp/connector","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"963ac6710204a834","names":["com.podcaststotext/mcp"],"host":"podcaststotext.com","endpoint":"https://podcaststotext.com/api/mcp","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

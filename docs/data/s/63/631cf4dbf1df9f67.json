@@ -1,0 +1,1 @@
+{"slug":"631cf4dbf1df9f67","names":["com.ispyconnect/agentdvr"],"host":"www.ispyconnect.com","endpoint":"https://www.ispyconnect.com/mcp","first_seen":"2026-09-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-21","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"016265fb8359a4f7","names":["energy.clarigrid/clarigrid"],"host":"mcp.clarigrid.energy","endpoint":"https://mcp.clarigrid.energy/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

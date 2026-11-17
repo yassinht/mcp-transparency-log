@@ -1,0 +1,1 @@
+{"slug":"1f9c6b35e16417f7","names":["money.candor/candor-finance"],"host":"api.candor.money","endpoint":"https://api.candor.money/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

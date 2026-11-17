@@ -1,0 +1,1 @@
+{"slug":"cb59f8f05688ef12","names":["com.ilurennik/ilu-rennik"],"host":"mcp.ilurennik.com","endpoint":"https://mcp.ilurennik.com/v1/owner/mcp","first_seen":"2026-11-04","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-06","kind":"delisted"}]}

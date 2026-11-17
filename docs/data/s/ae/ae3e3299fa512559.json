@@ -1,0 +1,1 @@
+{"slug":"ae3e3299fa512559","names":["app.growthradar/growth-radar"],"host":"growthradar.app","endpoint":"https://growthradar.app/api/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"f86735cc398c3841","names":["io.tracelog/assistant"],"host":"api.tracelog.io","endpoint":"https://api.tracelog.io/v1/assistant/mcp","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"898bacd0b02c3540","names":["ai.opper/opper"],"host":"api.opper.ai","endpoint":"https://api.opper.ai/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

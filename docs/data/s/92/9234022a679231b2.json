@@ -1,0 +1,1 @@
+{"slug":"9234022a679231b2","names":["sh.aboard/aboard"],"host":"api.aboard.sh","endpoint":"https://api.aboard.sh/mcp","first_seen":"2026-10-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-18","kind":"first_seen","outcome":"auth_required"}]}

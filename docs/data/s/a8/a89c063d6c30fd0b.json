@@ -1,0 +1,1 @@
+{"slug":"a89c063d6c30fd0b","names":["io.github.leosuhail-cmd/check-before-you-pay"],"host":"check.opulencedigitech.ca","endpoint":"https://check.opulencedigitech.ca/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

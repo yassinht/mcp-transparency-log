@@ -1,0 +1,1 @@
+{"slug":"7b73d688be3bde63","names":["io.github.usualaccountant/tally-mcp"],"host":"api.theusualaccountant.com","endpoint":"https://api.theusualaccountant.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

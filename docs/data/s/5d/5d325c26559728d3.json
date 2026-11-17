@@ -1,0 +1,1 @@
+{"slug":"5d325c26559728d3","names":["com.solidroam.mcp/european-charging-data"],"host":"mcp.solidroam.com","endpoint":"https://mcp.solidroam.com/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

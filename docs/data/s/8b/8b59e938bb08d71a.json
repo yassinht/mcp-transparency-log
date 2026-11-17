@@ -1,0 +1,1 @@
+{"slug":"8b59e938bb08d71a","names":["io.github.Lex-API/lexapi-mcp"],"host":"mcp.lex-api.com","endpoint":"https://mcp.lex-api.com/v1","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

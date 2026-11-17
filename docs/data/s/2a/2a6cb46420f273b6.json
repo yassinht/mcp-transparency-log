@@ -1,0 +1,1 @@
+{"slug":"2a6cb46420f273b6","names":["com.secureputcalls/mcp"],"host":"secureputcalls.com","endpoint":"https://secureputcalls.com/mcp","first_seen":"2026-10-09","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

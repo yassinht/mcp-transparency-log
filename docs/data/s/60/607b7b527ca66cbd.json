@@ -1,0 +1,1 @@
+{"slug":"607b7b527ca66cbd","names":["cloud.eresourcescheduler.app/eresource-scheduler"],"host":"app.eresourcescheduler.cloud","endpoint":"https://app.eresourcescheduler.cloud/mcp","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"auth_required"}]}

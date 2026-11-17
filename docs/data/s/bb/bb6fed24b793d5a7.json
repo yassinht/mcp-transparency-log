@@ -1,0 +1,1 @@
+{"slug":"bb6fed24b793d5a7","names":["ai.waystation/supabase"],"host":"waystation.ai","endpoint":"https://waystation.ai/supabase/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

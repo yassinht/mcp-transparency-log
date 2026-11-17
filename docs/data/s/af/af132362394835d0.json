@@ -1,0 +1,1 @@
+{"slug":"af132362394835d0","names":["design.codebase/codebase"],"host":"codebase.design","endpoint":"https://codebase.design/api/mcp","first_seen":"2026-10-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-15","kind":"first_seen","outcome":"auth_required"}]}

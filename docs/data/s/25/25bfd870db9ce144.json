@@ -1,0 +1,1 @@
+{"slug":"25bfd870db9ce144","names":["tools.calculator/mcp"],"host":"api.calculator.tools","endpoint":"https://api.calculator.tools/mcp/","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

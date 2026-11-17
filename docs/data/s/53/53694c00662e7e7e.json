@@ -1,0 +1,1 @@
+{"slug":"53694c00662e7e7e","names":["app.getdevboard/devboard"],"host":"api.getdevboard.app","endpoint":"https://api.getdevboard.app/mcp","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

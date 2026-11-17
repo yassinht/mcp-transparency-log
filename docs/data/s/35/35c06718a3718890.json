@@ -1,0 +1,1 @@
+{"slug":"35c06718a3718890","names":["io.github.grafana/mcp-grafana"],"host":"mcp.grafana.com","endpoint":"https://mcp.grafana.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

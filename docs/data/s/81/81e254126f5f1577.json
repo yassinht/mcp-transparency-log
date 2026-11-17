@@ -1,0 +1,1 @@
+{"slug":"81e254126f5f1577","names":["io.github.harshmaur/youtube-transcript-scraper"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=harshmaur/youtube-transcript-scraper","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

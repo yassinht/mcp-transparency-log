@@ -1,0 +1,1 @@
+{"slug":"59e6ca1e6f0ffd8d","names":["io.github.metamorphosis-sre/devdrops-property"],"host":"api.devdrops.run","endpoint":"https://api.devdrops.run/api/property/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"unreachable"}]}

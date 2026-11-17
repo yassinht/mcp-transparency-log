@@ -1,0 +1,1 @@
+{"slug":"70943e494e8791be","names":["ai.feedboss/feedboss"],"host":"server.feedboss.ai","endpoint":"https://server.feedboss.ai/api/v1/mcp","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

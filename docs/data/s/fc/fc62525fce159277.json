@@ -1,0 +1,1 @@
+{"slug":"fc62525fce159277","names":["io.github.EvidInvest/mcp-server"],"host":"mcp.evidinvest.com","endpoint":"https://mcp.evidinvest.com/mcp","first_seen":"2026-09-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-03","kind":"first_seen","outcome":"auth_required"}]}

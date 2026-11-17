@@ -1,0 +1,1 @@
+{"slug":"ddce49d592f98f3c","names":["ru.vibe2text/vibe2text"],"host":"api.vibe2text.ru","endpoint":"https://api.vibe2text.ru/mcp/","first_seen":"2026-09-13","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-13","kind":"first_seen","outcome":"auth_required"}]}

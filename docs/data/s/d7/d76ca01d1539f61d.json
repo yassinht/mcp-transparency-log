@@ -1,0 +1,1 @@
+{"slug":"d76ca01d1539f61d","names":["com.futurmatch/assistant","com.futurmatch/futurmatch"],"host":"api.futurmatch.com","endpoint":"https://api.futurmatch.com/mcp","first_seen":"2026-10-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-19","kind":"first_seen","outcome":"auth_required"}]}

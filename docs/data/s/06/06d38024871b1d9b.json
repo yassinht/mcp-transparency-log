@@ -1,0 +1,1 @@
+{"slug":"06d38024871b1d9b","names":["studio.approval/mcp"],"host":"mcp.approval.studio","endpoint":"https://mcp.approval.studio/","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

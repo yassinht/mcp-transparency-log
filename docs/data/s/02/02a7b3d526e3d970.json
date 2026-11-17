@@ -1,0 +1,1 @@
+{"slug":"02a7b3d526e3d970","names":["com.recruitmcp/recruitmcp"],"host":"mcp.recruitmcp.com","endpoint":"https://mcp.recruitmcp.com/mcp","first_seen":"2026-10-17","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-17","kind":"first_seen","outcome":"auth_required"}]}

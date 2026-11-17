@@ -1,0 +1,1 @@
+{"slug":"ea6fc86c77f16f3d","names":["community.findlocal/mcp"],"host":"mcp.findlocal.community","endpoint":"https://mcp.findlocal.community/mcp","first_seen":"2026-10-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-26","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"c4103b2ed5b16937","names":["com.360nook/crm"],"host":"app.360nook.com","endpoint":"https://app.360nook.com/api/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

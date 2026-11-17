@@ -1,0 +1,1 @@
+{"slug":"06d5190c1a9acdd6","names":["io.github.umakhanpro/vocalingo"],"host":"nodejs.vocalingo.app","endpoint":"https://nodejs.vocalingo.app/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

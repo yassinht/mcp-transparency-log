@@ -1,0 +1,1 @@
+{"slug":"123b2ec88c834882","names":["io.getsendable/sendable"],"host":"app.getsendable.io","endpoint":"https://app.getsendable.io/api/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

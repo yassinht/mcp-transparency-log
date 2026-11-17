@@ -1,0 +1,1 @@
+{"slug":"4ea3262562c55e52","names":["com.aibooma/agent-registry"],"host":"api.aibooma.com","endpoint":"https://api.aibooma.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

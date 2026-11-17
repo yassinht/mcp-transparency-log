@@ -1,0 +1,1 @@
+{"slug":"7114d6c764834db5","names":["com.quarralabs/google-trends-scraper"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=quarra/google-trends-scraper","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

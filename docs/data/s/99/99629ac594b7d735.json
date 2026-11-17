@@ -1,0 +1,1 @@
+{"slug":"99629ac594b7d735","names":["io.github.OpenSOSData/mcp-server"],"host":"mcp.opensosdata.com","endpoint":"https://mcp.opensosdata.com/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

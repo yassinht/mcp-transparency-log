@@ -1,0 +1,1 @@
+{"slug":"0857e1f07effab10","names":["ai.moneyheap/moneyheap"],"host":"moneyheap.ai","endpoint":"https://moneyheap.ai/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

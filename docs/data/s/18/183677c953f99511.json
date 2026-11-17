@@ -1,0 +1,1 @@
+{"slug":"183677c953f99511","names":["ai.cybret/findings"],"host":"mcp.cybret.ai","endpoint":"https://mcp.cybret.ai/mcp","first_seen":"2026-10-09","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

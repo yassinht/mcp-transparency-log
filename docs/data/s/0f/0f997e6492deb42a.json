@@ -1,0 +1,1 @@
+{"slug":"0f997e6492deb42a","names":["io.github.yesrelay/relay"],"host":"api.yesrelay.com","endpoint":"https://api.yesrelay.com/api/mcp","first_seen":"2026-09-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}

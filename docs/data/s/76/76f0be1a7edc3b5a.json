@@ -1,0 +1,1 @@
+{"slug":"76f0be1a7edc3b5a","names":["com.shortvidapi/mcp-server"],"host":"mcp.shortvidapi.com","endpoint":"https://mcp.shortvidapi.com/v1/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

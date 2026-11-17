@@ -1,0 +1,1 @@
+{"slug":"1881e15a9eef7c96","names":["io.github.akutishevsky/withings"],"host":"withings-mcp.com","endpoint":"https://withings-mcp.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

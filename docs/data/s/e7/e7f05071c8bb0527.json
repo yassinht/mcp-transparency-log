@@ -1,0 +1,1 @@
+{"slug":"e7f05071c8bb0527","names":["com.bespree/resumes"],"host":"bespree.com","endpoint":"https://bespree.com/api/v1/resume/mcp","first_seen":"2026-09-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-09","kind":"first_seen","outcome":"auth_required"}]}

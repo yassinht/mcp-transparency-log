@@ -1,0 +1,1 @@
+{"slug":"458a230cdcaefb64","names":["app.nametagstudio/nametag-studio"],"host":"nametagstudio.app","endpoint":"https://nametagstudio.app/api/app/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

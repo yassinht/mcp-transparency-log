@@ -1,0 +1,1 @@
+{"slug":"8760f953862b6db1","names":["ai.fugentic/mattest4-qyroac"],"host":"mattest4-qyroac.mcp.fugentic.ai","endpoint":"https://mattest4-qyroac.mcp.fugentic.ai","first_seen":"2026-08-30","listed":false,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"},{"date":"2026-09-18","kind":"delisted"}]}

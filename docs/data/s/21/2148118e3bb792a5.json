@@ -1,0 +1,1 @@
+{"slug":"2148118e3bb792a5","names":["io.github.AikoGilpin/serac"],"host":"serac.cloud","endpoint":"https://serac.cloud/api/agent/mcp/v1","first_seen":"2026-08-30","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

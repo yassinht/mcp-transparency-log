@@ -1,0 +1,1 @@
+{"slug":"2082c745c816baa9","names":["au.com.airsign/airsign"],"host":"api.airsign.com.au","endpoint":"https://api.airsign.com.au/mcp","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

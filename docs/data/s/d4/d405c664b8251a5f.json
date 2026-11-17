@@ -1,0 +1,1 @@
+{"slug":"d405c664b8251a5f","names":["io.github.Typeroll/typeroll"],"host":"app.typeroll.com","endpoint":"https://app.typeroll.com/api/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"c03d2e5917bb3b60","names":["com.onyxmetric/mcp"],"host":"app.onyxmetric.com","endpoint":"https://app.onyxmetric.com/api/mcp","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

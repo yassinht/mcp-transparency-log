@@ -1,0 +1,1 @@
+{"slug":"67a16bc1a2e3e015","names":["id.setlist/setlist-id"],"host":"api.setlist.id","endpoint":"https://api.setlist.id/mcp","first_seen":"2026-09-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-13","kind":"first_seen","outcome":"auth_required"}]}

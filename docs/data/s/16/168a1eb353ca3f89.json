@@ -1,0 +1,1 @@
+{"slug":"168a1eb353ca3f89","names":["com.supermailos/mail"],"host":"supermailos.com","endpoint":"https://supermailos.com/api/mcp","first_seen":"2026-10-09","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-10","kind":"delisted"}]}

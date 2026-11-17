@@ -1,0 +1,1 @@
+{"slug":"818146f736bb81fc","names":["com.markifact/meta-ads"],"host":"api.markifact.com","endpoint":"https://api.markifact.com/mcp/meta-ads","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"auth_required"}]}

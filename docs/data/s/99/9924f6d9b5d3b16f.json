@@ -1,0 +1,1 @@
+{"slug":"9924f6d9b5d3b16f","names":["com.derrick-app/derrick"],"host":"app1.derrick-app.com","endpoint":"https://app1.derrick-app.com/mcp","first_seen":"2026-09-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}

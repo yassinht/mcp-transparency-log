@@ -1,0 +1,1 @@
+{"slug":"d14c65f8b76b0a17","names":["com.llmotions.farm/sonnet-5-agent"],"host":"farm.llmotions.com","endpoint":"https://farm.llmotions.com/mcp/agents/sonnet-5-agent","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

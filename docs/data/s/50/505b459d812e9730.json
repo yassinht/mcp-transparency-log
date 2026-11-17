@@ -1,0 +1,1 @@
+{"slug":"505b459d812e9730","names":["ai.onedroid/synapse"],"host":"synapse.onedroid.ai","endpoint":"https://synapse.onedroid.ai/agent/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

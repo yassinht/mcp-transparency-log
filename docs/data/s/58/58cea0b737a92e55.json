@@ -1,0 +1,1 @@
+{"slug":"58cea0b737a92e55","names":["io.github.windmill-labs/windmill"],"host":"app.windmill.dev","endpoint":"https://app.windmill.dev/api/mcp/gateway","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

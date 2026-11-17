@@ -1,0 +1,1 @@
+{"slug":"ee1dfdbf37cf6ba2","names":["com.docpenny/pdf-generator"],"host":"mcp.docpenny.com","endpoint":"https://mcp.docpenny.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

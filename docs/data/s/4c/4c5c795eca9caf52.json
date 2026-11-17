@@ -1,0 +1,1 @@
+{"slug":"4c5c795eca9caf52","names":["com.b2bware/mcp-server"],"host":"mcp.b2bware.com","endpoint":"https://mcp.b2bware.com/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"c9278a90b3886009","names":["dev.cotlet/cotlet"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/connect","first_seen":"2026-10-22","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-25","kind":"delisted"}]}

@@ -1,0 +1,1 @@
+{"slug":"e512d74808937170","names":["com.rasareka/finance"],"host":"rasareka--finance-mcp.apify.actor","endpoint":"https://rasareka--finance-mcp.apify.actor/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

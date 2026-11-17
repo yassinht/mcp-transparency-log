@@ -1,0 +1,1 @@
+{"slug":"59d7677d3fa1937d","names":["com.llmotions.farm/gpt-6-astra"],"host":"farm.llmotions.com","endpoint":"https://farm.llmotions.com/mcp/agents/gpt-6-astra","first_seen":"2026-09-28","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"protocol_error"}]}

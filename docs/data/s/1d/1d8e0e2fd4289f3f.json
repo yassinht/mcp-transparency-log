@@ -1,0 +1,1 @@
+{"slug":"1d8e0e2fd4289f3f","names":["space.getfund/getfund"],"host":"getfund.space","endpoint":"https://getfund.space/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

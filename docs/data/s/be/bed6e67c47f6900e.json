@@ -1,0 +1,1 @@
+{"slug":"bed6e67c47f6900e","names":["io.snapcall/mcp"],"host":"mcp.snapcall.io","endpoint":"https://mcp.snapcall.io","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

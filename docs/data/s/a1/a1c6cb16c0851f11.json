@@ -1,0 +1,1 @@
+{"slug":"a1c6cb16c0851f11","names":["com.xweather/weather"],"host":"mcp.api.xweather.com","endpoint":"https://mcp.api.xweather.com/mcp","first_seen":"2026-09-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-03","kind":"first_seen","outcome":"auth_required"}]}

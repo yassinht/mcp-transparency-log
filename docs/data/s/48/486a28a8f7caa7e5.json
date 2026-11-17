@@ -1,0 +1,1 @@
+{"slug":"486a28a8f7caa7e5","names":["com.useholon/holon"],"host":"api.useholon.com","endpoint":"https://api.useholon.com/mcp","first_seen":"2026-09-24","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-24","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"310bcbbaf5ae11bc","names":["io.github.kontent-ai/mcp-server"],"host":"manage-mcp.kontent.ai","endpoint":"https://manage-mcp.kontent.ai/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

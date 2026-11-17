@@ -1,0 +1,1 @@
+{"slug":"5b2e9f5656be7ed9","names":["com.rightmoney/mcp"],"host":"app.rightmoney.com","endpoint":"https://app.rightmoney.com/api/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

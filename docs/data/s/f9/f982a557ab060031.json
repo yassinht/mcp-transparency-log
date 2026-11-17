@@ -1,0 +1,1 @@
+{"slug":"f982a557ab060031","names":["com.aussyprompt/one"],"host":"aussyprompt.com","endpoint":"https://aussyprompt.com/api/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

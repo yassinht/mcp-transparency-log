@@ -1,0 +1,1 @@
+{"slug":"7f2d81d6d5de5d3e","names":["dev.pages.ats-jobs-feed/ats-jobs-feed"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=venture_ace/ats-jobs-feed","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

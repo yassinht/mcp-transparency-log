@@ -1,0 +1,1 @@
+{"slug":"b4518204178dba10","names":["de.johannesbrunner.ainotes/ainotes"],"host":"ainotes.johannesbrunner.de","endpoint":"https://ainotes.johannesbrunner.de/api/v1/mcp","first_seen":"2026-11-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-01","kind":"first_seen","outcome":"auth_required"}]}

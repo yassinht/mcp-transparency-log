@@ -1,0 +1,1 @@
+{"slug":"ba1403ec66fb3f5f","names":["io.github.oreillymedia/oreilly-mcp-server"],"host":"api.oreilly.com","endpoint":"https://api.oreilly.com/api/search/v1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

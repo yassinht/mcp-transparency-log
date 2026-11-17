@@ -1,0 +1,1 @@
+{"slug":"4688c870064ddf4b","names":["io.github.atomsai/pyai"],"host":"api.pyai.com","endpoint":"https://api.pyai.com/mcp","first_seen":"2026-09-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-09","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"2977da36aa552cd5","names":["ch.antevo/mandates"],"host":"api.antevo.ch","endpoint":"https://api.antevo.ch/mcp/mandates/sse","first_seen":"2026-09-15","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-15","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-19","kind":"delisted"}]}

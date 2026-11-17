@@ -1,0 +1,1 @@
+{"slug":"69d7a987f4b67205","names":["com.cnrcode/tillpad"],"host":"tillpad.cnrcode.com","endpoint":"https://tillpad.cnrcode.com/mcp","first_seen":"2026-08-30","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-14","kind":"delisted"}]}

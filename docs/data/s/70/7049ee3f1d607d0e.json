@@ -1,0 +1,1 @@
+{"slug":"7049ee3f1d607d0e","names":["co.signalbeam/signal-beam"],"host":"app.signalbeam.co","endpoint":"https://app.signalbeam.co/mcp","first_seen":"2026-11-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-11","kind":"first_seen","outcome":"auth_required"}]}

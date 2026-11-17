@@ -1,0 +1,1 @@
+{"slug":"579fb14b4fb29aa1","names":["io.github.CSOAI-ORG/korea-ai-basic-act-mcp"],"host":"api.meok.ai","endpoint":"https://api.meok.ai/v1/governance/korea-ai-basic-act","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"unreachable"}]}

@@ -1,0 +1,1 @@
+{"slug":"c2ec662790aa2fd1","names":["au.com.shopsafe/verify"],"host":"shopsafe.com.au","endpoint":"https://shopsafe.com.au/mcp","first_seen":"2026-10-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-19","kind":"first_seen","outcome":"auth_required"}]}

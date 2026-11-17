@@ -1,0 +1,1 @@
+{"slug":"b816d1eb929e4c84","names":["ai.infolang/mcp"],"host":"api.infolang.ai","endpoint":"https://api.infolang.ai/v1/mcp/","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

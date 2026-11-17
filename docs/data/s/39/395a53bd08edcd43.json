@@ -1,0 +1,1 @@
+{"slug":"395a53bd08edcd43","names":["com.secretsantaorganizer/secretsanta"],"host":"api.secretsantaorganizer.com","endpoint":"https://api.secretsantaorganizer.com/mcp","first_seen":"2026-09-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-30","kind":"first_seen","outcome":"auth_required"}]}

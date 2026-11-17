@@ -1,0 +1,1 @@
+{"slug":"11f9b34275e41808","names":["io.github.andrewdraper/uxsense-drift"],"host":"app.uxsense.ai","endpoint":"https://app.uxsense.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"350ac9c3599f0179","names":["com.yeetpost/mcp"],"host":"api.yeetpost.com","endpoint":"https://api.yeetpost.com/api/v2/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

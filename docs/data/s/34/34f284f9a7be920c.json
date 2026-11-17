@@ -1,0 +1,1 @@
+{"slug":"34f284f9a7be920c","names":["dev.reapx/shopify-stores"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?actors=reapx/shopify-store-products-scraper,reapx/shopify-app-store-scraper","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

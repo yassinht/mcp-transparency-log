@@ -1,0 +1,1 @@
+{"slug":"e085bfb73d9a5df6","names":["com.nowgetitdone/getitdone"],"host":"app.nowgetitdone.com","endpoint":"https://app.nowgetitdone.com/api/mcp","first_seen":"2026-09-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-04","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"f3c09ffa749aece5","names":["io.github.Astrotomic/archivist-ai"],"host":"mcp.myarchivist.ai","endpoint":"https://mcp.myarchivist.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

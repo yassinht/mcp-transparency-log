@@ -1,0 +1,1 @@
+{"slug":"269a2cdb1c00b093","names":["ng.startright/ripplesignal"],"host":"ripplesignal.startright.ng","endpoint":"https://ripplesignal.startright.ng/api/mcp","first_seen":"2026-09-17","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-17","kind":"first_seen","outcome":"auth_required"}]}

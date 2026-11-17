@@ -1,0 +1,1 @@
+{"slug":"c233cf6af044eca6","names":["app.joinlayer/mcp"],"host":"mcp.joinlayer.app","endpoint":"https://mcp.joinlayer.app/mcp","first_seen":"2026-09-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-03","kind":"first_seen","outcome":"auth_required"}]}

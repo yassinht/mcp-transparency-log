@@ -1,0 +1,1 @@
+{"slug":"6d856d67f32fd814","names":["team.lots/lotsteam"],"host":"api.lots.team","endpoint":"https://api.lots.team/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

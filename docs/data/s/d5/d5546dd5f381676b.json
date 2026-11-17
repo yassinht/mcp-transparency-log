@@ -1,0 +1,1 @@
+{"slug":"d5546dd5f381676b","names":["io.github.guillermodoghel/facturear"],"host":"www.facture.ar","endpoint":"https://www.facture.ar/api/mcp","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

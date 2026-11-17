@@ -1,0 +1,1 @@
+{"slug":"33c265f62ad31060","names":["ch.antevo/wealth"],"host":"api.antevo.ch","endpoint":"https://api.antevo.ch/mcp/wealth/sse","first_seen":"2026-08-30","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-19","kind":"delisted"}]}

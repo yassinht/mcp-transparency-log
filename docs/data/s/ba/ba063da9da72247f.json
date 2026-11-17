@@ -1,0 +1,1 @@
+{"slug":"ba063da9da72247f","names":["com.avalara/cross-border"],"host":"mcp.avalara.com","endpoint":"https://mcp.avalara.com/cross-border","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

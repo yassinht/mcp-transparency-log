@@ -1,0 +1,1 @@
+{"slug":"f4a9c3aec6cfdcf7","names":["com.bangermail/banger"],"host":"api.bangermail.com","endpoint":"https://api.bangermail.com/mcp","first_seen":"2026-09-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-16","kind":"first_seen","outcome":"auth_required"}]}

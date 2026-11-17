@@ -1,0 +1,1 @@
+{"slug":"53a28fe47f2e2ea6","names":["ai.taskforcehq/taskforce"],"host":"mcp.taskforcehq.ai","endpoint":"https://mcp.taskforcehq.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

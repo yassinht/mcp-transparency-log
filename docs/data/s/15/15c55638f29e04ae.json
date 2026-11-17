@@ -1,0 +1,1 @@
+{"slug":"15c55638f29e04ae","names":["io.github.doralboim/attesta"],"host":"api-production-d9143.up.railway.app","endpoint":"https://api-production-d9143.up.railway.app/mcp","first_seen":"2026-09-25","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"protocol_error"}]}

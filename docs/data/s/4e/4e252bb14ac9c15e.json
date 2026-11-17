@@ -1,0 +1,1 @@
+{"slug":"4e252bb14ac9c15e","names":["io.kamai/mcp"],"host":"mcp.kamai.io","endpoint":"https://mcp.kamai.io/mcp","first_seen":"2026-09-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"5fc04d9f9780e3a2","names":["io.github.mooshee/funnellingo"],"host":"api.funnellingo.com","endpoint":"https://api.funnellingo.com/agent/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

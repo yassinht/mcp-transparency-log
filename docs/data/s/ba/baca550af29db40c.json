@@ -1,0 +1,1 @@
+{"slug":"baca550af29db40c","names":["io.cg3/prior"],"host":"api.cg3.io","endpoint":"https://api.cg3.io/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

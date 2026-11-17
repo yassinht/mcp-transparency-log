@@ -1,0 +1,1 @@
+{"slug":"506b8c402d123b32","names":["net.nexlab/us-congress-watch"],"host":"mcp.nexlab.net","endpoint":"https://mcp.nexlab.net/mcp/us-congress-watch","first_seen":"2026-09-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-06","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"698d14fbb9e7fc55","names":["com.superagnt/instagram-data"],"host":"mcp.superagnt.com","endpoint":"https://mcp.superagnt.com/mcp/instagram","first_seen":"2026-09-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-19","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"6bedcc6dd2c6a53d","names":["live.alpic.staging.email-mcp-17ee097a/email-mcp"],"host":"email-mcp-17ee097a.staging.alpic.live","endpoint":"https://email-mcp-17ee097a.staging.alpic.live","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

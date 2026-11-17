@@ -1,0 +1,1 @@
+{"slug":"5dc5f2a71a866a5f","names":["io.github.sendnf/sendnf"],"host":"api.sendnf.com","endpoint":"https://api.sendnf.com/mcp","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

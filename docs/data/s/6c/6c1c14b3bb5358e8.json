@@ -1,0 +1,1 @@
+{"slug":"6c1c14b3bb5358e8","names":["com.postassembly/post-assembly"],"host":"app.postassembly.com","endpoint":"https://app.postassembly.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

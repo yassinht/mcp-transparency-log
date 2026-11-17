@@ -1,0 +1,1 @@
+{"slug":"684149967ea4b745","names":["io.github.paulovitorti/amazon-brasil-vendedores-cnpj"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=paulovitor18/amazon-brasil-vendedores-cnpj","first_seen":"2026-09-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-14","kind":"first_seen","outcome":"auth_required"}]}

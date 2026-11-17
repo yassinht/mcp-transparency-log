@@ -1,0 +1,1 @@
+{"slug":"c9a9da2c1746569c","names":["io.github.TheySaid-Platform/theysaid"],"host":"ai.theysaid.io","endpoint":"https://ai.theysaid.io/api/mcp","first_seen":"2026-10-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-17","kind":"first_seen","outcome":"auth_required"}]}

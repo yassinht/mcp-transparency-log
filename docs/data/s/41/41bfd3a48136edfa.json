@@ -1,0 +1,1 @@
+{"slug":"41bfd3a48136edfa","names":["com.helprism/mcp"],"host":"api.helprism.com","endpoint":"https://api.helprism.com/mcp","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

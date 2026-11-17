@@ -1,0 +1,1 @@
+{"slug":"ecb1ee951e1e4d5f","names":["ai.bcited/bcited"],"host":"mcp.bcited.ai","endpoint":"https://mcp.bcited.ai/mcp","first_seen":"2026-09-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-18","kind":"first_seen","outcome":"auth_required"}]}

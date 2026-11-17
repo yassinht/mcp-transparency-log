@@ -1,0 +1,1 @@
+{"slug":"018d0ace141c9558","names":["app.magnt/magnt"],"host":"magnt.app","endpoint":"https://magnt.app/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

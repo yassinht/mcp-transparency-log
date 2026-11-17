@@ -1,0 +1,1 @@
+{"slug":"69dcca85b72c37f3","names":["io.pubble/pubble"],"host":"www.pubble.io","endpoint":"https://www.pubble.io/api/v2/mcp","first_seen":"2026-09-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-01","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"10ecd465e35268e1","names":["com.pymaia/pymaia"],"host":"api.pymaia.com","endpoint":"https://api.pymaia.com/mcp/directorio","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

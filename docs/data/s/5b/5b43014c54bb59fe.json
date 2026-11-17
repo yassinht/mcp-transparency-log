@@ -1,0 +1,1 @@
+{"slug":"5b43014c54bb59fe","names":["io.github.danielpopamd/linkedin-ads-mcp"],"host":"api.adplug.app","endpoint":"https://api.adplug.app/mcp/linkedin-ads","first_seen":"2026-09-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-17","kind":"first_seen","outcome":"auth_required"}]}

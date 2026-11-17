@@ -1,0 +1,1 @@
+{"slug":"8df10f957e9f06fb","names":["io.github.johnisanerd/bing-copilot"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=johnvc/bing-copilot-api","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

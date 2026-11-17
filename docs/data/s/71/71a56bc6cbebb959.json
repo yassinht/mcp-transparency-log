@@ -1,0 +1,1 @@
+{"slug":"71a56bc6cbebb959","names":["ai.troquel/troquel"],"host":"troquel.ai","endpoint":"https://troquel.ai/api/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

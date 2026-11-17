@@ -1,0 +1,1 @@
+{"slug":"3fb9891743426d95","names":["io.github.danielpopamd/hubspot-mcp"],"host":"api.adplug.app","endpoint":"https://api.adplug.app/mcp/hubspot","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

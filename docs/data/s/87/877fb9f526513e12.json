@@ -1,0 +1,1 @@
+{"slug":"877fb9f526513e12","names":["io.magdox/magdox"],"host":"app.magdox.io","endpoint":"https://app.magdox.io/api/mcp","first_seen":"2026-08-31","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-31","kind":"first_seen","outcome":"auth_required"}]}

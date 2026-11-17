@@ -1,0 +1,1 @@
+{"slug":"d9dae70f163baea6","names":["com.zenabm/mcp"],"host":"app.zenabm.com","endpoint":"https://app.zenabm.com/api/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

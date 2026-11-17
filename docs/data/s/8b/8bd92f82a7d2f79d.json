@@ -1,0 +1,1 @@
+{"slug":"8bd92f82a7d2f79d","names":["io.github.martc03/cybersecurity-vuln"],"host":"cybersecurity-vuln-mcp.apify.actor","endpoint":"https://cybersecurity-vuln-mcp.apify.actor/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

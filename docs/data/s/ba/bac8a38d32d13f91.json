@@ -1,0 +1,1 @@
+{"slug":"bac8a38d32d13f91","names":["io.github.HwangByeongSeon/career-site-job-feed"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=starbright_overlap/ats-job-feed","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

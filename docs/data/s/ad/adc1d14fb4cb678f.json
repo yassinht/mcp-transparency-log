@@ -1,0 +1,1 @@
+{"slug":"adc1d14fb4cb678f","names":["io.github.oxgeneral/agentnet"],"host":"79.137.184.124.nip.io:8421","endpoint":"https://79.137.184.124.nip.io:8421/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"timeout"}]}

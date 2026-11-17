@@ -1,0 +1,1 @@
+{"slug":"545d59d6315ce5f5","names":["com.leadfriendly/lead-friendly"],"host":"www.leadfriendly.com","endpoint":"https://www.leadfriendly.com/api/mcp/v1","first_seen":"2026-09-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-26","kind":"first_seen","outcome":"auth_required"}]}

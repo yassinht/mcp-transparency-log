@@ -1,0 +1,1 @@
+{"slug":"bb99293df711745a","names":["io.github.hirosichen/stytrix-mcp"],"host":"www.stytrix.com","endpoint":"https://www.stytrix.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

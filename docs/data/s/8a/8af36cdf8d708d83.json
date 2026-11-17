@@ -1,0 +1,1 @@
+{"slug":"8af36cdf8d708d83","names":["com.triphetu/triphetu"],"host":"app.triphetu.com","endpoint":"https://app.triphetu.com/api/mcp","first_seen":"2026-09-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-26","kind":"first_seen","outcome":"auth_required"}]}

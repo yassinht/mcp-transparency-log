@@ -1,0 +1,1 @@
+{"slug":"ad747e7cae04b490","names":["co.valid/mcp"],"host":"mcp.valid.co","endpoint":"https://mcp.valid.co/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

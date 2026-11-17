@@ -1,0 +1,1 @@
+{"slug":"99eed60bfac18d4e","names":["com.postmately/postmately"],"host":"api.postmately.com","endpoint":"https://api.postmately.com/mcp","first_seen":"2026-11-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-07","kind":"first_seen","outcome":"auth_required"}]}

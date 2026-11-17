@@ -1,0 +1,1 @@
+{"slug":"d24d7624ff5af785","names":["com.qualyhq/qualy"],"host":"api.qualyhq.com","endpoint":"https://api.qualyhq.com/v1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

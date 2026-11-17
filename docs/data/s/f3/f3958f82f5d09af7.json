@@ -1,0 +1,1 @@
+{"slug":"f3958f82f5d09af7","names":["io.github.johnisanerd/apple-maps"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=johnvc/apple-maps-api","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

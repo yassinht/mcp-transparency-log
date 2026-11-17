@@ -1,0 +1,1 @@
+{"slug":"f211e9cc244a1fb1","names":["com.setix/clearinghouse"],"host":"mcp.setix.dev","endpoint":"https://mcp.setix.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

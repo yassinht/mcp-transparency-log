@@ -1,0 +1,1 @@
+{"slug":"e21c4d1ac271e8a3","names":["sh.jsmon/mcp"],"host":"mcp.jsmon.sh","endpoint":"https://mcp.jsmon.sh/mcp","first_seen":"2026-09-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-22","kind":"first_seen","outcome":"auth_required"}]}

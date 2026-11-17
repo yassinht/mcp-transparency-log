@@ -1,0 +1,1 @@
+{"slug":"2644ff4afafef29f","names":["io.github.gleanery-works/ad-library"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=gleanery_actors/ad-library-scraper","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"9e09a68ec6976018","names":["io.github.aitorgarcia21/ifg-tax"],"host":"ifg.tax","endpoint":"https://ifg.tax/v1/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

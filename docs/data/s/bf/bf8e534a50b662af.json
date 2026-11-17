@@ -1,0 +1,1 @@
+{"slug":"bf8e534a50b662af","names":["app.cloudbutler/cloud-butler"],"host":"mcp.cloudbutler.app","endpoint":"https://mcp.cloudbutler.app/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"78a98dcc5f896269","names":["io.github.monietools/image-to-text-ocr"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=poised_beardlichen/image-to-text-ocr","first_seen":"2026-10-20","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-20","kind":"first_seen","outcome":"auth_required"}]}

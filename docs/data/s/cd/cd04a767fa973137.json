@@ -1,0 +1,1 @@
+{"slug":"cd04a767fa973137","names":["com.cloudflare.mcp/mcp"],"host":"logs.mcp.cloudflare.com","endpoint":"https://logs.mcp.cloudflare.com/sse","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

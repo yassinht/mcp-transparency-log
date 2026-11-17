@@ -1,0 +1,1 @@
+{"slug":"af7bb9a7d85a9616","names":["io.github.jfortier93/statement-normalizer-mcp"],"host":"statement-normalizer.mcpize.run","endpoint":"https://statement-normalizer.mcpize.run","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

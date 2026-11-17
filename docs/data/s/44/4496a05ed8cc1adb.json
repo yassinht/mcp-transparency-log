@@ -1,0 +1,1 @@
+{"slug":"4496a05ed8cc1adb","names":["eu.sirenic/sirenic"],"host":"api.sirenic.eu","endpoint":"https://api.sirenic.eu/mcp/connecteur","first_seen":"2026-09-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-26","kind":"first_seen","outcome":"auth_required"}]}

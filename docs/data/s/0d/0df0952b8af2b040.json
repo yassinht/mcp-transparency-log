@@ -1,0 +1,1 @@
+{"slug":"0df0952b8af2b040","names":["com.hasdata/google-hotels"],"host":"mcp.hasdata.com","endpoint":"https://mcp.hasdata.com/api/mcp?apis=google_travel_hotels","first_seen":"2026-09-18","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-18","kind":"first_seen","outcome":"auth_required"},{"date":"2026-09-23","kind":"delisted"}]}

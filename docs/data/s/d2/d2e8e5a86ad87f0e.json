@@ -1,0 +1,1 @@
+{"slug":"d2e8e5a86ad87f0e","names":["com.hydracept/hydracept"],"host":"api.hydracept.com","endpoint":"https://api.hydracept.com/mcp/claude","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

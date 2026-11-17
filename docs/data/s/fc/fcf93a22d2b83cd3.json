@@ -1,0 +1,1 @@
+{"slug":"fcf93a22d2b83cd3","names":["ai.packmind/mcp-server"],"host":"app.packmind.ai","endpoint":"https://app.packmind.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

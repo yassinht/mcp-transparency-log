@@ -1,0 +1,1 @@
+{"slug":"77b23e7e882a6004","names":["ai.getkleos/kleos"],"host":"app.getkleos.ai","endpoint":"https://app.getkleos.ai/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

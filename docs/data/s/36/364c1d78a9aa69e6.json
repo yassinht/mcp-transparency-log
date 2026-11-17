@@ -1,0 +1,1 @@
+{"slug":"364c1d78a9aa69e6","names":["ai.shippp/mcp"],"host":"app.shippp.ai","endpoint":"https://app.shippp.ai/api/mcp/mcp","first_seen":"2026-10-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-27","kind":"first_seen","outcome":"auth_required"}]}

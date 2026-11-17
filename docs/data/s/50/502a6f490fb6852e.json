@@ -1,0 +1,1 @@
+{"slug":"502a6f490fb6852e","names":["ai.seendb/seendb"],"host":"api.seendb.ai","endpoint":"https://api.seendb.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

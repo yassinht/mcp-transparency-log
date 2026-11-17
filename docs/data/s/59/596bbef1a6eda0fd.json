@@ -1,0 +1,1 @@
+{"slug":"596bbef1a6eda0fd","names":["com.tryverifyemail/verifyemail"],"host":"api.tryverifyemail.com","endpoint":"https://api.tryverifyemail.com/mcp","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

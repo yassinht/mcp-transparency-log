@@ -1,0 +1,1 @@
+{"slug":"579313b088489d02","names":["com.addsynapse/woocommerce"],"host":"api.addsynapse.com","endpoint":"https://api.addsynapse.com/mcp/woocommerce","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

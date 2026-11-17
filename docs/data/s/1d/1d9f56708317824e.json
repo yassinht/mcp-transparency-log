@@ -1,0 +1,1 @@
+{"slug":"1d9f56708317824e","names":["live.bitacora/bitacora"],"host":"app.bitacora.live","endpoint":"https://app.bitacora.live/mcp","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

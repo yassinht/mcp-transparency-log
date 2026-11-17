@@ -1,0 +1,1 @@
+{"slug":"8659517e1e196d2d","names":["io.github.tylerscomic-lab/montecarlo-validator-mcp"],"host":"montecarlo-validator-mcp.mcpize.run","endpoint":"https://montecarlo-validator-mcp.mcpize.run/mcp","first_seen":"2026-10-02","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-02","kind":"first_seen","outcome":"auth_required"}]}

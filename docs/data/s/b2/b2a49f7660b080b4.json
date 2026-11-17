@@ -1,0 +1,1 @@
+{"slug":"b2a49f7660b080b4","names":["io.github.datadmon/chatgpt-product-feed-generator"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=data_daemon/chatgpt-product-feed-generator","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"52bd0569838cbbec","names":["io.veezee/linkedin"],"host":"mcp.veezee.io","endpoint":"https://mcp.veezee.io/linkedin","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

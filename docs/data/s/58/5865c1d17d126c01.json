@@ -1,0 +1,1 @@
+{"slug":"5865c1d17d126c01","names":["io.huntertech/vendor-insights"],"host":"mcp.huntertech.io","endpoint":"https://mcp.huntertech.io/mcp/auth","first_seen":"2026-10-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"950328dcb606b6ad","names":["com.qronoplay/qronoplay"],"host":"api.qronoplay.fr","endpoint":"https://api.qronoplay.fr/v1/ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

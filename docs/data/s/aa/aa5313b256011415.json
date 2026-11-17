@@ -1,0 +1,1 @@
+{"slug":"aa5313b256011415","names":["io.github.jfortier93/verified-wages-mcp"],"host":"verified-wages.mcpize.run","endpoint":"https://verified-wages.mcpize.run","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

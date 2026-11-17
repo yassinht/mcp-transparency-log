@@ -1,0 +1,1 @@
+{"slug":"d766c1c15d5bfd4f","names":["com.cosmicephemeris/mcp"],"host":"api.cosmicephemeris.com","endpoint":"https://api.cosmicephemeris.com/mcp","first_seen":"2026-10-13","listed":true,"outcome":"rpc_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"protocol_error"}]}

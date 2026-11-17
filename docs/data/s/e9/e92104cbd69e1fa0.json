@@ -1,0 +1,1 @@
+{"slug":"e92104cbd69e1fa0","names":["net.nexlab/sports-events-results"],"host":"mcp.nexlab.net","endpoint":"https://mcp.nexlab.net/mcp/sports-events-results","first_seen":"2026-09-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-06","kind":"first_seen","outcome":"auth_required"}]}

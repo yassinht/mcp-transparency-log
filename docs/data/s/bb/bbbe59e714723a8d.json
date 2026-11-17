@@ -1,0 +1,1 @@
+{"slug":"bbbe59e714723a8d","names":["app.vercel.agent-svg-registry/mcp"],"host":"agent-svg-registry.vercel.app","endpoint":"https://agent-svg-registry.vercel.app/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

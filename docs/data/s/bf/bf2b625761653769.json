@@ -1,0 +1,1 @@
+{"slug":"bf2b625761653769","names":["sh.openpath/openpath"],"host":"openpath.sh","endpoint":"https://openpath.sh/mcp","first_seen":"2026-10-13","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

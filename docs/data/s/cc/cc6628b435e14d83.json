@@ -1,0 +1,1 @@
+{"slug":"cc6628b435e14d83","names":["io.github.domaranskyi/canada-tax-fx"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=canada-dd/canada-sales-tax-exchange-rates","first_seen":"2026-10-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-10","kind":"first_seen","outcome":"auth_required"}]}

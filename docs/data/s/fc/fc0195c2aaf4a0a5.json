@@ -1,0 +1,1 @@
+{"slug":"fc0195c2aaf4a0a5","names":["ai.vicem/vicem"],"host":"api.vicem.ai","endpoint":"https://api.vicem.ai/v1/mcp","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

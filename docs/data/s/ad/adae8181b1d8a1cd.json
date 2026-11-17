@@ -1,0 +1,1 @@
+{"slug":"adae8181b1d8a1cd","names":["io.github.johnisanerd/startup-investors"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=johnvc/startup-investors-data-scraper","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

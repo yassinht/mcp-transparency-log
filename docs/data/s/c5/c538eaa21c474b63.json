@@ -1,0 +1,1 @@
+{"slug":"c538eaa21c474b63","names":["com.pinkwallet/agentic-payments-sandbox"],"host":"agentic-sandbox.pinkwallet.com","endpoint":"https://agentic-sandbox.pinkwallet.com/mcp","first_seen":"2026-10-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

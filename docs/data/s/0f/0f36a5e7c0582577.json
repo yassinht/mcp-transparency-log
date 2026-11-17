@@ -1,0 +1,1 @@
+{"slug":"0f36a5e7c0582577","names":["com.agentmsgr/agentmsgr"],"host":"app.agentmsgr.com","endpoint":"https://app.agentmsgr.com/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

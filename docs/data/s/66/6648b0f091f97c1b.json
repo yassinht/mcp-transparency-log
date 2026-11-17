@@ -1,0 +1,1 @@
+{"slug":"6648b0f091f97c1b","names":["io.github.Synlake-ai/mcp-server"],"host":"api.synlake.ai","endpoint":"https://api.synlake.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"e11b17c7f1f2af68","names":["io.github.doc2mcp/langchain"],"host":"doc2mcp.site","endpoint":"https://doc2mcp.site/api/mcp/0cd2635e-0cd5-4712-b33c-13b10c547e42/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

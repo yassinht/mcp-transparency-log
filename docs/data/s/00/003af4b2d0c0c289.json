@@ -1,0 +1,1 @@
+{"slug":"003af4b2d0c0c289","names":["so.formo/formo"],"host":"api.formo.so","endpoint":"https://api.formo.so/v0/mcp/","first_seen":"2026-10-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-06","kind":"first_seen","outcome":"auth_required"}]}

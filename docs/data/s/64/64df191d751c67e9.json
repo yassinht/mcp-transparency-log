@@ -1,0 +1,1 @@
+{"slug":"64df191d751c67e9","names":["ad.apogee/apogee"],"host":"app.apogee.ad","endpoint":"https://app.apogee.ad/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

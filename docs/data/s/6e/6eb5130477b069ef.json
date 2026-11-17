@@ -1,0 +1,1 @@
+{"slug":"6eb5130477b069ef","names":["io.github.gbude-sudo/dreameros-scs-gateway"],"host":"mcp.dreameros.app","endpoint":"https://mcp.dreameros.app/mcp/sse","first_seen":"2026-09-18","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-18","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"037df1666bb586b0","names":["com.banking-mcp/banking"],"host":"banking-mcp.com","endpoint":"https://banking-mcp.com/api/mcp","first_seen":"2026-09-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-23","kind":"first_seen","outcome":"auth_required"}]}

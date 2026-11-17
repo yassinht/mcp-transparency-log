@@ -1,0 +1,1 @@
+{"slug":"e0e049f61e31e6db","names":["de.glits.plr/polradar"],"host":"plr.glits.de","endpoint":"https://plr.glits.de/mcp/","first_seen":"2026-10-05","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

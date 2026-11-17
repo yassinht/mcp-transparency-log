@@ -1,0 +1,1 @@
+{"slug":"9c02b102339fded0","names":["sh.microservices/mcp"],"host":"api.microservices.sh","endpoint":"https://api.microservices.sh/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"537011c625bb17d2","names":["app.sentinelx/sentinelx"],"host":"mcp.sentinelx.app","endpoint":"https://mcp.sentinelx.app/mcp/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

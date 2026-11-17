@@ -1,0 +1,1 @@
+{"slug":"c452c81556272eda","names":["io.github.retracn/app-store-reviews"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=automationnation/app-store-reviews-scraper","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

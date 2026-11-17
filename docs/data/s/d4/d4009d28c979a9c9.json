@@ -1,0 +1,1 @@
+{"slug":"d4009d28c979a9c9","names":["io.github.Jack-mi/aicia-ai-signal"],"host":"aicia-mcp.lxsgocode123.workers.dev","endpoint":"https://aicia-mcp.lxsgocode123.workers.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

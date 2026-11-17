@@ -1,0 +1,1 @@
+{"slug":"631f4ac420cd563c","names":["io.github.rodrigogaraujo/g3-apply"],"host":"apply.g3infotech.app","endpoint":"https://apply.g3infotech.app/api/mcp","first_seen":"2026-11-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-16","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"15e634d82a7efae4","names":["com.patternsradar/sift"],"host":"api.patternsradar.com","endpoint":"https://api.patternsradar.com/mcp","first_seen":"2026-09-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-07","kind":"first_seen","outcome":"auth_required"}]}

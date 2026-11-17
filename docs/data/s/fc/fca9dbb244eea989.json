@@ -1,0 +1,1 @@
+{"slug":"fca9dbb244eea989","names":["com.profullstack/b1dz"],"host":"b1dz.com","endpoint":"https://b1dz.com/api/agent/mcp","first_seen":"2026-11-12","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

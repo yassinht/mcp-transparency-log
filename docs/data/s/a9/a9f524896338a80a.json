@@ -1,0 +1,1 @@
+{"slug":"a9f524896338a80a","names":["io.github.AceDataCloud/mcp-maestro"],"host":"maestro.mcp.acedata.cloud","endpoint":"https://maestro.mcp.acedata.cloud/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

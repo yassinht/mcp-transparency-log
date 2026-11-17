@@ -1,0 +1,1 @@
+{"slug":"a5ad9dbf94ecd1ff","names":["com.reps-log/repslog"],"host":"api.reps-log.com","endpoint":"https://api.reps-log.com/api/mcp","first_seen":"2026-09-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-18","kind":"first_seen","outcome":"auth_required"}]}

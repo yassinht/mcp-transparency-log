@@ -1,0 +1,1 @@
+{"slug":"a8669421d8ec89f7","names":["com.agentcreditdata/agent-credit-bureau"],"host":"agentcreditdata.com","endpoint":"https://agentcreditdata.com/mcp","first_seen":"2026-09-28","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"protocol_error"}]}

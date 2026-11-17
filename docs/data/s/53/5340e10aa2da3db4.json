@@ -1,0 +1,1 @@
+{"slug":"5340e10aa2da3db4","names":["ua.org.legal/lex"],"host":"mcp.legal.org.ua","endpoint":"https://mcp.legal.org.ua/api/v2/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

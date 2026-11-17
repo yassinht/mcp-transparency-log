@@ -1,0 +1,1 @@
+{"slug":"115d2df7790c91ee","names":["ch.pfx/mcp-server"],"host":"mcp.pfx.ch","endpoint":"https://mcp.pfx.ch/api/server","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

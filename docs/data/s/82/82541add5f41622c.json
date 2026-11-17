@@ -1,0 +1,1 @@
+{"slug":"82541add5f41622c","names":["ai.perfectmemory/perfect-memory"],"host":"proxy.perfectmemory.ai","endpoint":"https://proxy.perfectmemory.ai/api/mcp","first_seen":"2026-09-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-26","kind":"first_seen","outcome":"auth_required"}]}

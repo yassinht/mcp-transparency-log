@@ -1,0 +1,1 @@
+{"slug":"8a547e80dd0b78d9","names":["ai.roryplans/roryplans"],"host":"www.roryplans.ai","endpoint":"https://www.roryplans.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

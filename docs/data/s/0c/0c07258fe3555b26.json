@@ -1,0 +1,1 @@
+{"slug":"0c07258fe3555b26","names":["io.github.comet-ml/opik-mcp"],"host":"www.comet.com","endpoint":"https://www.comet.com/opik/api/v1/mcp","first_seen":"2026-10-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-06","kind":"first_seen","outcome":"auth_required"}]}

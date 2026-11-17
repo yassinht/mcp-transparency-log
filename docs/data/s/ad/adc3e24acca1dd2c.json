@@ -1,0 +1,1 @@
+{"slug":"adc3e24acca1dd2c","names":["lu.korpus/korpus"],"host":"www.korpus.lu","endpoint":"https://www.korpus.lu/api/v1/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

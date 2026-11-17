@@ -1,0 +1,1 @@
+{"slug":"23caeccf8e60370e","names":["io.guapu/guapu"],"host":"guapu.io","endpoint":"https://guapu.io/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

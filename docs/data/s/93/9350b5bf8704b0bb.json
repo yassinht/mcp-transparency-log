@@ -1,0 +1,1 @@
+{"slug":"9350b5bf8704b0bb","names":["io.github.oneinfer/mcp-server"],"host":"mcp.oneinfer.ai","endpoint":"https://mcp.oneinfer.ai/mcp","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

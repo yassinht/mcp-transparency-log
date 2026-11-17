@@ -1,0 +1,1 @@
+{"slug":"6b8648090ed0f91d","names":["io.github.renta-labs/renta"],"host":"getrenta.io","endpoint":"https://getrenta.io/api/mcp","first_seen":"2026-11-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-15","kind":"first_seen","outcome":"auth_required"}]}

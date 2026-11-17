@@ -1,0 +1,1 @@
+{"slug":"c6e34729ee5a9a91","names":["io.atalayahq/atalaya"],"host":"app.atalayahq.io","endpoint":"https://app.atalayahq.io/api/mcp","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

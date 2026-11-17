@@ -1,0 +1,1 @@
+{"slug":"0807cf3e6084ebf9","names":["org.aimlds/atom-forecast-confidence-scoreboard"],"host":"atoms.pipavia.com","endpoint":"https://atoms.pipavia.com/mcp/forecast-confidence-scoreboard","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

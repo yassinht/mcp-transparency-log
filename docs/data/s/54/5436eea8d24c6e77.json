@@ -1,0 +1,1 @@
+{"slug":"5436eea8d24c6e77","names":["com.getridian/scheduling"],"host":"api.getridian.com","endpoint":"https://api.getridian.com/mcp/scheduling","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"b3a8eb6f0f03133d","names":["com.zapier/mcp"],"host":"mcp.zapier.com","endpoint":"https://mcp.zapier.com/api/v1/connect","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

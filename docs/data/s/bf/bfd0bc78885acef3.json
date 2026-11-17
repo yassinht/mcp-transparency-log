@@ -1,0 +1,1 @@
+{"slug":"bfd0bc78885acef3","names":["io.github.bepolabs/us-weather"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=bepolabs/us-weather","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

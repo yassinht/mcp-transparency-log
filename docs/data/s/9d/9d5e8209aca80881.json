@@ -1,0 +1,1 @@
+{"slug":"9d5e8209aca80881","names":["com.mypinpal/todo"],"host":"todo.mypinpal.com","endpoint":"https://todo.mypinpal.com/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

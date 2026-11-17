@@ -1,0 +1,1 @@
+{"slug":"406a9f56314527c9","names":["io.github.serenido/rednote-trending"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=serenido/rednote-trending-scraper","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

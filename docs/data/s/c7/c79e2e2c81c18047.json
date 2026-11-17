@@ -1,0 +1,1 @@
+{"slug":"c79e2e2c81c18047","names":["io.github.PanStories/mcp-stock-analyst"],"host":"neeenja--mcp-stock-analyst.apify.actor","endpoint":"https://neeenja--mcp-stock-analyst.apify.actor/mcp","first_seen":"2026-10-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-10","kind":"first_seen","outcome":"auth_required"}]}

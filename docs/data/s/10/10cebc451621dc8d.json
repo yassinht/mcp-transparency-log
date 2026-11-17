@@ -1,0 +1,1 @@
+{"slug":"10cebc451621dc8d","names":["io.github.flightdb/dictatoralert"],"host":"flightdb.org","endpoint":"https://flightdb.org/mcp/dictatoralert","first_seen":"2026-09-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}

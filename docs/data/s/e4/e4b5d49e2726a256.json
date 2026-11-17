@@ -1,0 +1,1 @@
+{"slug":"e4b5d49e2726a256","names":["world.papertrade/papertrade"],"host":"papertrade.world","endpoint":"https://papertrade.world/api/mcp","first_seen":"2026-11-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-15","kind":"first_seen","outcome":"auth_required"}]}

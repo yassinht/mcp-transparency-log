@@ -1,0 +1,1 @@
+{"slug":"2af6d371294a5770","names":["dev.cotlet/brandfolder"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/brandfolder/connect","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

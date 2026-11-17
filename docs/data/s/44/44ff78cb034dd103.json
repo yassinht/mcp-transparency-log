@@ -1,0 +1,1 @@
+{"slug":"44ff78cb034dd103","names":["ai.sternly/verify"],"host":"api.sternly.ai","endpoint":"https://api.sternly.ai/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

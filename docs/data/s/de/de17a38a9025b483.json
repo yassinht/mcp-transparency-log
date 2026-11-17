@@ -1,0 +1,1 @@
+{"slug":"de17a38a9025b483","names":["io.github.wisechef-ai/loopskill"],"host":"app.loopskill.io","endpoint":"https://app.loopskill.io/api/mcp/http/","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

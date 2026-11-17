@@ -1,0 +1,1 @@
+{"slug":"db5d5e6b3a97345f","names":["com.gpt-video/gpt-video"],"host":"www.gpt-video.com","endpoint":"https://www.gpt-video.com/api/mcp","first_seen":"2026-10-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"b9c2c36d6928b912","names":["io.github.Parsons-ai/money"],"host":"money.parsons.ai","endpoint":"https://money.parsons.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

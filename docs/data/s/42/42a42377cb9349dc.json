@@ -1,0 +1,1 @@
+{"slug":"42a42377cb9349dc","names":["network.smartgate/smartgate"],"host":"smartgate.network","endpoint":"https://smartgate.network/api/mcp","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

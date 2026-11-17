@@ -1,0 +1,1 @@
+{"slug":"ce46478f2a85b7ef","names":["io.github.musyta-labs/mcpcut"],"host":"mcpcut.com","endpoint":"https://mcpcut.com/mcp","first_seen":"2026-08-30","listed":false,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"unreachable"},{"date":"2026-10-01","kind":"delisted"}]}

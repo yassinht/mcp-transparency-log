@@ -1,0 +1,1 @@
+{"slug":"de7ecb558c906d56","names":["io.github.heyrafi/rafi-mcp"],"host":"nest-app-775685078591.us-east1.run.app","endpoint":"https://nest-app-775685078591.us-east1.run.app/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

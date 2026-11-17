@@ -1,0 +1,1 @@
+{"slug":"8bd8e4157247de70","names":["io.github.AnimaApp/anima"],"host":"public-api.animaapp.com","endpoint":"https://public-api.animaapp.com/v1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

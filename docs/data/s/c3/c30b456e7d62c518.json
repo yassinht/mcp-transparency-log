@@ -1,0 +1,1 @@
+{"slug":"c30b456e7d62c518","names":["sh.crispy/crispy"],"host":"crispy.sh","endpoint":"https://crispy.sh/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

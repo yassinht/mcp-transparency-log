@@ -1,0 +1,1 @@
+{"slug":"704a04845e8f89b9","names":["com.atlassian/atlassian-mcp-server"],"host":"mcp.atlassian.com","endpoint":"https://mcp.atlassian.com/v1/mcp/authv2","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

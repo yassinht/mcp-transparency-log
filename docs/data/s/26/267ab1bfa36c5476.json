@@ -1,0 +1,1 @@
+{"slug":"267ab1bfa36c5476","names":["io.github.shiv9thakur/mitr-mcp"],"host":"mcp.mitranalytics.dev","endpoint":"https://mcp.mitranalytics.dev/mcp","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

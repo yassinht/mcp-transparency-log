@@ -1,0 +1,1 @@
+{"slug":"051a6456a05d8d49","names":["io.github.mitchmolstad/scraps-kitchen"],"host":"api.scraps.kitchen","endpoint":"https://api.scraps.kitchen/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

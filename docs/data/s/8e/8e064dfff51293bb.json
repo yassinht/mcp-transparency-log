@@ -1,0 +1,1 @@
+{"slug":"8e064dfff51293bb","names":["com.agentmasterdata/agent-master-data"],"host":"api.agentmasterdata.com","endpoint":"https://api.agentmasterdata.com/mcp","first_seen":"2026-11-01","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-01","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"d26e6f7a3c84fc7c","names":["io.github.influence-so/influence-mcp"],"host":"influence.so","endpoint":"https://influence.so/api/mcp","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

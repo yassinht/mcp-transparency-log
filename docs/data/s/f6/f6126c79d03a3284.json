@@ -1,0 +1,1 @@
+{"slug":"f6126c79d03a3284","names":["io.github.SantoraReplica/panya"],"host":"panya.health","endpoint":"https://panya.health/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

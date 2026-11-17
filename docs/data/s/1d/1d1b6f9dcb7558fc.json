@@ -1,0 +1,1 @@
+{"slug":"1d1b6f9dcb7558fc","names":["ai.semata/semata"],"host":"app.semata.ai","endpoint":"https://app.semata.ai/api/mcp","first_seen":"2026-10-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-24","kind":"first_seen","outcome":"auth_required"}]}

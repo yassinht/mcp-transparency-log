@@ -1,0 +1,1 @@
+{"slug":"b22fce143ef4c267","names":["cloud.findagent/marketplace"],"host":"mcp.findagent.cloud","endpoint":"https://mcp.findagent.cloud/mcp","first_seen":"2026-08-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-31","kind":"first_seen","outcome":"auth_required"}]}

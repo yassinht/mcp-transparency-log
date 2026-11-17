@@ -1,0 +1,1 @@
+{"slug":"3fa9325463a43430","names":["io.esimfinder/connector"],"host":"mcp.esimfinder.io","endpoint":"https://mcp.esimfinder.io/api/v1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

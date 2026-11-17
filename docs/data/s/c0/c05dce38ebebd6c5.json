@@ -1,0 +1,1 @@
+{"slug":"c05dce38ebebd6c5","names":["app.devmargin/devmargin"],"host":"devmargin.app","endpoint":"https://devmargin.app/api/mcp","first_seen":"2026-09-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-06","kind":"first_seen","outcome":"auth_required"}]}

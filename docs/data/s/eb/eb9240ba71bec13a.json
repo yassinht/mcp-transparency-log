@@ -1,0 +1,1 @@
+{"slug":"eb9240ba71bec13a","names":["io.github.kr-data-api/korea-medical-device-approval"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=kr-data/korea-medical-device-approval","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

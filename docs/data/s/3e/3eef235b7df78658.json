@@ -1,0 +1,1 @@
+{"slug":"3eef235b7df78658","names":["app.awsel/wafeq"],"host":"wafeq-connector-saas.onrender.com","endpoint":"https://wafeq-connector-saas.onrender.com/mcp","first_seen":"2026-10-28","listed":false,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-11","kind":"delisted"}]}

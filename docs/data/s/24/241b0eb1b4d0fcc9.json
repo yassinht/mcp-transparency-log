@@ -1,0 +1,1 @@
+{"slug":"241b0eb1b4d0fcc9","names":["com.netgenium/instance"],"host":"mcp.netgenium.online","endpoint":"https://mcp.netgenium.online/api.aspx","first_seen":"2026-11-12","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

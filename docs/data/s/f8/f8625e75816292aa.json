@@ -1,0 +1,1 @@
+{"slug":"f8625e75816292aa","names":["io.github.sercanmetalore/automotive-mcp"],"host":"mcp.boykaf.com","endpoint":"https://mcp.boykaf.com/automotive/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

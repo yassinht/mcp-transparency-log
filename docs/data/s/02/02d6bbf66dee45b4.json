@@ -1,0 +1,1 @@
+{"slug":"02d6bbf66dee45b4","names":["io.github.NethermindEth/auditagent"],"host":"api.auditagent.nethermind.io","endpoint":"https://api.auditagent.nethermind.io/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

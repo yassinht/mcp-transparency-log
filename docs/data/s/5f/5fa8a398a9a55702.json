@@ -1,0 +1,1 @@
+{"slug":"5fa8a398a9a55702","names":["sh.measure/measure"],"host":"agent.measure.sh","endpoint":"https://agent.measure.sh/mcp","first_seen":"2026-09-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-08","kind":"first_seen","outcome":"auth_required"}]}

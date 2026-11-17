@@ -1,0 +1,1 @@
+{"slug":"2b1cb9bc05ea7aa0","names":["io.github.81labsapps-ops/framework-mcp"],"host":"framework-mcp-production.up.railway.app","endpoint":"https://framework-mcp-production.up.railway.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

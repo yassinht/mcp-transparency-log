@@ -1,0 +1,1 @@
+{"slug":"7744778d25561b94","names":["money.stables/mcp"],"host":"mcp.stables.money","endpoint":"https://mcp.stables.money/mcp","first_seen":"2026-10-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

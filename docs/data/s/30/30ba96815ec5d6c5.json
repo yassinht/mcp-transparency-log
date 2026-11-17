@@ -1,0 +1,1 @@
+{"slug":"30ba96815ec5d6c5","names":["town.val/mcp"],"host":"api.val.town","endpoint":"https://api.val.town/v3/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

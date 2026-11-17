@@ -1,0 +1,1 @@
+{"slug":"241a23d33724c5d0","names":["ai.getverde/verde"],"host":"www.getverde.ai","endpoint":"https://www.getverde.ai/api/mcp","first_seen":"2026-11-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-07","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"d9cb099397595429","names":["io.github.doc2mcp/freefirecommunity"],"host":"doc2mcp.site","endpoint":"https://doc2mcp.site/api/mcp/d590fef3-1aee-410c-86fa-3abd968db980/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

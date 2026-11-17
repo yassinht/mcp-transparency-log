@@ -1,0 +1,1 @@
+{"slug":"3cbc906d70843cf6","names":["io.github.AgenticBIHQ/agenticbi-mcp-server"],"host":"app.agenticbi.com","endpoint":"https://app.agenticbi.com/api/2.0/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

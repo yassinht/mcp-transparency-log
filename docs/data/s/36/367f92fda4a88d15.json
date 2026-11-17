@@ -1,0 +1,1 @@
+{"slug":"367f92fda4a88d15","names":["io.github.erashev-fedor/gemsift-mcp"],"host":"gemsift.com","endpoint":"https://gemsift.com/api/mcp/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

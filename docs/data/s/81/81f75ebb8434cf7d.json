@@ -1,0 +1,1 @@
+{"slug":"81f75ebb8434cf7d","names":["app.leafchat/leafchat"],"host":"api.leafchat.app","endpoint":"https://api.leafchat.app/mcp","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

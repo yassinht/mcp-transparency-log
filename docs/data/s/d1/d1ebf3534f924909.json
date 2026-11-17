@@ -1,0 +1,1 @@
+{"slug":"d1ebf3534f924909","names":["com.mayutic.ration/mcp"],"host":"mcp.ration.mayutic.com","endpoint":"https://mcp.ration.mayutic.com/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

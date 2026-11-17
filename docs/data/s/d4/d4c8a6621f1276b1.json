@@ -1,0 +1,1 @@
+{"slug":"d4c8a6621f1276b1","names":["app.witwiki/witwiki"],"host":"api.witwiki.app","endpoint":"https://api.witwiki.app/mcp","first_seen":"2026-09-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-07","kind":"first_seen","outcome":"auth_required"}]}

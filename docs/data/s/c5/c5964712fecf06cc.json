@@ -1,0 +1,1 @@
+{"slug":"c5964712fecf06cc","names":["io.github.sercanmetalore/web-analytics-mcp"],"host":"mcp.boykaf.com","endpoint":"https://mcp.boykaf.com/web-analytics/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

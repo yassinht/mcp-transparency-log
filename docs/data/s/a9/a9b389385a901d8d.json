@@ -1,0 +1,1 @@
+{"slug":"a9b389385a901d8d","names":["ai.usegigi/gigi"],"host":"usegigi.ai","endpoint":"https://usegigi.ai/api/mcp","first_seen":"2026-09-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-19","kind":"first_seen","outcome":"auth_required"}]}

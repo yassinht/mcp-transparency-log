@@ -1,0 +1,1 @@
+{"slug":"82d9af2ffb46ac1d","names":["com.unstoppabledomains/mcp-server"],"host":"api.unstoppabledomains.com","endpoint":"https://api.unstoppabledomains.com/mcp/v1/","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

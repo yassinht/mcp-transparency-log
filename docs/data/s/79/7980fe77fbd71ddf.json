@@ -1,0 +1,1 @@
+{"slug":"7980fe77fbd71ddf","names":["com.bridgetoagent/ai-readiness"],"host":"www.bridgetoagent.com","endpoint":"https://www.bridgetoagent.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

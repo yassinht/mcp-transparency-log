@@ -1,0 +1,1 @@
+{"slug":"9f6cf68c06455697","names":["com.suresms/mcp"],"host":"mcp.suresms.com","endpoint":"https://mcp.suresms.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"45232e86897e6034","names":["services.zei/registro-231"],"host":"zei.services","endpoint":"https://zei.services/api/mcp","first_seen":"2026-10-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

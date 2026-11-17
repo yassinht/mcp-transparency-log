@@ -1,0 +1,1 @@
+{"slug":"b904f5b6016acb82","names":["com.salience/logs"],"host":"mcp-logs.salience.com","endpoint":"https://mcp-logs.salience.com/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

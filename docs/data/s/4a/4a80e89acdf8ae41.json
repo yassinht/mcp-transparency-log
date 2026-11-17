@@ -1,0 +1,1 @@
+{"slug":"4a80e89acdf8ae41","names":["com.complianceassessmenttool/pci-compliance"],"host":"api.complianceassessmenttool.com","endpoint":"https://api.complianceassessmenttool.com/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"6d2a0e6bb82ffa12","names":["ai.smithery/DynamicEndpoints-autogen_mcp"],"host":"server.smithery.ai","endpoint":"https://server.smithery.ai/@DynamicEndpoints/autogen_mcp/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

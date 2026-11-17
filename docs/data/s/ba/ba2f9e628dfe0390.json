@@ -1,0 +1,1 @@
+{"slug":"ba2f9e628dfe0390","names":["com.ranovam/statuspage-scraper"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=enezli/statuspage-scraper","first_seen":"2026-09-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-01","kind":"first_seen","outcome":"auth_required"}]}

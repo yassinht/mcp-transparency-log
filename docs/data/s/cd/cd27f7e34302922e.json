@@ -1,0 +1,1 @@
+{"slug":"cd27f7e34302922e","names":["dog.brain/braindog"],"host":"app.brain.dog","endpoint":"https://app.brain.dog/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

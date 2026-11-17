@@ -1,0 +1,1 @@
+{"slug":"922a678460cfa81d","names":["io.github.nexusrun/nexus-ai"],"host":"api.zollo.live","endpoint":"https://api.zollo.live/mcp","first_seen":"2026-08-30","listed":false,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"},{"date":"2026-09-25","kind":"delisted"}]}

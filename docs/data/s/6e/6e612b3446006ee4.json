@@ -1,0 +1,1 @@
+{"slug":"6e612b3446006ee4","names":["com.capital-workbench/mcp"],"host":"mcp.capital-workbench.com","endpoint":"https://mcp.capital-workbench.com/mcp","first_seen":"2026-09-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-17","kind":"first_seen","outcome":"auth_required"}]}

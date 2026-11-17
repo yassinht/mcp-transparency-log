@@ -1,0 +1,1 @@
+{"slug":"e0c953e814bf6dca","names":["io.followin/market-data"],"host":"mcp.followin.io","endpoint":"https://mcp.followin.io/v2/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

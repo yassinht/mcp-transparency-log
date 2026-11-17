@@ -1,0 +1,1 @@
+{"slug":"d71a8be6437ee607","names":["tech.amass/amass"],"host":"mcp.amass.tech","endpoint":"https://mcp.amass.tech/mcp","first_seen":"2026-09-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-18","kind":"first_seen","outcome":"auth_required"}]}

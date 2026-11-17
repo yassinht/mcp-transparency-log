@@ -1,0 +1,1 @@
+{"slug":"66c20367eefd1e0d","names":["io.github.martindfarre/artifactos"],"host":"artifactos.studio","endpoint":"https://artifactos.studio/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"8c6ea20deb6e4aec","names":["io.github.blink1217/quant-swarm"],"host":"swarm-mcp-503318750546.europe-west1.run.app","endpoint":"https://swarm-mcp-503318750546.europe-west1.run.app/mcp/gym","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

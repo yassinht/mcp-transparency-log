@@ -1,0 +1,1 @@
+{"slug":"f1c38d6b971f6a5f","names":["co.servicegraph.mcp/servicegraph"],"host":"mcp.servicegraph.co","endpoint":"https://mcp.servicegraph.co","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

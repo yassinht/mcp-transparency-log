@@ -1,0 +1,1 @@
+{"slug":"d4e6295b2a3dcbcc","names":["io.github.jmrplens/gitlab-mcp-server"],"host":"mcp.jmrp.io","endpoint":"https://mcp.jmrp.io/gitlab","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

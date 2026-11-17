@@ -1,0 +1,1 @@
+{"slug":"3ceb5dbb60729d95","names":["io.github.treza-labs/treza"],"host":"www.trezalabs.com","endpoint":"https://www.trezalabs.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

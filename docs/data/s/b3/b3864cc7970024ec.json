@@ -1,0 +1,1 @@
+{"slug":"b3864cc7970024ec","names":["pl.furgonetka/mcp"],"host":"api.furgonetka.pl","endpoint":"https://api.furgonetka.pl/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

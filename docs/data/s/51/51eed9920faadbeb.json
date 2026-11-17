@@ -1,0 +1,1 @@
+{"slug":"51eed9920faadbeb","names":["io.github.apperhq/apper-mcp"],"host":"mcp.apper.io","endpoint":"https://mcp.apper.io/v1/connect","first_seen":"2026-10-07","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-07","kind":"delisted"}]}

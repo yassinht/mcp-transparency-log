@@ -1,0 +1,1 @@
+{"slug":"8573088b40c02284","names":["io.github.shagarwal/databazaar"],"host":"api.databazaar.io","endpoint":"https://api.databazaar.io/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

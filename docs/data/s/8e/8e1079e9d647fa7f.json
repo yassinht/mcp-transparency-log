@@ -1,0 +1,1 @@
+{"slug":"8e1079e9d647fa7f","names":["co.wisprs/wisprs"],"host":"wisprs.co","endpoint":"https://wisprs.co/api/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

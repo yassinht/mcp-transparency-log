@@ -1,0 +1,1 @@
+{"slug":"8ba39ba8e50558c2","names":["io.github.invertedhoologan/eval-engine-mcp"],"host":"eval.zuluworksai.com","endpoint":"https://eval.zuluworksai.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

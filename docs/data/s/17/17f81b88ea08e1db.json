@@ -1,0 +1,1 @@
+{"slug":"17f81b88ea08e1db","names":["io.github.doc2mcp/tinyfish"],"host":"www.doc2mcp.site","endpoint":"https://www.doc2mcp.site/api/mcp/1048e4a1-f431-4694-8297-c573624c4ed4/mcp","first_seen":"2026-10-21","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

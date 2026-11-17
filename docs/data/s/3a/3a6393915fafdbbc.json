@@ -1,0 +1,1 @@
+{"slug":"3a6393915fafdbbc","names":["com.infotech-crm/infotech-crm"],"host":"mcp.infotech-crm.com","endpoint":"https://mcp.infotech-crm.com/mcp","first_seen":"2026-10-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-02","kind":"first_seen","outcome":"protocol_error"}]}

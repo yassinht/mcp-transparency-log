@@ -1,0 +1,1 @@
+{"slug":"f078194fd00e84d4","names":["dev.sinatra/sinatra"],"host":"api.sinatra.dev","endpoint":"https://api.sinatra.dev/v1/mcp","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

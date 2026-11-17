@@ -1,0 +1,1 @@
+{"slug":"67e5d6a8098a1e6d","names":["io.github.trusteed-io/trusteed-mcp"],"host":"mcp.trusteed.io","endpoint":"https://mcp.trusteed.io/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

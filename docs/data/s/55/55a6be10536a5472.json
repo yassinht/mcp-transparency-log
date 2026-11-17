@@ -1,0 +1,1 @@
+{"slug":"55a6be10536a5472","names":["kz.tehprof.support/helpdesk"],"host":"support.tehprof.kz","endpoint":"https://support.tehprof.kz/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

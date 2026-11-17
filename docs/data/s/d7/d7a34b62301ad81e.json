@@ -1,0 +1,1 @@
+{"slug":"d7a34b62301ad81e","names":["io.github.greenonion-ai/amazon-listing-images"],"host":"api.greenonion.ai","endpoint":"https://api.greenonion.ai/plugins/amazon-listing/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"7be495ddeca1ec5f","names":["ai.aard/aard"],"host":"api.aard.ai","endpoint":"https://api.aard.ai/mcp","first_seen":"2026-09-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-15","kind":"first_seen","outcome":"auth_required"}]}

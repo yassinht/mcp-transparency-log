@@ -1,0 +1,1 @@
+{"slug":"a124fc8a5e88e05a","names":["io.github.datablume/uk-funding-rounds-sh01"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=fetch-actor-details,data_blume/uk-funding-rounds","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

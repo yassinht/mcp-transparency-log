@@ -1,0 +1,1 @@
+{"slug":"58b842f87d2763b1","names":["net.cegtec/gtm-goat"],"host":"app.cegtec.net","endpoint":"https://app.cegtec.net/api/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

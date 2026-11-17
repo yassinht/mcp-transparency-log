@@ -1,0 +1,1 @@
+{"slug":"a7045570f59689a8","names":["io.huntertech/vendor-insights"],"host":"mcp.huntertech.io","endpoint":"https://mcp.huntertech.io/mcp/sse","first_seen":"2026-10-25","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"protocol_error"}]}

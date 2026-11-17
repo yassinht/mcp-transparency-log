@@ -1,0 +1,1 @@
+{"slug":"4dff524ed2aa33d5","names":["io.github.doc2mcp/manus"],"host":"doc2mcp.site","endpoint":"https://doc2mcp.site/api/mcp/221536c8-fc67-48b8-a177-b04b58d6b268/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

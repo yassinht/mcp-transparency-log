@@ -1,0 +1,1 @@
+{"slug":"0149dc969e4b17fd","names":["io.github.adkit/pinterest-ads"],"host":"mcp.adkit.so","endpoint":"https://mcp.adkit.so/api/mcp/pinterest-ads","first_seen":"2026-11-13","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-14","kind":"delisted"}]}

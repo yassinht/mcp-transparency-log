@@ -1,0 +1,1 @@
+{"slug":"9f6c2f1de49174ca","names":["com.llamalogger/mcp"],"host":"mcp.llamalogger.com","endpoint":"https://mcp.llamalogger.com/api/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

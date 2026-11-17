@@ -1,0 +1,1 @@
+{"slug":"6ea7ccc1fa1b8987","names":["com.smirnovlabs/ynab-mcp-server"],"host":"mcpforynab.smirnovlabs.com","endpoint":"https://mcpforynab.smirnovlabs.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

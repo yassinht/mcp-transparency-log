@@ -1,0 +1,1 @@
+{"slug":"b338247452456272","names":["io.github.michaelw-pr/presentr-analyze"],"host":"analyze.presentr.me","endpoint":"https://analyze.presentr.me/api/mcp","first_seen":"2026-09-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-15","kind":"first_seen","outcome":"auth_required"}]}

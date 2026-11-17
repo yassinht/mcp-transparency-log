@@ -1,0 +1,1 @@
+{"slug":"d1ea74455f1e517f","names":["ai.greatarrow/great-arrow"],"host":"www.greatarrow.ai","endpoint":"https://www.greatarrow.ai/api/mcp","first_seen":"2026-09-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-05","kind":"first_seen","outcome":"auth_required"}]}

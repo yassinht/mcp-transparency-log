@@ -1,0 +1,1 @@
+{"slug":"23368b2de885191c","names":["ai.salescloser/salescloser"],"host":"app.salescloser.ai","endpoint":"https://app.salescloser.ai/mcp","first_seen":"2026-10-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-23","kind":"first_seen","outcome":"auth_required"}]}

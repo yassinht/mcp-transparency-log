@@ -1,0 +1,1 @@
+{"slug":"de3f6337dc296f14","names":["com.myoamigo/myoamigo"],"host":"api.myoamigo.com","endpoint":"https://api.myoamigo.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"6a8abe9a92138529","names":["io.github.Fieldproxy/fieldproxy-mcp"],"host":"api-norway.fieldproxy.ai","endpoint":"https://api-norway.fieldproxy.ai/mcp","first_seen":"2026-09-28","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"auth_required"}]}

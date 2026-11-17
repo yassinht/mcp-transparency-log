@@ -1,0 +1,1 @@
+{"slug":"d97e9b2912a6aef7","names":["ai.zephira.dashboard/company-intelligence"],"host":"dashboard.zephira.ai","endpoint":"https://dashboard.zephira.ai/api/mcp","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"1728e5daf43d2490","names":["ai.bunzee/bunzee"],"host":"bunzee.ai","endpoint":"https://bunzee.ai/mcp-server","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

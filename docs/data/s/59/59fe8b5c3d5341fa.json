@@ -1,0 +1,1 @@
+{"slug":"59fe8b5c3d5341fa","names":["br.com.adseditor/mcp"],"host":"app.adseditor.com.br","endpoint":"https://app.adseditor.com.br/mcp","first_seen":"2026-09-24","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-24","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-18","kind":"delisted"}]}

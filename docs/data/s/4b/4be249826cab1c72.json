@@ -1,0 +1,1 @@
+{"slug":"4be249826cab1c72","names":["com.scrollhound/scrollhound"],"host":"api.scrollhound.com","endpoint":"https://api.scrollhound.com/mcp","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

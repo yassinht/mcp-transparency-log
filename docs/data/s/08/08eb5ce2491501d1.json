@@ -1,0 +1,1 @@
+{"slug":"08eb5ce2491501d1","names":["app.miniaccountant/mini-accountant"],"host":"mcp.miniaccountant.app","endpoint":"https://mcp.miniaccountant.app/v1beta","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"6446b825e627c2ca","names":["app.ccreward/ccreward","io.github.aashishvanand/ccreward"],"host":"api.ccreward.app","endpoint":"https://api.ccreward.app/mcp","first_seen":"2026-11-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-15","kind":"first_seen","outcome":"auth_required"}]}

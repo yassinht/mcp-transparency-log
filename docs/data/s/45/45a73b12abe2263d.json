@@ -1,0 +1,1 @@
+{"slug":"45a73b12abe2263d","names":["ai.mediapact/mcp"],"host":"api.mediapact.ai","endpoint":"https://api.mediapact.ai/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

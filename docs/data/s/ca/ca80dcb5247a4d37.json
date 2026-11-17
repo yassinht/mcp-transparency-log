@@ -1,0 +1,1 @@
+{"slug":"ca80dcb5247a4d37","names":["io.github.jannegpriv/skargardskollen"],"host":"qzndsxisnxgjsddvwplm.supabase.co","endpoint":"https://qzndsxisnxgjsddvwplm.supabase.co/functions/v1/mcp","first_seen":"2026-08-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-31","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"02a790043471d9af","names":["so.hilt/pay-me"],"host":"api.hilt.so","endpoint":"https://api.hilt.so/mcp/pay-me","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

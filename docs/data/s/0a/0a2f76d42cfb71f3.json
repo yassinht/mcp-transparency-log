@@ -1,0 +1,1 @@
+{"slug":"0a2f76d42cfb71f3","names":["io.github.z3green/crp"],"host":"app.crp.eco","endpoint":"https://app.crp.eco/api/mcp","first_seen":"2026-10-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-24","kind":"first_seen","outcome":"auth_required"}]}

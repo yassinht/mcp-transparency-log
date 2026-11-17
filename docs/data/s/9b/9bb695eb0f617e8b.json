@@ -1,0 +1,1 @@
+{"slug":"9bb695eb0f617e8b","names":["vn.ctas/work"],"host":"api.ctas.vn","endpoint":"https://api.ctas.vn/mcp/work","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

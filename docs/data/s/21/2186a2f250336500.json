@@ -1,0 +1,1 @@
+{"slug":"2186a2f250336500","names":["io.github.selvoapp/selvo"],"host":"app.selvo.co","endpoint":"https://app.selvo.co/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

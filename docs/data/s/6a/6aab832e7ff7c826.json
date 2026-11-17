@@ -1,0 +1,1 @@
+{"slug":"6aab832e7ff7c826","names":["io.segly/segly"],"host":"api.segly.io","endpoint":"https://api.segly.io/mcp","first_seen":"2026-10-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-03","kind":"first_seen","outcome":"auth_required"}]}

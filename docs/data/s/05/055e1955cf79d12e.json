@@ -1,0 +1,1 @@
+{"slug":"055e1955cf79d12e","names":["ai.rindee/rindee"],"host":"api.rindee.ai","endpoint":"https://api.rindee.ai/mcp","first_seen":"2026-11-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-07","kind":"first_seen","outcome":"auth_required"}]}

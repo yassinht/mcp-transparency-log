@@ -1,0 +1,1 @@
+{"slug":"051fd423af540e1c","names":["works.jinn/gateway"],"host":"app.jinn.works","endpoint":"https://app.jinn.works/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

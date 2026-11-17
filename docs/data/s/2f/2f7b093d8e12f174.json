@@ -1,0 +1,1 @@
+{"slug":"2f7b093d8e12f174","names":["dev.cotlet/emailoctopus"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/emailoctopus/connect","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

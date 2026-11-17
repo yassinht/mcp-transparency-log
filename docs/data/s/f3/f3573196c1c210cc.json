@@ -1,0 +1,1 @@
+{"slug":"f3573196c1c210cc","names":["com.myuiaf/freshness-validator"],"host":"api.myuiaf.com","endpoint":"https://api.myuiaf.com/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

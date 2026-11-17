@@ -1,0 +1,1 @@
+{"slug":"f7f29b58c271df3e","names":["com.dbtrail/dbtrail"],"host":"api.dbtrail.com","endpoint":"https://api.dbtrail.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

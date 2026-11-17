@@ -1,0 +1,1 @@
+{"slug":"982ec3394f55e7c5","names":["io.github.EquateItAu/classquill-mcp"],"host":"mcp.classquill.com","endpoint":"https://mcp.classquill.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

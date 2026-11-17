@@ -1,0 +1,1 @@
+{"slug":"0fd121cc673a0166","names":["io.github.covaltpay/covalt-gateway"],"host":"kcafcrbeaudhibyytziw.supabase.co","endpoint":"https://kcafcrbeaudhibyytziw.supabase.co/functions/v1/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

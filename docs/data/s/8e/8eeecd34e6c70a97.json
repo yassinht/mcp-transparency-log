@@ -1,0 +1,1 @@
+{"slug":"8eeecd34e6c70a97","names":["io.github.tractatus-ai/letter"],"host":"api.letter.ai","endpoint":"https://api.letter.ai/v1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

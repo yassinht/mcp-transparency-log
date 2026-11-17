@@ -1,0 +1,1 @@
+{"slug":"ca9936a49ca22b0d","names":["io.briefport/agent-delivery"],"host":"briefport.io","endpoint":"https://briefport.io/mcp","first_seen":"2026-09-07","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-07","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"0215bf13d8f70865","names":["io.github.epinnock/scry-mcp"],"host":"mcp.scrymore.com","endpoint":"https://mcp.scrymore.com/mcp","first_seen":"2026-09-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-16","kind":"first_seen","outcome":"auth_required"}]}

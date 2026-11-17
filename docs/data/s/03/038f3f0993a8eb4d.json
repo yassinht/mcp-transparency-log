@@ -1,0 +1,1 @@
+{"slug":"038f3f0993a8eb4d","names":["io.landbot/mcp"],"host":"mcp.landbot.io","endpoint":"https://mcp.landbot.io/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

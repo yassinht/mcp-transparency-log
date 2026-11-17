@@ -1,0 +1,1 @@
+{"slug":"90d351075a7453e1","names":["io.github.trajectiq-ai/E2E"],"host":"playwright-e2e-mcp.vercel.app","endpoint":"https://playwright-e2e-mcp.vercel.app/api/mcp","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

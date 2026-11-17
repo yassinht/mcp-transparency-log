@@ -1,0 +1,1 @@
+{"slug":"8f31b7ac76a1e196","names":["ai.scrapewise/scrapewise"],"host":"mcp.scrapewise.ai","endpoint":"https://mcp.scrapewise.ai/mcp","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

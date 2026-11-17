@@ -1,0 +1,1 @@
+{"slug":"dda60e1e398d0b21","names":["ai.creatify/ad-agent"],"host":"api.creatify.ai","endpoint":"https://api.creatify.ai/ad_agent/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

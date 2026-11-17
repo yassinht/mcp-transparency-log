@@ -1,0 +1,1 @@
+{"slug":"80b2e6aecf9e0aa5","names":["com.getrosey/rosey"],"host":"api.getrosey.com","endpoint":"https://api.getrosey.com/mcp-oauth/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"7b4b3296b5af5c5d","names":["cloud.kubana/vps"],"host":"api.kubana.cloud","endpoint":"https://api.kubana.cloud/mcp/vps","first_seen":"2026-11-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-15","kind":"first_seen","outcome":"auth_required"}]}

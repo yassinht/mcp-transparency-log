@@ -1,0 +1,1 @@
+{"slug":"ed52b0c5a78b381d","names":["ai.viite/business-studio"],"host":"platform-api.viite.ai","endpoint":"https://platform-api.viite.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

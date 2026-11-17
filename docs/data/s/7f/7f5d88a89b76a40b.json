@@ -1,0 +1,1 @@
+{"slug":"7f5d88a89b76a40b","names":["app.hellocast/hellocast"],"host":"hellocast.app","endpoint":"https://hellocast.app/api/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

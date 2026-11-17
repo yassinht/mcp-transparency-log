@@ -1,0 +1,1 @@
+{"slug":"60f04b5a7475c2b6","names":["io.homaic/homaic-mcp"],"host":"mcp.homaic.io","endpoint":"https://mcp.homaic.io/v1/mcp","first_seen":"2026-11-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-07","kind":"first_seen","outcome":"auth_required"}]}

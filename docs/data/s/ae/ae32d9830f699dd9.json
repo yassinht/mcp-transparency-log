@@ -1,0 +1,1 @@
+{"slug":"ae32d9830f699dd9","names":["com.benriscore/api"],"host":"api.benriscore.com","endpoint":"https://api.benriscore.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

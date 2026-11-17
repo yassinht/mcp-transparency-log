@@ -1,0 +1,1 @@
+{"slug":"9037ca102e21febf","names":["com.metrxbot/mcp-server"],"host":"metrxbot.com","endpoint":"https://metrxbot.com/api/mcp/connect","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

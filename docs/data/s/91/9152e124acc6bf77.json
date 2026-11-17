@@ -1,0 +1,1 @@
+{"slug":"9152e124acc6bf77","names":["com.speakeasy.ai/platform"],"host":"ai.speakeasy.com","endpoint":"https://ai.speakeasy.com/platform-mcp","first_seen":"2026-10-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-23","kind":"first_seen","outcome":"auth_required"}]}

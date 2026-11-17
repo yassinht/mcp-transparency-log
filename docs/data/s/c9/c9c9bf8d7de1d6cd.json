@@ -1,0 +1,1 @@
+{"slug":"c9c9bf8d7de1d6cd","names":["ai.saifs/financial-anomaly"],"host":"financial-anomaly-mcp.saifs.ai","endpoint":"https://financial-anomaly-mcp.saifs.ai/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

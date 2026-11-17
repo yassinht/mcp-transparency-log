@@ -1,0 +1,1 @@
+{"slug":"4940fa51f193252d","names":["ai.instapath/instapath"],"host":"instapath.ai","endpoint":"https://instapath.ai/mcp","first_seen":"2026-10-04","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

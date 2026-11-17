@@ -1,0 +1,1 @@
+{"slug":"5a01d9b11ea545fc","names":["io.github.microsoft/EnterpriseMCP"],"host":"mcp.svc.cloud.microsoft","endpoint":"https://mcp.svc.cloud.microsoft/enterprise","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

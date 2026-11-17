@@ -1,0 +1,1 @@
+{"slug":"c10ec49cca279e03","names":["io.github.vincentn-waivern/cookie-checker-gdpr-ccpa-gcmv2"],"host":"consent-analyser-emea.waivern.com","endpoint":"https://consent-analyser-emea.waivern.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

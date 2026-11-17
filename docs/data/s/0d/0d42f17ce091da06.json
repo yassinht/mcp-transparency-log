@@ -1,0 +1,1 @@
+{"slug":"0d42f17ce091da06","names":["io.github.guptaprakhariitr/arxiv-mcp"],"host":"arxiv-mcp.atlasword.workers.dev","endpoint":"https://arxiv-mcp.atlasword.workers.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

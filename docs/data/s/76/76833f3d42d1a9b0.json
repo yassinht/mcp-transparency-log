@@ -1,0 +1,1 @@
+{"slug":"76833f3d42d1a9b0","names":["ai.localprospects/mcp"],"host":"localprospects.ai","endpoint":"https://localprospects.ai/api/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

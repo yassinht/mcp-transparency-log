@@ -1,0 +1,1 @@
+{"slug":"cfb2b35753ad9d14","names":["il.co.alice/flights"],"host":"mcp.alice.co.il","endpoint":"https://mcp.alice.co.il/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

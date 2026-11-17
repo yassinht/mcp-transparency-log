@@ -1,0 +1,1 @@
+{"slug":"3cc0fe6c7cc464b1","names":["net.solardialer/solardialer"],"host":"solardialer.net","endpoint":"https://solardialer.net/mcp","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

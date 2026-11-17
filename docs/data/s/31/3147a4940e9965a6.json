@@ -1,0 +1,1 @@
+{"slug":"3147a4940e9965a6","names":["ly.scrape/scrapely-mcp-server"],"host":"mcp.scrape.ly","endpoint":"https://mcp.scrape.ly","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

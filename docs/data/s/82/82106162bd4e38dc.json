@@ -1,0 +1,1 @@
+{"slug":"82106162bd4e38dc","names":["com.specgit/docs-agent"],"host":"specgit.com","endpoint":"https://specgit.com/api/agent","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

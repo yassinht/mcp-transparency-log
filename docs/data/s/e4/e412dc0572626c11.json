@@ -1,0 +1,1 @@
+{"slug":"e412dc0572626c11","names":["academy.serviceengineer/se-ai"],"host":"api.serviceengineer.academy","endpoint":"https://api.serviceengineer.academy/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

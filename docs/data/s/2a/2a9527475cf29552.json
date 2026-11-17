@@ -1,0 +1,1 @@
+{"slug":"2a9527475cf29552","names":["io.github.rezearcher/cve-triage"],"host":"x402-cve-triage.sigrunner.workers.dev","endpoint":"https://x402-cve-triage.sigrunner.workers.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"4b0647e0d8e0c528","names":["ai.windsock/windsock"],"host":"windsock.ai","endpoint":"https://windsock.ai/mcp","first_seen":"2026-09-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-12","kind":"first_seen","outcome":"auth_required"}]}

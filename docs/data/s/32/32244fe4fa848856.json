@@ -1,0 +1,1 @@
+{"slug":"32244fe4fa848856","names":["io.github.JC-lurker/proxyai"],"host":"www.proxyai.app","endpoint":"https://www.proxyai.app/api/mcp","first_seen":"2026-10-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-19","kind":"first_seen","outcome":"auth_required"}]}

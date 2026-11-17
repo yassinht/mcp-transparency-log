@@ -1,0 +1,1 @@
+{"slug":"037ef26bc80e08a6","names":["fr.lybox/lybox"],"host":"api.lybox.fr","endpoint":"https://api.lybox.fr/mcp","first_seen":"2026-09-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-30","kind":"first_seen","outcome":"auth_required"}]}

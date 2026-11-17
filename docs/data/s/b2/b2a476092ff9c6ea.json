@@ -1,0 +1,1 @@
+{"slug":"b2a476092ff9c6ea","names":["eu.runlocal.wise-shrimp/gpu-prices"],"host":"wise-shrimp.runlocal.eu","endpoint":"https://wise-shrimp.runlocal.eu/mcp","first_seen":"2026-10-09","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"1ab6e22792d8ed37","names":["com.zsetup/ai-assistant"],"host":"mcp.assistant.zsetup.com","endpoint":"https://mcp.assistant.zsetup.com/mcp","first_seen":"2026-10-14","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-31","kind":"delisted"}]}

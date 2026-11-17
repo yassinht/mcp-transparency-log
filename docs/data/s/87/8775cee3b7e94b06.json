@@ -1,0 +1,1 @@
+{"slug":"8775cee3b7e94b06","names":["io.github.spektre-labs/sigma-gate"],"host":"sigma-gate-864996675261.us-central1.run.app","endpoint":"https://sigma-gate-864996675261.us-central1.run.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

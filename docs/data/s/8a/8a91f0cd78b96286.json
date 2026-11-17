@@ -1,0 +1,1 @@
+{"slug":"8a91f0cd78b96286","names":["com.rivendeploy/mcp-server"],"host":"api.rivendeploy.com","endpoint":"https://api.rivendeploy.com/mcp/mcp","first_seen":"2026-10-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-10","kind":"first_seen","outcome":"auth_required"}]}

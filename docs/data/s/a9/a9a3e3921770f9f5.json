@@ -1,0 +1,1 @@
+{"slug":"a9a3e3921770f9f5","names":["com.dataclawe/dataclawe-mcp"],"host":"mcp.dataclawe.com","endpoint":"https://mcp.dataclawe.com/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

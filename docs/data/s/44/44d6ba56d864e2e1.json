@@ -1,0 +1,1 @@
+{"slug":"44d6ba56d864e2e1","names":["finance.betteroff/mcp"],"host":"api.betteroff.finance","endpoint":"https://api.betteroff.finance/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

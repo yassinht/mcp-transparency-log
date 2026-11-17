@@ -1,0 +1,1 @@
+{"slug":"b41bc1cd091880d5","names":["pro.higgshub/higgs-hub"],"host":"higgshub.pro","endpoint":"https://higgshub.pro/api/mcp/mcp","first_seen":"2026-09-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}

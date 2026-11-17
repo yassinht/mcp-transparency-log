@@ -1,0 +1,1 @@
+{"slug":"36c2d589535d98eb","names":["ai.shipstar/mcp"],"host":"mcp.shipstar.ai","endpoint":"https://mcp.shipstar.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

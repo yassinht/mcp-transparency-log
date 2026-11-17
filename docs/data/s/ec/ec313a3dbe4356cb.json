@@ -1,0 +1,1 @@
+{"slug":"ec313a3dbe4356cb","names":["com.vatfind/company-identity"],"host":"vatfind.com","endpoint":"https://vatfind.com/api/mcp","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

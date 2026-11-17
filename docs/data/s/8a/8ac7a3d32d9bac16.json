@@ -1,0 +1,1 @@
+{"slug":"8ac7a3d32d9bac16","names":["io.github.zikriz/wallet-doctor"],"host":"defi-webhook.m-zikriz.workers.dev","endpoint":"https://defi-webhook.m-zikriz.workers.dev/api/agent","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

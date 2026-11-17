@@ -1,0 +1,1 @@
+{"slug":"c8567060af6eee93","names":["io.github.GreatQuestion/mcp"],"host":"greatquestion.co","endpoint":"https://greatquestion.co/api/mcp/v1","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

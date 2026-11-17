@@ -1,0 +1,1 @@
+{"slug":"a6a5b0f67627c596","names":["ai.akkrudata/akkrudata"],"host":"api.akkrudata.ai","endpoint":"https://api.akkrudata.ai/mcp","first_seen":"2026-09-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-09","kind":"first_seen","outcome":"auth_required"}]}

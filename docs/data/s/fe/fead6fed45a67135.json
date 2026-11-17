@@ -1,0 +1,1 @@
+{"slug":"fead6fed45a67135","names":["site.mailly/mcp"],"host":"mcp.mailly.site","endpoint":"https://mcp.mailly.site/mcp","first_seen":"2026-10-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-18","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"340f72ca22ad17d7","names":["io.github.wulfcare/google-jobs"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=wulfcare/google-jobs-scraper,wulfcare/ai-training-jobs-scraper","first_seen":"2026-11-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-11","kind":"first_seen","outcome":"auth_required"}]}

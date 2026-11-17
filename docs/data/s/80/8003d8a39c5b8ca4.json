@@ -1,0 +1,1 @@
+{"slug":"8003d8a39c5b8ca4","names":["ai.cooperbuild/cooper"],"host":"api.cooperbuild.ai","endpoint":"https://api.cooperbuild.ai/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

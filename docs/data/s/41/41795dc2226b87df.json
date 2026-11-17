@@ -1,0 +1,1 @@
+{"slug":"41795dc2226b87df","names":["io.github.nvlsoft-ca/nexos"],"host":"mcp.nexos.ca","endpoint":"https://mcp.nexos.ca/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

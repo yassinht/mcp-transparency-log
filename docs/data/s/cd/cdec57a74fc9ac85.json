@@ -1,0 +1,1 @@
+{"slug":"cdec57a74fc9ac85","names":["io.github.hey-juno/juno"],"host":"api.heyjuno.co","endpoint":"https://api.heyjuno.co/v1/mcp/","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

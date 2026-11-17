@@ -1,0 +1,1 @@
+{"slug":"ae0ad0a5a1a7466d","names":["ai.membase/membase"],"host":"api.app.membase.ai","endpoint":"https://api.app.membase.ai/mcp-http","first_seen":"2026-10-14","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-21","kind":"delisted"}]}

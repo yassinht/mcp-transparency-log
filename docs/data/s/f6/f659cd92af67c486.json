@@ -1,0 +1,1 @@
+{"slug":"f659cd92af67c486","names":["ai.saifs/demand-forecasting"],"host":"demand-forecaster-mcp.saifs.ai","endpoint":"https://demand-forecaster-mcp.saifs.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

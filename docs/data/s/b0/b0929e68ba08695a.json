@@ -1,0 +1,1 @@
+{"slug":"b0929e68ba08695a","names":["com.grid-shot/gridshot"],"host":"mcp.grid-shot.com","endpoint":"https://mcp.grid-shot.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

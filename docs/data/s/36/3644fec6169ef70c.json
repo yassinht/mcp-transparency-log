@@ -1,0 +1,1 @@
+{"slug":"3644fec6169ef70c","names":["com.eventassets/eventassets"],"host":"api.eventassets.com","endpoint":"https://api.eventassets.com/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

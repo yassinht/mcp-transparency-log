@@ -1,0 +1,1 @@
+{"slug":"b78c65c4de9ea3d1","names":["io.beancount/beancount"],"host":"beancount.io","endpoint":"https://beancount.io/api-gateway/mcp","first_seen":"2026-10-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-06","kind":"first_seen","outcome":"auth_required"}]}

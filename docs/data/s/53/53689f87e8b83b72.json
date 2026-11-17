@@ -1,0 +1,1 @@
+{"slug":"53689f87e8b83b72","names":["io.github.MajaHelferbiene/rekwebrew"],"host":"www.reuffel.de","endpoint":"https://www.reuffel.de/mcp/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"timeout"}]}

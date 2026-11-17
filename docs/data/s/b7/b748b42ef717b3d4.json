@@ -1,0 +1,1 @@
+{"slug":"b748b42ef717b3d4","names":["dev.sending/mcp"],"host":"sending.dev","endpoint":"https://sending.dev/api/mcp","first_seen":"2026-09-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-24","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"b2c3e46f0c2da16a","names":["io.github.gnt-ai/gnt"],"host":"api.gntai.dev","endpoint":"https://api.gntai.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

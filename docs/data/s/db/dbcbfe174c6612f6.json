@@ -1,0 +1,1 @@
+{"slug":"dbcbfe174c6612f6","names":["app.socialexpert/social-expert"],"host":"api.socialexpert.app","endpoint":"https://api.socialexpert.app/functions/v1/mcp","first_seen":"2026-10-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-30","kind":"first_seen","outcome":"auth_required"}]}

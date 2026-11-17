@@ -1,0 +1,1 @@
+{"slug":"65b1450c5baf38d7","names":["ar.superonline/supermercado"],"host":"mcp.superonline.ar","endpoint":"https://mcp.superonline.ar/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"c0858773736a1e9a","names":["dev.reapx/crypto-coingecko"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?actors=reapx/coingecko-scraper","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

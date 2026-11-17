@@ -1,0 +1,1 @@
+{"slug":"c48f844735084d32","names":["com.idealo.mcp/mcp"],"host":"mcp.idealo.com","endpoint":"https://mcp.idealo.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

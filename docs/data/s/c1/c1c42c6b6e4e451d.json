@@ -1,0 +1,1 @@
+{"slug":"c1c42c6b6e4e451d","names":["com.traderwai/mcp-server"],"host":"mcp.traderwai.com","endpoint":"https://mcp.traderwai.com/deprecated","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

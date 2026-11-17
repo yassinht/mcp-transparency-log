@@ -1,0 +1,1 @@
+{"slug":"b5e1bff11a44cc23","names":["io.github.kriton-dev/http-security-headers"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=hermeskd/http-security-headers","first_seen":"2026-11-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-07","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"2ad541a639cb62b8","names":["ai.xorventa/xorventa"],"host":"api.xorventa.ai","endpoint":"https://api.xorventa.ai/mcp","first_seen":"2026-09-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"auth_required"}]}

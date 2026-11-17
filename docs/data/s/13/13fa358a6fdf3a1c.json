@@ -1,0 +1,1 @@
+{"slug":"13fa358a6fdf3a1c","names":["io.github.tylerscomic-lab/prop-rules-mcp"],"host":"prop-rules-mcp.mcpize.run","endpoint":"https://prop-rules-mcp.mcpize.run/mcp","first_seen":"2026-10-02","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-02","kind":"first_seen","outcome":"auth_required"}]}

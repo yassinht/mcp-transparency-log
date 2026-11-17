@@ -1,0 +1,1 @@
+{"slug":"94d92f6c6e49fd7a","names":["com.govouchsafe/vouchsafe"],"host":"www.govouchsafe.com","endpoint":"https://www.govouchsafe.com/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

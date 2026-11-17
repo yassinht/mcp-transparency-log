@@ -1,0 +1,1 @@
+{"slug":"b81ed792388db379","names":["com.walnutinvest/walnut"],"host":"walnutinvest.com","endpoint":"https://walnutinvest.com/api/connector/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

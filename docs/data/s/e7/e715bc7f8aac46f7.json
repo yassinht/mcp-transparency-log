@@ -1,0 +1,1 @@
+{"slug":"e715bc7f8aac46f7","names":["bot.ttrpg/grimoire"],"host":"api.ttrpg.bot","endpoint":"https://api.ttrpg.bot/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

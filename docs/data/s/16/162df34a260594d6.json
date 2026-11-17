@@ -1,0 +1,1 @@
+{"slug":"162df34a260594d6","names":["nl.tenderspotter/tenderspotter"],"host":"www.tenderspotter.nl","endpoint":"https://www.tenderspotter.nl/api/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

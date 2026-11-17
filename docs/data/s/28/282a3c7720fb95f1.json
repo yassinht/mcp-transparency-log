@@ -1,0 +1,1 @@
+{"slug":"282a3c7720fb95f1","names":["io.rootstuff/sentinel"],"host":"sentinel.rootstuff.io","endpoint":"https://sentinel.rootstuff.io/mcp/sentinel","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

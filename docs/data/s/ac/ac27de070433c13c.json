@@ -1,0 +1,1 @@
+{"slug":"ac27de070433c13c","names":["io.github.doc2mcp/network"],"host":"www.doc2mcp.site","endpoint":"https://www.doc2mcp.site/api/mcp/627464b0-c66d-44f0-a60d-76664a9bdbb1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

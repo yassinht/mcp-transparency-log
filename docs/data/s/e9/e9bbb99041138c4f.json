@@ -1,0 +1,1 @@
+{"slug":"e9bbb99041138c4f","names":["com.mailopoly/mailopoly"],"host":"fastapi.prod.aws.mailopoly.com","endpoint":"https://fastapi.prod.aws.mailopoly.com/mcp-server","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"20a20b81875a7c26","names":["io.github.gaiabio12-design/quantumscan-pqc-scanner"],"host":"quantumscan.io","endpoint":"https://quantumscan.io/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

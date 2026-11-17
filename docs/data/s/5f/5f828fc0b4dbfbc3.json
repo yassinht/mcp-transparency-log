@@ -1,0 +1,1 @@
+{"slug":"5f828fc0b4dbfbc3","names":["click.mycustomers/people"],"host":"people.worker.mycustomers.click","endpoint":"https://people.worker.mycustomers.click/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

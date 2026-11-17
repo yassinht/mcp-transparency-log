@@ -1,0 +1,1 @@
+{"slug":"7892916363009bb3","names":["io.github.HanWei30/dev-mcp"],"host":"api.stg.subotiz.com","endpoint":"https://api.stg.subotiz.com/mcp/ping","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"bceb31c2d97c4e3f","names":["io.github.connected-paths/mcp-social"],"host":"social-mcp.connectedpaths.com","endpoint":"https://social-mcp.connectedpaths.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

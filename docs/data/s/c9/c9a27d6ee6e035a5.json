@@ -1,0 +1,1 @@
+{"slug":"c9a27d6ee6e035a5","names":["com.meridianlabssoftware/ats-jobs"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=meridianlabs/greenhouse-lever-ashby-jobs-scraper","first_seen":"2026-09-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-27","kind":"first_seen","outcome":"auth_required"}]}

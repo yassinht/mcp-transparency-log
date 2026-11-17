@@ -1,0 +1,1 @@
+{"slug":"a67708d2e4f474f1","names":["ai.simpledock/simpledock"],"host":"simpledock.ai","endpoint":"https://simpledock.ai/api/v1/mcp","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

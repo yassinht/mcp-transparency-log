@@ -1,0 +1,1 @@
+{"slug":"9ea9afed7790a369","names":["com.intentwake/intentwake"],"host":"mcp.intentwake.com","endpoint":"https://mcp.intentwake.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

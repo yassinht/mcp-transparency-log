@@ -1,0 +1,1 @@
+{"slug":"3b8766223375501c","names":["com.tryfima/fima-mcp"],"host":"mcp.tryfima.com","endpoint":"https://mcp.tryfima.com/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

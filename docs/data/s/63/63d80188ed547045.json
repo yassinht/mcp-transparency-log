@@ -1,0 +1,1 @@
+{"slug":"63d80188ed547045","names":["ai.bittlebits/bittlebits"],"host":"bittlebits.ai","endpoint":"https://bittlebits.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

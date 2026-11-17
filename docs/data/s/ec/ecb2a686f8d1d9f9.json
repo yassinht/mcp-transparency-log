@@ -1,0 +1,1 @@
+{"slug":"ecb2a686f8d1d9f9","names":["com.spanly/spanly"],"host":"mcp.spanly.com","endpoint":"https://mcp.spanly.com/","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

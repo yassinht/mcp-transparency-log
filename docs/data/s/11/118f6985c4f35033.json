@@ -1,0 +1,1 @@
+{"slug":"118f6985c4f35033","names":["com.prodantix/mcp"],"host":"eu.mcp.prodantix.com","endpoint":"https://eu.mcp.prodantix.com/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"protocol_error"}]}

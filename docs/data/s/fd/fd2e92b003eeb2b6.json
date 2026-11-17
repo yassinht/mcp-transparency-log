@@ -1,0 +1,1 @@
+{"slug":"fd2e92b003eeb2b6","names":["app.morphed/mcp"],"host":"api.morphed.app","endpoint":"https://api.morphed.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

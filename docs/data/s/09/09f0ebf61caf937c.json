@@ -1,0 +1,1 @@
+{"slug":"09f0ebf61caf937c","names":["com.netfiscus/mcp"],"host":"app.netfiscus.com","endpoint":"https://app.netfiscus.com/api/mcp","first_seen":"2026-10-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-03","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"c40c0bf9504eca39","names":["io.github.Nero-Engine/dataset-aggregate-pivot-full"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=nerolabs/dataset-aggregate-pivot","first_seen":"2026-10-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

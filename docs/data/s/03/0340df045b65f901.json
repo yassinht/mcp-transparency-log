@@ -1,0 +1,1 @@
+{"slug":"0340df045b65f901","names":["archi.collab/archicollab"],"host":"collab.archi","endpoint":"https://collab.archi/api/mcp","first_seen":"2026-10-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

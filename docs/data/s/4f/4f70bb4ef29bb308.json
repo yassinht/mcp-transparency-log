@@ -1,0 +1,1 @@
+{"slug":"4f70bb4ef29bb308","names":["com.workwae/mcp-developer"],"host":"api.workwae.com","endpoint":"https://api.workwae.com/mcp/developer","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

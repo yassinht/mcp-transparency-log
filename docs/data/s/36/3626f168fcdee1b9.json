@@ -1,0 +1,1 @@
+{"slug":"3626f168fcdee1b9","names":["com.rankkking.cardpingv2/cardping"],"host":"cardpingv2.rankkking.com","endpoint":"https://cardpingv2.rankkking.com/api/mcp","first_seen":"2026-09-09","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-09","kind":"first_seen","outcome":"auth_required"}]}

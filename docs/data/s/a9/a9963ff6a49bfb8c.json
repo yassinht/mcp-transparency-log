@@ -1,0 +1,1 @@
+{"slug":"a9963ff6a49bfb8c","names":["io.github.sekera-radim/briefgate"],"host":"mcp.briefgate.dev","endpoint":"https://mcp.briefgate.dev/mcp","first_seen":"2026-10-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

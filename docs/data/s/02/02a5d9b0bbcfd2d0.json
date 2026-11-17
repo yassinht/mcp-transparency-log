@@ -1,0 +1,1 @@
+{"slug":"02a5d9b0bbcfd2d0","names":["com.bankopenapi/bankopenapi"],"host":"app.bankopenapi.com","endpoint":"https://app.bankopenapi.com/api/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

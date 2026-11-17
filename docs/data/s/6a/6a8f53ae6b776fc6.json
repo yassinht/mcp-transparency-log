@@ -1,0 +1,1 @@
+{"slug":"6a8f53ae6b776fc6","names":["app.moxboard/moxboard"],"host":"app.moxboard.app","endpoint":"https://app.moxboard.app/mcp","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

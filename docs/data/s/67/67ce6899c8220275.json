@@ -1,0 +1,1 @@
+{"slug":"67ce6899c8220275","names":["com.therapybillai/therapybill"],"host":"app.therapybillai.com","endpoint":"https://app.therapybillai.com/mcp","first_seen":"2026-10-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-15","kind":"first_seen","outcome":"auth_required"}]}

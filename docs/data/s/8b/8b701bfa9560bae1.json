@@ -1,0 +1,1 @@
+{"slug":"8b701bfa9560bae1","names":["io.github.doc2mcp/dev"],"host":"www.doc2mcp.site","endpoint":"https://www.doc2mcp.site/api/mcp/a21ddb4d-2344-4869-a191-162e1ebea375/mcp","first_seen":"2026-09-01","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-01","kind":"first_seen","outcome":"auth_required"}]}

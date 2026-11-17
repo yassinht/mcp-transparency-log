@@ -1,0 +1,1 @@
+{"slug":"310a74f11613fd9d","names":["io.github.GoTolstoy/library"],"host":"apilb.gotolstoy.com","endpoint":"https://apilb.gotolstoy.com/mcp/v1/library/mcp","first_seen":"2026-08-30","listed":false,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-04","kind":"delisted"}]}

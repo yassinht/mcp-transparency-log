@@ -1,0 +1,1 @@
+{"slug":"d19093a28cf84dac","names":["io.github.githunt-agent/githunt-mcp"],"host":"mcp.githunt.ai","endpoint":"https://mcp.githunt.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

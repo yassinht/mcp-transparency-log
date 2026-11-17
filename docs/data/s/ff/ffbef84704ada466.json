@@ -1,0 +1,1 @@
+{"slug":"ffbef84704ada466","names":["io.github.tylerscomic-lab/ledgeriq-depreciation"],"host":"openapi-1779148060328.mcpize.run","endpoint":"https://openapi-1779148060328.mcpize.run/mcp","first_seen":"2026-10-02","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-02","kind":"first_seen","outcome":"auth_required"}]}

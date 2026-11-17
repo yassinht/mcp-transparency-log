@@ -1,0 +1,1 @@
+{"slug":"36f6f0fd27620e5e","names":["eu.checkmails/checkmails"],"host":"checkmails.eu","endpoint":"https://checkmails.eu/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

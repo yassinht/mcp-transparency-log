@@ -1,0 +1,1 @@
+{"slug":"14d725555b8c19f7","names":["io.github.voicearc/splitbasket-prices"],"host":"api.splitbasket.shop","endpoint":"https://api.splitbasket.shop/v1/mcp","first_seen":"2026-08-30","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

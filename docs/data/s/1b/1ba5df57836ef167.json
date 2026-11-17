@@ -1,0 +1,1 @@
+{"slug":"1ba5df57836ef167","names":["de.cronjob/cronjob-de-mcp"],"host":"www.cronjob.de","endpoint":"https://www.cronjob.de/bridge","first_seen":"2026-09-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-11","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"37d21ae9c8f6b920","names":["be.planelec/planelec"],"host":"planelec.be","endpoint":"https://planelec.be/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

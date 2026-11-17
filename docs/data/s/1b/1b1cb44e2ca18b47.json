@@ -1,0 +1,1 @@
+{"slug":"1b1cb44e2ca18b47","names":["com.hostsherlock/mcp"],"host":"api.emailsherlock.com","endpoint":"https://api.emailsherlock.com/v1/mcp","first_seen":"2026-11-09","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-11","kind":"delisted"}]}

@@ -1,0 +1,1 @@
+{"slug":"ee139bb2a52ebf29","names":["ai.anha/resolver"],"host":"resolver.anha.ai","endpoint":"https://resolver.anha.ai/mcp","first_seen":"2026-09-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-14","kind":"first_seen","outcome":"auth_required"}]}

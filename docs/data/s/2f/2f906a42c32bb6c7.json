@@ -1,0 +1,1 @@
+{"slug":"2f906a42c32bb6c7","names":["uk.co.tendersignal/tenders"],"host":"www.tendersignal.co.uk","endpoint":"https://www.tendersignal.co.uk/mcp","first_seen":"2026-10-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-03","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"afdb06bc6066c664","names":["io.github.scroobius-pip/fudge"],"host":"api.withfudge.com","endpoint":"https://api.withfudge.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"a5669ed4f325e36b","names":["io.github.sercanmetalore/document-intel-mcp"],"host":"mcp.boykaf.com","endpoint":"https://mcp.boykaf.com/document-intel/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

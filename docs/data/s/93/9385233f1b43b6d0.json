@@ -1,0 +1,1 @@
+{"slug":"9385233f1b43b6d0","names":["io.github.tarang8811/getintel"],"host":"app.getintel.ai","endpoint":"https://app.getintel.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"f123b1f8307e747e","names":["io.github.worktable/worktable"],"host":"app.worktable.cloud","endpoint":"https://app.worktable.cloud/api/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

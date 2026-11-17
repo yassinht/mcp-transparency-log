@@ -1,0 +1,1 @@
+{"slug":"b11fff97f317fac1","names":["io.github.catalyst-labs-dev/google-trends-api"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=catalyst-labs/google-trends-api","first_seen":"2026-10-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-26","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"e26df268e0426c71","names":["io.sepiace/sepiace"],"host":"hi.sepiace.io","endpoint":"https://hi.sepiace.io/api/v1/mcp","first_seen":"2026-10-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-15","kind":"first_seen","outcome":"auth_required"}]}

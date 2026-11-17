@@ -1,0 +1,1 @@
+{"slug":"0d14ad1e906823e5","names":["cloud.briq/briq"],"host":"api.briq.cloud","endpoint":"https://api.briq.cloud/mcp","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

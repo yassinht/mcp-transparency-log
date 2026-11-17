@@ -1,0 +1,1 @@
+{"slug":"d7f7446a06622762","names":["dev.machinemail/mcp"],"host":"mcp.machinemail.dev","endpoint":"https://mcp.machinemail.dev/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

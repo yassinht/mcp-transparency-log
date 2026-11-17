@@ -1,0 +1,1 @@
+{"slug":"179b1886d8e32c03","names":["xyz.incockpit/cockpit"],"host":"app.incockpit.xyz","endpoint":"https://app.incockpit.xyz/api/mcp","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

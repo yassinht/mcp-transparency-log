@@ -1,0 +1,1 @@
+{"slug":"fc55912957c72f63","names":["io.phas/phasio"],"host":"m-api.eu.phas.io","endpoint":"https://m-api.eu.phas.io/api/manufacturer/v1/mcp","first_seen":"2026-09-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-24","kind":"first_seen","outcome":"auth_required"}]}

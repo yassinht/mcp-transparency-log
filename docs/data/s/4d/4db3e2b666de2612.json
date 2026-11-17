@@ -1,0 +1,1 @@
+{"slug":"4db3e2b666de2612","names":["site.checkbox/checkbox"],"host":"app.checkbox.site","endpoint":"https://app.checkbox.site/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

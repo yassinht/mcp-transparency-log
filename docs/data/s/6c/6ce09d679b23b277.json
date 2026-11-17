@@ -1,0 +1,1 @@
+{"slug":"6ce09d679b23b277","names":["ltd.rednet/rednet"],"host":"mcp.rednet.ltd","endpoint":"https://mcp.rednet.ltd/mcp","first_seen":"2026-09-30","listed":false,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-12","kind":"delisted"}]}

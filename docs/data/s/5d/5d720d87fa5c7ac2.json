@@ -1,0 +1,1 @@
+{"slug":"5d720d87fa5c7ac2","names":["com.figurepages/figurepages"],"host":"figurepages.com","endpoint":"https://figurepages.com/account/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

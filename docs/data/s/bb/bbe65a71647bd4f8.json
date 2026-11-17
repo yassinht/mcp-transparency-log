@@ -1,0 +1,1 @@
+{"slug":"bbe65a71647bd4f8","names":["com.domain-sentinel/domain-sentinel"],"host":"api.domain-sentinel.com","endpoint":"https://api.domain-sentinel.com/mcp","first_seen":"2026-09-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-03","kind":"first_seen","outcome":"auth_required"}]}

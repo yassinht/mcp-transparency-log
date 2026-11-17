@@ -1,0 +1,1 @@
+{"slug":"126e8927133c157d","names":["com.evermuse/evermuse"],"host":"api.evermuse.com","endpoint":"https://api.evermuse.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

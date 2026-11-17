@@ -1,0 +1,1 @@
+{"slug":"946d4f6906c2eaf5","names":["com.futureagi/futureagi"],"host":"api.futureagi.com","endpoint":"https://api.futureagi.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

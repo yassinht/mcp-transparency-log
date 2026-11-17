@@ -1,0 +1,1 @@
+{"slug":"1583a69ee6a2a78f","names":["io.github.PrometheusAgency/shopify-app-store-scraper"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?actors=prometheusagency/shopify-app-store-scraper","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

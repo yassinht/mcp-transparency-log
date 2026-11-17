@@ -1,0 +1,1 @@
+{"slug":"ab8aa6379189c016","names":["io.github.jinhsueh/agentlab-deploy"],"host":"mcp.agentlab.cresclab.com","endpoint":"https://mcp.agentlab.cresclab.com/mcp","first_seen":"2026-10-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

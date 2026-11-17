@@ -1,0 +1,1 @@
+{"slug":"f5c8c5e2f936192f","names":["io.flitch/flitch"],"host":"app.flitch.io","endpoint":"https://app.flitch.io/api/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

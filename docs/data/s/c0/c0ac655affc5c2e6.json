@@ -1,0 +1,1 @@
+{"slug":"c0ac655affc5c2e6","names":["com.scoutdata/scout-data"],"host":"api-atlas.scoutdata.com","endpoint":"https://api-atlas.scoutdata.com/api/v1/mcp/claude","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

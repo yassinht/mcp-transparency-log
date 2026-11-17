@@ -1,0 +1,1 @@
+{"slug":"c81adf8590d80751","names":["io.github.IgorGanapolsky/mac-yolo-safeguards"],"host":"macyolosafeguards.io","endpoint":"https://macyolosafeguards.io/mcp","first_seen":"2026-11-12","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"protocol_error"}]}

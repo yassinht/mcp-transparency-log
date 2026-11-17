@@ -1,0 +1,1 @@
+{"slug":"c0c997f5cec586f9","names":["io.github.scenetra/scenetra-mcp"],"host":"app.scenetra.com","endpoint":"https://app.scenetra.com/api/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

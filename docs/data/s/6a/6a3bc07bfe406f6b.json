@@ -1,0 +1,1 @@
+{"slug":"6a3bc07bfe406f6b","names":["ai.sendfast/sendfast"],"host":"sendfast.ai","endpoint":"https://sendfast.ai/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

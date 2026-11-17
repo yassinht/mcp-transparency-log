@@ -1,0 +1,1 @@
+{"slug":"37727040d6526e68","names":["io.github.ricdanyalgil/blueauth-document-signing"],"host":"blueauth.co","endpoint":"https://blueauth.co/api/mcp-server/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

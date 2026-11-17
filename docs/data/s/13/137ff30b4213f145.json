@@ -1,0 +1,1 @@
+{"slug":"137ff30b4213f145","names":["io.github.RalfIJ/google-jobs"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=ralfij/google-jobs-scraper","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

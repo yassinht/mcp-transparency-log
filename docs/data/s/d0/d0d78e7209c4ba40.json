@@ -1,0 +1,1 @@
+{"slug":"d0d78e7209c4ba40","names":["io.chatcut/chatcut"],"host":"api.chatcut.io","endpoint":"https://api.chatcut.io/api/external-mcp/mcp?chatcutInstallSource=mcp_registry","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

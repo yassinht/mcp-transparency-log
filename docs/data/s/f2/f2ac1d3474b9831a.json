@@ -1,0 +1,1 @@
+{"slug":"f2ac1d3474b9831a","names":["io.github.atk1-eng/zoo-mcp"],"host":"mcp-on-cloudrun-673872727624.us-central1.run.app","endpoint":"https://mcp-on-cloudrun-673872727624.us-central1.run.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"02f3b840a3ec65dc","names":["ai.fodda/mcp-server"],"host":"mcp.fodda.ai","endpoint":"https://mcp.fodda.ai/sse","first_seen":"2026-08-30","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"},{"date":"2026-09-26","kind":"delisted"}]}

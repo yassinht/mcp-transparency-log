@@ -1,0 +1,1 @@
+{"slug":"bb39a2ba04042248","names":["com.hailbell.api/hailbell"],"host":"api.hailbell.com","endpoint":"https://api.hailbell.com/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

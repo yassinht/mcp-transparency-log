@@ -1,0 +1,1 @@
+{"slug":"d8429885a8f83d30","names":["ai.outfitmaker/outfit-assistant"],"host":"outfitmaker.ai","endpoint":"https://outfitmaker.ai/mcp/wardrobe","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

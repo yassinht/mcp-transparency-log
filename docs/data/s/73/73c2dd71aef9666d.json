@@ -1,0 +1,1 @@
+{"slug":"73c2dd71aef9666d","names":["io.sanity.www/mcp"],"host":"mcp.sanity.io","endpoint":"https://mcp.sanity.io","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

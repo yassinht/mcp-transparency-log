@@ -1,0 +1,1 @@
+{"slug":"7e049b43a1a00cf9","names":["ai.inflowpay.app/inflow"],"host":"app.inflowpay.ai","endpoint":"https://app.inflowpay.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

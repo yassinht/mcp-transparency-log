@@ -1,0 +1,1 @@
+{"slug":"7bd02ce028b79c5c","names":["io.github.industriesfatty-spec/fattly"],"host":"fattly.app","endpoint":"https://fattly.app/api/mcp","first_seen":"2026-09-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-16","kind":"first_seen","outcome":"auth_required"}]}

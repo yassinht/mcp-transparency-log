@@ -1,0 +1,1 @@
+{"slug":"aa20e7210a6f0807","names":["com.autosecurelogin/bizmanager"],"host":"bizmanager.autosecurelogin.com","endpoint":"https://bizmanager.autosecurelogin.com/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

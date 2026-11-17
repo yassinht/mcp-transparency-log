@@ -1,0 +1,1 @@
+{"slug":"bf378b9b5122102d","names":["app.wecommander/wecommander"],"host":"wecommander.app","endpoint":"https://wecommander.app/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"cd3346545301d281","names":["io.arcnm/arcnm"],"host":"api.arcnm.io","endpoint":"https://api.arcnm.io/mcp-server/mcp","first_seen":"2026-09-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-21","kind":"first_seen","outcome":"auth_required"}]}

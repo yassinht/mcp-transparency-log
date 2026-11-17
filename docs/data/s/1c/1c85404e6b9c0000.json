@@ -1,0 +1,1 @@
+{"slug":"1c85404e6b9c0000","names":["dev.cotlet/notebooklm"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/notebooklm/connect","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

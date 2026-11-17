@@ -1,0 +1,1 @@
+{"slug":"9f55492f36270832","names":["br.com.bfocus/bfocus"],"host":"api.bfocus.com.br","endpoint":"https://api.bfocus.com.br/mcp","first_seen":"2026-10-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-18","kind":"first_seen","outcome":"auth_required"}]}

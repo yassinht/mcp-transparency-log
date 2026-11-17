@@ -1,0 +1,1 @@
+{"slug":"f2d2ff321167a9c7","names":["io.github.DSGPT2024/uk-tender-check"],"host":"uktendercheck.co.uk","endpoint":"https://uktendercheck.co.uk/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

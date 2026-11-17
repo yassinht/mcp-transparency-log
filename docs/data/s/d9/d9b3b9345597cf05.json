@@ -1,0 +1,1 @@
+{"slug":"d9b3b9345597cf05","names":["io.tightly/mcp"],"host":"mcp.eu.tightly.io","endpoint":"https://mcp.eu.tightly.io/mcp","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

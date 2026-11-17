@@ -1,0 +1,1 @@
+{"slug":"81b8a2abed095a86","names":["com.syncrosecure/mcp-server"],"host":"mcp.services.syncromsp.com","endpoint":"https://mcp.services.syncromsp.com/mcp/stream","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

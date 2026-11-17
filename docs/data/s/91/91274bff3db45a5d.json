@@ -1,0 +1,1 @@
+{"slug":"91274bff3db45a5d","names":["io.github.epure-sh/epure"],"host":"app.epure.sh","endpoint":"https://app.epure.sh/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

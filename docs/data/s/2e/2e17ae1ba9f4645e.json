@@ -1,0 +1,1 @@
+{"slug":"2e17ae1ba9f4645e","names":["io.smootify/mcp"],"host":"mcp.smootify.io","endpoint":"https://mcp.smootify.io/mcp","first_seen":"2026-10-31","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-31","kind":"first_seen","outcome":"auth_required"}]}

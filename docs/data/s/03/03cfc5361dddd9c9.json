@@ -1,0 +1,1 @@
+{"slug":"03cfc5361dddd9c9","names":["com.chargezen/spark"],"host":"mcp.chargezen.com","endpoint":"https://mcp.chargezen.com/mcp/spark","first_seen":"2026-10-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-18","kind":"first_seen","outcome":"auth_required"}]}

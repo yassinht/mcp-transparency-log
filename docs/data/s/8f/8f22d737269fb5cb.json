@@ -1,0 +1,1 @@
+{"slug":"8f22d737269fb5cb","names":["io.github.doc2mcp/tabletopsimulator"],"host":"doc2mcp.site","endpoint":"https://doc2mcp.site/api/mcp/1b5ee653-f763-415b-8d1b-46c60f17b363/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

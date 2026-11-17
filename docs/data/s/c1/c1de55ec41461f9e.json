@@ -1,0 +1,1 @@
+{"slug":"c1de55ec41461f9e","names":["ai.crowdos/mcp"],"host":"api.crowdos.ai","endpoint":"https://api.crowdos.ai/mcp","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

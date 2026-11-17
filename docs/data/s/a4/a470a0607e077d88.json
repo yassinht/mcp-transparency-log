@@ -1,0 +1,1 @@
+{"slug":"a470a0607e077d88","names":["io.github.QRSalt/qrsalt-mcp"],"host":"app.qrsalt.com","endpoint":"https://app.qrsalt.com/api/mcp","first_seen":"2026-09-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"auth_required"}]}

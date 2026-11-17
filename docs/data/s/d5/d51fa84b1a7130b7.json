@@ -1,0 +1,1 @@
+{"slug":"d51fa84b1a7130b7","names":["dev.mailkite/email-agent"],"host":"mcp.mailkite.dev","endpoint":"https://mcp.mailkite.dev/mcp?ref=email-agent","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

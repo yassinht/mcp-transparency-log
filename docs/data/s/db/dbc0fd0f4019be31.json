@@ -1,0 +1,1 @@
+{"slug":"dbc0fd0f4019be31","names":["com.bilgai/bilg"],"host":"mcp.bilgai.com","endpoint":"https://mcp.bilgai.com/mcp","first_seen":"2026-09-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-18","kind":"first_seen","outcome":"auth_required"}]}

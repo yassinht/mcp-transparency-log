@@ -1,0 +1,1 @@
+{"slug":"671b406c86c0ff7c","names":["io.github.edtool79-collab/ats-job-pulse"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=hirepulse/ats-job-pulse","first_seen":"2026-10-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-15","kind":"first_seen","outcome":"auth_required"}]}

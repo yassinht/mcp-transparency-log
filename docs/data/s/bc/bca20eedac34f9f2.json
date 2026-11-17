@@ -1,0 +1,1 @@
+{"slug":"bca20eedac34f9f2","names":["io.github.serenido/football-xg"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=serenido/football-xg-scraper","first_seen":"2026-10-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

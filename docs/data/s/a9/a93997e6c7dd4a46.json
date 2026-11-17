@@ -1,0 +1,1 @@
+{"slug":"a93997e6c7dd4a46","names":["app.sendar/mcp"],"host":"sendar.app","endpoint":"https://sendar.app/api/mcp","first_seen":"2026-10-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

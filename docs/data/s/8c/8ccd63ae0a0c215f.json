@@ -1,0 +1,1 @@
+{"slug":"8ccd63ae0a0c215f","names":["io.github.reinaldomoreira/do-it"],"host":"fhfnyzkocsetxnntrkmx.supabase.co","endpoint":"https://fhfnyzkocsetxnntrkmx.supabase.co/functions/v1/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

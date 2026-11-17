@@ -1,0 +1,1 @@
+{"slug":"fc5a9334cb646606","names":["ai.saifs/cash-forecast"],"host":"cash-forecast-mcp.saifs.ai","endpoint":"https://cash-forecast-mcp.saifs.ai/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

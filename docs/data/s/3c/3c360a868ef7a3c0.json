@@ -1,0 +1,1 @@
+{"slug":"3c360a868ef7a3c0","names":["io.github.comndllc/livestock-market-prices"],"host":"livestockmarketprices.com","endpoint":"https://livestockmarketprices.com/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

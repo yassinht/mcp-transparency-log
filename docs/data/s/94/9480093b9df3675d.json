@@ -1,0 +1,1 @@
+{"slug":"9480093b9df3675d","names":["ca.augureai/augure"],"host":"mcp.augureai.ca","endpoint":"https://mcp.augureai.ca/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

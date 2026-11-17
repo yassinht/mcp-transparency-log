@@ -1,0 +1,1 @@
+{"slug":"062fad7e5e864a80","names":["com.docs2mcp/docs2mcp"],"host":"mcp.docs2mcp.com","endpoint":"https://mcp.docs2mcp.com/mcp","first_seen":"2026-09-07","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-07","kind":"first_seen","outcome":"auth_required"}]}

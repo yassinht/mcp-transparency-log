@@ -1,0 +1,1 @@
+{"slug":"6181999176e28fda","names":["com.flightpowers/booking"],"host":"hotels.flightpowers.com","endpoint":"https://hotels.flightpowers.com/mcp/oauth","first_seen":"2026-09-09","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-09","kind":"first_seen","outcome":"auth_required"},{"date":"2026-09-10","kind":"delisted"}]}

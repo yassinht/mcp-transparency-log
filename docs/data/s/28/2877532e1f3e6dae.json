@@ -1,0 +1,1 @@
+{"slug":"2877532e1f3e6dae","names":["fr.calepio/calepio"],"host":"app.calepio.fr","endpoint":"https://app.calepio.fr/api/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

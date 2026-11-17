@@ -1,0 +1,1 @@
+{"slug":"923efb72b7d17463","names":["com.meridianlabssoftware/competitor-keywords"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=meridianlabs/competitor-keywords","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

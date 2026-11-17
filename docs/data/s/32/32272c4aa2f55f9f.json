@@ -1,0 +1,1 @@
+{"slug":"32272c4aa2f55f9f","names":["com.fxapis/mt5-insights"],"host":"api.fxapis.com","endpoint":"https://api.fxapis.com/mcp/insights","first_seen":"2026-11-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-12","kind":"first_seen","outcome":"auth_required"}]}

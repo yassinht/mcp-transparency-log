@@ -1,0 +1,1 @@
+{"slug":"e8c141335227dc4c","names":["io.elevenlabs/mcp"],"host":"api.us.elevenlabs.io","endpoint":"https://api.us.elevenlabs.io/v1/mcp","first_seen":"2026-09-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-09","kind":"first_seen","outcome":"auth_required"}]}

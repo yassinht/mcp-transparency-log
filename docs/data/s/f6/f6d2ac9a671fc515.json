@@ -1,0 +1,1 @@
+{"slug":"f6d2ac9a671fc515","names":["net.dynv6.1rbt1/rbt"],"host":"1rbt1.dynv6.net","endpoint":"https://1rbt1.dynv6.net/mcp","first_seen":"2026-09-19","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-19","kind":"first_seen","outcome":"unreachable"}]}

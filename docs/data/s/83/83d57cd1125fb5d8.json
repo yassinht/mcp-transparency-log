@@ -1,0 +1,1 @@
+{"slug":"83d57cd1125fb5d8","names":["io.github.UteamUP/mcp-server"],"host":"api.uteamup.com","endpoint":"https://api.uteamup.com/mcp/read-only","first_seen":"2026-10-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-19","kind":"first_seen","outcome":"auth_required"}]}

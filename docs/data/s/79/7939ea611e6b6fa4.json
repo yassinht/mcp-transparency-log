@@ -1,0 +1,1 @@
+{"slug":"7939ea611e6b6fa4","names":["dev.cotlet/razorsync"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/razorsync/connect","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

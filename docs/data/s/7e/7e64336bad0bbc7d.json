@@ -1,0 +1,1 @@
+{"slug":"7e64336bad0bbc7d","names":["io.github.doc2mcp/smoothsend"],"host":"www.doc2mcp.site","endpoint":"https://www.doc2mcp.site/api/mcp/206c5de4-cd25-461b-8eb8-0010d1c8e0b0/mcp","first_seen":"2026-10-04","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

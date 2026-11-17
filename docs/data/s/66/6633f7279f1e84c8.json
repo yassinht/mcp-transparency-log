@@ -1,0 +1,1 @@
+{"slug":"6633f7279f1e84c8","names":["im.callsign/callsign"],"host":"api.callsign.im","endpoint":"https://api.callsign.im/mcp","first_seen":"2026-10-25","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

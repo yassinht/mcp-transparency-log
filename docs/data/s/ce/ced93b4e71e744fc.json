@@ -1,0 +1,1 @@
+{"slug":"ced93b4e71e744fc","names":["io.github.DevinoSolutions/upapi-mcp"],"host":"app.upapi.io","endpoint":"https://app.upapi.io/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

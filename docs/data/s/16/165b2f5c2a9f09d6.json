@@ -1,0 +1,1 @@
+{"slug":"165b2f5c2a9f09d6","names":["io.github.quality-screener/qscreener"],"host":"mcp.qualityscreener.io","endpoint":"https://mcp.qualityscreener.io/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"37ab53e2f0e7c37d","names":["io.github.CSOAI-ORG/meok-aaif-agent-card-mcp"],"host":"api.meok.ai","endpoint":"https://api.meok.ai/v1/a2a/aaif-agent-card","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"unreachable"}]}

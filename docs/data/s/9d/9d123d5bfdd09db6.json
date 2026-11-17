@@ -1,0 +1,1 @@
+{"slug":"9d123d5bfdd09db6","names":["online.meal-planner/mcp"],"host":"www.meal-planner.online","endpoint":"https://www.meal-planner.online/wp-json/ksl-mp/v1/mcp","first_seen":"2026-10-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-09","kind":"first_seen","outcome":"auth_required"}]}

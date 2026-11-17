@@ -1,0 +1,1 @@
+{"slug":"660f95adfcec4efc","names":["ai.screenweaver/screenweaver"],"host":"app.screenweaver.ai","endpoint":"https://app.screenweaver.ai/api/mcp","first_seen":"2026-10-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-15","kind":"first_seen","outcome":"auth_required"}]}

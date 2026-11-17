@@ -1,0 +1,1 @@
+{"slug":"1f74d60656c0ede0","names":["com.ranovam/yelp-review-intelligence"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=enezli/yelp-review-intelligence","first_seen":"2026-09-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-01","kind":"first_seen","outcome":"auth_required"}]}

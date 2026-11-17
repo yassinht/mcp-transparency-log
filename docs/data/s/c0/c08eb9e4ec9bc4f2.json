@@ -1,0 +1,1 @@
+{"slug":"c08eb9e4ec9bc4f2","names":["io.github.BaiqingL/latchshot"],"host":"latchshot.fly.dev","endpoint":"https://latchshot.fly.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

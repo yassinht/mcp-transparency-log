@@ -1,0 +1,1 @@
+{"slug":"5cfd8d72ef50667e","names":["io.github.fujimura-ui/japan-official-statistics-mcp"],"host":"estat-mcp.plus-synergy.workers.dev","endpoint":"https://estat-mcp.plus-synergy.workers.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

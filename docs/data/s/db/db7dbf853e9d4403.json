@@ -1,0 +1,1 @@
+{"slug":"db7dbf853e9d4403","names":["com.paywithlocus/locus"],"host":"api.paywithlocus.com","endpoint":"https://api.paywithlocus.com/api/credits/mcp","first_seen":"2026-09-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-02","kind":"first_seen","outcome":"auth_required"}]}

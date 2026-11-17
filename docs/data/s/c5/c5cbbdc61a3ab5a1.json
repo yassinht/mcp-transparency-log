@@ -1,0 +1,1 @@
+{"slug":"c5cbbdc61a3ab5a1","names":["com.acutisgo/gate"],"host":"app.acutisgo.com","endpoint":"https://app.acutisgo.com/api/v1/gate/mcp","first_seen":"2026-10-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-11","kind":"first_seen","outcome":"auth_required"}]}

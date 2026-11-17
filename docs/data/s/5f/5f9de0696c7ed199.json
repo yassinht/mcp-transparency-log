@@ -1,0 +1,1 @@
+{"slug":"5f9de0696c7ed199","names":["com.lionreader/lion-reader"],"host":"lionreader.com","endpoint":"https://lionreader.com/api/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

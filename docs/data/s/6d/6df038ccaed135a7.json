@@ -1,0 +1,1 @@
+{"slug":"6df038ccaed135a7","names":["com.giasgiraffes/gias-giraffes"],"host":"www.giasgiraffes.com","endpoint":"https://www.giasgiraffes.com/api/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

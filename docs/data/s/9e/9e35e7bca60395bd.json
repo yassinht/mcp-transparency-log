@@ -1,0 +1,1 @@
+{"slug":"9e35e7bca60395bd","names":["io.ai2sql/ai2sql"],"host":"builder.ai2sql.io","endpoint":"https://builder.ai2sql.io/api/chatgpt-mcp","first_seen":"2026-09-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-05","kind":"first_seen","outcome":"auth_required"}]}

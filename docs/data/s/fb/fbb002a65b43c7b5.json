@@ -1,0 +1,1 @@
+{"slug":"fbb002a65b43c7b5","names":["com.foliosio/support-inbox"],"host":"app.foliosio.com","endpoint":"https://app.foliosio.com/api/v1/mcp","first_seen":"2026-11-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-07","kind":"first_seen","outcome":"auth_required"}]}

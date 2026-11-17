@@ -1,0 +1,1 @@
+{"slug":"5116e622b6bbd786","names":["com.superdemands/search-demand"],"host":"superdemands.com","endpoint":"https://superdemands.com/mcp","first_seen":"2026-10-22","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"7f3eb85d207b0569","names":["io.github.danielpopamd/google-ads-mcp"],"host":"api.adplug.app","endpoint":"https://api.adplug.app/mcp/google-ads","first_seen":"2026-09-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-17","kind":"first_seen","outcome":"auth_required"}]}

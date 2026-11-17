@@ -1,0 +1,1 @@
+{"slug":"800ce67537c6487d","names":["ai.chipp/chipp-tickets"],"host":"mcp.chipp.ai","endpoint":"https://mcp.chipp.ai/mcp/tickets","first_seen":"2026-10-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-27","kind":"first_seen","outcome":"auth_required"}]}

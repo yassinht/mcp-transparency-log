@@ -1,0 +1,1 @@
+{"slug":"d668d603dce1e73b","names":["ai.team0/living-understanding"],"host":"api.team0.ai","endpoint":"https://api.team0.ai/v1/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

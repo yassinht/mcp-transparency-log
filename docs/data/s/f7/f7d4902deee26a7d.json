@@ -1,0 +1,1 @@
+{"slug":"f7d4902deee26a7d","names":["com.halmoslabs/adoor"],"host":"app.adoor.halmoslabs.com","endpoint":"https://app.adoor.halmoslabs.com/mcp","first_seen":"2026-10-22","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-28","kind":"delisted"}]}

@@ -1,0 +1,1 @@
+{"slug":"01adaed5adfb57ac","names":["app.rezee/rezee"],"host":"api.rezee.app","endpoint":"https://api.rezee.app/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

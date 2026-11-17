@@ -1,0 +1,1 @@
+{"slug":"d283498f445e9122","names":["com.insightfulpipe/mssql"],"host":"mssql.insightfulmcp.com","endpoint":"https://mssql.insightfulmcp.com/","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"2412f10d039c502d","names":["com.dabradata/mcp"],"host":"app.dabradata.com","endpoint":"https://app.dabradata.com/mcp","first_seen":"2026-09-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}

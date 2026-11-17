@@ -1,0 +1,1 @@
+{"slug":"759f416af196fb47","names":["click.myagents/indexnow"],"host":"indexnow.mcp.myagents.click","endpoint":"https://indexnow.mcp.myagents.click/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

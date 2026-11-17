@@ -1,0 +1,1 @@
+{"slug":"42436029bd59d7fd","names":["co.dealwize/dealwize"],"host":"api.dealwize.co","endpoint":"https://api.dealwize.co/api/v1/mcp/sse","first_seen":"2026-09-05","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-05","kind":"first_seen","outcome":"protocol_error"}]}

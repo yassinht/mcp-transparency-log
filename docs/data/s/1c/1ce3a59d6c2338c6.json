@@ -1,0 +1,1 @@
+{"slug":"1ce3a59d6c2338c6","names":["io.github.paperoffice-ai/paperoffice-mcp"],"host":"mcp.paperoffice.ai","endpoint":"https://mcp.paperoffice.ai/muse","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

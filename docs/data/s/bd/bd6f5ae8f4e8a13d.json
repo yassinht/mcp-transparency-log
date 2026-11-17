@@ -1,0 +1,1 @@
+{"slug":"bd6f5ae8f4e8a13d","names":["io.github.skverall/car-dealer-tracker-mcp"],"host":"mcp.cardealertracker.app","endpoint":"https://mcp.cardealertracker.app/mcp","first_seen":"2026-10-07","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-07","kind":"first_seen","outcome":"auth_required"}]}

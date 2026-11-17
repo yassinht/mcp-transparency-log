@@ -1,0 +1,1 @@
+{"slug":"fd143c83228b2904","names":["io.github.gAI-ventures/pilotfish-managed"],"host":"pilotfish-be.gai.ventures","endpoint":"https://pilotfish-be.gai.ventures/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

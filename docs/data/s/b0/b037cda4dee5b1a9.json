@@ -1,0 +1,1 @@
+{"slug":"b037cda4dee5b1a9","names":["app.skaler/skaler"],"host":"skaler.app","endpoint":"https://skaler.app/api/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

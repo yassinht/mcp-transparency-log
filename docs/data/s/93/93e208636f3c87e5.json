@@ -1,0 +1,1 @@
+{"slug":"93e208636f3c87e5","names":["io.github.edbror/sat69-mcp"],"host":"sat69.watr.mx","endpoint":"https://sat69.watr.mx/connect","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

@@ -1,0 +1,1 @@
+{"slug":"249a449b4506faa2","names":["com.heybuna/buna"],"host":"api.heybuna.com","endpoint":"https://api.heybuna.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

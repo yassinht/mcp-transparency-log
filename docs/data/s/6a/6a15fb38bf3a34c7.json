@@ -1,0 +1,1 @@
+{"slug":"6a15fb38bf3a34c7","names":["ai.actwise/ideation"],"host":"actwise.ai","endpoint":"https://actwise.ai/ideation/mcp/v1","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"a9b53b2046b3ea4e","names":["com.agentfirststack/mail"],"host":"mail.agentfirststack.com","endpoint":"https://mail.agentfirststack.com/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

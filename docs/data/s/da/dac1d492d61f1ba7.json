@@ -1,0 +1,1 @@
+{"slug":"dac1d492d61f1ba7","names":["io.github.VirusTotal/virustotal-mcp"],"host":"ai.virustotal.com","endpoint":"https://ai.virustotal.com/mcp","first_seen":"2026-09-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-09","kind":"first_seen","outcome":"auth_required"}]}

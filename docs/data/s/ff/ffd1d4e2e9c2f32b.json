@@ -1,0 +1,1 @@
+{"slug":"ffd1d4e2e9c2f32b","names":["dev.pages.bulk-ocr/bulk-ocr"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=venture_ace/bulk-ocr","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

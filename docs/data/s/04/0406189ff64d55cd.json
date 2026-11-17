@@ -1,0 +1,1 @@
+{"slug":"0406189ff64d55cd","names":["com.statoss/mcp"],"host":"statoss.com","endpoint":"https://statoss.com/api/v1/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

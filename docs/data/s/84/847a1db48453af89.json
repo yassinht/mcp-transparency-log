@@ -1,0 +1,1 @@
+{"slug":"847a1db48453af89","names":["tech.huntshare/hunt"],"host":"api.huntshare.tech","endpoint":"https://api.huntshare.tech/mcp/oauth","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

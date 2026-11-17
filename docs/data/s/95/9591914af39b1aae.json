@@ -1,0 +1,1 @@
+{"slug":"9591914af39b1aae","names":["io.pocketarchive/pocket-archive"],"host":"api.pocketarchive.io","endpoint":"https://api.pocketarchive.io/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

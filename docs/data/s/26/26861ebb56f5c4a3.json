@@ -1,0 +1,1 @@
+{"slug":"26861ebb56f5c4a3","names":["com.uichemy/ai-website-creator"],"host":"app.uichemy.com","endpoint":"https://app.uichemy.com/api/mcp/cursor","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

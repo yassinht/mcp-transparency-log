@@ -1,0 +1,1 @@
+{"slug":"11c52ad7f3146f16","names":["com.yourbeckett/beckett"],"host":"api.yourbeckett.com","endpoint":"https://api.yourbeckett.com/mcp","first_seen":"2026-10-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-18","kind":"first_seen","outcome":"auth_required"}]}

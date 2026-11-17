@@ -1,0 +1,1 @@
+{"slug":"c01b0973fe1d5407","names":["com.loglune/mcp"],"host":"loglune.com","endpoint":"https://loglune.com/api/mcp","first_seen":"2026-09-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-28","kind":"first_seen","outcome":"auth_required"}]}

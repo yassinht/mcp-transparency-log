@@ -1,0 +1,1 @@
+{"slug":"eed86e6d46df239a","names":["com.hyprcart/admin"],"host":"hyprcart.com","endpoint":"https://hyprcart.com/api/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

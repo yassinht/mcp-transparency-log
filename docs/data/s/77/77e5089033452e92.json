@@ -1,0 +1,1 @@
+{"slug":"77e5089033452e92","names":["ai.sloosh/sloosh"],"host":"mcp.sloosh.ai","endpoint":"https://mcp.sloosh.ai/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

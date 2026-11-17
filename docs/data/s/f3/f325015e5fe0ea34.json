@@ -1,0 +1,1 @@
+{"slug":"f325015e5fe0ea34","names":["io.github.temway/mcp-server"],"host":"mcp.temway.com","endpoint":"https://mcp.temway.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

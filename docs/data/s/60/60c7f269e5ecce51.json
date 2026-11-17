@@ -1,0 +1,1 @@
+{"slug":"60c7f269e5ecce51","names":["com.asv-labs/motif"],"host":"mcp.asv-labs.com","endpoint":"https://mcp.asv-labs.com/mcp","first_seen":"2026-11-15","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-15","kind":"first_seen","outcome":"auth_required"}]}

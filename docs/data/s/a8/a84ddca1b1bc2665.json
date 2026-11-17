@@ -1,0 +1,1 @@
+{"slug":"a84ddca1b1bc2665","names":["dev.dvt/dvt"],"host":"mcp.dvt.dev","endpoint":"https://mcp.dvt.dev/mcp","first_seen":"2026-09-06","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-06","kind":"first_seen","outcome":"auth_required"}]}

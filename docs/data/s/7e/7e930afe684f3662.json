@@ -1,0 +1,1 @@
+{"slug":"7e930afe684f3662","names":["lol.postgame/postgame"],"host":"mcp.postgame.lol","endpoint":"https://mcp.postgame.lol/mcp?utm_campaign=registry","first_seen":"2026-11-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

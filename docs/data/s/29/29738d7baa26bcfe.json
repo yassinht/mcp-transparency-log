@@ -1,0 +1,1 @@
+{"slug":"29738d7baa26bcfe","names":["io.mailmcp/mailmcp"],"host":"mailmcp.io","endpoint":"https://mailmcp.io/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}

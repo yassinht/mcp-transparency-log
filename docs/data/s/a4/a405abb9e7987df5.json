@@ -1,0 +1,1 @@
+{"slug":"a405abb9e7987df5","names":["online.mcptask/mcptask"],"host":"mcptask.online","endpoint":"https://mcptask.online/mcp","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"protocol_error"}]}

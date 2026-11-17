@@ -1,0 +1,1 @@
+{"slug":"40e03e66e1248f2d","names":["io.github.Mrc527/mcp-for-icloud"],"host":"icloud.visin.ch","endpoint":"https://icloud.visin.ch/mcp","first_seen":"2026-11-09","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-11","kind":"delisted"}]}

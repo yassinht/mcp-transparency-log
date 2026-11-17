@@ -1,0 +1,1 @@
+{"slug":"db4fb986a779a3e1","names":["io.github.kr-data-api/korea-apt-transactions"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=kr-data/korea-apt-transactions","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

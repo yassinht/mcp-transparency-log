@@ -1,0 +1,1 @@
+{"slug":"3b99b910c04233a3","names":["io.github.gaelasao/building-permits-api"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=gaelasao/planning-data-au-nz-fr","first_seen":"2026-10-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-23","kind":"first_seen","outcome":"auth_required"}]}

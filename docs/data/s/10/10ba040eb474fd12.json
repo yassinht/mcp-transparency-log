@@ -1,0 +1,1 @@
+{"slug":"10ba040eb474fd12","names":["com.spansend/whatsapp"],"host":"api.spansend.com","endpoint":"https://api.spansend.com/mcp/","first_seen":"2026-10-06","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-06","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-08","kind":"delisted"}]}

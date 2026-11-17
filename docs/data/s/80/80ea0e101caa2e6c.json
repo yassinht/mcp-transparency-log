@@ -1,0 +1,1 @@
+{"slug":"80ea0e101caa2e6c","names":["io.github.lgpoliveira/bugiadata-mcp"],"host":"mcp.bugiadata.com","endpoint":"https://mcp.bugiadata.com/sse","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

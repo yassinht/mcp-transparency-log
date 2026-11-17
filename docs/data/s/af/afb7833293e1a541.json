@@ -1,0 +1,1 @@
+{"slug":"afb7833293e1a541","names":["io.github.hananzlot/ibuildpro"],"host":"mspujwrfhbobrxhofxzv.supabase.co","endpoint":"https://mspujwrfhbobrxhofxzv.supabase.co/functions/v1/mcp-server","first_seen":"2026-09-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-06","kind":"first_seen","outcome":"auth_required"}]}

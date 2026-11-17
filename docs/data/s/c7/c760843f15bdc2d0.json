@@ -1,0 +1,1 @@
+{"slug":"c760843f15bdc2d0","names":["com.insightfulpipe/google-sheets"],"host":"google-sheets.insightfulmcp.com","endpoint":"https://google-sheets.insightfulmcp.com/","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

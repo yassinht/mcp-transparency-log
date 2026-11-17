@@ -1,0 +1,1 @@
+{"slug":"885dc610d8d04e62","names":["io.github.apostra-public/apostra"],"host":"api.apostra.com","endpoint":"https://api.apostra.com/mcp/v3","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

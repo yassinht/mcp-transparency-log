@@ -1,0 +1,1 @@
+{"slug":"bb404b4c10330655","names":["ai.hrum/baro"],"host":"api.hrum.ai","endpoint":"https://api.hrum.ai/api/v1/partners/v1/baro/mcp","first_seen":"2026-10-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-30","kind":"first_seen","outcome":"auth_required"}]}

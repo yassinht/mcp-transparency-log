@@ -1,0 +1,1 @@
+{"slug":"6e9ec9ffb6d9b22d","names":["com.assesslane/assesslane"],"host":"assesslane.com","endpoint":"https://assesslane.com/api/mcp","first_seen":"2026-10-08","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-08","kind":"first_seen","outcome":"auth_required"}]}

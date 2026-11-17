@@ -1,0 +1,1 @@
+{"slug":"2de93f9122d2f560","names":["com.useampli/ampli"],"host":"www.useampli.com","endpoint":"https://www.useampli.com/api/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

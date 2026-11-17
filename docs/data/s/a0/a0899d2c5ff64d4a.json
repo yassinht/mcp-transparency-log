@@ -1,0 +1,1 @@
+{"slug":"a0899d2c5ff64d4a","names":["com.zalize.leads/leadsleuth"],"host":"leads.zalize.com","endpoint":"https://leads.zalize.com/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"f0979f9e483cd459","names":["cloud.pandy/tickets-organizer"],"host":"tickets.pandy.cloud","endpoint":"https://tickets.pandy.cloud/mcp/organizer","first_seen":"2026-10-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-13","kind":"first_seen","outcome":"auth_required"}]}

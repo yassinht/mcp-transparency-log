@@ -1,0 +1,1 @@
+{"slug":"b8ddfbcc6381ac56","names":["ai.markettrace/agent-feed"],"host":"api.markettrace.ai","endpoint":"https://api.markettrace.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

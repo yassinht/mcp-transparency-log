@@ -1,0 +1,1 @@
+{"slug":"366a577e7d070fa3","names":["ai.travelpanda/travelpanda"],"host":"api-sg.travelpanda.ai","endpoint":"https://api-sg.travelpanda.ai/agent/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"00d1a3c85b56d5a6","names":["com.trendsconnector/connector"],"host":"trendsconnector.com","endpoint":"https://trendsconnector.com/mcp","first_seen":"2026-10-22","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

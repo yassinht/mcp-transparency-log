@@ -1,0 +1,1 @@
+{"slug":"b114006f04f2a62b","names":["ai.b77/chess-results"],"host":"chess-results.b77.ai","endpoint":"https://chess-results.b77.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

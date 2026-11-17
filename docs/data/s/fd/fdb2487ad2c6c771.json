@@ -1,0 +1,1 @@
+{"slug":"fdb2487ad2c6c771","names":["com.artifactbridge/artifactbridge"],"host":"app.artifactbridge.com","endpoint":"https://app.artifactbridge.com/mcp","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"5b4fbf3f65b7aaa2","names":["co.respawnmedia.signal/respawn-signal"],"host":"signal.respawnmedia.co","endpoint":"https://signal.respawnmedia.co/mcp","first_seen":"2026-09-03","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-03","kind":"first_seen","outcome":"auth_required"}]}

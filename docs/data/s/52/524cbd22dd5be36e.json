@@ -1,0 +1,1 @@
+{"slug":"524cbd22dd5be36e","names":["ai.haggl/merchant"],"host":"www.haggl.ai","endpoint":"https://www.haggl.ai/api/mcp/merchant","first_seen":"2026-10-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-17","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"f41b2ec9b3b05ef1","names":["io.github.gonnagetapower/kelvia-mcp"],"host":"mcp.kelvia.app","endpoint":"https://mcp.kelvia.app/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

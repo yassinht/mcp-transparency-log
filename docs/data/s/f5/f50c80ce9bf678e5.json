@@ -1,0 +1,1 @@
+{"slug":"f50c80ce9bf678e5","names":["app.datafast/datafast"],"host":"datafast.app","endpoint":"https://datafast.app/api/mcp","first_seen":"2026-11-13","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-13","kind":"first_seen","outcome":"auth_required"}]}

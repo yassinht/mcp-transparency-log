@@ -1,0 +1,1 @@
+{"slug":"d7bff6dce87a9ffd","names":["com.mightyautomation/mcp"],"host":"mcp.mightyautomation.com","endpoint":"https://mcp.mightyautomation.com/api/mcp","first_seen":"2026-10-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-22","kind":"first_seen","outcome":"auth_required"}]}

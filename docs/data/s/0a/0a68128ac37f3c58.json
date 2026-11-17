@@ -1,0 +1,1 @@
+{"slug":"0a68128ac37f3c58","names":["io.github.fi4all/algoum"],"host":"api.algoum.de","endpoint":"https://api.algoum.de/v1/mcp","first_seen":"2026-10-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-04","kind":"first_seen","outcome":"auth_required"}]}

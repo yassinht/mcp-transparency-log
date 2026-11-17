@@ -1,0 +1,1 @@
+{"slug":"8e26a4b9f3f0d6fd","names":["io.github.PremierInc/azure-devops"],"host":"mcp.dev.azure.com","endpoint":"https://mcp.dev.azure.com","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

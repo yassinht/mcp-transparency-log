@@ -1,0 +1,1 @@
+{"slug":"38bf0448fb694e66","names":["io.github.redpine-ai/redpine-connect"],"host":"api.redpine.ai","endpoint":"https://api.redpine.ai/mcp","first_seen":"2026-10-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-01","kind":"first_seen","outcome":"auth_required"}]}

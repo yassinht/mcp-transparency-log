@@ -1,0 +1,1 @@
+{"slug":"4fd817515640aa56","names":["com.moodlemcp/moodle"],"host":"moodlemcp.com","endpoint":"https://moodlemcp.com/mcp","first_seen":"2026-08-30","listed":false,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"},{"date":"2026-10-19","kind":"delisted"}]}

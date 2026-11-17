@@ -1,0 +1,1 @@
+{"slug":"13ef06a05883d123","names":["com.deekfit/gym"],"host":"deekfit-mcp.azurewebsites.net","endpoint":"https://deekfit-mcp.azurewebsites.net/mcp","first_seen":"2026-11-14","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

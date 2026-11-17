@@ -1,0 +1,1 @@
+{"slug":"5673488c34179d34","names":["app.countrymanager/countrymanager"],"host":"countrymanager.app","endpoint":"https://countrymanager.app/api/loc/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

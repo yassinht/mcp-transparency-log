@@ -1,0 +1,1 @@
+{"slug":"318128412f7b533e","names":["io.redditdataapi/mcp-server"],"host":"mcp.redditdataapi.io","endpoint":"https://mcp.redditdataapi.io/v1/mcp","first_seen":"2026-11-06","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

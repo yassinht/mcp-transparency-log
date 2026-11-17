@@ -1,0 +1,1 @@
+{"slug":"7c789b6dbbb9c008","names":["io.github.Acro/sequential","io.github.usesequential/sequential"],"host":"api.usesequential.com","endpoint":"https://api.usesequential.com/mcp","first_seen":"2026-10-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-16","kind":"first_seen","outcome":"auth_required"}]}

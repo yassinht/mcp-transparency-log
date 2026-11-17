@@ -1,0 +1,1 @@
+{"slug":"00ca1b6ac4f9afd4","names":["io.github.SatGate-io/satgate"],"host":"satgate-mcp-saas.fly.dev","endpoint":"https://satgate-mcp-saas.fly.dev/sse","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"protocol_error"}]}

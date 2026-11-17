@@ -1,0 +1,1 @@
+{"slug":"7b0eef93a01237f9","names":["ai.openarx/openarx"],"host":"mcp.openarx.ai","endpoint":"https://mcp.openarx.ai/researcher/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

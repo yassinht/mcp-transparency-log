@@ -1,0 +1,1 @@
+{"slug":"eb8074599aa76970","names":["io.github.dreamingms/kael-mcp-server"],"host":"www.kael.ink","endpoint":"https://www.kael.ink/mcp/stream","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

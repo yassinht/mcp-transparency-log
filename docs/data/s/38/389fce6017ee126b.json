@@ -1,0 +1,1 @@
+{"slug":"389fce6017ee126b","names":["com.insightfulpipe/enrichment"],"host":"enrichment-crawlers.insightfulmcp.com","endpoint":"https://enrichment-crawlers.insightfulmcp.com/","first_seen":"2026-10-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-21","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"249b56588b292020","names":["io.github.aiforwork100-cell/pledr-legal-mcp"],"host":"legal.pledr.in","endpoint":"https://legal.pledr.in/mcp","first_seen":"2026-10-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-25","kind":"first_seen","outcome":"auth_required"}]}

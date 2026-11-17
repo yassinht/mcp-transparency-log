@@ -1,0 +1,1 @@
+{"slug":"9f9ac1e1106dc75e","names":["io.github.kimny1143/hoo-mcp"],"host":"hoo-mcp.glasswerkskimny.workers.dev","endpoint":"https://hoo-mcp.glasswerkskimny.workers.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

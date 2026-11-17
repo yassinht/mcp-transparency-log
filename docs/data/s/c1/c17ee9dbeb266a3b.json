@@ -1,0 +1,1 @@
+{"slug":"c17ee9dbeb266a3b","names":["com.canopy-io/account"],"host":"auth.canopy-io.com","endpoint":"https://auth.canopy-io.com/mcp/v1","first_seen":"2026-11-01","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-01","kind":"first_seen","outcome":"auth_required"}]}

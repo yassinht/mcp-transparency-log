@@ -1,0 +1,1 @@
+{"slug":"f632a39efd06f527","names":["net.alphayou/api"],"host":"api.alphayou.net","endpoint":"https://api.alphayou.net/api/v1/mcp","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

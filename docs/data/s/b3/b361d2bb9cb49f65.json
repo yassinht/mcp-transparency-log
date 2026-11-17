@@ -1,0 +1,1 @@
+{"slug":"b361d2bb9cb49f65","names":["io.github.vilogy/mcp-fleet"],"host":"motiv-mcp-fleet.mcp.xpay.sh","endpoint":"https://motiv-mcp-fleet.mcp.xpay.sh/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"4413f8978c59d111","names":["com.papersign/papersign"],"host":"api.paperform.app","endpoint":"https://api.paperform.app/mcp/papersign","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

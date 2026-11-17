@@ -1,0 +1,1 @@
+{"slug":"1cac5dc114802be2","names":["io.github.btouchard/herald"],"host":"your-herald-instance.example.com","endpoint":"https://your-herald-instance.example.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"unreachable"}]}

@@ -1,0 +1,1 @@
+{"slug":"afe9572431065f90","names":["ai.pidgeon/mcp"],"host":"pidgeon.ai","endpoint":"https://pidgeon.ai/api/mcp","first_seen":"2026-10-17","listed":false,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-17","kind":"first_seen","outcome":"auth_required"},{"date":"2026-11-15","kind":"delisted"}]}

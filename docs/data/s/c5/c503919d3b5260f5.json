@@ -1,0 +1,1 @@
+{"slug":"c503919d3b5260f5","names":["io.github.lightshipHQ/lightship"],"host":"lightship-production.up.railway.app","endpoint":"https://lightship-production.up.railway.app/mcp","first_seen":"2026-09-15","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-15","kind":"first_seen","outcome":"auth_required"}]}

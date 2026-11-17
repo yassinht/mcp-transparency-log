@@ -1,0 +1,1 @@
+{"slug":"ed175dd007ec5adc","names":["com.confbuild/confbuild"],"host":"app.confbuild.com","endpoint":"https://app.confbuild.com/mcp","first_seen":"2026-11-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-16","kind":"first_seen","outcome":"auth_required"}]}

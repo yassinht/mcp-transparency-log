@@ -1,0 +1,1 @@
+{"slug":"e1c9d973aa92fa4e","names":["net.getforgeops/forgeops"],"host":"getforgeops.net","endpoint":"https://getforgeops.net/api/v1/mcp","first_seen":"2026-11-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-03","kind":"first_seen","outcome":"auth_required"}]}

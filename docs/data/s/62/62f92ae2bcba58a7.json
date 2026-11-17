@@ -1,0 +1,1 @@
+{"slug":"62f92ae2bcba58a7","names":["com.betacade/mcp"],"host":"api.betacade.com","endpoint":"https://api.betacade.com/mcp","first_seen":"2026-10-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-24","kind":"first_seen","outcome":"auth_required"}]}

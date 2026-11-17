@@ -1,0 +1,1 @@
+{"slug":"59360aba9836c3fd","names":["app.sabli/minds"],"host":"sabli.app","endpoint":"https://sabli.app/api/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

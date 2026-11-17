@@ -1,0 +1,1 @@
+{"slug":"35afc5e18e2665c1","names":["ninja.selfmade/labs"],"host":"labs.selfmade.ninja","endpoint":"https://labs.selfmade.ninja/mcp","first_seen":"2026-09-27","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-27","kind":"first_seen","outcome":"auth_required"}]}

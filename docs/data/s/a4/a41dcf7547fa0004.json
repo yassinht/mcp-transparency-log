@@ -1,0 +1,1 @@
+{"slug":"a41dcf7547fa0004","names":["com.bearingstats/bearing"],"host":"bearingstats.com","endpoint":"https://bearingstats.com/api/mcp","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"325c91a7e4060442","names":["dk.rigsdata/rigsdata"],"host":"mcp.rigsdata.dk","endpoint":"https://mcp.rigsdata.dk/mcp","first_seen":"2026-11-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-17","kind":"first_seen","outcome":"auth_required"}]}

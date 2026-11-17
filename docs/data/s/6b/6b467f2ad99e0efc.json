@@ -1,0 +1,1 @@
+{"slug":"6b467f2ad99e0efc","names":["ai.zihin/mcp-server"],"host":"llm.zihin.ai","endpoint":"https://llm.zihin.ai/mcp","first_seen":"2026-09-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-02","kind":"first_seen","outcome":"auth_required"}]}

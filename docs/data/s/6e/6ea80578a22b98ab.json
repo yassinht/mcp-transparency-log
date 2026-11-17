@@ -1,0 +1,1 @@
+{"slug":"6ea80578a22b98ab","names":["sk.simfa/simfa"],"host":"api.simfa.sk","endpoint":"https://api.simfa.sk/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

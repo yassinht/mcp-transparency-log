@@ -1,0 +1,1 @@
+{"slug":"8f7a6e9580a47c32","names":["io.github.marcioyoshida/bluefin"],"host":"bluefin-app.com","endpoint":"https://bluefin-app.com/mcp","first_seen":"2026-10-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-14","kind":"first_seen","outcome":"auth_required"}]}

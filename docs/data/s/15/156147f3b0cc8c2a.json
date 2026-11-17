@@ -1,0 +1,1 @@
+{"slug":"156147f3b0cc8c2a","names":["io.github.dannolan/spottable"],"host":"api.spottableapp.com","endpoint":"https://api.spottableapp.com/v1/mcp","first_seen":"2026-10-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-03","kind":"first_seen","outcome":"auth_required"}]}

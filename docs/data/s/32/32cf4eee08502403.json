@@ -1,0 +1,1 @@
+{"slug":"32cf4eee08502403","names":["io.github.n3wth/lunchmoney-mcp"],"host":"mcp.lunchmoney.sh","endpoint":"https://mcp.lunchmoney.sh/mcp","first_seen":"2026-09-16","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-16","kind":"first_seen","outcome":"auth_required"}]}

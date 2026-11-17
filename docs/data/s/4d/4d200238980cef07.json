@@ -1,0 +1,1 @@
+{"slug":"4d200238980cef07","names":["io.github.colliedesk/colliedesk"],"host":"app.colliedesk.com","endpoint":"https://app.colliedesk.com/mcp","first_seen":"2026-11-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-10","kind":"first_seen","outcome":"auth_required"}]}

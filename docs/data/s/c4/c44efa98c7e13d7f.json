@@ -1,0 +1,1 @@
+{"slug":"c44efa98c7e13d7f","names":["io.github.rishabhmpc/prompt-compass"],"host":"api.mpcfintech.com","endpoint":"https://api.mpcfintech.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"5c8542a1f317dbac","names":["ai.dataparrot/data-parrot"],"host":"api-v3.dataparrot.ai","endpoint":"https://api-v3.dataparrot.ai/api/v3/data-parrot/mcp","first_seen":"2026-09-02","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-02","kind":"first_seen","outcome":"auth_required"}]}

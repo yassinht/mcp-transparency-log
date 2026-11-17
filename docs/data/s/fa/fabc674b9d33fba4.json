@@ -1,0 +1,1 @@
+{"slug":"fabc674b9d33fba4","names":["com.senprints.mcp/seller"],"host":"api.senprints.com","endpoint":"https://api.senprints.com/mcp/seller","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

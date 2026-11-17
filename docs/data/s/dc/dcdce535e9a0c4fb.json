@@ -1,0 +1,1 @@
+{"slug":"dcdce535e9a0c4fb","names":["co.flyweel/mcp-server"],"host":"api.flyweel.co","endpoint":"https://api.flyweel.co/functions/v1/mcp-server/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

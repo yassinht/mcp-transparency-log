@@ -1,0 +1,1 @@
+{"slug":"f3b15f358b8da586","names":["io.github.teemukarjaluoto/seo-sauna"],"host":"app.seosauna.com","endpoint":"https://app.seosauna.com/mcp","first_seen":"2026-10-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-29","kind":"first_seen","outcome":"auth_required"}]}

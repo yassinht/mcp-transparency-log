@@ -1,0 +1,1 @@
+{"slug":"2ef55f2fcd1b5f27","names":["ai.helpwell/helpwell"],"host":"app.helpwell.ai","endpoint":"https://app.helpwell.ai/mcp","first_seen":"2026-10-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-19","kind":"first_seen","outcome":"auth_required"}]}

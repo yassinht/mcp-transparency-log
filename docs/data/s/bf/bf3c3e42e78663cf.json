@@ -1,0 +1,1 @@
+{"slug":"bf3c3e42e78663cf","names":["ai.storerouter/storerouter"],"host":"mcp.storerouter.ai","endpoint":"https://mcp.storerouter.ai/mcp","first_seen":"2026-11-05","listed":true,"outcome":"unreachable","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

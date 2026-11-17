@@ -1,0 +1,1 @@
+{"slug":"a8eb9e4d1668cab8","names":["io.github.Daniel-Cherny/localplate-mcp"],"host":"iihzbnyxbxhsrexqsori.supabase.co","endpoint":"https://iihzbnyxbxhsrexqsori.supabase.co/functions/v1/localplate-mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

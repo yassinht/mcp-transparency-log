@@ -1,0 +1,1 @@
+{"slug":"e297c52602d5a9cd","names":["io.github.Xavierfok/singapore-proxy-mcp"],"host":"mcp.singaporemobileproxy.com","endpoint":"https://mcp.singaporemobileproxy.com/connector","first_seen":"2026-11-14","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-14","kind":"first_seen","outcome":"auth_required"}]}

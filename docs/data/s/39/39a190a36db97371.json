@@ -1,0 +1,1 @@
+{"slug":"39a190a36db97371","names":["io.github.jmcitrin/milyoo"],"host":"app.milyoo.ai","endpoint":"https://app.milyoo.ai/mcp","first_seen":"2026-11-02","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

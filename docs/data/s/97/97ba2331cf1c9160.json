@@ -1,0 +1,1 @@
+{"slug":"97ba2331cf1c9160","names":["io.github.open-leash/leash"],"host":"secure.lea.sh","endpoint":"https://secure.lea.sh/mcp","first_seen":"2026-11-04","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-04","kind":"first_seen","outcome":"auth_required"}]}

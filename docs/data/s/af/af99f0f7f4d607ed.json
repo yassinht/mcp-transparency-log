@@ -1,0 +1,1 @@
+{"slug":"af99f0f7f4d607ed","names":["io.github.wathba-org/wathba"],"host":"api.wathba.sa","endpoint":"https://api.wathba.sa/mcp","first_seen":"2026-10-17","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-17","kind":"first_seen","outcome":"auth_required"}]}

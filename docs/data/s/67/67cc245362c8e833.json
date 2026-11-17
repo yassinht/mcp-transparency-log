@@ -1,0 +1,1 @@
+{"slug":"67cc245362c8e833","names":["io.github.jannegpriv/flygkollen"],"host":"sjrlhaqhktilanznllvs.supabase.co","endpoint":"https://sjrlhaqhktilanznllvs.supabase.co/functions/v1/mcp","first_seen":"2026-09-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-10","kind":"first_seen","outcome":"auth_required"}]}

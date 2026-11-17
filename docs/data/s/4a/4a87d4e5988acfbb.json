@@ -1,0 +1,1 @@
+{"slug":"4a87d4e5988acfbb","names":["app.sellerassistant/seller-assistant"],"host":"mcp.sellerassistant.app","endpoint":"https://mcp.sellerassistant.app/mcp","first_seen":"2026-09-03","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-03","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"ef5463469082e11c","names":["com.powerexpertindia/tariff-mcp"],"host":"powerexpertindia.com","endpoint":"https://powerexpertindia.com/api/mcp/index.php","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

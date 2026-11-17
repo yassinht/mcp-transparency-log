@@ -1,0 +1,1 @@
+{"slug":"ccf4bdda4100cd23","names":["io.github.iamtsoftware/promolink"],"host":"promolink-mcp.onrender.com","endpoint":"https://promolink-mcp.onrender.com/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

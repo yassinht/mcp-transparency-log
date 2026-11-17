@@ -1,0 +1,1 @@
+{"slug":"9c9b773dfeaad3d7","names":["com.b2bprofileapi/mcp-server"],"host":"mcp.b2bprofileapi.com","endpoint":"https://mcp.b2bprofileapi.com/v1/mcp","first_seen":"2026-11-09","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-09","kind":"first_seen","outcome":"auth_required"}]}

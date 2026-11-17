@@ -1,0 +1,1 @@
+{"slug":"b1c7b0075660ad46","names":["io.github.404-studio/apollo-invoicing"],"host":"eu.spaceinvoices.com","endpoint":"https://eu.spaceinvoices.com/mcp/r/wlr_156199db8087faa6901fdb63ed664604","first_seen":"2026-09-10","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-10","kind":"first_seen","outcome":"auth_required"}]}

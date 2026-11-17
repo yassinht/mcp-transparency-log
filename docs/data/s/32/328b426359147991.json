@@ -1,0 +1,1 @@
+{"slug":"328b426359147991","names":["io.github.awpthorp/posterly"],"host":"www.poster.ly","endpoint":"https://www.poster.ly/api/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

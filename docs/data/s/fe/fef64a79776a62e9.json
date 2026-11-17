@@ -1,0 +1,1 @@
+{"slug":"fef64a79776a62e9","names":["io.unfunnel/unfunnel"],"host":"unfunnel.io","endpoint":"https://unfunnel.io/api/mcp","first_seen":"2026-11-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-05","kind":"first_seen","outcome":"auth_required"}]}

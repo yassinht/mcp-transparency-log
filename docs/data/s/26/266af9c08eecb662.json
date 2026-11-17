@@ -1,0 +1,1 @@
+{"slug":"266af9c08eecb662","names":["com.getvigilia/vigilia"],"host":"app.getvigilia.com","endpoint":"https://app.getvigilia.com/mcp","first_seen":"2026-10-12","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-12","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"7e7f407221b7359d","names":["io.github.dame-senders/senders-mcp"],"host":"mcp.senders.ai","endpoint":"https://mcp.senders.ai/mcp","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

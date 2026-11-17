@@ -1,0 +1,1 @@
+{"slug":"e2d4edcc98bf889f","names":["com.gatherhq.synthetic/research-reports"],"host":"synthetic.gatherhq.com","endpoint":"https://synthetic.gatherhq.com/api/v1/mcp","first_seen":"2026-10-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-27","kind":"first_seen","outcome":"auth_required"}]}

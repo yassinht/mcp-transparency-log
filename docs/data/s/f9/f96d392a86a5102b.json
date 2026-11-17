@@ -1,0 +1,1 @@
+{"slug":"f96d392a86a5102b","names":["com.aicdapi/records"],"host":"aicdapi.com","endpoint":"https://aicdapi.com/api/v1/mcp","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"auth_required"}]}

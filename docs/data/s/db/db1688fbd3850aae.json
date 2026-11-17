@@ -1,0 +1,1 @@
+{"slug":"db1688fbd3850aae","names":["il.co.taster/library"],"host":"www.taster.co.il","endpoint":"https://www.taster.co.il/api/mcp","first_seen":"2026-10-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

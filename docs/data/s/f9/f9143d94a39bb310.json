@@ -1,0 +1,1 @@
+{"slug":"f9143d94a39bb310","names":["io.github.M-China-Official/mcd-mcp"],"host":"mcp.mcd.cn","endpoint":"https://mcp.mcd.cn/mcp-servers/mcd-mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

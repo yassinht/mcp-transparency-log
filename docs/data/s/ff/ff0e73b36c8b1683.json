@@ -1,0 +1,1 @@
+{"slug":"ff0e73b36c8b1683","names":["com.webanto/webanto"],"host":"webanto.com","endpoint":"https://webanto.com/api/mcp","first_seen":"2026-11-02","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-02","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"c77b922923cc19a7","names":["com.mail-cuck/connector"],"host":"connector.mail-cuck.com","endpoint":"https://connector.mail-cuck.com/mcp","first_seen":"2026-11-06","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-06","kind":"first_seen","outcome":"auth_required"}]}

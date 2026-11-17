@@ -1,0 +1,1 @@
+{"slug":"3e1682698fd17507","names":["io.weavz/weavz"],"host":"platform.weavz.io","endpoint":"https://platform.weavz.io/mcp/weavz","first_seen":"2026-08-30","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"auth_required"}]}

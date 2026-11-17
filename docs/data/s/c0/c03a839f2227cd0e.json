@@ -1,0 +1,1 @@
+{"slug":"c03a839f2227cd0e","names":["com.eidari/eidari"],"host":"eidari.com","endpoint":"https://eidari.com/api/mcp","first_seen":"2026-10-28","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-28","kind":"first_seen","outcome":"auth_required"}]}

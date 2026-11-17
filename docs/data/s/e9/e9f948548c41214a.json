@@ -1,0 +1,1 @@
+{"slug":"e9f948548c41214a","names":["com.monocrawl/mcp"],"host":"www.monocrawl.com","endpoint":"https://www.monocrawl.com/mcp/oauth","first_seen":"2026-09-27","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-27","kind":"first_seen","outcome":"auth_required"}]}

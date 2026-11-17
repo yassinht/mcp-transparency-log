@@ -1,0 +1,1 @@
+{"slug":"fc496468b05a271b","names":["io.github.guptaprakhariitr/hn-trending-mcp"],"host":"hn-trending-mcp.atlasword.workers.dev","endpoint":"https://hn-trending-mcp.atlasword.workers.dev/mcp","first_seen":"2026-08-30","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-08-30","kind":"first_seen","outcome":"protocol_error"}]}
