@@ -279,4 +279,4 @@ This log covers **publicly observable MCP servers** — those listed in the offi
 
 ## Licence
 
-TBD.
+[Apache License 2.0](LICENSE). Copyright 2026 Yassine Houta.
