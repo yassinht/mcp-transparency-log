@@ -124,9 +124,8 @@ func (s *Store) PutBlob(b []byte) (string, error) {
 		return sum, nil
 	}
 
-	dir := filepath.Join(s.root, "blobs", sum[:2])
-	path := filepath.Join(dir, sum)
-	if _, err := os.Stat(path); err == nil {
+	dir := blobDir(s.root, sum)
+	if blobExists(dir, sum) {
 		s.mu.Lock()
 		s.seen[sum] = true
 		s.mu.Unlock()
@@ -135,27 +134,8 @@ func (s *Store) PutBlob(b []byte) (string, error) {
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		return "", err
 	}
-	// Write to a temp name then rename, so a crash never leaves a truncated blob
-	// sitting at an address that claims to hash to something else.
-	tmp, err := os.CreateTemp(dir, ".tmp-*")
-	if err != nil {
+	if err := writeBlobGz(dir, sum, b); err != nil {
 		return "", err
-	}
-	if _, err := tmp.Write(b); err != nil {
-		tmp.Close()
-		os.Remove(tmp.Name())
-		return "", err
-	}
-	if err := tmp.Close(); err != nil {
-		os.Remove(tmp.Name())
-		return "", err
-	}
-	if err := os.Rename(tmp.Name(), path); err != nil {
-		os.Remove(tmp.Name())
-		// A concurrent writer winning the race is fine: same bytes, same address.
-		if _, serr := os.Stat(path); serr != nil {
-			return "", err
-		}
 	}
 	s.mu.Lock()
 	s.seen[sum] = true
@@ -170,7 +150,7 @@ func ReadBlob(dir, sum string) ([]byte, error) {
 	if len(sum) < 2 {
 		return nil, fmt.Errorf("store: malformed blob address %q", sum)
 	}
-	return os.ReadFile(filepath.Join(dir, "blobs", sum[:2], sum))
+	return readBlob(dir, sum)
 }
 
 // Append writes one record as a line of the run index.

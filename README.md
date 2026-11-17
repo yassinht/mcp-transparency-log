@@ -145,10 +145,12 @@ go run ./cmd/crawler                    # full census
 Output lands in `data/`:
 
 ```
-data/blobs/<ab>/<sha256>        exact response bytes, deduplicated across all runs
+data/blobs/<ab>/<sha256>.gz     exact response bytes, gzip-wrapped, deduplicated across all runs
 data/runs/<runID>/index.jsonl   one line per endpoint observed
 data/runs/<runID>/meta.json     run header, including the raw registry pages
 ```
+
+The address is the SHA-256 of the raw bytes; only the on-disk form is compressed (3.6x, measured, since 2026-11-18). Blobs archived before that date are plain and read the same way; `cmd/blobpack` converts them in place, verifying each against its address before removing the plain copy.
 
 Politeness is structural rather than advisory: targets are grouped by host and each host is worked by exactly one goroutine with a delay between requests, so no amount of `--workers` can hammer a single operator.
 
