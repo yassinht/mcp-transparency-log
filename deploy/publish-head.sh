@@ -85,6 +85,10 @@ if [ -x "$APP_DIR/mcpobs" ]; then
     # servers.json below, because a missing day breaks the chain for everyone.
     # Past runs re-export byte-identically, so git stores only the new day.
     git add docs/data/census.json docs/data/changes docs/data/leaves 2>/dev/null || true
+    # Per-server pages, badges and the scan summary. The export leaves a file
+    # untouched when nothing about that server changed, so on a quiet night
+    # this stages a few hundred small files, not thirty thousand.
+    git add docs/data/s docs/data/badge docs/data/scan.json docs/data/peers 2>/dev/null || true
     last=$(git log -1 --format=%ct -- docs/data/servers.json 2>/dev/null || echo 0)
     if [ "$(( ($(date +%s) - last) / 86400 ))" -ge 7 ]; then
       git add docs/data/servers.json 2>/dev/null || true

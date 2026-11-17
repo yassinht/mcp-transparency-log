@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verify · MCP Transparency Log</title>
+<meta name="description" content="How to rebuild the Merkle tree from the published leaf hashes and check it against every signed tree head, in a clean clone, with one command.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a href="./"><strong>MCP Transparency Log</strong></a>
+  <a href="./#servers">Servers</a>
+  <a href="lock.html">Lock (CI)</a>
+  <a href="scan.html">Scan</a>
+  <a href="verify.html">Verify</a>
+  <a href="plans.html">Plans</a>
+  <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+</nav>
+
+<h1>Verify the log yourself</h1>
+<p class="sub">A transparency log that only its operator can check is a database with a nice name.
+This one is checked from a clean clone, with nothing but what is in the repository.</p>
+
+<h2>What is published</h2>
+<div class="cols">
+  <div class="card">
+    <h3>Signed tree heads</h3>
+    <p>One file per night in <a href="https://github.com/yassinht/mcp-transparency-log/tree/main/heads">heads/</a>:
+    the tree size, the root hash, a timestamp, and an Ed25519 signature over them. The public
+    key is <code>heads/key.pub</code>. Each head commits to every observation before it.</p>
+  </div>
+  <div class="card">
+    <h3>Leaf hashes</h3>
+    <p>Thirty-two bytes per observation in
+    <a href="https://github.com/yassinht/mcp-transparency-log/tree/main/docs/data/leaves">docs/data/leaves/</a>,
+    one file per night, in log order. Around 800 KB a day. These are what the tree is built from,
+    so with them you can rebuild it without the multi-gigabyte archive.</p>
+  </div>
+  <div class="card">
+    <h3>The tree algorithm</h3>
+    <p>RFC 6962, through the same <code>sumdb/tlog</code> package that implements the Go checksum
+    database. Nothing bespoke is between you and the hashes.</p>
+  </div>
+</div>
+
+<h2>Run it</h2>
+<pre>git clone https://github.com/yassinht/mcp-transparency-log
+cd mcp-transparency-log
+go run ./cmd/mcpobs verify --leaves docs/data/leaves --heads heads --pubkey heads/key.pub</pre>
+<p>For every published head, the command rebuilds the tree from the leaf hashes up to that
+head's size, recomputes the root, checks the signature with the public key, and prints
+<code>VERIFIED</code> or says exactly which head disagrees. It takes a minute on a laptop.</p>
+
+<h2>What that proves, and what it does not</h2>
+<div class="cols">
+  <div class="card">
+    <h3>It proves</h3>
+    <p>That the heads were signed by the holder of the key, that each one is consistent with the
+    published leaves, and that no observation was altered or removed after a head committing to it
+    was published. Hold yesterday's head and you can detect any rewrite of yesterday's history.</p>
+  </div>
+  <div class="card">
+    <h3>It does not prove</h3>
+    <p>That the leaves describe reality. A single operator could log an observation that never
+    happened and sign it consistently. Catching that needs a second party running its own crawler
+    against the same servers and signing what it sees: a witness. That is the unbuilt phase, and
+    it cannot be built alone.</p>
+  </div>
+</div>
+
+<h2>From a hash to a server</h2>
+<p>A leaf is the SHA-256 of one observation record: server, endpoint, outcome, the canonical
+surface hash, the tool names, and the content hashes of the raw bytes that were archived. The
+raw archive is gigabytes and lives on the crawler; it is not served publicly yet. The surface
+hash, however, is checkable against the server itself right now:</p>
+<pre>mcpobs lock https://tandem.ac/mcp      # probes the live server, prints its surface_sha256</pre>
+<p>If that hash equals the one on the server's <a href="server.html?e=https%3A%2F%2Ftandem.ac%2Fmcp">history page</a>,
+the server is serving tonight exactly what the log recorded. If it differs, the log will record
+the difference tonight, and so will anyone who runs the same command.</p>
+
+<h2>Key</h2>
+<pre id="key">loading heads/key.pub…</pre>
+<p class="note" id="head"></p>
+
+<footer>
+  <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/cmd/mcpobs/verify.go">verify.go</a>
+  · <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/internal/mlog/leaves.go">leaves.go</a>
+  · <a href="https://github.com/yassinht/mcp-transparency-log">Source</a>
+</footer>
+
+</div>
+<script src="site.js"></script>
+<script>
+const RAW = 'https://raw.githubusercontent.com/yassinht/mcp-transparency-log/main/';
+fetch(RAW + 'heads/key.pub').then(r => r.ok ? r.text() : Promise.reject())
+  .then(t => { document.getElementById('key').textContent = t.trim(); })
+  .catch(() => { document.getElementById('key').innerHTML = '<a href="https://github.com/yassinht/mcp-transparency-log/blob/main/heads/key.pub">heads/key.pub on GitHub</a>'; });
+fetch('https://api.github.com/repos/yassinht/mcp-transparency-log/contents/heads').then(r => r.ok ? r.json() : Promise.reject())
+  .then(list => {
+    const heads = list.filter(f => f.name.endsWith('.txt')).map(f => f.name).sort();
+    if (heads.length) document.getElementById('head').innerHTML =
+      `${n(heads.length)} signed heads published; latest <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/heads/${esc(heads.at(-1))}">${esc(heads.at(-1))}</a>.`;
+  }).catch(() => {});
+</script>
+</body>
+</html>

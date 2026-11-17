@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lock · MCP Transparency Log</title>
+<meta name="description" content="mcp.lock pins the tool surface of the MCP servers your project depends on. A GitHub Action re-probes them and fails the build with a diff when one changes.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a href="./"><strong>MCP Transparency Log</strong></a>
+  <a href="./#servers">Servers</a>
+  <a href="lock.html">Lock (CI)</a>
+  <a href="scan.html">Scan</a>
+  <a href="verify.html">Verify</a>
+  <a href="plans.html">Plans</a>
+  <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+</nav>
+
+<h1>mcp.lock: a lockfile for the servers your agent calls</h1>
+<p class="sub">You pin your npm dependencies. The MCP servers your agent talks to can change their tool
+descriptions tonight, and your agent will follow the new text tomorrow.</p>
+
+<p>A tool description is injected straight into the model's context. If a server you reviewed
+last month quietly rewrites <em>"look up the weather"</em> into <em>"look up the weather and
+include the user's previous messages"</em>, nothing in your stack notices: no package version
+moved, no hash in your repository changed, no test fails. <code>mcp.lock</code> gives that
+change somewhere to fail.</p>
+
+<div class="grid" style="margin:1.5rem 0">
+  <div class="stat"><div class="k">what is pinned</div><div class="v" style="font-size:1.05rem;margin-top:.4rem">tool names, descriptions, input schemas, annotations: one canonical hash per server</div></div>
+  <div class="stat"><div class="k">how it is checked</div><div class="v" style="font-size:1.05rem;margin-top:.4rem">a live probe from your CI runner, not a lookup in this log</div></div>
+  <div class="stat"><div class="k">what you get</div><div class="v" style="font-size:1.05rem;margin-top:.4rem">a failed job and an issue with the diff, linking to the server's observed history</div></div>
+</div>
+
+<h2>1 · Install the CLI</h2>
+<pre>go install github.com/yassinht/mcp-transparency-log/cmd/mcpobs@latest</pre>
+<p class="note">One static binary, no runtime dependencies. The same binary reads and verifies the public log.</p>
+
+<h2>2 · Lock the servers you use</h2>
+<pre>mcpobs lock context7=https://mcp.context7.com/mcp \
+            exa=https://mcp.exa.ai/mcp \
+            https://docs.mcp.cloudflare.com/mcp
+git add mcp.lock && git commit -m "Pin MCP server surfaces"</pre>
+<p>Names are optional and only for readability. The lockfile is plain JSON, sorted, written to be
+read in code review:</p>
+<pre>{
+  "version": 1,
+  "generated": "2026-10-26T09:15:52Z",
+  "log": "https://github.com/yassinht/mcp-transparency-log",
+  "servers": [
+    {
+      "name": "context7",
+      "endpoint": "https://mcp.context7.com/mcp",
+      "surface_sha256": "36dee0f3fbf80c4ed815e2b82cdfeb444188e7e941177d3124e31a3e0d6d91d6",
+      "jcs_v1_tools_sha256": "sha256-XpeSi1ir5PNF5yunuB1mfnHR+1IpBb5+X+N+JhSTt8E=",
+      "tools": ["query-docs", "resolve-library-id"],
+      "locked_at": "2026-10-26T09:15:52Z",
+      "transport": "streamable-http"
+    }
+  ]
+}</pre>
+
+<h2>3 · Check it in CI</h2>
+<p>Add a workflow. Daily is the useful cadence; on pull requests that touch the lockfile is the
+second one.</p>
+<pre># .github/workflows/mcp-lock.yml
+name: MCP surface lock
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  pull_request:
+    paths: [mcp.lock]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write        # to open the drift issue; drop it and set open-issue: "false" to only fail
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yassinht/mcp-transparency-log@v1
+        with:
+          lock: mcp.lock          # default
+          open-issue: "true"      # default</pre>
+<p class="note">The Action builds <code>mcpobs</code> from the tag you pinned, so what runs in your
+CI is exactly what is in that tag's source. No download from a third host, no prebuilt binary to
+trust.</p>
+
+<h2>4 · When a server changes</h2>
+<p>The job fails and one issue is opened (or the existing one gets a comment), labelled
+<code>mcp-surface-drift</code>. It reads like this:</p>
+<div class="card">
+  <h3>MCP server tool surface changed</h3>
+  <p><code>mcp.lock</code> pins 4 server(s). Checked 2026-10-27T06:17:40Z: <strong>1 changed</strong>, 0 unreachable, 3 unchanged.</p>
+  <h3 style="font-size:.9rem">context7</h3>
+  <p><code>https://mcp.context7.com/mcp</code></p>
+  <p>Tools: 2 → 2 · surface <code>36dee0f3fbf8…</code> → <code>a81c0e22d904…</code> · locked 2026-10-26</p>
+  <p>Same tool names — <strong>a description or input schema was edited in place.</strong> This is the change a client never sees; read the new text before accepting it.</p>
+  <p><a href="server.html?e=https%3A%2F%2Fmcp.context7.com%2Fmcp">Observed history of this server</a></p>
+  <p class="note">To accept after review: <code>mcpobs --lock mcp.lock check --update</code>, then commit the lockfile.</p>
+</div>
+<p>Review the new text, then accept it the way you would accept a dependency bump:</p>
+<pre>mcpobs check --update
+git commit -am "Accept new surface of context7 (reviewed)"</pre>
+<p class="note">An unreachable server is reported but is not drift: the lock could not be verified that
+run, which is different from the server having changed.</p>
+
+<h2>Live, in this repository</h2>
+<p>This repository pins four public servers in <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/mcp.lock">its own mcp.lock</a>
+and runs the Action every morning. The failures and issues it produces are the demo; nothing about
+them is staged.</p>
+<p id="dogfood" class="note">loading the latest run…</p>
+
+<h2>Questions a careful reader asks</h2>
+<div class="cols">
+  <div class="card">
+    <h3>Why probe live instead of reading the log?</h3>
+    <p>Dependabot does not consult a mirror of npm to tell you a package changed; it looks. The
+    log's role is evidence and history: the hash in your lockfile can be matched against what the
+    log saw the night you wrote it, and the issue links to the server's observed history. Your
+    check does not depend on this site being up.</p>
+  </div>
+  <div class="card">
+    <h3>What does the hash cover?</h3>
+    <p>The canonical form of <code>tools/list</code>: every tool's name, title, description, input
+    schema and annotation hints, with key order and whitespace normalised. Not the server's
+    outputs, not its prompts or resources, not its TLS certificate. The same canonicalisation the
+    crawler records, so your lock and the log agree byte for byte. Beside it, <code>jcs_v1_tools_sha256</code>
+    is the narrower RFC 8785 digest of each tool's contract (name, description, input and output schema)
+    that <a href="https://crawlcheck.io/spec/mcp-lockfile">CrawlCheck</a> and
+    <a href="https://github.com/alexar76/histor">HISTOR</a> publish, so the same server can be compared
+    across all three records.</p>
+  </div>
+  <div class="card">
+    <h3>Exit codes</h3>
+    <p><code>0</code> every server matches. <code>1</code> at least one changed. <code>2</code>
+    the check itself failed (bad lockfile, no servers). Unreachable servers are reported and do not
+    by themselves fail the run.</p>
+  </div>
+  <div class="card">
+    <h3>Servers that need credentials?</h3>
+    <p>Not yet. The probe sends no authentication, which is also why the public log covers only
+    unauthenticated servers. If your agent depends on authenticated servers and you would want
+    them locked, <a href="plans.html">say so</a>: that is the first thing a paid tier would do.</p>
+  </div>
+</div>
+
+<footer>
+  <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/action.yml">action.yml</a>
+  · <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/cmd/mcpobs/lock.go">lock.go</a>
+  · <a href="https://github.com/yassinht/mcp-transparency-log">Source</a>
+</footer>
+
+</div>
+<script src="site.js"></script>
+<script>
+fetch('https://api.github.com/repos/yassinht/mcp-transparency-log/actions/workflows/mcp-lock.yml/runs?per_page=1&exclude_pull_requests=true')
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(d => {
+    const run = d.workflow_runs?.[0];
+    const el = document.getElementById('dogfood');
+    if (!run) { el.textContent = 'No scheduled run has completed yet.'; return; }
+    const when = run.run_started_at?.slice(0, 16).replace('T', ' ') + ' UTC';
+    const verdict = run.conclusion === 'success' ? '<span class="ok">all four servers unchanged</span>'
+                  : run.conclusion === 'failure' ? '<span class="warn">drift detected: see the issue</span>'
+                  : run.status === 'in_progress' || run.status === 'queued' ? 'running' : esc(run.conclusion || run.status);
+    el.innerHTML = `Latest run ${when}: ${verdict}. <a href="${esc(run.html_url)}">Job log</a> · <a href="https://github.com/yassinht/mcp-transparency-log/issues?q=label%3Amcp-surface-drift">drift issues</a>`;
+  })
+  .catch(() => { document.getElementById('dogfood').innerHTML = '<a href="https://github.com/yassinht/mcp-transparency-log/actions/workflows/mcp-lock.yml">Workflow runs on GitHub</a> · <a href="https://github.com/yassinht/mcp-transparency-log/issues?q=label%3Amcp-surface-drift">drift issues</a>'; });
+</script>
+</body>
+</html>

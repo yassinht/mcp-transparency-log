@@ -1,0 +1,27 @@
+# This repository eats its own cooking: mcp.lock at the root pins four public
+# MCP servers, and this workflow re-probes them every morning with the Action
+# defined in action.yml. When one of them changes its tool surface, the run
+# fails and an issue labelled `mcp-surface-drift` appears with the diff. Those
+# issues are the live demo; nothing about them is staged.
+name: MCP surface lock
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  pull_request:
+    paths: [mcp.lock, action.yml, "cmd/mcpobs/**", "internal/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./
+        with:
+          lock: mcp.lock

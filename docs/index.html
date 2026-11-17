@@ -4,77 +4,93 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MCP Transparency Log</title>
-<style>
-:root{
-  --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a64; --line:#e3e1db;
-  --card:#fff; --accent:#1d6e56; --warn:#8a5a0b; --bad:#9a3b32;
-  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-}
-@media(prefers-color-scheme:dark){
-  :root{--bg:#141413;--fg:#e8e6e1;--muted:#96948d;--line:#2c2b28;
-        --card:#1c1b19;--accent:#5dcaa5;--warn:#e0a94a;--bad:#e07b70;}
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);
-  font:15px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-.wrap{max-width:960px;margin:0 auto;padding:2.5rem 1.25rem 5rem}
-h1{font-size:1.5rem;font-weight:600;margin:0 0 .35rem;letter-spacing:-.01em}
-h2{font-size:1.05rem;font-weight:600;margin:2.75rem 0 .9rem}
-p{margin:0 0 1rem;max-width:62ch}
-a{color:inherit;text-decoration:underline;text-underline-offset:2px}
-.sub{color:var(--muted);margin-bottom:1.75rem}
-code,.mono{font-family:var(--mono);font-size:.86em}
-pre{background:var(--card);border:1px solid var(--line);border-radius:8px;
-  padding:.85rem 1rem;overflow-x:auto;margin:0 0 1rem;font-size:.84rem}
-.grid{display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem}
-.stat .k{font-size:.76rem;color:var(--muted);letter-spacing:.02em}
-.stat .v{font-size:1.5rem;font-weight:600;margin-top:.15rem;font-variant-numeric:tabular-nums}
-.stat .n{font-size:.76rem;color:var(--muted);margin-top:.1rem}
-table{width:100%;border-collapse:collapse;font-size:.88rem}
-th{text-align:left;font-weight:500;color:var(--muted);font-size:.78rem;
-  padding:.4rem .6rem;border-bottom:1px solid var(--line)}
-td{padding:.45rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
-td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
-.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}
-input[type=search]{width:100%;padding:.6rem .8rem;font:inherit;border-radius:8px;
-  border:1px solid var(--line);background:var(--card);color:inherit}
-.note{color:var(--muted);font-size:.84rem}
-.bars{display:flex;align-items:flex-end;gap:3px;height:120px;margin:.5rem 0 .35rem}
-.bar{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-height:2px;opacity:.85}
-.bar.partial{background:var(--warn)}
-.axis{display:flex;justify-content:space-between;color:var(--muted);font-size:.74rem}
-.tag{font-size:.74rem;padding:.1rem .45rem;border-radius:5px;border:1px solid var(--line);color:var(--muted)}
-.ok{color:var(--accent)} .bad{color:var(--bad)} .warn{color:var(--warn)}
-footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--line);
-  color:var(--muted);font-size:.84rem}
-</style>
+<meta name="description" content="An independent, signed, nightly record of what every public MCP server actually serves, with a lockfile and GitHub Action that fail your build when one of them changes.">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 <div class="wrap">
 
-<h1>MCP Transparency Log</h1>
-<p class="sub">An independent, continuously-operated record of what public MCP servers actually served.</p>
+<nav>
+  <a href="./"><strong>MCP Transparency Log</strong></a>
+  <a href="#servers">Servers</a>
+  <a href="lock.html">Lock (CI)</a>
+  <a href="scan.html">Scan</a>
+  <a href="verify.html">Verify</a>
+  <a href="plans.html">Plans</a>
+  <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+</nav>
 
-<p>Every night a crawler visits every server in the official MCP registry that declares a network
-endpoint, and records the exact tool surface it served. Observations go into an append-only
-Merkle log with a signed tree head published daily, so these figures can be recomputed rather
-than taken on trust.</p>
+<div class="hero">
+<h1>Know when an MCP server changes underneath your agent.</h1>
+<p>Every night since 27 August 2026 a crawler has visited every server in the official MCP
+registry and recorded the exact tool surface it served: names, descriptions, input schemas.
+The observations go into an append-only Merkle log with a signed tree head published daily.
+Nothing on this site asks to be trusted; every number can be recomputed.</p>
+<p>
+  <a class="cta" href="#servers">Look up a server</a>
+  <a class="cta ghost" href="lock.html">Lock your servers in CI</a>
+  <a class="cta ghost" href="verify.html">Verify the log</a>
+</p>
+</div>
 
-<p class="note">This page is a <em>derived view</em>. The record is the log — verify it yourself:</p>
-<pre>go install github.com/yassinht/mcp-transparency-log/cmd/mcpobs@latest
-mcpobs verify</pre>
-
-<h2>Latest census</h2>
+<h2>Tonight's census</h2>
 <div class="grid" id="stats"><div class="stat"><div class="k">loading…</div></div></div>
 <p class="note" id="stats-note"></p>
 
-<h2>Endpoints observed, by day</h2>
+<h2>Three tools, one record</h2>
+<div class="cols">
+  <div class="card">
+    <h3>A page for every server</h3>
+    <p>Each endpoint has a history: when it appeared, every night its tool surface changed and
+    which tools moved, when it went dark, what the rule scan found in its text. Two badges say
+    at a glance whether it still serves what it served.</p>
+    <p class="badge-line">
+      <img alt="mcp surface badge" src="https://img.shields.io/badge/mcp%20surface-unchanged%20since%202026--08--27-brightgreen">
+      <img alt="mcp scan badge" src="https://img.shields.io/badge/mcp%20scan-clean-brightgreen">
+    </p>
+    <p class="note"><a href="#servers">Search below</a>, or open <code>server.html?e=&lt;endpoint URL&gt;</code>.</p>
+  </div>
+  <div class="card">
+    <h3>Lock, like package-lock.json</h3>
+    <p><code>mcp.lock</code> pins the tool surface of each MCP server your project uses. A GitHub
+    Action re-probes them, fails the build when one differs, and opens an issue with the diff:
+    tools added, removed, or edited in place.</p>
+<pre>mcpobs lock context7=https://mcp.context7.com/mcp
+git add mcp.lock
+
+# .github/workflows/mcp-lock.yml
+- uses: yassinht/mcp-transparency-log@v1</pre>
+    <p class="note">Each entry also carries the jcs-v1 tool-set digest that CrawlCheck and HISTOR compute, so a lock
+    written here can be compared with their records. <a href="lock.html">Setup in four steps</a>. This repository runs it on itself.</p>
+  </div>
+  <div class="card">
+    <h3>Scan, without a model</h3>
+    <p>Thirteen rules a human can re-run look for text aimed at the model rather than the user:
+    "ignore previous instructions", "forward the conversation", hidden bidi characters. Every
+    match is quoted; none is called malicious.</p>
+    <p id="scan-teaser" class="note">loading…</p>
+    <p class="note"><a href="scan.html">Rules, numbers, and one example each</a>.</p>
+  </div>
+</div>
+
+<h2>Changed in the last seven nights</h2>
+<p class="note">Servers whose tool surface differs from the night before. Same tool names with a
+different hash means a description or schema was edited in place, which is the change a client
+never sees.</p>
+<div id="recent"><p class="note">loading…</p></div>
+
+<h2 id="servers">Servers</h2>
+<p class="note">Type at least three characters to search by name, host or endpoint. The index is
+loaded on first search.</p>
+<input type="search" id="q" placeholder="context7, cloudflare, mcp.example.com…" autocomplete="off">
+<div id="results" style="margin-top:.9rem"></div>
+
+<h2>Endpoints observed, by night</h2>
 <div class="bars" id="bars"></div>
 <div class="axis"><span id="ax-from"></span><span id="ax-to"></span></div>
 <p class="note">Amber marks a census that did not reach every endpoint. Its <code>meta.json</code> records it as incomplete.</p>
 
-<h2>Daily outcomes</h2>
+<h2>Nightly outcomes</h2>
 <div class="scroll">
   <table id="census">
     <thead><tr>
@@ -86,104 +102,157 @@ mcpobs verify</pre>
   </table>
 </div>
 
-<h2>Servers</h2>
-<p class="note">Type at least three characters to search by name or host. The index is loaded on first search.</p>
-<input type="search" id="q" placeholder="weather, pipeworx.io, github…" autocomplete="off">
-<div id="results" style="margin-top:.9rem"></div>
+<h2>What this is, and is not</h2>
+<div class="cols">
+  <div class="card">
+    <h3>It is</h3>
+    <p>A record of what publicly listed, unauthenticated MCP servers served on each night, kept in
+    a form that lets a stranger prove it was not rewritten. The signing key proves one operator
+    stood behind each head; the published leaf hashes let anyone rebuild the tree and compare.</p>
+  </div>
+  <div class="card">
+    <h3>It is not</h3>
+    <p>Not a judgement of any server. Not coverage of servers that require credentials, of local
+    stdio servers, or of anything outside the official registry. Not yet witnessed by a second
+    independent crawler: a log with one operator can prove consistency, not truth.</p>
+  </div>
+  <div class="card">
+    <h3>It is not alone</h3>
+    <p>Other people read the same servers: <a href="https://github.com/alexar76/histor">HISTOR</a>,
+    <a href="https://github.com/mikerawsonnz/mcp-drift-observatory">MCP Drift Observatory</a>,
+    <a href="https://mcpcost.ulehla.dev">mcpcost</a>, <a href="https://crawlcheck.io/spec/mcp-lockfile">CrawlCheck</a>.
+    Observers that disagree expose a lying server or a bug in one of them, so every night this log publishes
+    <a href="data/peers/tool-digests-latest.jsonl">its observations as a cross-check list</a> in the digest
+    format they share. <a href="https://github.com/yassinht/mcp-transparency-log#related-work">Who started when</a>.</p>
+  </div>
+</div>
 
 <footer>
   Signed tree heads: <a href="https://github.com/yassinht/mcp-transparency-log/tree/main/heads">heads/</a>
-  · Source and raw analysis: <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
-  · Covers <strong>publicly observable</strong> MCP servers listed in the official registry —
-  not the MCP ecosystem as a whole.
+  · Leaf hashes: <a href="https://github.com/yassinht/mcp-transparency-log/tree/main/docs/data/leaves">docs/data/leaves/</a>
+  · Source: <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+  · Covers <strong>publicly observable</strong> MCP servers listed in the official registry, not the MCP ecosystem as a whole.
 </footer>
 
 </div>
+<script src="site.js"></script>
 <script>
-const n = x => (x ?? 0).toLocaleString('en-US');
-const pct = (a,b) => b ? (100*a/b).toFixed(1)+'%' : '—';
-
 let census = [];
 
-fetch('data/census.json').then(r=>r.json()).then(d=>{
+getJSON('data/census.json').then(async d => {
   census = d;
-  if(!census.length) return;
-  const last = census[census.length-1], o = last.outcomes||{};
-  const ok = o.ok||0;
+  if (!census.length) return;
+  const last = census[census.length - 1], o = last.outcomes || {};
+  const ok = o.ok || 0;
+
+  // Changes over the last seven nights, from the per-day change files.
+  let changed = 0, recent = [];
+  for (const date of lastDates(census, 7)) {
+    try {
+      const day = await getJSON(`data/changes/${date}.json`);
+      for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) {
+        changed++; recent.push({date, ...e});
+      }
+    } catch {}
+  }
 
   document.getElementById('stats').innerHTML = [
     ['endpoints probed', n(last.endpoints), last.date],
-    ['answered unauthenticated', n(ok), pct(ok,last.endpoints)],
+    ['answered unauthenticated', n(ok), pct(ok, last.endpoints)],
     ['tools recorded', n(last.tools), ''],
-    ['days observed', n(census.length), census[0].date+' →']
-  ].map(([k,v,s])=>`<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${s}</div></div>`).join('');
+    ['nights observed', n(census.length), census[0].date + ' →'],
+    ['surfaces changed, 7 nights', n(changed), changed ? 'see below' : '']
+  ].map(([k, v, s]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${s}</div></div>`).join('');
 
   document.getElementById('stats-note').textContent =
     last.complete ? 'Latest census reached every endpoint.'
                   : 'Latest census did not reach every endpoint; it is recorded as incomplete.';
 
+  // Recent changes, newest first, hosts with hundreds of template servers collapsed.
+  const byHost = {};
+  for (const e of recent) (byHost[e.host] ??= []).push(e);
+  const rows = [];
+  for (const [host, list] of Object.entries(byHost).sort((a, b) => b[1].length - a[1].length)) {
+    if (list.length >= 25) {
+      rows.push(`<tr><td colspan="4" class="note">${n(list.length)} servers on <span class="mono">${esc(host)}</span> changed together: one publisher's template, not ${n(list.length)} decisions.</td></tr>`);
+      continue;
+    }
+    for (const e of list) rows.push(`<tr>
+      <td class="mono">${e.date}</td>
+      <td><a class="plain mono" href="${pageHref(e.slug)}">${esc(e.server)}</a><br><span class="note mono">${esc(host)}</span></td>
+      <td class="num">${n(e.tools)}</td>
+      <td>${e.kind === 'recovered' ? '<span class="warn">back, different</span>'
+          : (e.added || e.removed) ? `${e.added ? '<span class="ok">+' + e.added + '</span> ' : ''}${e.removed ? '<span class="bad">−' + e.removed + '</span>' : ''}`
+          : '<span class="warn">edited in place</span>'}</td></tr>`);
+  }
+  document.getElementById('recent').innerHTML = rows.length
+    ? `<div class="scroll"><table><thead><tr><th>night</th><th>server</th><th class="num">tools</th><th>what moved</th></tr></thead><tbody>${rows.slice(0, 80).join('')}</tbody></table></div>`
+      + (rows.length > 80 ? `<p class="note">${n(rows.length)} rows, showing 80. Search a server below for its full history.</p>` : '')
+    : '<p class="note">No surface changes recorded in the last seven nights.</p>';
+
   // bars
-  const max = Math.max(...census.map(c=>c.endpoints));
-  document.getElementById('bars').innerHTML = census.map(c=>
-    `<div class="bar${c.complete?'':' partial'}" style="height:${Math.round(100*c.endpoints/max)}%" title="${c.date}: ${n(c.endpoints)} endpoints"></div>`
+  const max = Math.max(...census.map(c => c.endpoints));
+  document.getElementById('bars').innerHTML = census.map(c =>
+    `<div class="bar${c.complete ? '' : ' partial'}" style="height:${Math.round(100 * c.endpoints / max)}%" title="${c.date}: ${n(c.endpoints)} endpoints"></div>`
   ).join('');
   document.getElementById('ax-from').textContent = census[0].date;
-  document.getElementById('ax-to').textContent = census[census.length-1].date;
+  document.getElementById('ax-to').textContent = census[census.length - 1].date;
 
   // table, newest first
-  document.querySelector('#census tbody').innerHTML = census.slice().reverse().map(c=>{
-    const o=c.outcomes||{};
+  document.querySelector('#census tbody').innerHTML = census.slice().reverse().map(c => {
+    const o = c.outcomes || {};
     return `<tr><td class="mono">${c.date}</td>
       <td class="num">${n(c.endpoints)}</td>
-      <td class="num ok">${n(o.ok)} <span class="note">${pct(o.ok||0,c.endpoints)}</span></td>
+      <td class="num ok">${n(o.ok)} <span class="note">${pct(o.ok || 0, c.endpoints)}</span></td>
       <td class="num">${n(o.auth_required)}</td>
       <td class="num warn">${n(o.protocol_error)}</td>
-      <td class="num">${n((o.unreachable||0)+(o.timeout||0))}</td>
+      <td class="num">${n((o.unreachable || 0) + (o.timeout || 0))}</td>
       <td class="num">${n(c.tools)}</td>
-      <td>${c.complete?'':'<span class="tag">incomplete</span>'}</td></tr>`;
+      <td>${c.complete ? '' : '<span class="tag">incomplete</span>'}</td></tr>`;
   }).join('');
-}).catch(()=>{
+}).catch(() => {
   document.getElementById('stats').innerHTML =
     '<div class="stat"><div class="k">no data</div><div class="n">run <code>mcpobs export</code> first</div></div>';
 });
 
+getJSON('data/scan.json').then(s => {
+  const t = s.template_replication;
+  document.getElementById('scan-teaser').innerHTML =
+    `Latest run: <strong>${pct(s.review_servers, s.servers)}</strong> of ${n(s.servers)} enumerable servers carry a flag worth a reviewer's time; `
+    + `<strong>${t.rest_review_pct.toFixed(1)}%</strong> once two publishers' templates are set aside.`;
+}).catch(() => { document.getElementById('scan-teaser').textContent = 'Scan summary not published yet.'; });
+
 let servers = null, timer = null;
 const q = document.getElementById('q'), results = document.getElementById('results');
+q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(search, 180); });
 
-q.addEventListener('input', () => {
-  clearTimeout(timer);
-  timer = setTimeout(search, 180);
-});
-
-async function search(){
+async function search() {
   const term = q.value.trim().toLowerCase();
-  if(term.length < 3){ results.innerHTML=''; return; }
-  if(!servers){
+  if (term.length < 3) { results.innerHTML = ''; return; }
+  if (!servers) {
     results.innerHTML = '<p class="note">loading the index…</p>';
-    try { servers = await (await fetch('data/servers.json')).json(); }
+    try { servers = await getJSON('data/servers.json'); }
     catch { results.innerHTML = '<p class="note">index unavailable</p>'; return; }
   }
+  const latest = census.length ? census[census.length - 1].date : null;
   const hits = servers.filter(s =>
-    s.name.toLowerCase().includes(term) || (s.host||'').toLowerCase().includes(term)
+    s.name.toLowerCase().includes(term) || (s.host || '').toLowerCase().includes(term) || s.endpoint.toLowerCase().includes(term)
   );
-  if(!hits.length){ results.innerHTML = '<p class="note">nothing matches.</p>'; return; }
+  if (!hits.length) { results.innerHTML = '<p class="note">nothing matches.</p>'; return; }
+  hits.sort((a, b) => (b.outcome === 'ok') - (a.outcome === 'ok') || b.days - a.days);
 
-  results.innerHTML = `<p class="note">${n(hits.length)} match${hits.length>1?'es':''}${hits.length>200?', showing 200':''}</p>
+  results.innerHTML = `<p class="note">${n(hits.length)} match${hits.length > 1 ? 'es' : ''}${hits.length > 200 ? ', showing 200' : ''}</p>
   <div class="scroll"><table>
-  <thead><tr><th>server</th><th>host</th><th class="num">tools</th><th class="num">days</th>
-  <th class="num">changes</th><th>first seen</th><th></th></tr></thead><tbody>` +
-  hits.slice(0,200).map(s=>`<tr>
-    <td class="mono">${esc(s.name)}</td>
-    <td class="mono note">${esc(s.host||'')}</td>
-    <td class="num">${s.outcome==='ok'?n(s.tools):'—'}</td>
-    <td class="num">${n(s.days)}</td>
-    <td class="num">${s.changes?`<strong>${n(s.changes)}</strong>`:'0'}</td>
-    <td class="mono note">${s.first_seen}</td>
-    <td>${s.outcome==='ok'?'<span class="ok">ok</span>':`<span class="bad">${esc(s.outcome)}</span>`}</td>
+  <thead><tr><th>server</th><th class="num">tools</th><th>surface</th><th class="num">changes</th><th>scan</th><th>status</th></tr></thead><tbody>` +
+  hits.slice(0, 200).map(s => `<tr>
+    <td><a class="plain mono" href="${pageHref(s.slug)}">${esc(s.name)}</a><br><span class="note mono">${esc(s.host || '')}</span></td>
+    <td class="num">${s.outcome === 'ok' ? n(s.tools) : '—'}</td>
+    <td class="note">${s.outcome === 'ok' && s.stable_since ? `unchanged since ${s.stable_since}${latest ? ' <span class="mono">(' + nights(daysBetween(s.stable_since, latest)) + ')</span>' : ''}` : ''}</td>
+    <td class="num">${s.changes ? `<strong>${n(s.changes)}</strong>` : '0'}</td>
+    <td>${s.outcome !== 'ok' ? '' : s.review ? `<span class="tag review">${s.review} to review</span>` : s.flags ? '<span class="tag info">informational</span>' : '<span class="ok">clean</span>'}</td>
+    <td>${!s.listed ? '<span class="note">delisted</span>' : s.outcome === 'ok' ? '<span class="ok">ok</span>' : `<span class="bad">${esc(s.outcome)}</span>`}</td>
   </tr>`).join('') + '</tbody></table></div>';
 }
-
-function esc(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 </script>
 </body>
 </html>

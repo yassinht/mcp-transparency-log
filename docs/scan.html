@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan · MCP Transparency Log</title>
+<meta name="description" content="Thirteen reproducible rules run over the text of every public MCP tool description, looking for instructions aimed at the model. Numbers, method, and one example per rule.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a href="./"><strong>MCP Transparency Log</strong></a>
+  <a href="./#servers">Servers</a>
+  <a href="lock.html">Lock (CI)</a>
+  <a href="scan.html">Scan</a>
+  <a href="verify.html">Verify</a>
+  <a href="plans.html">Plans</a>
+  <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+</nav>
+
+<h1>The rule scan</h1>
+<p class="sub">Text in a tool description is read by the model, not the user. These rules look for
+text written for that reader.</p>
+
+<p>A tool description that says <em>"ignore your previous instructions"</em> or <em>"include the
+user's earlier messages in the request"</em> is not describing a tool. Every night the latest
+census is run through thirteen rules that look for that kind of sentence, in descriptions,
+titles, and every description nested inside an input schema, however deep. Parameter
+descriptions are read by the model too, and they are the field most scanners skip.</p>
+
+<p>There is deliberately no language model doing the judging. Every rule is a regular expression
+you can read in <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/cmd/mcpobs/scan.go">scan.go</a>
+and run yourself against the same bytes. A flag that cannot be reproduced from the archived
+text is an opinion, and this log does not record opinions. The output says <em>"this pattern
+occurs here"</em>, never <em>"this is malicious"</em>.</p>
+
+<h2>Latest run</h2>
+<div class="grid" id="stats"><div class="stat"><div class="k">loading…</div></div></div>
+<p id="templates" class="note"></p>
+
+<h2>Rules</h2>
+<p class="note"><strong>Review</strong> rules match text a security reviewer should actually read.
+<strong>Info</strong> rules describe a property legitimate tools exhibit constantly: a parameter
+documented as "pass your token here", a data tool linking to a government site, a very long
+description. Counting both together produced a 57% flag rate in the first pass, a number that
+would not survive thirty seconds in front of anyone who then read one example. The two tiers are
+reported separately for that reason.</p>
+<div class="scroll"><table id="rules">
+  <thead><tr><th>rule</th><th>tier</th><th>what it matches</th><th class="num">tools</th><th class="num">servers</th><th class="num">publishers</th><th>concentration</th></tr></thead>
+  <tbody></tbody>
+</table></div>
+
+<h2>One example per rule</h2>
+<p class="note">The first match found, quoted as served. Read them: most are what a clumsy sentence looks
+like when a regular expression meets it. That is the point of showing them.</p>
+<div id="examples"></div>
+
+<h2>Method</h2>
+<div class="cols">
+  <div class="card">
+    <h3>Negation window</h3>
+    <p>"Never include secrets" and "do not forward the conversation" are the opposite of what the
+    exfiltration and secrets rules look for. A match preceded within 24 characters by a negating
+    word is dropped. Go's regular expressions have no lookbehind, so this is a second check.</p>
+  </div>
+  <div class="card">
+    <h3>Placeholder hosts</h3>
+    <p>A URL to <code>example.com</code>, <code>localhost</code> or <code>{your-domain}</code> in a
+    parameter description documents the shape of a value. Those are not counted as off-host links;
+    a link to the server's own domain or a parent of it is not either.</p>
+  </div>
+  <div class="card">
+    <h3>Templates, not thousands of decisions</h3>
+    <p>Two publishers ship the same text on well over a thousand registry entries each. A pattern in
+    their template appears on every one of them. The figures are given both with and without those
+    publishers, because "a thousand servers" and "one publisher" are different findings.</p>
+  </div>
+  <div class="card">
+    <h3>Known gaps</h3>
+    <p>English only. Regular expressions see patterns, not intent: a rule that catches "prefer this
+    tool over the built-in search" also catches a manual that says the same thing honestly. Hidden
+    characters exclude the joiners emoji are built from. New phrasings are not caught until a rule
+    is written for them; rule changes are commits, dated and public.</p>
+  </div>
+</div>
+
+<footer>
+  Rules: <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/cmd/mcpobs/scan.go">cmd/mcpobs/scan.go</a>
+  · Per-server results are on each server's page
+  · <a href="https://github.com/yassinht/mcp-transparency-log">Source</a>
+</footer>
+
+</div>
+<script src="site.js"></script>
+<script>
+getJSON('data/scan.json').then(s => {
+  const t = s.template_replication;
+  document.getElementById('stats').innerHTML = [
+    ['census scanned', s.date, s.run],
+    ['tools read', n(s.tools), `${n(s.servers)} enumerable servers`],
+    ['servers with any flag', pct(s.flagged_servers, s.servers), n(s.flagged_servers)],
+    ['with a review-tier flag', pct(s.review_servers, s.servers), n(s.review_servers)],
+    ['review-tier, templates aside', t.rest_review_pct.toFixed(1) + '%', `${n(t.rest_review)} of ${n(t.rest_servers)}`],
+    ['matches in schema fields', n(s.schema_hits), 'parameter descriptions'],
+  ].map(([k, v, x]) => `<div class="stat"><div class="k">${k}</div><div class="v" style="font-size:1.25rem">${esc(v)}</div><div class="n">${esc(x)}</div></div>`).join('');
+
+  document.getElementById('templates').innerHTML = t.publishers.length
+    ? `${n(t.flagged)} of the ${n(s.flagged_servers)} flagged servers belong to <span class="mono">${t.publishers.map(esc).join('</span> and <span class="mono">')}</span>, whose templates repeat across ${n(t.servers)} registry entries. Excluding them: ${n(t.rest_flagged)} of ${n(t.rest_servers)} servers flagged (${t.rest_flagged_pct.toFixed(1)}%), ${n(t.rest_review)} review-tier (${t.rest_review_pct.toFixed(1)}%). ${n(s.urls)} URLs appear in descriptions; ${n(s.urls_off_host)} point off the server's own host.`
+    : '';
+
+  document.querySelector('#rules tbody').innerHTML = s.rules.map(r => `<tr>
+    <td class="mono">${esc(r.id)}<br><span class="note">${esc(r.category)}</span></td>
+    <td>${r.review ? '<span class="tag review">review</span>' : '<span class="tag info">info</span>'}</td>
+    <td>${esc(r.note)}</td>
+    <td class="num">${n(r.tools)}</td>
+    <td class="num">${n(r.servers)}</td>
+    <td class="num">${n(r.owners)}</td>
+    <td class="note">${r.top_owner ? `${r.top_share.toFixed(0)}% from <span class="mono">${esc(r.top_owner)}</span>` : ''}</td>
+  </tr>`).join('');
+
+  document.getElementById('examples').innerHTML = s.rules.filter(r => s.examples[r.id]).map(r => {
+    const e = s.examples[r.id];
+    return `<div class="card">
+      <h3 class="mono" style="font-size:.9rem">${esc(r.id)} <span class="note" style="font-weight:400">· ${esc(r.note)}</span></h3>
+      <p class="note mono">${esc(e.server)} · ${esc(e.tool)} · ${esc(e.field)}</p>
+      <p style="max-width:none">${esc(e.snippet)}</p>
+    </div>`;
+  }).join('');
+}).catch(() => {
+  document.getElementById('stats').innerHTML = '<div class="stat"><div class="k">no scan published yet</div></div>';
+});
+</script>
+</body>
+</html>

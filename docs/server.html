@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Server · MCP Transparency Log</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a href="./"><strong>MCP Transparency Log</strong></a>
+  <a href="./#servers">Servers</a>
+  <a href="lock.html">Lock (CI)</a>
+  <a href="scan.html">Scan</a>
+  <a href="verify.html">Verify</a>
+  <a href="plans.html">Plans</a>
+  <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+</nav>
+
+<div id="page"><p class="note">loading…</p></div>
+
+<footer>
+  This page is a derived view. The observation records behind every event are leaves of a
+  signed Merkle log; <a href="verify.html">rebuild it yourself</a>.
+  · <a href="https://github.com/yassinht/mcp-transparency-log">Source</a>
+</footer>
+
+</div>
+<script src="site.js"></script>
+<script>
+const KIND = {
+  first_seen:      ['first', 'first observed'],
+  enumerable:      ['first', 'tool list readable for the first time'],
+  surface_changed: ['changed', 'tool surface changed'],
+  unreachable:     ['unreach', 'stopped answering'],
+  recovered:       ['recovered', 'answering again'],
+  delisted:        ['unreach', 'no longer in the registry'],
+  relisted:        ['recovered', 'back in the registry'],
+};
+
+(async () => {
+  const params = new URLSearchParams(location.search);
+  let slug = params.get('s');
+  const endpoint = params.get('e');
+  const el = document.getElementById('page');
+  if (!slug && endpoint) slug = await slugOf(endpoint);
+  if (!slug) { el.innerHTML = '<h1>Which server?</h1><p>Open this page as <code>server.html?e=&lt;endpoint URL&gt;</code>, or <a href="./#servers">search</a>.</p>'; return; }
+
+  let p, census = [];
+  try { [p, census] = await Promise.all([getJSON(shard('s', slug)), getJSON('data/census.json').catch(() => [])]); }
+  catch {
+    el.innerHTML = `<h1>Not observed</h1>
+      <p>No observations for ${endpoint ? `<code>${esc(endpoint)}</code>` : 'this endpoint'}.</p>
+      <p class="note">The crawler covers servers listed in the official MCP registry that declare a network
+      endpoint. If this one was added recently, it appears after the next nightly census. Endpoints are
+      matched byte for byte: a trailing slash or a different path is a different server.</p>`;
+    document.title = 'Not observed · MCP Transparency Log';
+    return;
+  }
+
+  const latest = census.length ? census[census.length - 1].date : null;
+  const name = p.names[0];
+  document.title = `${name} · MCP Transparency Log`;
+  const stableFor = p.stable_since && latest ? nights(daysBetween(p.stable_since, latest)) : null;
+  const observedFor = latest ? nights(daysBetween(p.first_seen, latest) + 1) : null;
+
+  let status;
+  if (!p.listed) status = `<span class="bad">delisted</span> · last in the registry ${p.events.at(-1).date}`;
+  else if (p.outcome === 'ok') status = `<span class="ok">ok</span> · ${n(p.tools)} tool${p.tools === 1 ? '' : 's'} · unchanged since <strong>${p.stable_since}</strong>${stableFor ? ` (${stableFor})` : ''}`;
+  else if (p.outcome === 'auth_required') status = `<span class="warn">requires credentials</span> · tool list not observable without a login`;
+  else status = `<span class="bad">${esc(p.outcome)}</span> · not answering as an MCP server`;
+
+  const review = p.flags.filter(f => f.review);
+  const lockLine = `mcpobs lock ${name.split('/').pop().replace(/[^a-z0-9-]/gi, '-').toLowerCase()}=${p.endpoint}`;
+
+  el.innerHTML = `
+  <h1 class="mono" style="font-size:1.3rem">${esc(name)}</h1>
+  ${p.names.length > 1 ? `<p class="note">also listed as ${p.names.slice(1).map(x => `<span class="mono">${esc(x)}</span>`).join(', ')}</p>` : ''}
+  <p class="sub"><a class="mono" href="${esc(p.endpoint)}" rel="nofollow noopener">${esc(p.endpoint)}</a></p>
+
+  <div class="grid">
+    <div class="stat"><div class="k">status tonight</div><div class="v" style="font-size:1.05rem;margin-top:.4rem">${status}</div></div>
+    <div class="stat"><div class="k">first observed</div><div class="v" style="font-size:1.2rem">${p.first_seen}</div><div class="n">${observedFor ? observedFor + ' in the log' : ''}</div></div>
+    <div class="stat"><div class="k">surface changes</div><div class="v">${n(p.changes)}</div><div class="n">${p.changes ? 'nights the hash differed' : 'never, since first readable'}</div></div>
+    <div class="stat"><div class="k">rule scan</div><div class="v" style="font-size:1.2rem">${p.outcome !== 'ok' ? '<span class="note">not observable</span>' : review.length ? `<span class="warn">${review.length} to review</span>` : p.flags.length ? '<span class="ok">no review flags</span>' : '<span class="ok">clean</span>'}</div><div class="n">${p.scan_run ? 'run ' + p.scan_run.slice(0, 10) : ''}</div></div>
+  </div>
+
+  ${p.outcome === 'ok' || p.changes || p.tool_names ? `
+  <h2>Badges</h2>
+  <p class="badge-line">
+    <img alt="mcp surface" src="${badgeURL(slug)}">
+    <img alt="mcp scan" src="${badgeURL(slug, '-scan.json')}">
+  </p>
+  <p class="note">Markdown for a README. The badges re-read this log, so they move when the server does, not when the README does.</p>
+  ${copyable(`[![mcp surface](${badgeURL(slug)})](${SITE}server.html?s=${slug})\n[![mcp scan](${badgeURL(slug, '-scan.json')})](${SITE}server.html?s=${slug})`)}
+  ` : ''}
+
+  <h2>History</h2>
+  <ul class="timeline">
+  ${p.events.slice().reverse().map(e => {
+    const [cls, label] = KIND[e.kind] || ['', e.kind];
+    let detail = '';
+    if (e.kind === 'first_seen') detail = e.outcome === 'ok' ? `${n(e.tools)} tools` : `outcome: ${esc(e.outcome)}`;
+    if (e.kind === 'enumerable') detail = `${n(e.tools)} tools`;
+    if (e.kind === 'unreachable') detail = `outcome: ${esc(e.outcome)}`;
+    if (e.kind === 'recovered') detail = e.changed ? `<span class="warn">came back with a different surface</span> · ${n(e.tools)} tools` : `same surface as before · ${n(e.tools)} tools`;
+    if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) {
+      const parts = [];
+      if (e.added?.length) parts.push(`<span class="ok">+ ${e.added.map(esc).join(', ')}</span>`);
+      if (e.removed?.length) parts.push(`<span class="bad">− ${e.removed.map(esc).join(', ')}</span>`);
+      if (!parts.length) parts.push('<span class="warn">same tool names: a description or input schema was edited in place</span>');
+      detail = (e.kind === 'recovered' ? detail + '<br>' : `${n(e.tools)} tools · `) + parts.join(' · ');
+      if (e.surface) detail += `<br><span class="note mono">surface ${e.surface.slice(0, 16)}…</span>`;
+    }
+    return `<li><span class="d">${e.date}</span><span><span class="kind ${cls}">${label}</span>${detail ? ' · ' + detail : ''}</span></li>`;
+  }).join('')}
+  </ul>
+  ${latest && p.listed ? `<p class="note">Observed every night through ${latest}. Nights without an entry above are nights nothing changed.</p>` : ''}
+
+  ${p.tool_names?.length ? `
+  <h2>Tools served${p.outcome === 'ok' ? '' : ' (last readable surface)'}</h2>
+  <p class="mono" style="max-width:none;line-height:1.9">${p.tool_names.map(t => `<span class="tag">${esc(t)}</span>`).join(' ')}</p>
+  ${p.surface ? `<p class="note">surface_sha256 <span class="mono">${p.surface}</span> · covers every member of every tool</p>` : ''}
+  ${p.jcs_v1_tools_sha256 ? `<p class="note">jcs-v1 tool-set digest <span class="mono">${esc(p.jcs_v1_tools_sha256)}</span> · the digest <a href="https://github.com/alexar76/histor">HISTOR</a> and <a href="https://crawlcheck.io/spec/mcp-lockfile">CrawlCheck</a> compute for the same list, for comparing records</p>` : ''}
+  ` : ''}
+
+  ${p.outcome === 'ok' ? `
+  <h2>Rule scan</h2>
+  ${p.flags.length ? `
+  <p class="note">Patterns found in the text the model reads: descriptions, titles, and schema descriptions.
+  A match is a pattern, not a verdict; most are clumsy prose. <a href="scan.html">How the rules work</a>.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>rule</th><th>tier</th><th>tool · field</th><th>matched text</th></tr></thead>
+    <tbody>${p.flags.map(f => `<tr>
+      <td class="mono">${esc(f.rule)}<br><span class="note">${esc(f.note)}</span></td>
+      <td>${f.review ? '<span class="tag review">review</span>' : '<span class="tag info">info</span>'}</td>
+      <td class="mono note">${esc(f.tool)}<br>${esc(f.field)}</td>
+      <td class="note">${esc(f.snippet)}</td></tr>`).join('')}
+    </tbody></table></div>`
+  : `<p class="note">No rule matched any text this server serves. That is a statement about thirteen patterns, not a safety certificate.</p>`}
+  ` : ''}
+
+  <h2>Pin it in your own CI</h2>
+  <p class="note">Record the surface you reviewed; fail the build when it moves. <a href="lock.html">How the lockfile works</a>.</p>
+  ${copyable(lockLine)}
+  `;
+})();
+</script>
+</body>
+</html>

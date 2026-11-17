@@ -28,6 +28,10 @@ func main() {
 	pubKey := flag.String("pubkey", "heads/key.pub", "public key that signs the heads")
 	leaves := flag.String("leaves", "", "published leaf-hash directory; verify from these instead of the records")
 	scanJSON := flag.String("scan-json", "", "scan: also write per-server flags to this JSON file")
+	lockPath := flag.String("lock", "mcp.lock", "lock/check: path of the lockfile")
+	checkJSON := flag.String("check-json", "", "check: also write results to this JSON file")
+	checkMD := flag.String("check-md", "", "check: also write a Markdown drift report (what the GitHub Action posts)")
+	update := flag.Bool("update", false, "check: rewrite the lockfile to the current surfaces after reporting")
 	flag.Parse()
 
 	if *logDir == "" {
@@ -69,6 +73,10 @@ func main() {
 			run = args[1]
 		}
 		err = cmdScan(*dataDir, run, *scanJSON)
+	case "lock":
+		err = cmdLock(*lockPath, args[1:])
+	case "check":
+		err = cmdCheck(*lockPath, *checkJSON, *checkMD, *update)
 	case "export":
 		out := "docs"
 		if len(args) == 2 {
@@ -96,6 +104,8 @@ func usage() {
   mcpobs heads                 list the published tree heads
   mcpobs scan [run]            rule-based scan of tool text for model-directed
                                instructions, steering, exfil, secrets, hidden content
+  mcpobs lock <endpoint>...    pin each server's current tool surface in mcp.lock
+  mcpobs check                 re-probe every locked server; exit 1 on drift
   mcpobs export [dir]          write static JSON for the site (default "docs")
 
 flags:
@@ -140,14 +150,15 @@ func cmdRuns(dir string) error {
 // ---------------------------------------------------------------- diff
 
 type obs struct {
-	Server    string   `json:"server_name"`
-	Endpoint  string   `json:"endpoint"`
-	Outcome   string   `json:"outcome"`
-	Surface   string   `json:"surface_sha256"`
-	ToolNames []string `json:"tool_names"`
-	ToolCount int      `json:"tool_count"`
-	PageBlobs []string `json:"page_blobs"`
-	Host      string   `json:"host"`
+	Server     string   `json:"server_name"`
+	Endpoint   string   `json:"endpoint"`
+	Outcome    string   `json:"outcome"`
+	Surface    string   `json:"surface_sha256"`
+	ToolNames  []string `json:"tool_names"`
+	ToolCount  int      `json:"tool_count"`
+	PageBlobs  []string `json:"page_blobs"`
+	Host       string   `json:"host"`
+	ObservedAt string   `json:"observed_at"`
 }
 
 func cmdDiff(dir, a, b string) error {

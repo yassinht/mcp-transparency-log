@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "generated": "2026-11-17T22:36:12Z",
+  "log": "https://github.com/yassinht/mcp-transparency-log",
+  "servers": [
+    {
+      "name": "cloudflare-docs",
+      "endpoint": "https://docs.mcp.cloudflare.com/mcp",
+      "surface_sha256": "2887f1944f655625b0360f8d0a25a0648eea261560b467caabe00bd651ec10c0",
+      "jcs_v1_tools_sha256": "sha256-GqUyi0vc/Gc1Yb0+T0wNocyaytCWTrjjMWvLOuOPOz4=",
+      "tools": [
+        "migrate_pages_to_workers_guide",
+        "search_cloudflare_documentation"
+      ],
+      "locked_at": "2026-11-17T22:36:12Z",
+      "transport": "streamable-http"
+    },
+    {
+      "name": "context7",
+      "endpoint": "https://mcp.context7.com/mcp",
+      "surface_sha256": "36dee0f3fbf80c4ed815e2b82cdfeb444188e7e941177d3124e31a3e0d6d91d6",
+      "jcs_v1_tools_sha256": "sha256-XpeSi1ir5PNF5yunuB1mfnHR+1IpBb5+X+N+JhSTt8E=",
+      "tools": [
+        "query-docs",
+        "resolve-library-id"
+      ],
+      "locked_at": "2026-11-17T22:36:12Z",
+      "transport": "streamable-http"
+    },
+    {
+      "name": "exa",
+      "endpoint": "https://mcp.exa.ai/mcp",
+      "surface_sha256": "f7de8833772a4a7f0dab1c76291b2f87401c6e7d543f644028337894a954dbb7",
+      "jcs_v1_tools_sha256": "sha256-hSLFkS6M+tt1bHtSu7UGTO9WhnNyASoOGkFJgn3VZuc=",
+      "tools": [
+        "web_fetch_exa",
+        "web_search_exa"
+      ],
+      "locked_at": "2026-11-17T22:36:12Z",
+      "transport": "streamable-http"
+    },
+    {
+      "name": "tandem-docs",
+      "endpoint": "https://tandem.ac/mcp",
+      "surface_sha256": "73dd9c8626a0051e0ab5c91ee42ba2a2c2e8668b24da92fb9f76ed0744013bb3",
+      "jcs_v1_tools_sha256": "sha256-xHrgbIGaYj7PYZTHT9CY+Za/+1ABIFwjMi1qxdEDt7g=",
+      "tools": [
+        "answer_how_to",
+        "compare_doc_page_refresh",
+        "compare_docs_index_refresh",
+        "get_doc",
+        "get_docs_cache_status",
+        "get_start_path",
+        "get_tandem_guide",
+        "invalidate_docs_cache",
+        "recommend_next_docs",
+        "refresh_doc_page",
+        "refresh_docs_index",
+        "search_docs",
+        "warmup_docs_cache"
+      ],
+      "locked_at": "2026-11-17T22:36:12Z",
+      "transport": "streamable-http"
+    }
+  ]
+}

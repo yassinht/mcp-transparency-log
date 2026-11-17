@@ -16,9 +16,34 @@ A crawler visits every publicly reachable MCP server in the official registry on
 
 The value is the accumulated history. A stranger can clone this repository in a weekend. Nobody can clone a year of observations.
 
+## Use it
+
+**Look up a server.** Every endpoint in the registry has a page at `https://yassinht.github.io/mcp-transparency-log/server.html?e=<endpoint URL>`: when it appeared, every night its tool surface changed and which tools moved, when it went dark, the tools it serves, what the rule scan found in its text, and two badges that re-read this log:
+
+[![mcp surface](https://img.shields.io/endpoint?url=https%3A%2F%2Fyassinht.github.io%2Fmcp-transparency-log%2Fdata%2Fbadge%2F1a%2F1a1978d681b968f5.json)](https://yassinht.github.io/mcp-transparency-log/server.html?e=https%3A%2F%2Ftandem.ac%2Fmcp)
+[![mcp scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fyassinht.github.io%2Fmcp-transparency-log%2Fdata%2Fbadge%2F1a%2F1a1978d681b968f5-scan.json)](https://yassinht.github.io/mcp-transparency-log/server.html?e=https%3A%2F%2Ftandem.ac%2Fmcp)
+
+**Pin the servers you depend on.** `mcp.lock` is to MCP servers what `package-lock.json` is to packages:
+
+```bash
+go install github.com/yassinht/mcp-transparency-log/cmd/mcpobs@latest
+mcpobs lock context7=https://mcp.context7.com/mcp exa=https://mcp.exa.ai/mcp
+git add mcp.lock
+```
+
+Each entry records the server's canonical surface hash and its jcs-v1 tool-set digest, the same bytes CrawlCheck's lockfiles and HISTOR's records carry, so a lock written here can be compared with what either of them observed. `mcpobs check` re-probes every locked server and exits 1 when one no longer serves what was reviewed. In CI:
+
+```yaml
+- uses: yassinht/mcp-transparency-log@v1
+```
+
+The Action fails the job and opens an issue with the diff: tools added, removed, or edited in place under the same names. This repository runs it against its own [`mcp.lock`](mcp.lock) every morning; the issues it opens are the demo. [Setup in four steps](https://yassinht.github.io/mcp-transparency-log/lock.html).
+
+**Scan tool text.** `mcpobs scan` runs thirteen regular expressions over every description, title and schema description in a census, looking for text addressed to the model rather than the user: "ignore previous instructions", "forward the conversation", hidden bidi characters. No model judges; every match is quoted and none is called malicious. [Rules, numbers and one example each](https://yassinht.github.io/mcp-transparency-log/scan.html).
+
 ## Status
 
-Running. Phases 0 through 3 complete.
+Running since 2026-08-30, unattended.
 
 | Phase | Scope | State |
 | --- | --- | --- |
@@ -26,13 +51,14 @@ Running. Phases 0 through 3 complete.
 | 1 | Crawler, raw observation archive, daily census | done, running |
 | 2 | RFC 6962 Merkle log, signed tree heads, verify CLI | done |
 | 3 | Public static site and published leaf hashes | done |
-| 4 | Witnesses and gossip for split-view detection | not started |
+| 3b | A history page and badges per server; `mcp.lock` and the GitHub Action; the rule scan | done, 2026-11-17 |
+| 4 | Witnesses and cross-checks with independent observers | started: nightly peer list published, see [Related work](#related-work) |
 
-**38 consecutive daily censuses as of 2026-10-06, no gaps, 755,221 observations.** A systemd timer fetches the registry, probes every endpoint, archives the raw bytes, appends to the tree, signs a head, publishes it and regenerates the site — with no human in the loop. It has run unattended for five weeks.
+**79 nightly censuses as of 2026-11-17, one night missed (2026-11-08), 2,169,622 observations in the tree.** On the last night 45,490 endpoints were probed and 27,096 of them enumerated a tool list without credentials. A systemd timer fetches the registry, probes every endpoint, archives the raw bytes, appends to the tree, signs a head, publishes it and regenerates the site, with no human in the loop. The registry grew from 16,305 declared endpoints on 2026-09-07 to 45,490; the crawl has kept up.
 
-**The daily figures are at [yassinht.github.io/mcp-transparency-log](https://yassinht.github.io/mcp-transparency-log/).**
+**The daily figures, every server's history and the scan are at [yassinht.github.io/mcp-transparency-log](https://yassinht.github.io/mcp-transparency-log/).** The measurements were cited as evidence in the registry's own tracker for periodic re-validation of entries ([modelcontextprotocol/registry#1715](https://github.com/modelcontextprotocol/registry/issues/1715), consolidating [#1626](https://github.com/modelcontextprotocol/registry/issues/1626)).
 
-Phase 4 is the end state, not the entry ticket. A witness is not something I can build: it is a second party running their own crawler against the same servers and signing what they see, so that a log which invented its history could be contradicted. That needs someone else to care enough to run infrastructure, which is not a dependency worth waiting on. A single-operator log is still useful in the meantime — Go's own checksum database ran that way for years.
+Phase 4 is the end state, not the entry ticket. A witness is a second party running their own crawler against the same servers and signing what they see, so that a log which invented its history could be contradicted. In the three months since this started, several independent crawlers have appeared ([Related work](#related-work)). Since 2026-11-17 this log publishes its nightly observations in the cross-check format HISTOR reads from other observers, so the two records can catch each other out. A single-operator log is still useful in the meantime; Go's own checksum database ran that way for years.
 
 ## First census — 2026-08-27
 
@@ -76,6 +102,24 @@ Measured on a random sample of 300 registry entries, 2026-08-25:
 Two operators, `gateway.pipeworx.io` (1,312 servers) and `api.mcp.ai` (1,099), publish **17.7% of every observable server in the registry**. One template edit changes 1,312 "servers" at once. That concentration is the clearest argument for watching this ecosystem rather than trusting it.
 
 The probe, its raw output, and the population snapshot are in [`docs/week0-falsification/`](docs/week0-falsification/). Two bugs in that probe mattered enormously: missing SSE transport support understated reachability by ten percentage points and would have produced a false "do not build" verdict, and a hardcoded protocol version biased the sample against servers on newer spec revisions. Writing the code was never the bottleneck. Contact with reality was.
+
+## Related work
+
+Nobody is alone in this, and the order matters less than the fact that several people reached the same conclusion independently. Dated so that the order is plain; nothing here is a judgement of the others.
+
+| Project | Watches | First public | How it differs from this log |
+| --- | --- | --- | --- |
+| [KryptosAI mcp-observatory](https://github.com/KryptosAI/mcp-observatory) | tool and schema drift of the servers you configure, `lock` / `lock verify` in CI | by 2026-03 | a client-side tool with no public record of the registry. Unrelated to this project, which carried the same name until September 2026 |
+| [PulseFeed MCP Drift Watch](https://pulsefeed.dev/mcp/drift) | package and repository changes after a server is listed, whole registry | 2026-07-30 | packages, not tool surfaces |
+| [MCP Drift Observatory](https://github.com/mikerawsonnz/mcp-drift-observatory) | byte-exact tool declarations of public servers, daily, git archive and Atom feed per server | 2026-08-20 | no Merkle log or signed heads; reachable as an MCP server |
+| **this log** | tool surfaces of every registry endpoint, nightly, RFC 6962 log, signed heads, published leaf hashes | 2026-08-26, unbroken series from 2026-08-30 | |
+| [HISTOR](https://github.com/alexar76/histor) | tool surfaces of registry endpoints and sandboxed npm/PyPI packages, RFC 9162 log, hosted API with `/check`, witnessed checkpoints | 2026-09-24, data from 2026-10-10 | a hosted service with a database; cross-checks other observers daily |
+| [mcpcost](https://mcpcost.ulehla.dev) | liveness and context-window cost of every registry server, daily evidence file | 2026-10-03 | cost, not content |
+| [ProtocolProbe](https://protocolprobe.com) | registry entries against npm, PyPI and GitHub | 2026-10 | packages and repositories, not endpoints |
+
+Whole-registry endpoint censuses were also reported to the registry by siliroid ([#1485](https://github.com/modelcontextprotocol/registry/issues/1485), [#1487](https://github.com/modelcontextprotocol/registry/issues/1487)) and mun29 ([#1643](https://github.com/modelcontextprotocol/registry/issues/1643)). All of them, with this log's [#1626](https://github.com/modelcontextprotocol/registry/issues/1626), were consolidated as evidence under [#1715](https://github.com/modelcontextprotocol/registry/issues/1715).
+
+**Cross-checking.** Two observers that read the same servers independently check each other: when they disagree, either a server answered them differently or one of them has a bug. Every night this log publishes [`docs/data/peers/tool-digests-latest.jsonl`](docs/data/peers/tool-digests-latest.jsonl), one row per endpoint with its jcs-v1 tool-set digest (or `null` and the outcome) and the time it was read, in the format [HISTOR's cross-check](https://github.com/alexar76/histor/blob/main/docs/cross-check.md) consumes. The digest reproduces CrawlCheck's published test vectors ([`internal/canon/mtl_test.go`](internal/canon/mtl_test.go)), so the three records can be compared row by row.
 
 ## Design commitments
 
@@ -214,7 +258,7 @@ scp dist/crawler dist/mcpobs deploy/* user@server:~/
 ssh user@server 'sudo bash install.sh'
 ```
 
-`install.sh` creates a `mcpobs` service account with no shell, installs to `/opt/mcp-transparency-log`, and enables a daily systemd timer. It refuses to run if any name it needs is already taken, rather than overwriting something that might matter.
+`install.sh` creates a `mcpobs` service account with no shell, installs to `/opt/mcp-observatory` (the directory keeps the project's first name), and enables a daily systemd timer. It refuses to run if any name it needs is already taken, rather than overwriting something that might matter.
 
 The unit is deliberately constrained. The crawler talks to fourteen thousand servers it does not control, on a box that is probably running something else that does matter:
 
