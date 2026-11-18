@@ -23,7 +23,7 @@ h1{font:600 72px/.98 var(--sans);letter-spacing:-.04em;margin:0 0 26px;max-width
 .nights{display:grid;grid-template-columns:repeat(40,1fr);gap:4px;margin:64px 0 8px}.nights i{height:18px;border-radius:2px;background:var(--lum);opacity:.9}.nights i.first{background:#fff}.nights i.gap{background:var(--line-2)}
 .legend{font:12px var(--mono);color:var(--fg-3)}
 .facts{display:grid;grid-template-columns:repeat(5,1fr);margin:40px 0 0;border-top:1px solid var(--line-2)}
-.facts div{padding:18px 16px;border-right:1px solid var(--line)}.facts div:last-child{border-right:0}
+.facts > div{padding:18px 16px;border-right:1px solid var(--line)}.facts > div:last-child{border-right:0}
 .facts .k{font:11px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--fg-3)}
 .facts .v{font:600 38px/1 var(--sans);letter-spacing:-.03em;margin-top:10px;font-variant-numeric:tabular-nums}
 .facts .n{font-size:12.5px;color:var(--fg-2);margin-top:6px}
@@ -39,7 +39,7 @@ td{padding:12px 0;border-bottom:1px solid var(--line);padding-right:18px}td.mono
 .quiet{color:var(--fg-3)}.cap{font:12px var(--mono);color:var(--fg-3);margin-top:8px}
 footer{border-top:1px solid var(--line-2);margin-top:80px;padding-top:22px;font-size:14px;color:var(--fg-2);display:flex;gap:24px;flex-wrap:wrap}
 .tag{position:fixed;right:12px;bottom:12px;font:11px var(--mono);background:var(--lum);color:#10200a;padding:4px 8px;border-radius:3px}
-@media(max-width:860px){main{padding:44px 16px 60px}h1{font-size:40px}.lede{font-size:17px}.facts{grid-template-columns:repeat(2,1fr)}.facts div{border-right:0;border-bottom:1px solid var(--line)}.three{grid-template-columns:1fr;gap:26px}.nights{grid-template-columns:repeat(20,1fr)}header,.strip{padding-left:16px;padding-right:16px}nav{gap:14px;font-size:13px}}
+@media(max-width:860px){main{padding:44px 16px 60px}h1{font-size:40px}.lede{font-size:17px}.facts{grid-template-columns:repeat(2,1fr)}.facts > div{border-right:0;border-bottom:1px solid var(--line)}.three{grid-template-columns:1fr;gap:26px}.nights{grid-template-columns:repeat(20,1fr)}header,.strip{padding-left:16px;padding-right:16px}nav{gap:14px;font-size:13px}}
 </style></head>
 <body>
 <div class="strip"><span class="pulse"></span><span>night 80 · signed head 2026-11-18 · tree size 2,215,731 · <b>verified from published leaves</b></span><span style="margin-left:auto">next census in 7 h</span></div>
