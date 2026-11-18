@@ -211,27 +211,30 @@ getJSON('data/census.json').then(async census => {
   document.getElementById('foot-head').textContent = `MCP Transparency Log · night ${n(census.length)} · ${last.date}`;
   document.getElementById('trust').innerHTML = `<b>${n(census.length)} nights since 30 August 2026</b> · ${n(leaves)} signed observations · cited by the official MCP registry · Apache-2.0`;
 
-  // Changes over the last seven nights, template fleets set aside.
-  let recent = [], total = 0;
-  for (const date of lastDates(census, 7)) {
-    try {
-      const day = await getJSON(`data/changes/${date}.json`);
-      for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) { total++; recent.push({date, ...e}); }
-    } catch {}
-  }
+  // Stats first, from the census alone, so the page never waits on the
+  // change files (several MB a night) to show its numbers.
+  const stats = document.getElementById('stats');
+  const tiles = (changedTile) => [
+    ['servers probed tonight', n(probed), last.date],
+    ['answered openly', n(o.ok || 0), pct(o.ok || 0, probed)],
+    ['tools on record', n(last.tools), ''],
+    ['observations in the log', n(leaves), `${n(census.length)} nights`],
+    changedTile,
+  ].map(([k, v, s]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${s}</div></div>`).join('');
+  stats.innerHTML = tiles(['changed this week', '…', 'counting']);
+  document.getElementById('recent').innerHTML = '<div class="t"><span>Changed in the last seven nights</span><b>loading…</b></div>';
+
+  // Changes over the last seven nights, fetched in parallel, template fleets set aside.
+  const days = await Promise.all(lastDates(census, 7).map(date => getJSON(`data/changes/${date}.json`).then(d => [date, d]).catch(() => [date, []])));
+  let recent = [];
+  for (const [date, day] of days) for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) recent.push({date, ...e});
   const byHost = {};
   for (const e of recent) (byHost[e.host] ??= []).push(e);
   const fleets = Object.entries(byHost).filter(([, l]) => l.length >= 25);
   const fleetCount = fleets.reduce((s, [, l]) => s + l.length, 0);
   const independent = recent.filter(e => !fleets.some(([h]) => h === e.host));
 
-  document.getElementById('stats').innerHTML = [
-    ['servers probed tonight', n(probed), last.date],
-    ['answered openly', n(o.ok || 0), pct(o.ok || 0, probed)],
-    ['tools on record', n(last.tools), ''],
-    ['observations in the log', n(leaves), `${n(census.length)} nights`],
-    ['changed this week', n(independent.length), fleetCount ? `+ ${n(fleetCount)} on template fleets` : 'templates aside'],
-  ].map(([k, v, s]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${s}</div></div>`).join('');
+  stats.innerHTML = tiles(['changed this week', n(independent.length), fleetCount ? `+ ${n(fleetCount)} on template fleets` : 'templates aside']);
 
   const pick = independent.sort((a, b) => b.date.localeCompare(a.date)).slice(0, 4);
   document.getElementById('recent').innerHTML =

@@ -59,17 +59,24 @@ getJSON('data/census.json').then(async d => {
   const last = census[census.length - 1], o = last.outcomes || {};
   const ok = o.ok || 0;
 
-  let changed = 0, recent = [];
-  for (const date of lastDates(census, 7)) {
-    try {
-      const day = await getJSON(`data/changes/${date}.json`);
-      for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) {
-        changed++; recent.push({date, ...e});
-      }
-    } catch {}
-  }
+  const stats = document.getElementById('stats');
+  const render = (changed) => stats.innerHTML = [
+    ['endpoints probed', n(last.endpoints), last.date],
+    ['answered unauthenticated', n(ok), pct(ok, last.endpoints)],
+    ['tools recorded', n(last.tools), ''],
+    ['nights observed', n(census.length), census[0].date + ' →'],
+    ['surfaces changed, 7 nights', changed == null ? '…' : n(changed), changed ? 'see below' : '']
+  ].map(([k, v, s]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${s}</div></div>`).join('');
+  render(null);
+  document.getElementById('stats-note').textContent =
+    last.complete ? 'Latest census reached every endpoint.' : 'Latest census did not reach every endpoint; it is recorded as incomplete.';
+  drawCensus();
 
-  document.getElementById('stats').innerHTML = [
+  const days = await Promise.all(lastDates(census, 7).map(date => getJSON(`data/changes/${date}.json`).then(d => [date, d]).catch(() => [date, []])));
+  let changed = 0, recent = [];
+  for (const [date, day] of days) for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) { changed++; recent.push({date, ...e}); }
+  render(changed);
+  if (false) document.getElementById('stats').innerHTML = [
     ['endpoints probed', n(last.endpoints), last.date],
     ['answered unauthenticated', n(ok), pct(ok, last.endpoints)],
     ['tools recorded', n(last.tools), ''],
@@ -100,6 +107,7 @@ getJSON('data/census.json').then(async d => {
       + (rows.length > 80 ? `<p class="note">${n(rows.length)} rows, showing 80.</p>` : '')
     : '<p class="note">No surface changes recorded in the last seven nights.</p>';
 
+  function drawCensus() {
   const max = Math.max(...census.map(c => c.endpoints));
   document.getElementById('bars').innerHTML = census.map(c =>
     `<div class="bar${c.complete ? '' : ' partial'}" style="height:${Math.round(100 * c.endpoints / max)}%" title="${c.date}: ${n(c.endpoints)} endpoints"></div>`).join('');
@@ -117,6 +125,7 @@ getJSON('data/census.json').then(async d => {
       <td class="num">${n(c.tools)}</td>
       <td>${c.complete ? '' : '<span class="tag">incomplete</span>'}</td></tr>`;
   }).join('');
+  }
 }).catch(() => {
   document.getElementById('stats').innerHTML = '<div class="stat"><div class="k">no data</div><div class="n">run <code>mcpobs export</code> first</div></div>';
 });
