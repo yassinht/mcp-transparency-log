@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commercial landing · Direction B</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d12;--bg-2:#11141b;--bg-3:#171b24;--line:#232836;--line-2:#303747;--fg:#eef0f5;--fg-2:#a9afbd;--fg-3:#6f7788;--ok:#3ddc97;--ok-2:#1f8f63;--ok-bg:#12302a;--warn:#f2b544;--warn-bg:#332a12;--info:#7aa2f7;
+--sans:"Inter",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans)}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+header{position:sticky;top:0;z-index:9;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:30px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font:700 16px var(--sans);letter-spacing:-.01em}
+.logo i{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--ok),var(--ok-2));box-shadow:0 0 0 4px rgba(61,220,151,.12)}
+nav{display:flex;gap:26px;margin-left:auto;font-size:14.5px}nav a{text-decoration:none;color:var(--fg-2)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:12px 18px;font:600 15px var(--sans);text-decoration:none;cursor:pointer;border:1px solid transparent;white-space:nowrap}
+.btn.p{background:var(--ok);color:#06251b;box-shadow:0 8px 30px rgba(61,220,151,.18)}.btn.g{border-color:var(--line-2);color:var(--fg);background:rgba(255,255,255,.02)}.btn.s{padding:9px 14px;font-size:14px;border-radius:8px}
+/* hero */
+.hero{position:relative;padding:96px 0 40px;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-200px 0 auto 0;height:620px;background:radial-gradient(600px 320px at 50% 0%,rgba(61,220,151,.16),transparent 70%);pointer-events:none}
+.pill{display:inline-flex;align-items:center;gap:10px;font:500 13px var(--sans);color:var(--fg-2);border:1px solid var(--line-2);border-radius:999px;padding:6px 14px 6px 8px;background:var(--bg-2)}
+.pill b{font:600 11px var(--mono);color:#06251b;background:var(--ok);border-radius:999px;padding:3px 8px;letter-spacing:.04em}
+h1{font:800 64px/1.02 var(--sans);letter-spacing:-.045em;margin:26px auto 22px;max-width:17ch}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--ok),#9be7c6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:20px;color:var(--fg-2);max-width:60ch;margin:0 auto 32px}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.trust{font:13px var(--mono);color:var(--fg-3);margin-top:20px}.trust b{color:var(--fg-2);font-weight:500}
+.shot{margin:56px auto 0;max-width:1060px;border:1px solid var(--line-2);border-radius:14px;background:var(--bg-2);box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.02) inset;overflow:hidden;position:relative}
+.shot .bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--bg-3)}
+.shot .bar i{width:10px;height:10px;border-radius:50%;background:var(--line-2)}
+.shot .bar span{margin-left:10px;font:12px var(--mono);color:var(--fg-3);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:3px 10px}
+.shot img{display:block;width:100%;height:560px;object-fit:cover;object-position:top}
+.shot::after{content:"";position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(transparent,var(--bg))}
+/* proof */
+.proof{padding:40px 0 10px;text-align:center}
+.proof .k{font:12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--fg-3);margin-bottom:18px}
+.marks{display:flex;gap:14px 40px;justify-content:center;flex-wrap:wrap;color:var(--fg-2);font:600 15px var(--sans)}
+.marks span small{display:block;font:11.5px var(--mono);color:var(--fg-3);font-weight:400;margin-top:2px}
+/* sections */
+section{padding:96px 0 0}
+.eyebrow{font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ok);margin-bottom:14px}
+h2{font:800 42px/1.08 var(--sans);letter-spacing:-.035em;margin:0 0 14px}
+.sub{color:var(--fg-2);font-size:18px;max-width:62ch;margin:0 0 40px}
+.center{text-align:center}.center .sub{margin-left:auto;margin-right:auto}
+.beats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.beat{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+.beat .n{font:800 40px/1 var(--sans);letter-spacing:-.04em;color:var(--ok);margin-bottom:12px}
+.beat h3{font:600 19px var(--sans);margin:0 0 8px;letter-spacing:-.01em}.beat p{margin:0;color:var(--fg-2);font-size:15px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:28px;padding:36px 0}
+.feat.rev .txt{order:2}
+.feat h3{font:700 30px/1.15 var(--sans);letter-spacing:-.03em;margin:0 0 12px}.feat p{color:var(--fg-2);font-size:16.5px;margin:0 0 18px}
+.feat ul{margin:0 0 20px;padding:0;list-style:none}.feat li{padding:7px 0 7px 26px;position:relative;color:var(--fg-2)}
+.feat li::before{content:"";position:absolute;left:0;top:14px;width:14px;height:14px;border-radius:50%;background:var(--ok-bg);border:1.5px solid var(--ok)}
+.vis{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.vis img{display:block;width:100%;height:340px;object-fit:cover;object-position:0 0}
+.term{font:13px/1.65 var(--mono);padding:18px 20px;color:var(--fg)}
+.term .c{color:var(--fg-3)}.term .g{color:var(--ok)}.term .y{color:var(--warn)}.term .b{color:var(--info)}
+.issue{padding:18px 20px;font-size:14px}
+.issue .t{font:600 15px var(--sans);display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.issue .t i{width:10px;height:10px;border-radius:50%;background:var(--ok)}
+.issue .lbl{font:500 11px var(--mono);color:var(--warn);background:var(--warn-bg);border:1px solid #6b4f14;border-radius:999px;padding:2px 8px;margin-left:auto}
+.issue p{margin:6px 0;color:var(--fg-2)}.issue code{font:12.5px var(--mono);color:var(--fg)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg-2)}
+.step{padding:28px 26px;border-right:1px solid var(--line)}.step:last-child{border-right:0}
+.step .k{font:12px var(--mono);color:var(--fg-3);letter-spacing:.1em;margin-bottom:10px}.step h3{font:600 20px var(--sans);margin:0 0 8px}.step p{margin:0;color:var(--fg-2);font-size:15px}
+.step code{display:block;margin-top:14px;font:12.5px var(--mono);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;color:var(--fg);word-break:break-all}
+.sol{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card .st{font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;display:inline-block;padding:3px 9px;border-radius:5px;margin-bottom:12px}
+.st.live{color:var(--ok);background:var(--ok-bg)}.st.pilot{color:var(--warn);background:var(--warn-bg)}.st.road{color:var(--fg-2);background:var(--bg-3)}
+.card h3{font:600 20px var(--sans);margin:0 0 8px;letter-spacing:-.01em}.card p{margin:0 0 12px;color:var(--fg-2);font-size:15px}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.q{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:26px}
+.q p{font-size:17px;margin:0 0 16px;color:var(--fg)}.q .who{font-size:13.5px;color:var(--fg-2)}.q .who b{color:var(--fg);font-weight:600}.q .who a{color:var(--fg-3);font-family:var(--mono);font-size:12px;text-decoration:none;display:block;margin-top:4px}
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.plan{background:var(--bg-2);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;position:relative}
+.plan.hi{border-color:var(--ok);background:linear-gradient(180deg,rgba(61,220,151,.07),transparent 40%),var(--bg-2)}
+.plan .pop{position:absolute;top:-12px;left:28px;font:600 11px var(--mono);letter-spacing:.06em;background:var(--ok);color:#06251b;border-radius:999px;padding:4px 10px}
+.plan h3{margin:0;font:600 17px var(--sans)}.plan .price{font:800 38px/1 var(--sans);letter-spacing:-.04em;margin:16px 0 4px}.plan .per{font-size:13px;color:var(--fg-3);margin-bottom:20px}
+.plan ul{margin:0 0 24px;padding:0;list-style:none}.plan li{padding:7px 0 7px 26px;position:relative;color:var(--fg-2);font-size:14.5px}
+.plan li::before{content:"✓";position:absolute;left:0;top:7px;color:var(--ok);font-weight:700}
+.plan .btn{margin-top:auto;justify-content:center}
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-top:1px solid var(--line);padding:18px 0}details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font:600 17px var(--sans);list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::after{content:"+";color:var(--fg-3);font-weight:400;font-size:22px}details[open] summary::after{content:"–"}
+details p{color:var(--fg-2);margin:12px 0 0;max-width:68ch}
+/* cta */
+.cta{margin-top:96px;border:1px solid var(--line-2);border-radius:20px;padding:64px 40px;text-align:center;background:radial-gradient(500px 260px at 50% 100%,rgba(61,220,151,.14),transparent 70%),var(--bg-2)}
+.cta h2{font-size:38px}
+.search{display:flex;max-width:620px;margin:26px auto 0;background:var(--bg);border:1px solid var(--line-2);border-radius:12px;overflow:hidden}
+.search input{flex:1;border:0;background:transparent;color:var(--fg);padding:15px 18px;font:15px var(--mono);outline:none}
+.search button{border:0;background:var(--ok);color:#06251b;font:700 15px var(--sans);padding:0 22px;cursor:pointer}
+.cta .note{font:13px var(--mono);color:var(--fg-3);margin-top:12px}
+footer{margin-top:96px;border-top:1px solid var(--line);padding:40px 0 56px;font-size:14px;color:var(--fg-2)}
+footer .wrap{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:28px}
+footer b{display:block;color:var(--fg);margin-bottom:10px;font-weight:600}footer a{display:block;text-decoration:none;color:var(--fg-2);margin:6px 0}
+footer .fine{grid-column:1/-1;border-top:1px solid var(--line);margin-top:28px;padding-top:18px;font:12.5px var(--mono);color:var(--fg-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.tag{position:fixed;right:12px;bottom:12px;font:11px var(--mono);background:var(--ok);color:#06251b;padding:4px 8px;border-radius:4px;z-index:10}
+@media(max-width:920px){.wrap{padding:0 18px}nav{display:none}.hero{padding:56px 0 20px}h1{font-size:40px}.lede{font-size:17px}.shot img{height:300px}.beats,.feat,.steps,.sol,.quotes,.plans{grid-template-columns:1fr}.feat{gap:22px;padding:20px 0}.feat.rev .txt{order:0}.step{border-right:0;border-bottom:1px solid var(--line)}section{padding-top:64px}h2{font-size:30px}.cta{padding:40px 20px}.cta h2{font-size:28px}footer .wrap{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+<header><div class="wrap">
+  <div class="logo"><i></i>MCP Transparency Log</div>
+  <nav><a href="#product">Product</a><a href="#how">How it works</a><a href="#solutions">Solutions</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#">Docs</a></nav>
+  <a class="btn g s" href="#">Sign in with GitHub</a><a class="btn p s" href="#cta">Start free</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <span class="pill"><b>NEW</b> Lock authenticated servers from CI, secrets never leave your pipeline</span>
+  <h1>Your agents trust 45,000 MCP servers. <em>We check all of them, every night.</em></h1>
+  <p class="lede">A tool description goes straight into your model. A server can rewrite it tonight with no version bump and no alarm. We keep a signed, independently verifiable record of what every public MCP server serves, and turn it into a lockfile, a CI gate, and evidence your auditor can verify.</p>
+  <div class="ctas"><a class="btn p" href="#cta">Look up a server, free</a><a class="btn g" href="#solutions">Book a demo</a></div>
+  <div class="trust"><b>80 nights unbroken</b> · 2.2M signed observations · cited by the official MCP registry · Apache-2.0</div>
+  <div class="shot"><div class="bar"><i></i><i></i><i></i><span>mcp-transparency-log · server · ac.tandem/docs-mcp</span></div><img src="renders/b-console-desktop.png" alt="A server's history page"></div>
+</div></section>
+
+<div class="proof"><div class="wrap">
+  <div class="k">Cited, cross-checked, and read by the people who build this ecosystem</div>
+  <div class="marks">
+    <span>modelcontextprotocol / registry<small>measurements consolidated as design evidence, issue #1715</small></span>
+    <span>HISTOR<small>independent observer · cross-check peer</small></span>
+    <span>CrawlCheck<small>shared jcs-v1 digest · test vectors match</small></span>
+    <span>experteam.tn<small>delivery partner</small></span>
+  </div>
+</div></div>
+
+<section class="center"><div class="wrap">
+  <div class="eyebrow">The problem</div>
+  <h2>Nothing in your stack notices a rewritten tool.</h2>
+  <p class="sub">Package managers pin versions. Signatures prove who published. Neither tells you that the description your agent read this morning is not the one you reviewed last month.</p>
+  <div class="beats" style="text-align:left">
+    <div class="beat"><div class="n">19%</div><h3>of servers changed within 24 hours</h3><p>Measured across the registry on consecutive nights. Most of it is one publisher's template; the independent baseline is 2 to 3 % a day, every day.</p></div>
+    <div class="beat"><div class="n">95%</div><h3>of those changes kept the same tool names</h3><p>A description or schema rewritten in place. The client sees nothing move. The model follows the new text.</p></div>
+    <div class="beat"><div class="n">0</div><h3>alerts, version bumps, or failed builds</h3><p>Until there is a record to compare against. That record is what we keep, and what the lockfile and the Action compare you with.</p></div>
+  </div>
+</div></section>
+
+<section id="product"><div class="wrap">
+  <div class="eyebrow">Product</div>
+  <h2>One record. Three ways to use it.</h2>
+  <p class="sub">Everything below is live and free for public servers. No account to read it.</p>
+
+  <div class="feat">
+    <div class="txt"><h3>A history page for every server</h3><p>When it appeared, every night its tools changed and which ones moved, when it went dark, what the rule scan found in its text. The full hash, the shared digest, and two badges that re-read the log.</p>
+      <ul><li>46,923 endpoints, one page each, updated nightly</li><li>Events, not noise: quiet nights are shown as quiet</li><li>Badges for a README: <code style="font:12px var(--mono)">unchanged since 2026-08-30</code></li></ul>
+      <a class="btn g s" href="#">Open a server page</a></div>
+    <div class="vis"><img src="renders/b-console-desktop.png" alt="server page" style="object-position:0 60px"></div>
+  </div>
+
+  <div class="feat rev">
+    <div class="txt"><h3>mcp.lock and a GitHub Action</h3><p>Pin the servers your agent uses, authenticated ones included. Every run re-probes them; when a surface moves, the job fails and an issue arrives with the diff and a link to the server's history.</p>
+      <ul><li>Secrets stay in your CI; the lockfile records only where they live</li><li>Exit codes CI understands: 0 unchanged, 1 drift, 2 could not check</li><li>Accept a change the way you accept a dependency bump</li></ul>
+      <a class="btn g s" href="#">Set it up in four steps</a></div>
+    <div class="vis"><div class="term"><span class="c">$</span> mcpobs lock context7=https://mcp.context7.com/mcp<br><span class="c">probing https://mcp.context7.com/mcp ...</span> 2 tools, surface <span class="b">36dee0f3fbf8</span><br><span class="c">wrote mcp.lock (1 server)</span><br><br><span class="c"># .github/workflows/mcp-lock.yml</span><br>- uses: <span class="g">yassinht/mcp-transparency-log@v1</span></div>
+      <div class="issue" style="border-top:1px solid var(--line)"><div class="t"><i></i>MCP server tool surface changed (mcp.lock drift)<span class="lbl">mcp-surface-drift</span></div><p><code>context7</code> · tools 2 → 2 · surface <code>36dee0f3fbf8…</code> → <code>a81c0e22d904…</code></p><p>Same tool names, <b style="color:var(--fg)">a description was edited in place.</b> Read the new text before accepting it.</p></div></div>
+  </div>
+
+  <div class="feat">
+    <div class="txt"><h3>Verifiable by anyone, including your auditor</h3><p>Every night's observations are leaves of an RFC 6962 Merkle tree with a signed head. The leaf hashes are published. A clean clone and one command rebuild the tree and check every head ever signed.</p>
+      <ul><li>Same construction as the Go checksum database</li><li>Hash specified with test vectors; a second observer reproduces it</li><li>Cross-checked nightly against independent crawlers</li></ul>
+      <a class="btn g s" href="#">Verify it yourself</a></div>
+    <div class="vis"><div class="term"><span class="c">$</span> git clone https://github.com/yassinht/mcp-transparency-log<br><span class="c">$</span> go run ./cmd/mcpobs verify --leaves docs/data/leaves --heads heads --pubkey heads/key.pub<br><br>head 2026-09-07  size 136225    <span class="g">VERIFIED</span><br>head 2026-09-08  size 170631    <span class="g">VERIFIED</span><br><span class="c">…</span><br>head 2026-11-17  size 2169622   <span class="g">VERIFIED</span><br>head 2026-11-18  size 2215731   <span class="g">VERIFIED</span><br><br><span class="g">80 heads, 2,215,731 leaves, consistent.</span></div></div>
+  </div>
+</div></section>
+
+<section id="how" class="center"><div class="wrap">
+  <div class="eyebrow">How it works</div>
+  <h2>Observe. Lock. Prove.</h2>
+  <p class="sub">Three steps, in the order a security team actually adopts them.</p>
+  <div class="steps" style="text-align:left">
+    <div class="step"><div class="k">01 · OBSERVE</div><h3>Find your servers in the log</h3><p>Paste a URL. See what it served every night since it appeared, and whether anything in its text speaks to the model instead of the user.</p><code>server.html?e=https://mcp.context7.com/mcp</code></div>
+    <div class="step"><div class="k">02 · LOCK</div><h3>Pin them in your repository</h3><p>One lockfile, one Action. From then on a rewritten description is a failed build and an issue, not a surprise.</p><code>mcpobs lock context7=… &amp;&amp; git add mcp.lock</code></div>
+    <div class="step"><div class="k">03 · PROVE</div><h3>Hand the record to whoever asks</h3><p>Evidence packs with inclusion proofs, for auditors, customers, or an incident review. Verified with one command, not read on trust.</p><code>mcpobs check --evidence report.json</code></div>
+  </div>
+</div></section>
+
+<section id="solutions"><div class="wrap">
+  <div class="eyebrow">Solutions for teams</div>
+  <h2>When agents are in production, you need to prove what they consumed.</h2>
+  <p class="sub">Delivered with experteam.tn, which signs the contract and invoices. Honest labels: what runs today, what is in pilot, what is being built.</p>
+  <div class="sol">
+    <div class="card"><span class="st pilot">pilot · 4 weeks</span><h3>MCP supply-chain audit</h3><p>Every server your agents use, locked and checked from your CI, private ones included. The rule scan over their text. Your first evidence pack and vendor fact sheets for procurement.</p><a class="btn g s" href="#cta">Book an audit</a></div>
+    <div class="card"><span class="st pilot">pilot</span><h3>Evidence packs</h3><p>What each server served at a given moment, the diffs, the approvals, an inclusion proof per observation, mapped to EU AI Act record-keeping, ISO 42001 and SOC 2 change management.</p></div>
+    <div class="card"><span class="st road">building · Q1 2027</span><h3>Private log, publicly witnessed</h3><p>The crawler inside your network for internal and vendor servers. Only signed heads leave; the public log co-signs them. Third-party attested history with no data shared.</p></div>
+    <div class="card"><span class="st road">building · Q1 2027</span><h3>Split-view detection</h3><p>The same server probed from several regions and client identities every night. A server that shows scanners one list and your agents another is caught, which no single-vantage scanner can do.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">In their words</div>
+  <h2>Public, linkable, not invented.</h2>
+  <div class="quotes" style="margin-top:28px">
+    <div class="q"><p>"Repeated measurements distinguishing unauthenticated success, auth-required, non-MCP HTTP, JSON-RPC errors, unreachable hosts and timeouts."</p><div class="who"><b>Radoslav Dimitrov</b>, maintainer, official MCP registry, consolidating this log's reports as design evidence<a>github.com/modelcontextprotocol/registry/issues/1715</a></div></div>
+    <div class="q"><p>"The four censuses that measure the whole registry … our definition of dead is the weakest one in this tracker, and it should not be quoted alongside theirs."</p><div class="who"><b>geosensor-tech</b>, independent measurement, on this log among the four whole-registry censuses<a>github.com/modelcontextprotocol/registry/issues/1692</a></div></div>
+  </div>
+</div></section>
+
+<section id="pricing" class="center"><div class="wrap">
+  <div class="eyebrow">Pricing</div>
+  <h2>Free for the public record. Paid when it is your servers and your auditor.</h2>
+  <p class="sub">Paid work starts with a pilot. We would rather earn the subscription than sell it.</p>
+  <div class="plans" style="text-align:left;margin-top:36px">
+    <div class="plan"><h3>Public</h3><div class="price">Free</div><div class="per">forever, for public servers</div><ul><li>Nightly log of every registry endpoint</li><li>History page and badges per server</li><li>mcp.lock, check, GitHub Action</li><li>Rule scan, every match quoted</li><li>Signed heads, leaf hashes, spec</li></ul><a class="btn g" href="#cta">Start free</a></div>
+    <div class="plan hi"><span class="pop">START HERE</span><h3>Audit</h3><div class="price">€6,000</div><div class="per">one engagement · 4 weeks · invoiced by experteam.tn</div><ul><li>All your servers locked, private ones included</li><li>Checks wired into your CI</li><li>First evidence pack</li><li>Vendor fact sheets for procurement</li><li>Credited against Enterprise</li></ul><a class="btn p" href="#cta">Book an audit</a></div>
+    <div class="plan"><h3>Enterprise</h3><div class="price">€30,000</div><div class="per">per year · after a pilot · scope set together</div><ul><li>Private log in your network, witnessed by ours</li><li>Your own vantage for split-view detection</li><li>Quarterly evidence packs</li><li>Someone to call</li></ul><a class="btn g" href="#cta">Talk to us</a></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="center"><div class="eyebrow">FAQ</div><h2>Questions a careful buyer asks.</h2></div>
+  <div class="faq" style="margin-top:28px">
+    <details open><summary>Do you call the tools on servers you observe?</summary><p>No. The crawler sends <code>initialize</code> and <code>tools/list</code> and nothing else. It never executes a tool, never installs a package, never sends credentials to anyone. Behavioural testing exists only as a consented service on servers you own.</p></details>
+    <details><summary>Can it watch our private or authenticated servers?</summary><p>Yes, from your CI: a header per server from an environment variable, sent on every request and written nowhere. The public log itself covers only unauthenticated servers; your private checks leave no trace here. A private log that runs inside your network is in pilot.</p></details>
+    <details><summary>What does verification actually prove?</summary><p>That the published heads were signed by the key holder, that each is consistent with the published leaves, and that no observation was altered or removed after a head committing to it was published. It does not by itself prove the leaves describe reality; that is what cross-checks with independent observers are for, and we publish ours nightly.</p></details>
+    <details><summary>Is there a model judging anything?</summary><p>No. Every judgement in the data path is a rule a human can re-run against the archived bytes. The rule scan's thirteen patterns are regular expressions in the open-source repository; every match is quoted and none is called malicious.</p></details>
+    <details><summary>Who runs this?</summary><p>Yassine Houta, a software engineer in Tunisia, since 30 August 2026, with experteam.tn as delivery partner for companies. The code is Apache-2.0, the data is recomputable, and every correction ever made to the numbers is still in the README.</p></details>
+  </div>
+</div></section>
+
+<div class="wrap"><div class="cta" id="cta">
+  <h2>Start with one server. The one you trust most.</h2>
+  <p class="sub" style="margin-bottom:0">Paste its URL. You will see what it served every night since it appeared, and whether that is still what it serves.</p>
+  <form class="search"><input placeholder="https://mcp.context7.com/mcp"><button>Look it up</button></form>
+  <div class="note">free · no account · 46,923 endpoints have a page</div>
+</div></div>
+
+<footer><div class="wrap">
+  <div><div class="logo" style="margin-bottom:10px"><i></i>MCP Transparency Log</div>Independent nightly record of what public MCP servers actually serve. Signed, append-only, recomputable. Built in Tunisia, delivered with experteam.tn.</div>
+  <div><b>Product</b><a>Servers</a><a>Lock &amp; CI</a><a>Rule scan</a><a>Badges</a><a>Verify</a></div>
+  <div><b>Solutions</b><a>Audit</a><a>Evidence packs</a><a>Private log</a><a>Split-view</a></div>
+  <div><b>Company</b><a>About</a><a>Pricing</a><a>Contact</a><a>Security</a></div>
+  <div><b>Open</b><a>GitHub</a><a>Signed heads</a><a>Leaf hashes</a><a>Hash spec</a><a>Related work</a></div>
+  <div class="fine"><span>© 2026 Yassine Houta · Apache-2.0 · data CC BY 4.0</span><span>night 80 · head 2026-11-18 · verified</span></div>
+</div></footer>
+<div class="tag">commercial landing · direction B · mockup</div>
+</body></html>
