@@ -134,9 +134,9 @@ them is staged.</p>
     outputs, not its prompts or resources, not its TLS certificate. The same canonicalisation the
     crawler records, so your lock and the log agree byte for byte. Beside it, <code>jcs_v1_tools_sha256</code>
     is the narrower RFC 8785 digest of each tool's contract (name, description, input and output schema)
-    that <a href="https://crawlcheck.io/spec/mcp-lockfile">CrawlCheck</a> and
-    <a href="https://github.com/alexar76/histor">HISTOR</a> publish, so the same server can be compared
-    across all three records.</p>
+    that other registry observers publish, so the same server can be compared across records.
+    The surface hash itself is specified, with test vectors, in
+    <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/docs/spec/surface-hash.md">docs/spec/surface-hash.md</a>.</p>
   </div>
   <div class="card">
     <h3>Exit codes</h3>

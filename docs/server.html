@@ -122,8 +122,8 @@ const KIND = {
   ${p.tool_names?.length ? `
   <h2>Tools served${p.outcome === 'ok' ? '' : ' (last readable surface)'}</h2>
   <p class="mono" style="max-width:none;line-height:1.9">${p.tool_names.map(t => `<span class="tag">${esc(t)}</span>`).join(' ')}</p>
-  ${p.surface ? `<p class="note">surface_sha256 <span class="mono">${p.surface}</span> · covers every member of every tool</p>` : ''}
-  ${p.jcs_v1_tools_sha256 ? `<p class="note">jcs-v1 tool-set digest <span class="mono">${esc(p.jcs_v1_tools_sha256)}</span> · the digest <a href="https://github.com/alexar76/histor">HISTOR</a> and <a href="https://crawlcheck.io/spec/mcp-lockfile">CrawlCheck</a> compute for the same list, for comparing records</p>` : ''}
+  ${p.surface ? `<p class="note">surface_sha256 <span class="mono">${p.surface}</span> · covers every member of every tool (<a href="https://github.com/yassinht/mcp-transparency-log/blob/main/docs/spec/surface-hash.md">specification and test vectors</a>)</p>` : ''}
+  ${p.jcs_v1_tools_sha256 ? `<p class="note">jcs-v1 tool-set digest <span class="mono">${esc(p.jcs_v1_tools_sha256)}</span> · RFC 8785 digest of each tool's contract, shared with other registry observers for comparing records</p>` : ''}
   ` : ''}
 
   ${p.outcome === 'ok' ? `
