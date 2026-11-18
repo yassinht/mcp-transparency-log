@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lock · MCP Transparency Log</title>
+<title>Lock &amp; CI · Surfacelog</title>
 <meta name="description" content="mcp.lock pins the tool surface of the MCP servers your project depends on. A GitHub Action re-probes them and fails the build with a diff when one changes.">
 <link rel="stylesheet" href="site.css">
 </head>
@@ -64,7 +64,7 @@ read in code review:</p>
   ]
 }</pre>
 
-<h3>Servers that need credentials</h3>
+<h3 id="credentials">Servers that need credentials</h3>
 <p>Put the header in an environment variable named after the entry; it is sent on every request and
 written nowhere. The lockfile records only where the credential lives.</p>
 <pre>export MCPOBS_HEADER_SALESFORCE="Authorization: Bearer $SF_TOKEN"   # one header per line

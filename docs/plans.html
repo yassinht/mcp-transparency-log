@@ -3,79 +3,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Plans · MCP Transparency Log</title>
-<meta name="description" content="Everything on this site is free for public servers. What a paid tier would add, and the honest condition under which it will exist.">
+<title>Pricing · Surfacelog</title>
+<meta name="description" content="The public record is free and stays free. Paid work starts with a four-week audit, invoiced by experteam.tn, and grows into an enterprise subscription after a pilot.">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
 <div class="wrap">
 
-<nav>
-  <a href="./"><strong>MCP Transparency Log</strong></a>
-  <a href="./#servers">Servers</a>
-  <a href="lock.html">Lock (CI)</a>
-  <a href="scan.html">Scan</a>
-  <a href="verify.html">Verify</a>
-  <a href="plans.html">Plans</a>
-  <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
-</nav>
-
-<h1>Plans</h1>
-<p class="sub">One is live. The other exists on this page so that you can tell me whether it should exist at all.</p>
+<h1>Pricing</h1>
+<p class="sub">The free tier is the whole public product and stays that way. Paid work starts with a pilot, because we would rather earn the subscription than sell it.</p>
 
 <div class="cols">
-  <div class="plan live">
+  <div class="plan">
     <h3>Public</h3>
     <div class="price">Free<span class="note" style="font-size:.85rem;font-weight:400"> · forever, for public servers</span></div>
     <ul>
       <li>Nightly observation of every unauthenticated server in the official registry</li>
       <li>A history page and two badges for each of them</li>
-      <li><code>mcpobs lock</code> and <code>check</code> for any public endpoint, on your machine</li>
+      <li><code>mcpobs lock</code> and <code>check</code> for any endpoint, private ones included, from your own CI</li>
       <li>The GitHub Action, in as many repositories as you like</li>
       <li>The rule scan, with every match quoted</li>
       <li>Signed heads and leaf hashes, verifiable from a clean clone</li>
-      <li>Source under the Apache License 2.0; every number recomputable from the archive</li>
+      <li>Source under Apache-2.0; every number recomputable from the archive</li>
     </ul>
     <p style="margin-top:1rem"><a class="cta" href="lock.html">Start with the lockfile</a></p>
   </div>
 
-  <div class="plan">
-    <h3>Team</h3>
-    <div class="price">Not for sale yet</div>
-    <p class="note">What it would be, if enough people want it:</p>
+  <div class="plan live">
+    <h3>Audit</h3>
+    <div class="price">€6,000<span class="note" style="font-size:.85rem;font-weight:400"> · one engagement, four weeks</span></div>
+    <p class="note">Invoiced and contracted by experteam.tn. Credited in full against Enterprise.</p>
     <ul>
-      <li>Hosted nightly checks of your authenticated servers, with the credentials held for you instead of in your CI</li>
-      <li>Hosted nightly checks with no CI to maintain, and alerts where your team reads them</li>
-      <li>A private history page per server, with the full tool text of every version, not just the hash</li>
-      <li>Exportable evidence: "this is what the server served on this date", signed</li>
+      <li>Every server your agents use, locked and checked from your CI, authenticated ones included</li>
+      <li>The rule scan over their text, with findings read by a person</li>
+      <li>Your first evidence pack: what each server served, when it changed, who accepted it</li>
+      <li>Vendor fact sheets for procurement: tenure, change rate, silent edits, template concentration</li>
+      <li>A written summary your security lead can forward</li>
+    </ul>
+    <p style="margin-top:1rem"><a class="cta" href="index.html#contact">Book an audit</a></p>
+  </div>
+
+  <div class="plan">
+    <h3>Enterprise</h3>
+    <div class="price">€30,000<span class="note" style="font-size:.85rem;font-weight:400"> · per year, after a pilot</span></div>
+    <p class="note">Scope set together after the audit. Not sold without one.</p>
+    <ul>
+      <li>A private log in your network for internal and vendor servers; only signed heads leave, the public log co-signs them</li>
+      <li>Your own vantage point for split-view detection</li>
+      <li>Quarterly evidence packs, mapped to EU AI Act record-keeping, ISO 42001 and SOC 2 change management</li>
       <li>Someone to call when a check says something you do not understand</li>
     </ul>
-    <p style="margin-top:1rem"><a class="cta ghost" href="https://github.com/yassinht/mcp-transparency-log/issues/new?title=Team+plan%3A+we+would+pay+for+this&labels=team-plan&body=Which+servers+would+you+lock%2C+and+what+would+a+change+in+one+of+them+cost+you%3F%0A%0A">Tell me you would pay</a></p>
+    <p style="margin-top:1rem"><a class="cta ghost" href="index.html#contact">Talk to us</a></p>
   </div>
 </div>
 
+<h2>What is being built, and when</h2>
+<p>The private log and split-view detection are on the <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/ROADMAP.md">public roadmap</a> for the first quarter of 2027, with estimates and the budget they need. An Enterprise subscription signed before they ship is priced as a pilot and shaped by what you actually need from them.</p>
+
 <h2>Why there is no credit-card form</h2>
-<p>Billing, accounts, hosted checks and alerting are infrastructure that has to be kept alive every
-day by someone. I run the crawler, the log and this site alone, as a side project, and I will not
-add a paid service I cannot stand behind. The free tier is complete and will stay complete: nothing
-on this site is a crippled version of something behind a paywall.</p>
-<p>The Team plan opens when five teams have said, in writing, that they would pay for it. The
-counter below is the number of GitHub issues carrying the <code>team-plan</code> label. It is
-read live, and it is allowed to say zero.</p>
+<p>Billing, accounts and hosted alerting are infrastructure that has to be kept alive every day by someone. The crawler, the log and this site are run by one engineer; experteam.tn handles contracts and invoices so that nothing paid depends on a service that cannot be stood behind. The free tier is complete and will stay complete: nothing on this site is a crippled version of something behind a paywall.</p>
+<p>The counter below is the number of GitHub issues carrying the <code>team-plan</code> label, people who said in writing they would pay for a hosted tier. It is read live, and it is allowed to say zero.</p>
 <div class="grid" style="max-width:420px">
-  <div class="stat"><div class="k">teams who said they would pay</div><div class="v" id="count">…</div><div class="n">of 5 needed · <a href="https://github.com/yassinht/mcp-transparency-log/issues?q=label%3Ateam-plan">read them</a></div></div>
+  <div class="stat"><div class="k">teams who said they would pay</div><div class="v" id="count">…</div><div class="n"><a href="https://github.com/yassinht/mcp-transparency-log/issues?q=label%3Ateam-plan">read them</a> · <a href="https://github.com/yassinht/mcp-transparency-log/issues/new?title=Team+plan%3A+we+would+pay+for+this&labels=team-plan&body=Which+servers+would+you+lock%2C+and+what+would+a+change+in+one+of+them+cost+you%3F%0A%0A">add yours</a></div></div>
 </div>
 
-<h2>Until then</h2>
-<p>If your agent depends on servers you cannot lock with the free tooling, open an issue describing
-them. If a change on a server you watch ever costs you something, I would like to hear what: that is
-the one question this whole project exists to answer, and the answer decides what gets built.</p>
-
-<footer>
-  <a href="https://github.com/yassinht/mcp-transparency-log">Source</a>
-  · <a href="https://github.com/yassinht/mcp-transparency-log/issues">Issues</a>
-</footer>
-
+<footer>Prices are hypotheses stated in advance, to be tested on the first two engagements, and published here so that nobody is quoted a different number in private.</footer>
 </div>
 <script src="site.js"></script>
 <script>

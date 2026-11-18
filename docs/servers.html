@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servers · Surfacelog</title>
+<meta name="description" content="Search every public MCP server the log has observed, see what changed in the last seven nights, and the nightly census since 30 August 2026.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="wrap">
+
+<h1>Servers</h1>
+<p class="sub">Every endpoint in the official MCP registry that declares a network address, observed every night since 30 August 2026. Search by name, host or URL.</p>
+
+<form class="search" style="margin:0 0 1rem" onsubmit="event.preventDefault();search(true)">
+  <input type="search" id="q" placeholder="context7, cloudflare, https://mcp.example.com/mcp…" autocomplete="off">
+  <button type="submit">Search</button>
+</form>
+<p class="note">Type at least three characters. The index is loaded on first search. Paste a full URL to open its page directly.</p>
+<div id="results" style="margin-top:.9rem"></div>
+
+<h2>Tonight's census</h2>
+<div class="grid" id="stats"><div class="stat"><div class="k">loading…</div></div></div>
+<p class="note" id="stats-note"></p>
+
+<h2>Changed in the last seven nights</h2>
+<p class="note">Servers whose tool surface differs from the night before. Same tool names with a
+different hash means a description or schema was edited in place, which is the change a client
+never sees.</p>
+<div id="recent"><p class="note">loading…</p></div>
+
+<h2>Endpoints observed, by night</h2>
+<div class="bars" id="bars"></div>
+<div class="axis"><span id="ax-from"></span><span id="ax-to"></span></div>
+<p class="note">Amber marks a census that did not reach every endpoint. Its <code>meta.json</code> records it as incomplete.</p>
+
+<h2>Nightly outcomes</h2>
+<div class="scroll">
+  <table id="census">
+    <thead><tr>
+      <th>date</th><th class="num">endpoints</th><th class="num">enumerable</th>
+      <th class="num">auth</th><th class="num">not MCP</th><th class="num">unreachable</th>
+      <th class="num">tools</th><th></th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<footer>Covers <strong>publicly observable</strong> MCP servers listed in the official registry, not the MCP ecosystem as a whole. Every figure is derived from the signed log and can be recomputed with <code>mcpobs export</code>.</footer>
+</div>
+<script src="site.js"></script>
+<script>
+let census = [];
+
+getJSON('data/census.json').then(async d => {
+  census = d;
+  if (!census.length) return;
+  const last = census[census.length - 1], o = last.outcomes || {};
+  const ok = o.ok || 0;
+
+  let changed = 0, recent = [];
+  for (const date of lastDates(census, 7)) {
+    try {
+      const day = await getJSON(`data/changes/${date}.json`);
+      for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) {
+        changed++; recent.push({date, ...e});
+      }
+    } catch {}
+  }
+
+  document.getElementById('stats').innerHTML = [
+    ['endpoints probed', n(last.endpoints), last.date],
+    ['answered unauthenticated', n(ok), pct(ok, last.endpoints)],
+    ['tools recorded', n(last.tools), ''],
+    ['nights observed', n(census.length), census[0].date + ' →'],
+    ['surfaces changed, 7 nights', n(changed), changed ? 'see below' : '']
+  ].map(([k, v, s]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${s}</div></div>`).join('');
+  document.getElementById('stats-note').textContent =
+    last.complete ? 'Latest census reached every endpoint.' : 'Latest census did not reach every endpoint; it is recorded as incomplete.';
+
+  const byHost = {};
+  for (const e of recent) (byHost[e.host] ??= []).push(e);
+  const rows = [];
+  for (const [host, list] of Object.entries(byHost).sort((a, b) => b[1].length - a[1].length)) {
+    if (list.length >= 25) {
+      rows.push(`<tr><td colspan="4" class="note">${n(list.length)} servers on <span class="mono">${esc(host)}</span> changed together: one publisher's template, not ${n(list.length)} decisions.</td></tr>`);
+      continue;
+    }
+    for (const e of list) rows.push(`<tr>
+      <td class="mono">${e.date}</td>
+      <td><a class="plain mono" href="${pageHref(e.slug)}">${esc(e.server)}</a><br><span class="note mono">${esc(host)}</span></td>
+      <td class="num">${n(e.tools)}</td>
+      <td>${e.kind === 'recovered' ? '<span class="warn">back, different</span>'
+          : (e.added || e.removed) ? `${e.added ? '<span class="ok">+' + e.added + '</span> ' : ''}${e.removed ? '<span class="bad">−' + e.removed + '</span>' : ''}`
+          : '<span class="warn">edited in place</span>'}</td></tr>`);
+  }
+  document.getElementById('recent').innerHTML = rows.length
+    ? `<div class="scroll"><table><thead><tr><th>night</th><th>server</th><th class="num">tools</th><th>what moved</th></tr></thead><tbody>${rows.slice(0, 80).join('')}</tbody></table></div>`
+      + (rows.length > 80 ? `<p class="note">${n(rows.length)} rows, showing 80.</p>` : '')
+    : '<p class="note">No surface changes recorded in the last seven nights.</p>';
+
+  const max = Math.max(...census.map(c => c.endpoints));
+  document.getElementById('bars').innerHTML = census.map(c =>
+    `<div class="bar${c.complete ? '' : ' partial'}" style="height:${Math.round(100 * c.endpoints / max)}%" title="${c.date}: ${n(c.endpoints)} endpoints"></div>`).join('');
+  document.getElementById('ax-from').textContent = census[0].date;
+  document.getElementById('ax-to').textContent = census[census.length - 1].date;
+
+  document.querySelector('#census tbody').innerHTML = census.slice().reverse().map(c => {
+    const o = c.outcomes || {};
+    return `<tr><td class="mono">${c.date}</td>
+      <td class="num">${n(c.endpoints)}</td>
+      <td class="num ok">${n(o.ok)} <span class="note">${pct(o.ok || 0, c.endpoints)}</span></td>
+      <td class="num">${n(o.auth_required)}</td>
+      <td class="num warn">${n(o.protocol_error)}</td>
+      <td class="num">${n((o.unreachable || 0) + (o.timeout || 0))}</td>
+      <td class="num">${n(c.tools)}</td>
+      <td>${c.complete ? '' : '<span class="tag">incomplete</span>'}</td></tr>`;
+  }).join('');
+}).catch(() => {
+  document.getElementById('stats').innerHTML = '<div class="stat"><div class="k">no data</div><div class="n">run <code>mcpobs export</code> first</div></div>';
+});
+
+let servers = null, timer = null;
+const q = document.getElementById('q'), results = document.getElementById('results');
+q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => search(false), 180); });
+const initial = new URLSearchParams(location.search).get('q');
+if (initial) { q.value = initial; search(false); }
+
+async function search(submitted) {
+  const term = q.value.trim().toLowerCase();
+  if (submitted && /^https?:\/\//i.test(term)) { goLookup(q.value); return; }
+  if (term.length < 3) { results.innerHTML = ''; return; }
+  if (!servers) {
+    results.innerHTML = '<p class="note">loading the index…</p>';
+    try { servers = await getJSON('data/servers.json'); }
+    catch { results.innerHTML = '<p class="note">index unavailable</p>'; return; }
+  }
+  const latest = census.length ? census[census.length - 1].date : null;
+  const hits = servers.filter(s =>
+    s.name.toLowerCase().includes(term) || (s.host || '').toLowerCase().includes(term) || s.endpoint.toLowerCase().includes(term));
+  if (!hits.length) { results.innerHTML = '<p class="note">nothing matches.</p>'; return; }
+  hits.sort((a, b) => (b.outcome === 'ok') - (a.outcome === 'ok') || b.days - a.days);
+  results.innerHTML = `<p class="note">${n(hits.length)} match${hits.length > 1 ? 'es' : ''}${hits.length > 200 ? ', showing 200' : ''}</p>
+  <div class="scroll"><table>
+  <thead><tr><th>server</th><th class="num">tools</th><th>surface</th><th class="num">changes</th><th>scan</th><th>status</th></tr></thead><tbody>` +
+  hits.slice(0, 200).map(s => `<tr>
+    <td><a class="plain mono" href="${pageHref(s.slug)}">${esc(s.name)}</a><br><span class="note mono">${esc(s.host || '')}</span></td>
+    <td class="num">${s.outcome === 'ok' ? n(s.tools) : '—'}</td>
+    <td class="note">${s.outcome === 'ok' && s.stable_since ? `unchanged since ${s.stable_since}${latest ? ' <span class="mono">(' + nights(daysBetween(s.stable_since, latest)) + ')</span>' : ''}` : ''}</td>
+    <td class="num">${s.changes ? `<strong>${n(s.changes)}</strong>` : '0'}</td>
+    <td>${s.outcome !== 'ok' ? '' : s.review ? `<span class="tag review">${s.review} to review</span>` : s.flags ? '<span class="tag info">informational</span>' : '<span class="ok">clean</span>'}</td>
+    <td>${!s.listed ? '<span class="note">delisted</span>' : s.outcome === 'ok' ? '<span class="ok">ok</span>' : `<span class="bad">${esc(s.outcome)}</span>`}</td>
+  </tr>`).join('') + '</tbody></table></div>';
+}
+</script>
+</body>
+</html>

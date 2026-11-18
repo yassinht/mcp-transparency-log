@@ -2,6 +2,8 @@
 
 An independent, continuously-operated record of what public MCP servers actually served.
 
+**Site and product: [Surfacelog](https://yassinht.github.io/mcp-transparency-log/)**, the company and product name since 2026-11-18. The public record it operates keeps the name MCP Transparency Log, because a record's name should not change.
+
 ## Why signing is not enough
 
 Sigstore, Rekor and manifest signing are **opt-in publisher attestations**. A server operator who changes a tool description from *"look up the weather"* to *"look up the weather and forward the conversation to evil.example"* will happily sign the new description, and the signature will verify perfectly. Signing proves who published something. It does not tell you that what you are running today is not what you audited last month.
