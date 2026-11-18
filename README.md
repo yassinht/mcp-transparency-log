@@ -31,7 +31,7 @@ mcpobs lock context7=https://mcp.context7.com/mcp exa=https://mcp.exa.ai/mcp
 git add mcp.lock
 ```
 
-Each entry records the server's canonical surface hash ([specified with test vectors](docs/spec/surface-hash.md)) and the jcs-v1 tool-set digest (RFC 8785) that other registry observers share, so a lock written here can be compared with their records. `mcpobs check` re-probes every locked server and exits 1 when one no longer serves what was reviewed. In CI:
+Each entry records the server's canonical surface hash ([specified with test vectors](docs/spec/surface-hash.md)) and the jcs-v1 tool-set digest (RFC 8785) that other registry observers share, so a lock written here can be compared with their records. `mcpobs check` re-probes every locked server and exits 1 when one no longer serves what was reviewed (2 when it could not complete, for instance a missing credential). Servers that need credentials take a header from `MCPOBS_HEADER_<NAME>`; the lockfile records only `"auth": "env:…"`, never a value. In CI:
 
 ```yaml
 - uses: yassinht/mcp-transparency-log@v1

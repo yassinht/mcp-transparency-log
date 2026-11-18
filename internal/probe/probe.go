@@ -65,6 +65,22 @@ type Config struct {
 	// single version silently biased the week-0 sample against servers on a
 	// different spec revision.
 	ProtocolVersions []string
+	// Headers are sent on every request: how a lock or check reaches a
+	// server that needs credentials. The public census never sets them; the
+	// log covers unauthenticated servers only. Protocol headers (Accept,
+	// Content-Type, MCP-Protocol-Version, Mcp-Session-Id) always win over
+	// these, and Go's client drops Authorization on a cross-host redirect.
+	Headers http.Header
+}
+
+// extraHeaders applies cfg.Headers to a request. Called before the protocol
+// headers are set, so a stray Accept or Content-Type here cannot break MCP.
+func (p *Prober) extraHeaders(req *http.Request) {
+	for k, vs := range p.cfg.Headers {
+		for _, v := range vs {
+			req.Header.Add(k, v)
+		}
+	}
 }
 
 func DefaultConfig(ua string) Config {
@@ -291,6 +307,7 @@ func (p *Prober) probeSSE(ctx context.Context, endpoint string) *Result {
 		r.FailReason = trim(err.Error())
 		return r
 	}
+	p.extraHeaders(req)
 	req.Header.Set("User-Agent", p.cfg.UserAgent)
 	req.Header.Set("Accept", "text/event-stream")
 
@@ -366,6 +383,7 @@ func (p *Prober) probeSSE(ctx context.Context, endpoint string) *Result {
 		if rerr != nil {
 			return rerr
 		}
+		p.extraHeaders(rq)
 		rq.Header.Set("User-Agent", p.cfg.UserAgent)
 		rq.Header.Set("Content-Type", "application/json")
 		rs, derr := p.client.Do(rq)

@@ -11,6 +11,7 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
 	"os"
@@ -88,6 +89,13 @@ func main() {
 		os.Exit(2)
 	}
 	if err != nil {
+		// check: 1 means a server drifted, 2 means the check itself could not
+		// be completed (bad lockfile, missing credential). CI treats them
+		// differently and the Action's output documents both.
+		if args[0] == "check" && !errors.Is(err, errDrift) {
+			fmt.Fprintf(os.Stderr, "mcpobs: %v\n", err)
+			os.Exit(2)
+		}
 		fatal("%v", err)
 	}
 }
@@ -114,6 +122,12 @@ flags:
   --heads <dir>                signed heads (default "heads")
   --pubkey <file>              signing public key (default "heads/key.pub")
   --leaves <dir>               published leaf hashes; verify with no archive
+
+credentials (lock/check):
+  MCPOBS_HEADER_<NAME>="Header-Name: value"   one header per line, for the entry
+                               named <NAME> (or the endpoint host, upper-cased);
+                               recorded in the lockfile as "auth": "env:...",
+                               never as a value
 `)
 }
 

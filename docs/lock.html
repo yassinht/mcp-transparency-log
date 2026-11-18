@@ -64,6 +64,15 @@ read in code review:</p>
   ]
 }</pre>
 
+<h3>Servers that need credentials</h3>
+<p>Put the header in an environment variable named after the entry; it is sent on every request and
+written nowhere. The lockfile records only where the credential lives.</p>
+<pre>export MCPOBS_HEADER_SALESFORCE="Authorization: Bearer $SF_TOKEN"   # one header per line
+mcpobs lock salesforce=https://mcp.salesforce.example/mcp
+# mcp.lock gains  "auth": "env:MCPOBS_HEADER_SALESFORCE"  and nothing else</pre>
+<p class="note">A check that finds an <code>auth</code> entry without its variable stops with exit code 2 and says which
+variable is missing, instead of reporting the server as unreachable.</p>
+
 <h2>3 · Check it in CI</h2>
 <p>Add a workflow. Daily is the useful cadence; on pull requests that touch the lockfile is the
 second one.</p>
@@ -88,7 +97,9 @@ jobs:
       - uses: yassinht/mcp-transparency-log@v1
         with:
           lock: mcp.lock          # default
-          open-issue: "true"      # default</pre>
+          open-issue: "true"      # default
+        env:                      # only for entries locked with a credential
+          MCPOBS_HEADER_SALESFORCE: "Authorization: Bearer ${{ secrets.MCP_SALESFORCE_TOKEN }}"</pre>
 <p class="note">The Action builds <code>mcpobs</code> from the tag you pinned, so what runs in your
 CI is exactly what is in that tag's source. No download from a third host, no prebuilt binary to
 trust.</p>
@@ -146,9 +157,10 @@ them is staged.</p>
   </div>
   <div class="card">
     <h3>Servers that need credentials?</h3>
-    <p>Not yet. The probe sends no authentication, which is also why the public log covers only
-    unauthenticated servers. If your agent depends on authenticated servers and you would want
-    them locked, <a href="plans.html">say so</a>: that is the first thing a paid tier would do.</p>
+    <p>Yes, since 2026-11-18: a header per entry from <code>MCPOBS_HEADER_&lt;NAME&gt;</code>, sent on every
+    request, never stored. The public log itself still covers only unauthenticated servers, because
+    the crawler sends no credentials to anyone; your private and vendor servers are checked from your
+    CI, with your secrets, and leave no trace here.</p>
   </div>
 </div>
 

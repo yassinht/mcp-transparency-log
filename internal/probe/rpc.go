@@ -62,6 +62,7 @@ func (p *Prober) post(ctx context.Context, endpoint, sessionID, version string, 
 	if err != nil {
 		return nil, nil, 0, err
 	}
+	p.extraHeaders(req)
 	req.Header.Set("User-Agent", p.cfg.UserAgent)
 	req.Header.Set("Content-Type", "application/json")
 	// Both forms must be advertised: the spec lets the server pick either.

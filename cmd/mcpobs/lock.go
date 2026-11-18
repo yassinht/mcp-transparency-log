@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"net/http"
 	"os"
 	"sort"
 	"strings"
@@ -52,6 +53,9 @@ type lockEntry struct {
 	Tools     []string `json:"tools"`
 	LockedAt  string   `json:"locked_at"`
 	Transport string   `json:"transport,omitempty"`
+	// Auth names where the credential comes from ("env:MCPOBS_HEADER_X"),
+	// never what it is. See auth.go.
+	Auth string `json:"auth,omitempty"`
 }
 
 // errDrift is returned by check when at least one server no longer matches
@@ -68,11 +72,13 @@ type probed struct {
 	Transport string
 }
 
-func probeSurface(endpoint string) (*probed, error) {
+func probeSurface(endpoint string, hdr http.Header) (*probed, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 45*time.Second)
 	defer cancel()
 
-	p := probe.New(probe.DefaultConfig(lockUserAgent))
+	cfg := probe.DefaultConfig(lockUserAgent)
+	cfg.Headers = hdr
+	p := probe.New(cfg)
 	res := p.Probe(ctx, endpoint, "")
 	if res.Outcome != probe.OutcomeOK {
 		reason := res.FailReason
@@ -147,15 +153,27 @@ func cmdLock(path string, endpoints []string) error {
 	var failed int
 	for _, ep := range endpoints {
 		name, endpoint := splitNameEndpoint(ep)
-		fmt.Fprintf(os.Stderr, "probing %s ... ", endpoint)
-		pr, perr := probeSurface(endpoint)
-		if perr != nil {
-			fmt.Fprintf(os.Stderr, "FAILED (%v)\n", perr)
+		hdr, envKey, herr := headersFor(name, endpoint)
+		if herr != nil {
+			fmt.Fprintf(os.Stderr, "%s: %v\n", endpoint, herr)
 			failed++
 			continue
 		}
-		fmt.Fprintf(os.Stderr, "%d tools, surface %s, jcs-v1 %s\n", len(pr.Tools), pr.Surface[:12], pr.ToolsSRI)
-		entry := lockEntry{Name: name, Endpoint: endpoint, Surface: pr.Surface, ToolsSRI: pr.ToolsSRI, Tools: pr.Tools, LockedAt: now, Transport: pr.Transport}
+		fmt.Fprintf(os.Stderr, "probing %s ... ", endpoint)
+		pr, perr := probeSurface(endpoint, hdr)
+		if perr != nil {
+			if len(hdr) == 0 && strings.HasPrefix(perr.Error(), string(probe.OutcomeAuth)) {
+				fmt.Fprintf(os.Stderr, "FAILED (%v; set %s=\"Header-Name: value\" to send credentials)\n", perr, envKey)
+			} else {
+				fmt.Fprintf(os.Stderr, "FAILED (%v)\n", perr)
+			}
+			failed++
+			continue
+		}
+		auth := authRef(envKey, hdr)
+		fmt.Fprintf(os.Stderr, "%d tools, surface %s, jcs-v1 %s%s\n", len(pr.Tools), pr.Surface[:12], pr.ToolsSRI,
+			map[bool]string{true: " (authenticated via " + envKey + ")", false: ""}[auth != ""])
+		entry := lockEntry{Name: name, Endpoint: endpoint, Surface: pr.Surface, ToolsSRI: pr.ToolsSRI, Tools: pr.Tools, LockedAt: now, Transport: pr.Transport, Auth: auth}
 		if i, ok := byEndpoint[endpoint]; ok {
 			if entry.Name == "" {
 				entry.Name = lf.Servers[i].Name
@@ -200,21 +218,36 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 		Transport string    `json:"transport,omitempty"`
 	}
 	var (
-		results              []result
-		changed, unreachable int
-		now                  = time.Now().UTC().Format(time.RFC3339)
+		results                             []result
+		changed, unreachable, misconfigured int
+		now                                 = time.Now().UTC().Format(time.RFC3339)
 	)
 
 	fmt.Printf("%s: %d server(s)\n\n", path, len(lf.Servers))
 	for i, e := range lf.Servers {
 		r := result{Entry: e}
-		pr, perr := probeSurface(e.Endpoint)
-		surface, tools, transport := pr.Surface, pr.Tools, pr.Transport
-		r.Transport = transport
 		label := e.Name
 		if label == "" {
 			label = e.Endpoint
 		}
+		// A server locked with a credential must be checked with one. Probing
+		// it bare would report "unreachable" and hide a missing secret behind
+		// a network-looking failure.
+		hdr, envKey, herr := headersFor(e.Name, e.Endpoint)
+		if herr != nil || (e.Auth != "" && len(hdr) == 0) {
+			r.Status = "misconfigured"
+			r.Error = "credential " + envKey + " is not set in this environment"
+			if herr != nil {
+				r.Error = herr.Error()
+			}
+			misconfigured++
+			fmt.Printf("  MISCONFIGURED %s\n               %s\n", label, r.Error)
+			results = append(results, r)
+			continue
+		}
+		pr, perr := probeSurface(e.Endpoint, hdr)
+		surface, tools, transport := pr.Surface, pr.Tools, pr.Transport
+		r.Transport = transport
 		switch {
 		case perr != nil:
 			r.Status, r.Error = "unreachable", perr.Error()
@@ -240,16 +273,16 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 			}
 			fmt.Printf("               surface %s -> %s\n", e.Surface[:12], surface[:12])
 			if update {
-				lf.Servers[i] = lockEntry{Name: e.Name, Endpoint: e.Endpoint, Surface: surface, ToolsSRI: pr.ToolsSRI, Tools: tools, LockedAt: now, Transport: transport}
+				lf.Servers[i] = lockEntry{Name: e.Name, Endpoint: e.Endpoint, Surface: surface, ToolsSRI: pr.ToolsSRI, Tools: tools, LockedAt: now, Transport: transport, Auth: e.Auth}
 			}
 		}
 		results = append(results, r)
 	}
 
-	fmt.Printf("\n%d ok, %d changed, %d unreachable\n", len(lf.Servers)-changed-unreachable, changed, unreachable)
+	fmt.Printf("\n%d ok, %d changed, %d unreachable, %d misconfigured\n", len(lf.Servers)-changed-unreachable-misconfigured, changed, unreachable, misconfigured)
 
 	if jsonOut != "" {
-		out := map[string]any{"lock": path, "checked_at": now, "changed": changed, "unreachable": unreachable, "results": results}
+		out := map[string]any{"lock": path, "checked_at": now, "changed": changed, "unreachable": unreachable, "misconfigured": misconfigured, "results": results}
 		if err := writeJSON(jsonOut, out); err != nil {
 			return err
 		}
@@ -285,6 +318,8 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 				fmt.Fprintf(&b, "[Observed history of this server](%s)\n\n", hist)
 			case "unreachable":
 				fmt.Fprintf(&b, "### %s — unreachable\n\n`%s` · %s\n\nNot counted as drift; the lock could not be verified this run.\n\n", label, r.Entry.Endpoint, r.Error)
+			case "misconfigured":
+				fmt.Fprintf(&b, "### %s — not checked\n\n`%s` · %s\n\nThis entry was locked with a credential. Set that variable on the step that runs the check (from a repository secret in GitHub Actions).\n\n", label, r.Entry.Endpoint, r.Error)
 			}
 		}
 		fmt.Fprintf(&b, "---\n\nTo accept after review: `mcpobs --lock %s check --update`, then commit the lockfile.\n\n", path)
@@ -303,6 +338,9 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 	}
 	if changed > 0 {
 		return errDrift
+	}
+	if misconfigured > 0 {
+		return fmt.Errorf("%d locked server(s) need a credential that is not set; the check is incomplete", misconfigured)
 	}
 	return nil
 }

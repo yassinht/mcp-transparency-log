@@ -29,7 +29,7 @@ infrastructure.
 
 | ID | Story | Acceptance | Est. | Requires |
 | --- | --- | --- | --- | --- |
-| A1 ⏳ | Authenticated servers in `lock` and `check`: per-server headers read from environment variables (`MCPOBS_HEADER_<name>=Authorization: Bearer …`), never written to the lockfile | A private server locks and checks in CI with a secret from Actions or Vault; the lockfile diff shows no secret | 3 d | nothing |
+| A1 ✅ | Authenticated servers in `lock` and `check`: per-server headers read from environment variables (`MCPOBS_HEADER_<name>=Authorization: Bearer …`), never written to the lockfile | A private server locks and checks in CI with a secret from Actions or Vault; the lockfile diff shows no secret | 3 d | nothing |
 | A2 ⏳ | `mcpobs check --evidence out.json`: for every changed server, the full tool text before and after, the diff, timestamps, lock reference, and the public log head of that night | A reviewer reads one file and sees the exact sentence that changed | 3 d | nothing |
 | A3 ⏳ | `mcpobs evidence <endpoint> --from --to` (operator side): every surface version of a server between two dates, with the archived bytes and an inclusion proof per observation | Output verifies with A4 from a clean clone | 4 d | nothing |
 | A4 ⏳ | `mcpobs verify-evidence bundle.json`: checks every inclusion proof against the published leaves and heads, offline | An auditor runs one command and gets VERIFIED or the exact failing item | 3 d | nothing |
