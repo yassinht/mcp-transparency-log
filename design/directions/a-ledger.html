@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Direction A · Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f3ec; --paper-2:#efeadf; --ink:#1b1a17; --ink-2:#4d4a43; --ink-3:#8a867c;
+  --rule:#d9d3c5; --rule-2:#bdb5a3;
+  --ok:#2e6f5e; --ok-bg:#e3efe9; --warn:#9a6a12; --warn-bg:#f4ead4; --bad:#9a3b32; --bad-bg:#f3e0dd;
+  --serif:"Source Serif 4",Georgia,serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans)}
+a{color:inherit}
+.topline{font:12px/1 var(--mono);color:var(--ink-2);background:var(--paper-2);border-bottom:1px solid var(--rule);
+  padding:8px 32px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topline b{color:var(--ok);font-weight:500}
+header{display:flex;align-items:baseline;gap:32px;padding:18px 32px;border-bottom:1px solid var(--rule-2)}
+.brand{font:600 20px var(--serif);letter-spacing:-.01em}
+.brand small{display:block;font:12px var(--mono);color:var(--ink-3);letter-spacing:.04em;text-transform:uppercase;margin-top:2px}
+nav{display:flex;gap:22px;margin-left:auto;font-size:14px}
+nav a{text-decoration:none;color:var(--ink-2)} nav a.on{color:var(--ink);border-bottom:2px solid var(--ink);padding-bottom:2px}
+main{max-width:1180px;margin:0 auto;padding:28px 32px 64px}
+.crumbs{font:13px var(--mono);color:var(--ink-3)}
+h1{font:600 34px/1.15 var(--serif);margin:6px 0 4px;letter-spacing:-.015em}
+.endpoint{font:14px var(--mono);color:var(--ink-2)}
+.status{display:flex;gap:28px;flex-wrap:wrap;margin:22px 0 8px;padding:18px 0;border-top:1px solid var(--rule-2);border-bottom:1px solid var(--rule)}
+.fact .k{font:12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3)}
+.fact .v{font:600 22px/1.2 var(--serif);margin-top:4px;font-variant-numeric:tabular-nums}
+.fact .v.ok{color:var(--ok)}
+.fact .n{font-size:12.5px;color:var(--ink-2)}
+.chip{display:inline-block;font:500 12px var(--mono);padding:2px 8px;border-radius:3px;border:1px solid currentColor;vertical-align:middle}
+.chip.ok{color:var(--ok);background:var(--ok-bg)} .chip.warn{color:var(--warn);background:var(--warn-bg)} .chip.bad{color:var(--bad);background:var(--bad-bg)}
+.cols{display:grid;grid-template-columns:1.25fr .9fr;gap:40px;margin-top:28px}
+h2{font:600 15px var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin:26px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+.tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--rule-2);margin-left:6px}
+.tl li{position:relative;padding:0 0 18px 22px;font-size:14px}
+.tl li::before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:2px solid var(--ink-2)}
+.tl li.ok::before{border-color:var(--ok);background:var(--ok)} .tl li.warn::before{border-color:var(--warn);background:var(--warn)}
+.tl .d{font:13px var(--mono);color:var(--ink-3);margin-right:10px}
+.tl .quiet{color:var(--ink-3);font-style:italic}
+.tl .quiet::before{border-style:dotted;background:var(--paper)}
+.hash{font:13px var(--mono);word-break:break-all;background:var(--paper-2);padding:8px 10px;border:1px solid var(--rule);border-radius:3px;margin:6px 0 10px}
+.hash .l{color:var(--ink-3);font-size:11px;display:block;margin-bottom:2px;letter-spacing:.04em;text-transform:uppercase}
+.tools{display:flex;flex-wrap:wrap;gap:6px}
+.tools span{font:13px var(--mono);padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:#fff}
+pre{font:13px/1.5 var(--mono);background:#fff;border:1px solid var(--rule);padding:10px 12px;border-radius:3px;overflow:auto;margin:6px 0}
+.badges{display:flex;gap:10px;align-items:center;margin:8px 0}
+.badge{display:inline-flex;font:12px var(--mono);border:1px solid var(--rule-2);border-radius:3px;overflow:hidden}
+.badge i{font-style:normal;background:#555;color:#fff;padding:3px 7px} .badge b{font-weight:500;padding:3px 7px;color:#fff;background:var(--ok)}
+.badge.scan b{background:var(--ok)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font:12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);padding:6px 8px;border-bottom:1px solid var(--rule-2)}
+td{padding:8px;border-bottom:1px solid var(--rule);vertical-align:top}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.note{color:var(--ink-2);font-size:13px}
+.overview{margin-top:48px;padding-top:24px;border-top:3px double var(--rule-2)}
+.overview h1{font-size:40px;max-width:22ch}
+.lede{font:18px/1.5 var(--serif);max-width:60ch;color:var(--ink-2)}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:20px 0;border:1px solid var(--rule-2)}
+.stats div{padding:12px 14px;border-right:1px solid var(--rule)} .stats div:last-child{border-right:0}
+.stats .k{font:11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3)}
+.stats .v{font:600 26px/1.1 var(--serif);margin-top:4px;font-variant-numeric:tabular-nums}
+.bars{display:flex;align-items:flex-end;gap:2px;height:56px;margin-top:10px}
+.bars i{flex:1;background:var(--ink-2);opacity:.75;border-radius:1px 1px 0 0}
+.tag{position:fixed;right:12px;bottom:12px;font:11px var(--mono);background:var(--ink);color:var(--paper);padding:4px 8px;border-radius:3px;opacity:.85}
+@media (max-width:820px){.cols{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}header{padding:14px 16px}main{padding:20px 16px}.topline{padding:8px 16px}h1{font-size:26px}.overview h1{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="topline"><span>Signed head · 2026-11-18 · tree size 2,215,731 · <b>verified from published leaves</b></span><span>night 80 · next census 03:08 UTC</span></div>
+<header>
+  <div class="brand">MCP Transparency Log<small>Independent nightly record · since 2026-08-30</small></div>
+  <nav><a class="on">Servers</a><a>Lock</a><a>Scan</a><a>Verify</a><a>Plans</a><a>Source</a></nav>
+</header>
+<main>
+  <div class="crumbs">Servers / ac.tandem</div>
+  <h1>ac.tandem/docs-mcp</h1>
+  <div class="endpoint">https://tandem.ac/mcp &nbsp;·&nbsp; streamable-http &nbsp;·&nbsp; <span class="chip ok">OK</span></div>
+
+  <div class="status">
+    <div class="fact"><div class="k">Tool surface</div><div class="v ok">unchanged since 2026-08-30</div><div class="n">80 consecutive nights, 13 tools</div></div>
+    <div class="fact"><div class="k">First observed</div><div class="v">2026-08-30</div><div class="n">night 1 of the public series</div></div>
+    <div class="fact"><div class="k">Changes</div><div class="v">0</div><div class="n">no night differed from the one before</div></div>
+    <div class="fact"><div class="k">Rule scan</div><div class="v ok">clean</div><div class="n">13 rules, run 2026-11-18</div></div>
+  </div>
+
+  <div class="cols">
+    <section>
+      <h2>History</h2>
+      <ul class="tl">
+        <li><span class="d">2026-11-18</span>observed, unchanged <span class="note">· tonight</span></li>
+        <li class="quiet"><span class="d">2026-08-31 → 11-17</span>79 quiet nights, same surface each night</li>
+        <li class="ok"><span class="d">2026-08-30</span><b>first observed</b> · 13 tools · tool list readable without credentials</li>
+      </ul>
+      <p class="note">Every night is a leaf in the signed log. A night without an entry is a night the surface hash was equal to the night before.</p>
+
+      <h2>What a change looks like</h2>
+      <ul class="tl">
+        <li class="warn"><span class="d">2026-10-13</span><b>surface changed</b> · 2 → 2 tools · <span class="chip warn">edited in place</span> same tool names, a description or schema was rewritten</li>
+        <li class="ok"><span class="d">2026-09-23</span>recovered · same surface as before</li>
+        <li><span class="d">2026-09-21</span>stopped answering · timeout</li>
+      </ul>
+      <p class="note">Sample from another server, shown so the three event kinds are visible.</p>
+    </section>
+
+    <aside>
+      <h2>Surface</h2>
+      <div class="hash"><span class="l">surface_sha256 · covers every member of every tool</span>73dd9c8626a0051e0ab5c91ee42ba2a2c2e8668b24da92fb9f76ed0744013bb3</div>
+      <div class="hash"><span class="l">jcs-v1 tool-set digest · RFC 8785, shared with other observers</span>sha256-xHrgbIGaYj7PYZTHT9CY+Za/+1ABIFwjMi1qxdEDt7g=</div>
+
+      <h2>13 tools served</h2>
+      <div class="tools"><span>answer_how_to</span><span>compare_doc_page_refresh</span><span>compare_docs_index_refresh</span><span>get_doc</span><span>get_docs_cache_status</span><span>get_start_path</span><span>get_tandem_guide</span><span>invalidate_docs_cache</span><span>recommend_next_docs</span><span>refresh_doc_page</span><span>refresh_docs_index</span><span>search_docs</span><span>warmup_docs_cache</span></div>
+
+      <h2>Badges</h2>
+      <div class="badges"><span class="badge"><i>mcp surface</i><b>unchanged since 2026-08-30</b></span><span class="badge scan"><i>mcp scan</i><b>clean</b></span></div>
+      <pre>[![mcp surface](https://img.shields.io/endpoint?url=…/badge/1a/1a1978d681b968f5.json)](…)</pre>
+
+      <h2>Pin it in CI</h2>
+      <pre>mcpobs lock docs-mcp=https://tandem.ac/mcp</pre>
+    </aside>
+  </div>
+
+  <h2>Rule scan · run 2026-11-18</h2>
+  <table>
+    <thead><tr><th>rule</th><th>tier</th><th>tool · field</th><th>matched text</th></tr></thead>
+    <tbody>
+      <tr><td colspan="4" class="note">No rule matched any text this server serves. That is a statement about thirteen patterns, not a safety certificate.</td></tr>
+      <tr><td class="mono">URL-EXT <div class="note">URL to a host other than the server's own</div></td><td><span class="chip">info</span></td><td>get_doc · schema.url.description</td><td class="note">"…see https://docs.example-vendor.com/…" <em>(sample row from another server)</em></td></tr>
+    </tbody>
+  </table>
+
+  <section class="overview">
+    <div class="crumbs">Overview, same direction</div>
+    <h1>Know when an MCP server changes underneath your agent.</h1>
+    <p class="lede">Every night since 30 August 2026 a crawler has visited every server in the official MCP registry and recorded the exact tool surface it served. The record is an append-only Merkle log with a signed head published daily. Nothing here asks to be trusted.</p>
+    <div class="stats">
+      <div><div class="k">endpoints probed</div><div class="v">45,490</div></div>
+      <div><div class="k">answered unauthenticated</div><div class="v">27,096</div></div>
+      <div><div class="k">tools recorded</div><div class="v">484,556</div></div>
+      <div><div class="k">nights observed</div><div class="v">80</div></div>
+      <div><div class="k">review-tier flags</div><div class="v">3.1 %</div></div>
+    </div>
+    <div class="bars"><i style="height:38%"></i><i style="height:40%"></i><i style="height:41%"></i><i style="height:44%"></i><i style="height:47%"></i><i style="height:49%"></i><i style="height:52%"></i><i style="height:55%"></i><i style="height:57%"></i><i style="height:60%"></i><i style="height:63%"></i><i style="height:66%"></i><i style="height:70%"></i><i style="height:73%"></i><i style="height:76%"></i><i style="height:79%"></i><i style="height:82%"></i><i style="height:86%"></i><i style="height:90%"></i><i style="height:94%"></i><i style="height:97%"></i><i style="height:100%"></i></div>
+    <p class="note">Endpoints observed per night, 2026-08-30 → 2026-11-18.</p>
+  </section>
+</main>
+<div class="tag">direction mockup A · real data + two sample rows</div>
+</body>
+</html>

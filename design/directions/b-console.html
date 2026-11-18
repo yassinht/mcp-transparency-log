@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Direction B · Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1115; --bg-2:#151821; --bg-3:#1c2029; --line:#262b36; --line-2:#333a48;
+  --fg:#e6e8ee; --fg-2:#a7adbb; --fg-3:#6b7384;
+  --ok:#3ddc97; --ok-bg:#12302a; --warn:#f2b544; --warn-bg:#332a12; --bad:#ff6b6b; --bad-bg:#3a1c1c; --info:#7aa2f7;
+  --sans:"Inter",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:13.5px/1.5 var(--sans)}
+a{color:inherit}
+.shell{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+.rail{background:var(--bg-2);border-right:1px solid var(--line);padding:14px 12px;display:flex;flex-direction:column;gap:4px}
+.rail .brand{font:600 13px var(--sans);padding:6px 10px 14px;display:flex;align-items:center;gap:8px}
+.rail .brand i{width:22px;height:22px;border-radius:5px;background:linear-gradient(135deg,var(--ok),#1f8f63);display:inline-block}
+.rail a{text-decoration:none;color:var(--fg-2);padding:7px 10px;border-radius:6px;font-size:13px}
+.rail a.on{background:var(--bg-3);color:var(--fg)}
+.rail .sec{font:11px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--fg-3);padding:14px 10px 4px}
+.rail .head{margin-top:auto;font:11.5px/1.5 var(--mono);color:var(--fg-2);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:10px}
+.rail .head b{color:var(--ok);font-weight:500}
+.rail .head .k{color:var(--fg-3)}
+.top{display:flex;align-items:center;gap:14px;padding:10px 22px;border-bottom:1px solid var(--line);background:var(--bg-2);font-size:12.5px;color:var(--fg-2)}
+.top input{margin-left:auto;background:var(--bg);border:1px solid var(--line-2);color:var(--fg);border-radius:6px;padding:6px 10px;font:12.5px var(--sans);width:min(280px,40vw)}
+main{padding:20px 22px 48px;max-width:1240px;min-width:0;overflow-wrap:anywhere}
+.shell > div{min-width:0}
+.crumbs{font:12px var(--mono);color:var(--fg-3)}
+h1{font:600 22px/1.2 var(--sans);margin:4px 0 2px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.endpoint{font:12.5px var(--mono);color:var(--fg-2)}
+.chip{display:inline-flex;align-items:center;gap:6px;font:500 11.5px var(--mono);padding:2px 8px;border-radius:999px;border:1px solid}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.chip.ok{color:var(--ok);background:var(--ok-bg);border-color:#1f5a46} .chip.warn{color:var(--warn);background:var(--warn-bg);border-color:#6b4f14} .chip.bad{color:var(--bad);background:var(--bad-bg);border-color:#7a2e2e} .chip.info{color:var(--fg-2);border-color:var(--line-2)} .chip.info::before{display:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:18px 0}
+.stat{background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.stat .k{font:11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--fg-3)}
+.stat .v{font:600 20px/1.2 var(--sans);margin-top:6px;font-variant-numeric:tabular-nums}
+.stat .v.ok{color:var(--ok)} .stat .n{font-size:12px;color:var(--fg-2);margin-top:2px}
+.panel{background:var(--bg-2);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.panel h2{font:600 12px var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--fg-2);margin:0;padding:10px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.panel h2 span{font:11px var(--mono);color:var(--fg-3);text-transform:none;letter-spacing:0}
+.panel .body{padding:12px 14px}
+.cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:12px}
+.col{display:flex;flex-direction:column;gap:12px}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:minmax(70px,96px) 14px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;align-items:start}
+.tl li:last-child{border-bottom:0}
+.tl .d{font:12px var(--mono);color:var(--fg-3);padding-top:2px}
+.tl .dot{width:8px;height:8px;border-radius:50%;background:var(--fg-3);margin-top:6px}
+.tl li.ok .dot{background:var(--ok)} .tl li.warn .dot{background:var(--warn)} .tl li.bad .dot{background:var(--bad)} .tl li.quiet .dot{background:transparent;border:1px dashed var(--fg-3)}
+.tl .quiet{color:var(--fg-3)}
+.hash{font:12px var(--mono);word-break:break-all;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;margin:6px 0 10px;display:flex;justify-content:space-between;gap:10px}
+.hash .l{display:block;color:var(--fg-3);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:3px}
+.hash button{font:11px var(--mono);background:var(--bg-3);color:var(--fg-2);border:1px solid var(--line-2);border-radius:4px;padding:2px 7px;height:fit-content}
+.tools{display:flex;flex-wrap:wrap;gap:6px}
+.tools span{font:12px var(--mono);padding:2px 7px;border:1px solid var(--line-2);border-radius:4px;background:var(--bg)}
+pre{font:12px/1.5 var(--mono);background:var(--bg);border:1px solid var(--line);padding:9px 11px;border-radius:6px;overflow:auto;margin:6px 0;color:var(--fg)}
+.badges{display:flex;gap:8px;align-items:center;margin:4px 0 8px}
+.badge{display:inline-flex;font:11px var(--mono);border-radius:4px;overflow:hidden;border:1px solid var(--line-2)}
+.badge i{font-style:normal;background:#2a2f3a;color:#fff;padding:3px 7px} .badge b{font-weight:500;padding:3px 7px;background:#1f8f63;color:#fff}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;font:11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--fg-3);padding:8px 14px;border-bottom:1px solid var(--line);background:var(--bg-2)}
+td{padding:9px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.mono{font-family:var(--mono)} .note{color:var(--fg-2);font-size:12px}
+.overview{margin-top:36px;border-top:1px solid var(--line);padding-top:22px}
+.overview h1{font-size:30px;max-width:24ch;display:block}
+.lede{max-width:66ch;color:var(--fg-2);font-size:14.5px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.spark{display:flex;align-items:flex-end;gap:2px;height:40px;margin-top:8px}
+.spark i{flex:1;background:var(--info);opacity:.8;border-radius:1px}
+.tag{position:fixed;right:12px;bottom:12px;font:11px var(--mono);background:var(--ok);color:#06251b;padding:4px 8px;border-radius:4px}
+@media (max-width:900px){.shell{grid-template-columns:1fr}.rail{flex-direction:row;flex-wrap:wrap;align-items:center}.rail .head{display:none}.rail .sec{display:none}.grid{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.top input{width:100%}main{padding:16px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="brand"><i></i>MCP Transparency Log</div>
+    <a class="on">Servers</a><a>Changes · 7 nights</a><a>Rule scan</a>
+    <div class="sec">Act</div>
+    <a>Lock &amp; CI</a><a>Evidence</a><a>Cross-checks</a>
+    <div class="sec">Prove</div>
+    <a>Verify</a><a>Signed heads</a><a>Plans</a>
+    <div class="head"><span class="k">signed head</span><br>2026-11-18 · 2,215,731<br><span class="k">status</span> <b>verified</b> from leaves<br><span class="k">next census</span> 03:08 UTC</div>
+  </aside>
+  <div>
+    <div class="top"><span>Servers</span><span>›</span><span style="color:var(--fg)">ac.tandem/docs-mcp</span><input placeholder="Search 46,923 servers by name, host or endpoint"></div>
+    <main>
+      <h1>ac.tandem/docs-mcp <span class="chip ok">ok</span></h1>
+      <div class="endpoint">https://tandem.ac/mcp · streamable-http · protocol 2025-06-18 · slug 1a1978d681b968f5</div>
+
+      <div class="grid">
+        <div class="stat"><div class="k">tool surface</div><div class="v ok">unchanged since 2026-08-30</div><div class="n">80 nights · 13 tools</div></div>
+        <div class="stat"><div class="k">first observed</div><div class="v">2026-08-30</div><div class="n">night 1 of the series</div></div>
+        <div class="stat"><div class="k">changes</div><div class="v">0</div><div class="n">no night differed</div></div>
+        <div class="stat"><div class="k">rule scan</div><div class="v ok">clean</div><div class="n">13 rules · 2026-11-18</div></div>
+      </div>
+
+      <div class="cols">
+        <div class="col">
+          <div class="panel">
+            <h2>History <span>80 observations · 1 event</span></h2>
+            <div class="body">
+              <ul class="tl">
+                <li><span class="d">2026-11-18</span><span class="dot"></span><span>observed, unchanged</span></li>
+                <li class="quiet"><span class="d">08-31 → 11-17</span><span class="dot"></span><span class="quiet">79 quiet nights · identical surface hash each night</span></li>
+                <li class="ok"><span class="d">2026-08-30</span><span class="dot"></span><span><b>first observed</b> · 13 tools · readable without credentials</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel">
+            <h2>Event kinds <span>sample · another server</span></h2>
+            <div class="body">
+              <ul class="tl">
+                <li class="warn"><span class="d">2026-10-13</span><span class="dot"></span><span><b>surface changed</b> · 2 → 2 tools · <span class="chip warn">edited in place</span><div class="note">same tool names; a description or input schema was rewritten</div></span></li>
+                <li class="ok"><span class="d">2026-09-23</span><span class="dot"></span><span>recovered · same surface as before</span></li>
+                <li class="bad"><span class="d">2026-09-21</span><span class="dot"></span><span>stopped answering · timeout</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel">
+            <h2>Rule scan <span>run 2026-11-18 · 13 rules</span></h2>
+            <table>
+              <thead><tr><th>rule</th><th>tier</th><th>tool · field</th><th>matched text</th></tr></thead>
+              <tbody>
+                <tr><td colspan="4" class="note">No rule matched any text this server serves. A statement about thirteen patterns, not a safety certificate.</td></tr>
+                <tr><td class="mono">URL-EXT<div class="note">off-host URL</div></td><td><span class="chip info">info</span></td><td class="mono">get_doc · schema.url</td><td class="note">"…see https://docs.example-vendor.com/…" <em>(sample)</em></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col">
+          <div class="panel"><h2>Surface</h2><div class="body">
+            <div class="hash"><div><span class="l">surface_sha256 · every member of every tool</span>73dd9c8626a0051e0ab5c91ee42ba2a2c2e8668b24da92fb9f76ed0744013bb3</div><button>copy</button></div>
+            <div class="hash"><div><span class="l">jcs-v1 · RFC 8785 · shared with other observers</span>sha256-xHrgbIGaYj7PYZTHT9CY+Za/+1ABIFwjMi1qxdEDt7g=</div><button>copy</button></div>
+          </div></div>
+          <div class="panel"><h2>13 tools</h2><div class="body tools"><span>answer_how_to</span><span>compare_doc_page_refresh</span><span>compare_docs_index_refresh</span><span>get_doc</span><span>get_docs_cache_status</span><span>get_start_path</span><span>get_tandem_guide</span><span>invalidate_docs_cache</span><span>recommend_next_docs</span><span>refresh_doc_page</span><span>refresh_docs_index</span><span>search_docs</span><span>warmup_docs_cache</span></div></div>
+          <div class="panel"><h2>Badges</h2><div class="body">
+            <div class="badges"><span class="badge"><i>mcp surface</i><b>unchanged since 2026-08-30</b></span><span class="badge"><i>mcp scan</i><b>clean</b></span></div>
+            <pre>[![mcp surface](https://img.shields.io/endpoint?url=…/badge/1a/1a1978d681b968f5.json)](…)</pre>
+          </div></div>
+          <div class="panel"><h2>Pin in CI</h2><div class="body"><pre>mcpobs lock docs-mcp=https://tandem.ac/mcp</pre><p class="note">Then <span class="mono">uses: yassinht/mcp-transparency-log@v1</span>. Fails the build and opens an issue when this surface moves.</p></div></div>
+        </div>
+      </div>
+
+      <section class="overview">
+        <div class="crumbs">Overview, same direction</div>
+        <h1>Know when an MCP server changes underneath your agent.</h1>
+        <p class="lede">Every night since 30 August 2026 a crawler visits every server in the official MCP registry and records the exact tool surface it served. Append-only Merkle log, signed head nightly, leaf hashes published. Nothing here asks to be trusted.</p>
+        <div class="stats">
+          <div class="stat"><div class="k">endpoints probed</div><div class="v">45,490</div><div class="spark"><i style="height:40%"></i><i style="height:45%"></i><i style="height:52%"></i><i style="height:58%"></i><i style="height:63%"></i><i style="height:70%"></i><i style="height:76%"></i><i style="height:84%"></i><i style="height:92%"></i><i style="height:100%"></i></div></div>
+          <div class="stat"><div class="k">answered unauthenticated</div><div class="v">27,096</div><div class="n">59.6 %</div></div>
+          <div class="stat"><div class="k">tools recorded</div><div class="v">484,556</div></div>
+          <div class="stat"><div class="k">nights observed</div><div class="v">80</div><div class="n">2026-08-30 →</div></div>
+          <div class="stat"><div class="k">review-tier flags</div><div class="v">3.1 %</div><div class="n">templates set aside</div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<div class="tag">direction mockup B · real data + sample rows</div>
+</body>
+</html>
