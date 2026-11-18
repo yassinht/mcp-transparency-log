@@ -1,0 +1,1 @@
+{"slug":"cfd4e6a4f25a9792","names":["dev.datasetworks/web-to-text"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=datasetworks/web-to-text","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

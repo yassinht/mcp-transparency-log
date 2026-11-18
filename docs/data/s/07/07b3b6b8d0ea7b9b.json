@@ -1,0 +1,1 @@
+{"slug":"07b3b6b8d0ea7b9b","names":["ai.commitlayer/mcp"],"host":"api.commitlayer.ai","endpoint":"https://api.commitlayer.ai/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

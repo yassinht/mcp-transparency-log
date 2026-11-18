@@ -1,0 +1,1 @@
+{"slug":"8cce5dca0f1ecfd9","names":["io.behavly/behavly"],"host":"behavly.io","endpoint":"https://behavly.io/api/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

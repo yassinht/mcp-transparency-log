@@ -1,0 +1,1 @@
+{"slug":"5c9f0d567c78ca13","names":["ch.antevo/companies"],"host":"api.antevo.ch","endpoint":"https://api.antevo.ch/mcp/companies/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

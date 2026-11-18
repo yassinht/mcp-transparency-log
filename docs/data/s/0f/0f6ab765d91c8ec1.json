@@ -1,0 +1,1 @@
+{"slug":"0f6ab765d91c8ec1","names":["io.github.Monkeydscraping/google-ads-domain-checker"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=monkey.d.scraping/google-ads-domain-checker","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

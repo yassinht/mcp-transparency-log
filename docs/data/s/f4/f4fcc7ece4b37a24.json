@@ -1,0 +1,1 @@
+{"slug":"f4fcc7ece4b37a24","names":["build.ingenious/mcp"],"host":"mcp.ingenious.build","endpoint":"https://mcp.ingenious.build/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

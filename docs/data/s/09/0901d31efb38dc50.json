@@ -1,0 +1,1 @@
+{"slug":"0901d31efb38dc50","names":["com.lowlanddata/procurement-alerts"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?actors=lowlanddata/map-price-violation-monitor","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"64ca07969ef31ca0","names":["com.shaftware/resorcerer"],"host":"app.resorcerer.ai","endpoint":"https://app.resorcerer.ai/api/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

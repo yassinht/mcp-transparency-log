@@ -1,0 +1,1 @@
+{"slug":"59d7ac0301bd1b20","names":["lol.browser/browser"],"host":"api.browser.lol","endpoint":"https://api.browser.lol/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

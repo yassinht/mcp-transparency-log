@@ -1,0 +1,1 @@
+{"slug":"e290343d6df44234","names":["com.myquoteiq/quoteiq"],"host":"mcp.myquoteiq.com","endpoint":"https://mcp.myquoteiq.com/quoteiqMcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

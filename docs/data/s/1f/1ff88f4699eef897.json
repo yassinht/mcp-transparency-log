@@ -1,0 +1,1 @@
+{"slug":"1ff88f4699eef897","names":["io.github.memeanalyst/nhs-jobs-scraper-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=fetch-actor-details,magnova/nhs-jobs-scraper","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

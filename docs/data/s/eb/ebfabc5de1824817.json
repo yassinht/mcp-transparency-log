@@ -1,0 +1,1 @@
+{"slug":"ebfabc5de1824817","names":["io.github.awarenessdays/financecalendar"],"host":"www.financecalendar.com","endpoint":"https://www.financecalendar.com/wp-json/fc-mcp/v1/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

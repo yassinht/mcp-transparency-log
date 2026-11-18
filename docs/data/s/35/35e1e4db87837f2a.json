@@ -1,0 +1,1 @@
+{"slug":"35e1e4db87837f2a","names":["com.tidybutton/carrier-check"],"host":"carriers.tidybutton.com","endpoint":"https://carriers.tidybutton.com/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

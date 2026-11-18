@@ -1,0 +1,1 @@
+{"slug":"9490c3ab82ed4df8","names":["com.tidybutton/sec-filings"],"host":"secwatch.tidybutton.com","endpoint":"https://secwatch.tidybutton.com/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

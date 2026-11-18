@@ -1,0 +1,1 @@
+{"slug":"4b7c5b407b01da0d","names":["com.tidybutton/facility-check"],"host":"facility.tidybutton.com","endpoint":"https://facility.tidybutton.com/mcp","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}

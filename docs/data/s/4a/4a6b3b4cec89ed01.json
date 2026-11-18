@@ -1,0 +1,1 @@
+{"slug":"4a6b3b4cec89ed01","names":["io.github.Monkeydscraping/google-serp-fast"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=monkey.d.scraping/google-serp-fast","first_seen":"2026-11-18","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-18","kind":"first_seen","outcome":"auth_required"}]}
