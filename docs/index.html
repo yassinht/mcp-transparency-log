@@ -3,264 +3,256 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Surfacelog · Know when an MCP server changes underneath your agent</title>
-<meta name="description" content="Surfacelog keeps a signed, independently verifiable record of what every public MCP server serves, every night, and turns it into a lockfile, a CI gate and evidence your auditor can verify.">
-<meta property="og:title" content="Surfacelog">
-<meta property="og:description" content="Your agents trust 45,000 MCP servers. We check all of them, every night.">
+<title>MCP Transparency Log</title>
+<meta name="description" content="An independent, signed, nightly record of what every public MCP server actually serves, with a lockfile and GitHub Action that fail your build when one of them changes.">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
+<div class="wrap">
 
-<section class="lp-hero"><div class="lp">
-  <a class="pill" href="lock.html#credentials"><b>NEW</b> Lock authenticated servers from CI, secrets never leave your pipeline</a>
-  <h1>Your agents trust <span id="h-servers">45,000</span> MCP servers. <em>We check all of them, every night.</em></h1>
-  <p class="lede">A tool description goes straight into your model. A server can rewrite it tonight with no version bump and no alarm. Surfacelog keeps a signed, independently verifiable record of what every public MCP server serves, and turns it into a lockfile, a CI gate, and evidence your auditor can verify.</p>
-  <div class="ctas"><a class="btn p" href="servers.html">Look up a server, free</a><a class="btn g" href="#contact">Book a demo</a></div>
-  <div class="trust" id="trust"><b>since 30 August 2026</b> · signed nightly · cited by the official MCP registry · Apache-2.0</div>
-  <div class="shot"><div class="bar"><i></i><i></i><i></i><span>surfacelog · server · ac.tandem/docs-mcp</span></div><a href="server.html?e=https%3A%2F%2Ftandem.ac%2Fmcp"><img src="assets/hero-server.png" alt="A server's history page on Surfacelog" onerror="this.closest('.shot').style.display='none'"></a></div>
-</div></section>
+<nav>
+  <a href="./"><strong>MCP Transparency Log</strong></a>
+  <a href="#servers">Servers</a>
+  <a href="lock.html">Lock (CI)</a>
+  <a href="scan.html">Scan</a>
+  <a href="verify.html">Verify</a>
+  <a href="plans.html">Plans</a>
+  <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+</nav>
 
-<div class="proof"><div class="lp">
-  <div class="k">Cited, cross-checked, and read by the people who build this ecosystem</div>
-  <div class="marks">
-    <a href="https://github.com/modelcontextprotocol/registry/issues/1715">modelcontextprotocol / registry<small>measurements consolidated as design evidence · issue #1715</small></a>
-    <a href="https://github.com/alexar76/histor/issues/13">HISTOR<small>independent observer · cross-check proposed</small></a>
-    <a href="https://crawlcheck.io/spec/mcp-lockfile">CrawlCheck<small>shared jcs-v1 digest · test vectors match</small></a>
-    <a href="https://experteam.tn">experteam.tn<small>delivery partner</small></a>
+<div class="hero">
+<h1>Know when an MCP server changes underneath your agent.</h1>
+<p>Every night since 30 August 2026 a crawler has visited every server in the official MCP
+registry and recorded the exact tool surface it served: names, descriptions, input schemas.
+The observations go into an append-only Merkle log with a signed tree head published daily.
+Nothing on this site asks to be trusted; every number can be recomputed.</p>
+<p>
+  <a class="cta" href="#servers">Look up a server</a>
+  <a class="cta ghost" href="lock.html">Lock your servers in CI</a>
+  <a class="cta ghost" href="verify.html">Verify the log</a>
+</p>
+</div>
+
+<h2>Tonight's census</h2>
+<div class="grid" id="stats"><div class="stat"><div class="k">loading…</div></div></div>
+<p class="note" id="stats-note"></p>
+
+<h2>Three tools, one record</h2>
+<div class="cols">
+  <div class="card">
+    <h3>A page for every server</h3>
+    <p>Each endpoint has a history: when it appeared, every night its tool surface changed and
+    which tools moved, when it went dark, what the rule scan found in its text. Two badges say
+    at a glance whether it still serves what it served.</p>
+    <p class="badge-line">
+      <img alt="mcp surface badge" src="https://img.shields.io/badge/mcp%20surface-unchanged%20since%202026--08--30-brightgreen">
+      <img alt="mcp scan badge" src="https://img.shields.io/badge/mcp%20scan-clean-brightgreen">
+    </p>
+    <p class="note"><a href="#servers">Search below</a>, or open <code>server.html?e=&lt;endpoint URL&gt;</code>.</p>
   </div>
-</div></div>
+  <div class="card">
+    <h3>Lock, like package-lock.json</h3>
+    <p><code>mcp.lock</code> pins the tool surface of each MCP server your project uses. A GitHub
+    Action re-probes them, fails the build when one differs, and opens an issue with the diff:
+    tools added, removed, or edited in place.</p>
+<pre>mcpobs lock context7=https://mcp.context7.com/mcp
+git add mcp.lock
 
-<main class="lp">
-  <section class="center">
-    <div class="eyebrow">Tonight</div>
-    <h2>The record, as of the last census.</h2>
-    <p class="sub">Every number below is recomputed from the signed log after each night's crawl.</p>
-    <div class="grid" id="stats" style="text-align:left"><div class="stat"><div class="k">loading…</div></div></div>
-    <div class="hero-card" id="recent" style="margin-top:14px"></div>
-  </section>
-
-  <section class="center">
-    <div class="eyebrow">The problem</div>
-    <h2>Nothing in your stack notices a rewritten tool.</h2>
-    <p class="sub">Package managers pin versions. Signatures prove who published. Neither tells you that the description your agent read this morning is not the one you reviewed last month.</p>
-    <div class="beats">
-      <div class="beat"><div class="n">19%</div><h3>of servers changed within 24 hours</h3><p>Measured across the registry on consecutive nights. Most of it is one publisher's template; the independent baseline is 2 to 3 % a day, every day.</p></div>
-      <div class="beat"><div class="n">95%</div><h3>of those changes kept the same tool names</h3><p>A description or schema rewritten in place. The client sees nothing move. The model follows the new text.</p></div>
-      <div class="beat"><div class="n">0</div><h3>alerts, version bumps, or failed builds</h3><p>Until there is a record to compare against. That record is what we keep, and what the lockfile and the Action compare you with.</p></div>
-    </div>
-  </section>
-
-  <section id="product">
-    <div class="eyebrow">Product</div>
-    <h2>One record. Three ways to use it.</h2>
-    <p class="sub">Everything below is live and free for public servers. No account to read it.</p>
-
-    <div class="feat">
-      <div class="txt"><h3>A history page for every server</h3><p>When it appeared, every night its tools changed and which ones moved, when it went dark, what the rule scan found in its text. The full hash, the shared digest, and two badges that re-read the log.</p>
-        <ul><li><span id="f-endpoints">46,923</span> endpoints, one page each, updated nightly</li><li>Events, not noise: quiet nights are shown as quiet</li><li>Badges for a README: <code>unchanged since 2026-08-30</code></li></ul>
-        <a class="btn g s" href="server.html?e=https%3A%2F%2Ftandem.ac%2Fmcp">Open a server page</a></div>
-      <div class="vis"><a href="server.html?e=https%3A%2F%2Ftandem.ac%2Fmcp"><img src="assets/hero-server.png" alt="server page" style="object-position:0 120px" onerror="this.closest('.vis').style.display='none'"></a></div>
-    </div>
-
-    <div class="feat rev">
-      <div class="txt"><h3>mcp.lock and a GitHub Action</h3><p>Pin the servers your agent uses, authenticated ones included. Every run re-probes them; when a surface moves, the job fails and an issue arrives with the diff and a link to the server's history.</p>
-        <ul><li>Secrets stay in your CI; the lockfile records only where they live</li><li>Exit codes CI understands: 0 unchanged, 1 drift, 2 could not check</li><li>Accept a change the way you accept a dependency bump</li></ul>
-        <a class="btn g s" href="lock.html">Set it up in four steps</a></div>
-      <div class="vis"><pre class="term"><span class="c">$</span> mcpobs lock context7=https://mcp.context7.com/mcp
-<span class="c">probing https://mcp.context7.com/mcp ...</span> 2 tools, surface <span class="b">36dee0f3fbf8</span>
-<span class="c">wrote mcp.lock (1 server)</span>
-
-<span class="c"># .github/workflows/mcp-lock.yml</span>
-- uses: <span class="g">yassinht/mcp-transparency-log@v1</span></pre>
-        <div class="issue"><div class="t"><i></i>MCP server tool surface changed (mcp.lock drift)<span class="lbl">mcp-surface-drift</span></div><p><code>context7</code> · tools 2 → 2 · surface <code>36dee0f3fbf8…</code> → <code>a81c0e22d904…</code></p><p>Same tool names, <b style="color:var(--fg)">a description was edited in place.</b> Read the new text before accepting it.</p></div></div>
-    </div>
-
-    <div class="feat">
-      <div class="txt"><h3>Verifiable by anyone, including your auditor</h3><p>Every night's observations are leaves of an RFC 6962 Merkle tree with a signed head. The leaf hashes are published. A clean clone and one command rebuild the tree and check every head ever signed.</p>
-        <ul><li>Same construction as the Go checksum database</li><li>Hash specified with test vectors; a second observer reproduces it</li><li>Cross-checked nightly against independent crawlers</li></ul>
-        <a class="btn g s" href="verify.html">Verify it yourself</a></div>
-      <div class="vis"><pre class="term" id="term-verify"><span class="c">$</span> git clone https://github.com/yassinht/mcp-transparency-log
-<span class="c">$</span> go run ./cmd/mcpobs verify --leaves docs/data/leaves --heads heads --pubkey heads/key.pub
-
-head 2026-09-07  size 136225    <span class="g">VERIFIED</span>
-head 2026-09-08  size 170631    <span class="g">VERIFIED</span>
-<span class="c">…</span>
-<span id="term-last">head 2026-11-18  size 2215731   <span class="g">VERIFIED</span></span>
-
-<span class="g" id="term-sum">80 heads, 2,215,731 leaves, consistent.</span></pre></div>
-    </div>
-  </section>
-
-  <section id="how" class="center">
-    <div class="eyebrow">How it works</div>
-    <h2>Observe. Lock. Prove.</h2>
-    <p class="sub">Three steps, in the order a security team actually adopts them.</p>
-    <div class="steps">
-      <div class="step"><div class="k">01 · OBSERVE</div><h3>Find your servers in the log</h3><p>Paste a URL. See what it served every night since it appeared, and whether anything in its text speaks to the model instead of the user.</p><code>server.html?e=https://mcp.context7.com/mcp</code></div>
-      <div class="step"><div class="k">02 · LOCK</div><h3>Pin them in your repository</h3><p>One lockfile, one Action. From then on a rewritten description is a failed build and an issue, not a surprise.</p><code>mcpobs lock context7=… &amp;&amp; git add mcp.lock</code></div>
-      <div class="step"><div class="k">03 · PROVE</div><h3>Hand the record to whoever asks</h3><p>The signed log, its leaf hashes and the archived bytes, for auditors, customers, or an incident review. One command rebuilds the tree and checks every head ever signed. Per-observation evidence bundles are next on the roadmap.</p><code>mcpobs verify --leaves docs/data/leaves</code></div>
-    </div>
-  </section>
-
-  <section id="solutions">
-    <div class="eyebrow">Solutions for teams</div>
-    <h2>When agents are in production, you need to prove what they consumed.</h2>
-    <p class="sub">Delivered with experteam.tn, which signs the contract and invoices. Honest labels: what runs today, what is in pilot, what is being built.</p>
-    <div class="sol">
-      <div class="card"><span class="st pilot">pilot · 4 weeks</span><h3>MCP supply-chain audit</h3><p>Every server your agents use, locked and checked from your CI, private ones included. The rule scan over their text. Your first evidence pack and vendor fact sheets for procurement.</p><a class="btn g s" href="#contact">Book an audit</a></div>
-      <div class="card"><span class="st road">building · Dec 2026</span><h3>Evidence packs</h3><p>What each server served at a given moment, the diffs, the approvals, an inclusion proof per observation, mapped to EU AI Act record-keeping, ISO 42001 and SOC 2 change management. The diffs and the bytes exist today; the bundle and its offline verifier are being built.</p></div>
-      <div class="card"><span class="st road">building · Q1 2027</span><h3>Private log, publicly witnessed</h3><p>The crawler inside your network for internal and vendor servers. Only signed heads leave; the public log co-signs them. Third-party attested history with no data shared.</p></div>
-      <div class="card"><span class="st road">building · Q1 2027</span><h3>Split-view detection</h3><p>The same server probed from several regions and client identities every night. A server that shows scanners one list and your agents another is caught, which no single-vantage scanner can do.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="eyebrow">In their words</div>
-    <h2>Public, linkable, not invented.</h2>
-    <div class="quotes">
-      <div class="q"><p>"Repeated measurements distinguishing unauthenticated success, auth-required, non-MCP HTTP, JSON-RPC errors, unreachable hosts and timeouts."</p><div class="who"><b>Radoslav Dimitrov</b>, maintainer, official MCP registry, consolidating this log's reports as design evidence<a href="https://github.com/modelcontextprotocol/registry/issues/1715">github.com/modelcontextprotocol/registry/issues/1715</a></div></div>
-      <div class="q"><p>"The four censuses that measure the whole registry … our definition of dead is the weakest one in this tracker, and it should not be quoted alongside theirs."</p><div class="who"><b>geosensor-tech</b>, independent measurement, placing this log among the four whole-registry censuses<a href="https://github.com/modelcontextprotocol/registry/issues/1692">github.com/modelcontextprotocol/registry/issues/1692</a></div></div>
-    </div>
-  </section>
-
-  <section id="pricing" class="center">
-    <div class="eyebrow">Pricing</div>
-    <h2>Free for the public record. Paid when it is your servers and your auditor.</h2>
-    <p class="sub">Paid work starts with a pilot. We would rather earn the subscription than sell it.</p>
-    <div class="plans">
-      <div class="plan"><h3>Public</h3><div class="price">Free</div><div class="per">forever, for public servers</div><ul><li>Nightly log of every registry endpoint</li><li>History page and badges per server</li><li>mcp.lock, check, GitHub Action</li><li>Rule scan, every match quoted</li><li>Signed heads, leaf hashes, spec</li></ul><a class="btn g" href="servers.html">Start free</a></div>
-      <div class="plan hi"><span class="pop">START HERE</span><h3>Audit</h3><div class="price">€6,000</div><div class="per">one engagement · 4 weeks · invoiced by experteam.tn</div><ul><li>All your servers locked, private ones included</li><li>Checks wired into your CI</li><li>First evidence pack</li><li>Vendor fact sheets for procurement</li><li>Credited against Enterprise</li></ul><a class="btn p" href="#contact">Book an audit</a></div>
-      <div class="plan"><h3>Enterprise</h3><div class="price">€30,000</div><div class="per">per year · opens Q1 2027, after a pilot · scope set together</div><ul><li>Private log in your network, witnessed by ours</li><li>Your own vantage for split-view detection</li><li>Quarterly evidence packs</li><li>Someone to call</li><li class="note">Built against the public roadmap; the Audit is the way in today</li></ul><a class="btn g" href="#contact">Talk to us</a></div>
-    </div>
-    <p class="note" style="margin-top:14px">Full detail and the honest demand counter on the <a href="plans.html">pricing page</a>.</p>
-  </section>
-
-  <section id="faq">
-    <div class="center"><div class="eyebrow">FAQ</div><h2>Questions a careful buyer asks.</h2></div>
-    <div class="faq">
-      <details open><summary>Do you call the tools on servers you observe?</summary><p>No. The crawler sends <code>initialize</code> and <code>tools/list</code> and nothing else. It never executes a tool, never installs a package, never sends credentials to anyone. We do not run behavioural tests, on anyone's servers.</p></details>
-      <details><summary>Can it watch our private or authenticated servers?</summary><p>Yes, from your CI: a header per server from an environment variable, sent on every request and written nowhere. The public log itself covers only unauthenticated servers; your private checks leave no trace here. A private log that runs inside your network is being built.</p></details>
-      <details><summary>What does verification actually prove?</summary><p>That the published heads were signed by the key holder, that each is consistent with the published leaves, and that no observation was altered or removed after a head committing to it was published. It does not by itself prove the leaves describe reality; that is what cross-checks with independent observers are for, and we publish ours nightly.</p></details>
-      <details><summary>Is there a model judging anything?</summary><p>No. Every judgement in the data path is a rule a human can re-run against the archived bytes. The rule scan's thirteen patterns are regular expressions in the open-source repository; every match is quoted and none is called malicious.</p></details>
-      <details><summary>Why is the log called something else?</summary><p>Surfacelog is the company and the product. The public record it operates is the MCP Transparency Log, which has kept that name since its first census on 30 August 2026 and keeps it, because a record's name should not change.</p></details>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="eyebrow">About</div>
-    <h2>Eighty nights of paying attention.</h2>
-    <div class="feat" style="padding-top:0">
-      <div class="txt">
-        <p>The log started on 30 August 2026 as one question: is the MCP ecosystem observable at all, or is "trust the registry" the only option? It was. Eighty nights later it holds over two million signed observations, and the official registry's maintainers used its measurements as evidence when they designed periodic re-validation of entries.</p>
-        <p>Surfacelog is built and run by <b>Yassine Houta</b>, a software engineer in Tunisia, and delivered to companies with <b>experteam.tn</b>. The code is Apache-2.0. The design rules are simple and public: raw bytes are the record, every judgement is a rule a human can re-run, no model anywhere in the data path, and every correction ever made to the numbers is still in the README.</p>
-        <p>Other people watch the same servers. We publish our nightly observations in the format they read, because two independent observers that agree are worth more than one that asks to be believed.</p>
-      </div>
-      <div class="card alt" id="about-facts">
-        <div><b>First census</b><br>2026-08-30</div>
-        <div><b>Nights in the log</b><br><span id="a-nights">80</span></div>
-        <div><b>Observations in the tree</b><br><span id="a-obs">2,215,731</span></div>
-        <div><b>Cited by</b><br>modelcontextprotocol/registry #1715</div>
-        <div><b>Hash specification</b><br>published, with test vectors</div>
-        <div><b>Licence</b><br>Apache-2.0</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="eyebrow">Contact</div>
-    <h2>Tell us which servers your agents depend on.</h2>
-    <p class="sub">And what a change in one of them would cost you. That is the only question this project exists to answer.</p>
-    <div class="contact">
-      <form id="contact-form">
-        <label for="c-name">Name</label><input id="c-name" type="text" placeholder="Your name">
-        <label for="c-org">Company</label><input id="c-org" type="text" placeholder="Where you run agents">
-        <label for="c-need">What do you need</label><select id="c-need"><option>An audit of our MCP servers</option><option>A private log for internal servers</option><option>Evidence for an auditor</option><option>Something else</option></select>
-        <label for="c-msg">Message</label><textarea id="c-msg" placeholder="Which servers, how many agents, which deadline"></textarea>
-        <p style="margin-top:16px"><button class="btn p" type="submit">Send as a GitHub issue</button> <span class="note" style="margin-left:10px">Opens a pre-filled issue on the public repository. Answered by a person, usually within a day.</span></p>
-      </form>
-      <div class="alt">
-        <div><b>Prefer email?</b><br>Through experteam.tn's contact page, mention Surfacelog.</div>
-        <div><b>GitHub</b><br><a href="https://github.com/yassinht/mcp-transparency-log/issues">github.com/yassinht/mcp-transparency-log</a> · open an issue, it is public and that is fine</div>
-        <div><b>For server publishers</b><br>Want the badge on your README? It is free; open your server's page and copy it.</div>
-        <div><b>Security disclosures</b><br><a href="https://github.com/yassinht/mcp-transparency-log/blob/main/SECURITY.md">SECURITY.md</a> in the repository</div>
-      </div>
-    </div>
-  </section>
-
-  <div class="band" id="lookup">
-    <h2>Start with one server. The one you trust most.</h2>
-    <p class="sub" style="margin-bottom:0">Paste its URL. You will see what it served every night since it appeared, and whether that is still what it serves.</p>
-    <form class="search" onsubmit="event.preventDefault();goLookup(this.q.value)"><input name="q" placeholder="https://mcp.context7.com/mcp"><button type="submit">Look it up</button></form>
-    <div class="note">free · no account · <span id="b-endpoints">46,923</span> endpoints have a page</div>
+# .github/workflows/mcp-lock.yml
+- uses: yassinht/mcp-transparency-log@v1</pre>
+    <p class="note">Each entry also carries the jcs-v1 tool-set digest (RFC 8785) that other registry observers share, so a lock
+    written here can be compared with their records. <a href="lock.html">Setup in four steps</a>. This repository runs it on itself.</p>
   </div>
-</main>
+  <div class="card">
+    <h3>Scan, without a model</h3>
+    <p>Thirteen rules a human can re-run look for text aimed at the model rather than the user:
+    "ignore previous instructions", "forward the conversation", hidden bidi characters. Every
+    match is quoted; none is called malicious.</p>
+    <p id="scan-teaser" class="note">loading…</p>
+    <p class="note"><a href="scan.html">Rules, numbers, and one example each</a>.</p>
+  </div>
+</div>
 
+<h2>Changed in the last seven nights</h2>
+<p class="note">Servers whose tool surface differs from the night before. Same tool names with a
+different hash means a description or schema was edited in place, which is the change a client
+never sees.</p>
+<div id="recent"><p class="note">loading…</p></div>
+
+<h2 id="servers">Servers</h2>
+<p class="note">Type at least three characters to search by name, host or endpoint. The index is
+loaded on first search.</p>
+<input type="search" id="q" placeholder="context7, cloudflare, mcp.example.com…" autocomplete="off">
+<div id="results" style="margin-top:.9rem"></div>
+
+<h2>Endpoints observed, by night</h2>
+<div class="bars" id="bars"></div>
+<div class="axis"><span id="ax-from"></span><span id="ax-to"></span></div>
+<p class="note">Amber marks a census that did not reach every endpoint. Its <code>meta.json</code> records it as incomplete.</p>
+
+<h2>Nightly outcomes</h2>
+<div class="scroll">
+  <table id="census">
+    <thead><tr>
+      <th>date</th><th class="num">endpoints</th><th class="num">enumerable</th>
+      <th class="num">auth</th><th class="num">not MCP</th><th class="num">unreachable</th>
+      <th class="num">tools</th><th></th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<h2>What this is, and is not</h2>
+<div class="cols">
+  <div class="card">
+    <h3>It is</h3>
+    <p>A record of what publicly listed, unauthenticated MCP servers served on each night, kept in
+    a form that lets a stranger prove it was not rewritten. The signing key proves one operator
+    stood behind each head; the published leaf hashes let anyone rebuild the tree and compare.</p>
+  </div>
+  <div class="card">
+    <h3>It is not</h3>
+    <p>Not a judgement of any server. Not coverage of servers that require credentials, of local
+    stdio servers, or of anything outside the official registry. Not yet witnessed by a second
+    independent crawler: a log with one operator can prove consistency, not truth.</p>
+  </div>
+  <div class="card">
+    <h3>It is not alone</h3>
+    <p>Other people read the same servers: <a href="https://github.com/alexar76/histor">HISTOR</a>,
+    <a href="https://github.com/mikerawsonnz/mcp-drift-observatory">MCP Drift Observatory</a>,
+    <a href="https://mcpcost.ulehla.dev">mcpcost</a>, <a href="https://crawlcheck.io/spec/mcp-lockfile">CrawlCheck</a>.
+    Observers that disagree expose a lying server or a bug in one of them, so every night this log publishes
+    <a href="data/peers/tool-digests-latest.jsonl">its observations as a cross-check list</a> in the digest
+    format they share. <a href="https://github.com/yassinht/mcp-transparency-log#related-work">Who started when</a>.</p>
+  </div>
+</div>
+
+<footer>
+  Signed tree heads: <a href="https://github.com/yassinht/mcp-transparency-log/tree/main/heads">heads/</a>
+  · Leaf hashes: <a href="https://github.com/yassinht/mcp-transparency-log/tree/main/docs/data/leaves">docs/data/leaves/</a>
+  · Source: <a href="https://github.com/yassinht/mcp-transparency-log">GitHub</a>
+  · Covers <strong>publicly observable</strong> MCP servers listed in the official registry, not the MCP ecosystem as a whole.
+</footer>
+
+</div>
 <script src="site.js"></script>
 <script>
-// Live numbers from the log; the page degrades to its static copy if a fetch fails.
-getJSON('data/census.json').then(async census => {
+let census = [];
+
+getJSON('data/census.json').then(async d => {
+  census = d;
   if (!census.length) return;
   const last = census[census.length - 1], o = last.outcomes || {};
-  const leaves = census.reduce((s, c) => s + (c.endpoints || 0), 0);
-  const probed = last.endpoints || 0;
-  document.getElementById('h-servers').textContent = n(Math.floor(probed / 1000) * 1000);
-  document.getElementById('a-nights').textContent = n(census.length);
-  document.getElementById('a-obs').textContent = n(leaves);
-  document.getElementById('term-last').innerHTML = `head ${last.date}  size ${leaves}   <span class="g">VERIFIED</span>`;
-  document.getElementById('term-sum').textContent = `${n(census.length)} heads, ${n(leaves)} leaves, consistent.`;
-  document.getElementById('foot-head').textContent = `MCP Transparency Log · night ${n(census.length)} · ${last.date}`;
-  document.getElementById('trust').innerHTML = `<b>${n(census.length)} nights since 30 August 2026</b> · ${n(leaves)} signed observations · cited by the official MCP registry · Apache-2.0`;
+  const ok = o.ok || 0;
 
-  // Stats first, from the census alone, so the page never waits on the
-  // change files (several MB a night) to show its numbers.
-  const stats = document.getElementById('stats');
-  const tiles = (changedTile) => [
-    ['servers probed tonight', n(probed), last.date],
-    ['answered openly', n(o.ok || 0), pct(o.ok || 0, probed)],
-    ['tools on record', n(last.tools), ''],
-    ['observations in the log', n(leaves), `${n(census.length)} nights`],
-    changedTile,
+  // Changes over the last seven nights, from the per-day change files.
+  let changed = 0, recent = [];
+  for (const date of lastDates(census, 7)) {
+    try {
+      const day = await getJSON(`data/changes/${date}.json`);
+      for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) {
+        changed++; recent.push({date, ...e});
+      }
+    } catch {}
+  }
+
+  document.getElementById('stats').innerHTML = [
+    ['endpoints probed', n(last.endpoints), last.date],
+    ['answered unauthenticated', n(ok), pct(ok, last.endpoints)],
+    ['tools recorded', n(last.tools), ''],
+    ['nights observed', n(census.length), census[0].date + ' →'],
+    ['surfaces changed, 7 nights', n(changed), changed ? 'see below' : '']
   ].map(([k, v, s]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${s}</div></div>`).join('');
-  stats.innerHTML = tiles(['changed this week', '…', 'counting']);
-  document.getElementById('recent').innerHTML = '<div class="t"><span>Changed in the last seven nights</span><b>loading…</b></div>';
 
-  // Changes over the last seven nights, fetched in parallel, template fleets set aside.
-  const days = await Promise.all(lastDates(census, 7).map(date => getJSON(`data/changes/${date}.json`).then(d => [date, d]).catch(() => [date, []])));
-  let recent = [];
-  for (const [date, day] of days) for (const e of day) if (e.kind === 'surface_changed' || (e.kind === 'recovered' && e.changed)) recent.push({date, ...e});
+  document.getElementById('stats-note').textContent =
+    last.complete ? 'Latest census reached every endpoint.'
+                  : 'Latest census did not reach every endpoint; it is recorded as incomplete.';
+
+  // Recent changes, newest first, hosts with hundreds of template servers collapsed.
   const byHost = {};
   for (const e of recent) (byHost[e.host] ??= []).push(e);
-  const fleets = Object.entries(byHost).filter(([, l]) => l.length >= 25);
-  const fleetCount = fleets.reduce((s, [, l]) => s + l.length, 0);
-  const independent = recent.filter(e => !fleets.some(([h]) => h === e.host));
+  const rows = [];
+  for (const [host, list] of Object.entries(byHost).sort((a, b) => b[1].length - a[1].length)) {
+    if (list.length >= 25) {
+      rows.push(`<tr><td colspan="4" class="note">${n(list.length)} servers on <span class="mono">${esc(host)}</span> changed together: one publisher's template, not ${n(list.length)} decisions.</td></tr>`);
+      continue;
+    }
+    for (const e of list) rows.push(`<tr>
+      <td class="mono">${e.date}</td>
+      <td><a class="plain mono" href="${pageHref(e.slug)}">${esc(e.server)}</a><br><span class="note mono">${esc(host)}</span></td>
+      <td class="num">${n(e.tools)}</td>
+      <td>${e.kind === 'recovered' ? '<span class="warn">back, different</span>'
+          : (e.added || e.removed) ? `${e.added ? '<span class="ok">+' + e.added + '</span> ' : ''}${e.removed ? '<span class="bad">−' + e.removed + '</span>' : ''}`
+          : '<span class="warn">edited in place</span>'}</td></tr>`);
+  }
+  document.getElementById('recent').innerHTML = rows.length
+    ? `<div class="scroll"><table><thead><tr><th>night</th><th>server</th><th class="num">tools</th><th>what moved</th></tr></thead><tbody>${rows.slice(0, 80).join('')}</tbody></table></div>`
+      + (rows.length > 80 ? `<p class="note">${n(rows.length)} rows, showing 80. Search a server below for its full history.</p>` : '')
+    : '<p class="note">No surface changes recorded in the last seven nights.</p>';
 
-  stats.innerHTML = tiles(['changed this week', n(independent.length), fleetCount ? `+ ${n(fleetCount)} on template fleets` : 'templates aside']);
+  // bars
+  const max = Math.max(...census.map(c => c.endpoints));
+  document.getElementById('bars').innerHTML = census.map(c =>
+    `<div class="bar${c.complete ? '' : ' partial'}" style="height:${Math.round(100 * c.endpoints / max)}%" title="${c.date}: ${n(c.endpoints)} endpoints"></div>`
+  ).join('');
+  document.getElementById('ax-from').textContent = census[0].date;
+  document.getElementById('ax-to').textContent = census[census.length - 1].date;
 
-  const pick = independent.sort((a, b) => b.date.localeCompare(a.date)).slice(0, 4);
-  document.getElementById('recent').innerHTML =
-    `<div class="t"><span>Changed in the last seven nights · independent servers</span><b>night ${n(census.length)}</b></div>` +
-    (pick.length ? pick.map(e => `<div class="row"><span class="d">${e.date}</span><span>${
-        e.kind === 'recovered' ? '<span class="chip warn">back, different</span>' :
-        (e.added || e.removed) ? `${e.added ? '<span class="chip ok">+' + e.added + ' tool' + (e.added > 1 ? 's' : '') + '</span> ' : ''}${e.removed ? '<span class="chip bad">−' + e.removed + '</span>' : ''}` :
-        '<span class="chip warn">edited in place</span>'
-      } &nbsp;<a class="plain mono" href="${pageHref(e.slug)}" style="font-size:12.5px">${esc(e.server)}</a><br><span class="note">${esc(e.host)}${(!e.added && !e.removed && e.kind !== 'recovered') ? ' · same tool names, a description or schema was rewritten' : ''}</span></span></div>`).join('')
-      : '<div class="row"><span class="d">—</span><span class="note">No independent surface change recorded this week.</span></div>') +
-    (fleets.length ? `<div class="row"><span class="d">fleets</span><span class="note">${fleets.map(([h, l]) => `${n(l.length)} on ${esc(h)}`).join(' · ')}: one publisher's template each, not independent decisions.</span></div>` : '') +
-    `<div class="row"><span class="d">more</span><span><a href="servers.html">Every change of the week, and the full census →</a></span></div>`;
-}).catch(() => {});
-
-getJSON('data/servers.json').then(s => {
-  document.getElementById('f-endpoints').textContent = n(s.length);
-  document.getElementById('b-endpoints').textContent = n(s.length);
-}).catch(() => {});
-
-document.getElementById('contact-form').addEventListener('submit', e => {
-  e.preventDefault();
-  const v = id => document.getElementById(id).value.trim();
-  const title = encodeURIComponent(`${v('c-need')}${v('c-org') ? ' · ' + v('c-org') : ''}`);
-  const body = encodeURIComponent(`**Name:** ${v('c-name')}\n**Company:** ${v('c-org')}\n**Need:** ${v('c-need')}\n\n${v('c-msg')}\n`);
-  window.open(`${REPO}/issues/new?labels=contact&title=${title}&body=${body}`, '_blank', 'noopener');
+  // table, newest first
+  document.querySelector('#census tbody').innerHTML = census.slice().reverse().map(c => {
+    const o = c.outcomes || {};
+    return `<tr><td class="mono">${c.date}</td>
+      <td class="num">${n(c.endpoints)}</td>
+      <td class="num ok">${n(o.ok)} <span class="note">${pct(o.ok || 0, c.endpoints)}</span></td>
+      <td class="num">${n(o.auth_required)}</td>
+      <td class="num warn">${n(o.protocol_error)}</td>
+      <td class="num">${n((o.unreachable || 0) + (o.timeout || 0))}</td>
+      <td class="num">${n(c.tools)}</td>
+      <td>${c.complete ? '' : '<span class="tag">incomplete</span>'}</td></tr>`;
+  }).join('');
+}).catch(() => {
+  document.getElementById('stats').innerHTML =
+    '<div class="stat"><div class="k">no data</div><div class="n">run <code>mcpobs export</code> first</div></div>';
 });
+
+getJSON('data/scan.json').then(s => {
+  const t = s.template_replication;
+  document.getElementById('scan-teaser').innerHTML =
+    `Latest run: <strong>${pct(s.review_servers, s.servers)}</strong> of ${n(s.servers)} enumerable servers carry a flag worth a reviewer's time; `
+    + `<strong>${t.rest_review_pct.toFixed(1)}%</strong> once two publishers' templates are set aside.`;
+}).catch(() => { document.getElementById('scan-teaser').textContent = 'Scan summary not published yet.'; });
+
+let servers = null, timer = null;
+const q = document.getElementById('q'), results = document.getElementById('results');
+q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(search, 180); });
+
+async function search() {
+  const term = q.value.trim().toLowerCase();
+  if (term.length < 3) { results.innerHTML = ''; return; }
+  if (!servers) {
+    results.innerHTML = '<p class="note">loading the index…</p>';
+    try { servers = await getJSON('data/servers.json'); }
+    catch { results.innerHTML = '<p class="note">index unavailable</p>'; return; }
+  }
+  const latest = census.length ? census[census.length - 1].date : null;
+  const hits = servers.filter(s =>
+    s.name.toLowerCase().includes(term) || (s.host || '').toLowerCase().includes(term) || s.endpoint.toLowerCase().includes(term)
+  );
+  if (!hits.length) { results.innerHTML = '<p class="note">nothing matches.</p>'; return; }
+  hits.sort((a, b) => (b.outcome === 'ok') - (a.outcome === 'ok') || b.days - a.days);
+
+  results.innerHTML = `<p class="note">${n(hits.length)} match${hits.length > 1 ? 'es' : ''}${hits.length > 200 ? ', showing 200' : ''}</p>
+  <div class="scroll"><table>
+  <thead><tr><th>server</th><th class="num">tools</th><th>surface</th><th class="num">changes</th><th>scan</th><th>status</th></tr></thead><tbody>` +
+  hits.slice(0, 200).map(s => `<tr>
+    <td><a class="plain mono" href="${pageHref(s.slug)}">${esc(s.name)}</a><br><span class="note mono">${esc(s.host || '')}</span></td>
+    <td class="num">${s.outcome === 'ok' ? n(s.tools) : '—'}</td>
+    <td class="note">${s.outcome === 'ok' && s.stable_since ? `unchanged since ${s.stable_since}${latest ? ' <span class="mono">(' + nights(daysBetween(s.stable_since, latest)) + ')</span>' : ''}` : ''}</td>
+    <td class="num">${s.changes ? `<strong>${n(s.changes)}</strong>` : '0'}</td>
+    <td>${s.outcome !== 'ok' ? '' : s.review ? `<span class="tag review">${s.review} to review</span>` : s.flags ? '<span class="tag info">informational</span>' : '<span class="ok">clean</span>'}</td>
+    <td>${!s.listed ? '<span class="note">delisted</span>' : s.outcome === 'ok' ? '<span class="ok">ok</span>' : `<span class="bad">${esc(s.outcome)}</span>`}</td>
+  </tr>`).join('') + '</tbody></table></div>';
+}
 </script>
 </body>
 </html>

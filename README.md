@@ -2,7 +2,7 @@
 
 An independent, continuously-operated record of what public MCP servers actually served.
 
-**Site and product: [Surfacelog](https://yassinht.github.io/mcp-transparency-log/)**, the company and product name since 2026-11-18. The public record it operates keeps the name MCP Transparency Log, because a record's name should not change.
+**Audits and commercial support: [Surfacelog](https://surfacelog.pages.dev/)**, the company that operates this log (since 2026-11-18). The public record keeps the name MCP Transparency Log, because a record's name should not change; this repository and its site are the record and the open-source tools, nothing else.
 
 ## Why signing is not enough
 
