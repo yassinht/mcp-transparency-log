@@ -28,11 +28,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/yassinht/mcp-transparency-log/internal/canon"
-	"github.com/yassinht/mcp-transparency-log/internal/mlog"
-	"github.com/yassinht/mcp-transparency-log/internal/probe"
 	"github.com/yassinht/mcp-transparency-log/internal/registry"
-	"github.com/yassinht/mcp-transparency-log/internal/store"
+	"github.com/yassinht/mcp-transparency-log/pkg/canon"
+	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/probe"
+	"github.com/yassinht/mcp-transparency-log/pkg/store"
 )
 
 const version = "0.1.0"

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/yassinht/mcp-transparency-log/internal/evidence"
-	"github.com/yassinht/mcp-transparency-log/internal/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/evidence"
+	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
 )
 
 // cmdEvidence is the operator side: it needs the archive. The output is the

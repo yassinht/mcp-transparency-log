@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/yassinht/mcp-transparency-log/internal/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
 )
 
 // verify is the command this project exists to make possible. Everything else

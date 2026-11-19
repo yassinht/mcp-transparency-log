@@ -31,8 +31,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/yassinht/mcp-transparency-log/internal/canon"
-	"github.com/yassinht/mcp-transparency-log/internal/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/canon"
+	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
 	"golang.org/x/mod/sumdb/tlog"
 )
 

@@ -19,7 +19,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/yassinht/mcp-transparency-log/internal/store"
+	"github.com/yassinht/mcp-transparency-log/pkg/store"
 )
 
 func main() {

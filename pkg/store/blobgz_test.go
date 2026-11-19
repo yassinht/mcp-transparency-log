@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/yassinht/mcp-transparency-log/internal/canon"
+	"github.com/yassinht/mcp-transparency-log/pkg/canon"
 )
 
 func TestPutBlobWritesGzipAndReadBlobReadsBoth(t *testing.T) {

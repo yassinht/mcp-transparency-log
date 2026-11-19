@@ -2,16 +2,15 @@ package main
 
 import (
 	"bufio"
-	"crypto/sha256"
-	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"net/url"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/yassinht/mcp-transparency-log/pkg/rules"
 )
 
 // scan --since replays the rule set over every census in a date range and
@@ -25,18 +24,6 @@ import (
 // scan. Results are cached on disk under a key derived from the rule set, so
 // editing a rule invalidates the cache instead of silently reusing stale
 // verdicts.
-
-// rulesVersion fingerprints the rule set. Any change to a pattern, the length
-// threshold or the rule list produces a new cache file.
-func rulesVersion() string {
-	h := sha256.New()
-	fmt.Fprintf(h, "scan-cache/v1\n%d\n", lengthOutlier)
-	for _, r := range scanRules {
-		fmt.Fprintf(h, "%s\t%s\n", r.ID, r.Re.String())
-	}
-	fmt.Fprintf(h, "%s\n%s\n", ruleURLExt, ruleLength)
-	return hex.EncodeToString(h.Sum(nil))[:12]
-}
 
 // cacheEntry is one scanned (surface, host): the rules that hit and the first
 // place each did, enough to show a reader the text without rescanning.
@@ -60,7 +47,7 @@ func openScanCache(dir string) (*scanCache, error) {
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		return nil, err
 	}
-	c := &scanCache{path: filepath.Join(dir, "rules-"+rulesVersion()+".jsonl"), entries: map[string]map[string]scanHit{}}
+	c := &scanCache{path: filepath.Join(dir, "rules-"+rules.Version()+".jsonl"), entries: map[string]map[string]scanHit{}}
 	if f, err := os.Open(c.path); err == nil {
 		sc := bufio.NewScanner(f)
 		sc.Buffer(make([]byte, 0, 64*1024), 16<<20)
@@ -102,50 +89,6 @@ func (c *scanCache) close() error {
 		return err
 	}
 	return c.f.Close()
-}
-
-// ruleHits evaluates every rule over one server's tools and returns the first
-// hit per rule. It is the per-surface core that scanServer aggregates; keeping
-// it separate is what makes the result cacheable.
-func ruleHits(tl map[string]json.RawMessage, host string) map[string]scanHit {
-	host = strings.ToLower(host)
-	hits := map[string]scanHit{}
-	names := make([]string, 0, len(tl))
-	for name := range tl {
-		names = append(names, name)
-	}
-	sort.Strings(names) // deterministic "first hit" regardless of map order
-	for _, name := range names {
-		raw := tl[name]
-		for _, f := range textFields(raw) {
-			for _, r := range scanRules {
-				if _, seen := hits[r.ID]; seen {
-					continue
-				}
-				if loc := firstUnnegated(r.Re, f.text); loc != nil {
-					hits[r.ID] = scanHit{Tool: name, Field: f.name, Snippet: snippet(f.text, loc)}
-				}
-			}
-			if _, seen := hits[ruleURLExt]; !seen {
-				for _, u := range urlRe.FindAllString(f.text, -1) {
-					pu, perr := url.Parse(u)
-					if perr != nil {
-						continue
-					}
-					h := strings.ToLower(pu.Hostname())
-					if h == "" || sameSite(h, host) || placeholderHost(h) {
-						continue
-					}
-					hits[ruleURLExt] = scanHit{Tool: name, Field: f.name, Snippet: u}
-					break
-				}
-			}
-			if _, seen := hits[ruleLength]; !seen && f.name == "description" && len(f.text) > lengthOutlier {
-				hits[ruleLength] = scanHit{Tool: name, Field: "description", Snippet: fmt.Sprintf("%d chars", len(f.text))}
-			}
-		}
-	}
-	return hits
 }
 
 // ---------------------------------------------------------------- history
@@ -249,7 +192,7 @@ func cmdScanSince(dataDir, since, until, cacheDir, jsonOut string) error {
 		len(scanOrder()), len(runs), runs[0][:10], runs[len(runs)-1][:10], filepath.Base(cache.path), cache.loaded)
 
 	notes, cats := scanNotes(), scanCategories()
-	hist := &scanHistory{Since: runs[0][:10], Until: runs[len(runs)-1][:10], RulesVersion: rulesVersion(), CacheFile: cache.path}
+	hist := &scanHistory{Since: runs[0][:10], Until: runs[len(runs)-1][:10], RulesVersion: rules.Version(), CacheFile: cache.path}
 	byID := map[string]*ruleHistory{}
 	for _, id := range scanOrder() {
 		r := &ruleHistory{ID: id, Category: cats[id], Note: notes[id], Review: reviewRules[id],
@@ -292,7 +235,7 @@ func cmdScanSince(dataDir, since, until, cacheDir, jsonOut string) error {
 					tot.Unreadable++
 					continue
 				}
-				hits = ruleHits(tl, o.Host)
+				hits = rules.Hits(tl, o.Host)
 				scanned++
 				if perr := cache.put(key, hits); perr != nil {
 					return perr

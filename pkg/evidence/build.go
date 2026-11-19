@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yassinht/mcp-transparency-log/internal/mlog"
-	"github.com/yassinht/mcp-transparency-log/internal/store"
+	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/store"
 )
 
 // BuildOptions says which server, which nights, and where the archive is.

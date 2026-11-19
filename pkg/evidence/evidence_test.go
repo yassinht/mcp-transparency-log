@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yassinht/mcp-transparency-log/internal/canon"
-	"github.com/yassinht/mcp-transparency-log/internal/mlog"
-	"github.com/yassinht/mcp-transparency-log/internal/store"
+	"github.com/yassinht/mcp-transparency-log/pkg/canon"
+	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/store"
 )
 
 const subject = "https://mcp.example.test/mcp"

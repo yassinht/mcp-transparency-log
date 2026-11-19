@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/yassinht/mcp-transparency-log/internal/evidence"
+	"github.com/yassinht/mcp-transparency-log/pkg/evidence"
 )
 
 // fakeMCP serves initialize and one page of tools; the tools it serves can be

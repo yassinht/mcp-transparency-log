@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/yassinht/mcp-transparency-log/internal/canon"
-	"github.com/yassinht/mcp-transparency-log/internal/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/canon"
+	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
 )
 
 // CheckFormat is the evidence `mcpobs check --check-evidence` writes from a
