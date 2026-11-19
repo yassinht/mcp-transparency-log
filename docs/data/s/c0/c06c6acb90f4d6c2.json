@@ -1,0 +1,1 @@
+{"slug":"c06c6acb90f4d6c2","names":["events.agentlive/agentlive-events"],"host":"api.agentlive.events","endpoint":"https://api.agentlive.events/mcp","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}

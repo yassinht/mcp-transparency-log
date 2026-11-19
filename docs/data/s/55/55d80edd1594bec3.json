@@ -1,0 +1,1 @@
+{"slug":"55d80edd1594bec3","names":["io.shortzen/mcp"],"host":"shortzen.io","endpoint":"https://shortzen.io/api/mcp","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}

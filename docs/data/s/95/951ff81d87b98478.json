@@ -1,0 +1,1 @@
+{"slug":"951ff81d87b98478","names":["io.github.openpromoter/openpromoter-mcp"],"host":"app.openpromoter.com","endpoint":"https://app.openpromoter.com/mcp","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}

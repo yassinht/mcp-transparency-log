@@ -1,0 +1,1 @@
+{"slug":"3e3f41f6e09922f0","names":["com.whyfolio/stock-research-memory"],"host":"jnegpslncfegmmuzwpzw.supabase.co","endpoint":"https://jnegpslncfegmmuzwpzw.supabase.co/functions/v1/agent-memory","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}

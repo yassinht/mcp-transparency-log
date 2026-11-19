@@ -1,0 +1,1 @@
+{"slug":"4a4054d3caa7eb44","names":["io.github.willowswt/youtube-transcript-leads-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?actors=church_of_loujess/youtube-transcript-rag-scraper","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}

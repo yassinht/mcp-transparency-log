@@ -1,0 +1,1 @@
+{"slug":"34a44609c91765ae","names":["io.github.krammer0/google-trends-and-jobs"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=krammer/google-trends-scraper,krammer/google-jobs-scraper","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}

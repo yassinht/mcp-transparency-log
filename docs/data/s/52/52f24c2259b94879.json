@@ -1,1 +1,1 @@
-{"slug":"52f24c2259b94879","names":["dev.bluet/bluet"],"host":"bluet.dev","endpoint":"https://bluet.dev/mcp","first_seen":"2026-09-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}
+{"slug":"52f24c2259b94879","names":["dev.bluet/bluet"],"host":"bluet.dev","endpoint":"https://bluet.dev/mcp","first_seen":"2026-09-25","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-25","kind":"first_seen","outcome":"auth_required"}]}
