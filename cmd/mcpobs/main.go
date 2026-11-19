@@ -29,6 +29,9 @@ func main() {
 	pubKey := flag.String("pubkey", "heads/key.pub", "public key that signs the heads")
 	leaves := flag.String("leaves", "", "published leaf-hash directory; verify from these instead of the records")
 	scanJSON := flag.String("scan-json", "", "scan: also write per-server flags to this JSON file")
+	since := flag.String("since", "", "scan: replay the rules over every night from this date (YYYY-MM-DD)")
+	until := flag.String("until", "", "scan --since: last night to include (default: the latest)")
+	scanCache := flag.String("scan-cache", "", "scan --since: cache directory (default <data>/scan-cache)")
 	lockPath := flag.String("lock", "mcp.lock", "lock/check: path of the lockfile")
 	checkJSON := flag.String("check-json", "", "check: also write results to this JSON file")
 	checkMD := flag.String("check-md", "", "check: also write a Markdown drift report (what the GitHub Action posts)")
@@ -87,7 +90,11 @@ func main() {
 		if len(args) >= 2 {
 			run = args[1]
 		}
-		err = cmdScan(*dataDir, run, *scanJSON)
+		if *since != "" {
+			err = cmdScanSince(*dataDir, *since, *until, *scanCache, *scanJSON)
+		} else {
+			err = cmdScan(*dataDir, run, *scanJSON)
+		}
 	case "lock":
 		err = cmdLock(*lockPath, args[1:])
 	case "check":
@@ -131,6 +138,8 @@ func usage() {
                                every proof, every byte, and the summary
   mcpobs scan [run]            rule-based scan of tool text for model-directed
                                instructions, steering, exfil, secrets, hidden content
+  mcpobs --since <date> scan   replay the rules over every night since <date>:
+                               first appearance per rule, spread, per-night counts
   mcpobs lock <endpoint>...    pin each server's current tool surface in mcp.lock
   mcpobs check                 re-probe every locked server; exit 1 on drift
                                (--check-evidence f: the text before and after)
