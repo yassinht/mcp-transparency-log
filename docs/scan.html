@@ -92,6 +92,16 @@ like when a regular expression meets it. That is the point of showing them.</p>
   · <a href="https://github.com/yassinht/mcp-transparency-log">Source</a>
 </footer>
 
+<h2>Since the first census</h2>
+<p class="sub">The same rules replayed over every night since 30 August 2026, from the archived bytes. For each
+rule: the night it first appeared in the registry, where, how far it has spread, and whether it is still
+there. A rule written tomorrow can be asked of the whole history the same way.</p>
+<div class="scroll"><table id="history">
+  <thead><tr><th>rule</th><th>first seen</th><th>first on</th><th class="num">servers ever</th><th class="num">publishers ever</th><th class="num">nights present</th><th class="num">last night</th></tr></thead>
+  <tbody><tr><td colspan="7" class="note">loading…</td></tr></tbody>
+</table></div>
+<p class="note" id="history-note"></p>
+<div id="spreads"></div>
 </div>
 <script src="site.js"></script>
 <script>
@@ -130,6 +140,27 @@ getJSON('data/scan.json').then(s => {
   }).join('');
 }).catch(() => {
   document.getElementById('stats').innerHTML = '<div class="stat"><div class="k">no scan published yet</div></div>';
+});
+
+getJSON('data/scan-history.json').then(h => {
+  document.querySelector('#history tbody').innerHTML = h.rules.map(r => `<tr>
+    <td class="mono">${esc(r.id)}<br><span class="note">${r.review ? 'review' : 'info'}</span></td>
+    <td class="mono">${r.first_seen ? esc(r.first_seen) : '<span class="note">never</span>'}</td>
+    <td>${r.first_server ? `<a class="plain mono" href="server.html?e=${encodeURIComponent(r.first_endpoint)}">${esc(r.first_server)}</a>` : ''}${r.first_hit ? `<br><span class="note">${esc(r.first_hit.tool)} · ${esc(r.first_hit.field)}: ${esc(r.first_hit.snippet)}</span>` : ''}</td>
+    <td class="num">${n(r.servers)}</td>
+    <td class="num">${n(r.owners)}</td>
+    <td class="num">${n(r.nights_present)} <span class="note">/ ${n(h.nights.length)}</span></td>
+    <td class="num">${n(r.last_night_servers)}</td>
+  </tr>`).join('');
+  const first = h.nights[0], last = h.nights[h.nights.length - 1];
+  document.getElementById('history-note').textContent =
+    `${n(h.nights.length)} nights, ${h.since} to ${h.until}. First night: ${n(first.enumerable)} enumerable servers, ${n(first.review)} with a review-tier flag. Last night: ${n(last.enumerable)} and ${n(last.review)}. ${n(h.surfaces_scanned + h.cache_hits)} (surface, host) pairs evaluated, each distinct one scanned once. Rule set ${h.rules_version}.`;
+  const jumps = [];
+  for (const r of h.rules) r.new_per_night.forEach((p, i) => { if (i > 0 && p.servers > 0) jumps.push({id: r.id, date: p.date, n: p.servers}); });
+  jumps.sort((a, b) => b.n - a.n);
+  document.getElementById('spreads').innerHTML = jumps.length ? `<p class="note" style="margin-top:.8rem">Largest one-night spreads, new servers carrying a rule that night: ${jumps.slice(0, 8).map(j => `<span class="mono">${esc(j.id)}</span> ${j.date} +${n(j.n)}`).join(' · ')}. A jump of hundreds in one night is a publisher shipping a template, not hundreds of decisions.</p>` : '';
+}).catch(() => {
+  document.querySelector('#history tbody').innerHTML = '<tr><td colspan="7" class="note">history not published yet</td></tr>';
 });
 </script>
 </body>

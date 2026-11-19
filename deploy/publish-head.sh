@@ -89,6 +89,21 @@ if [ -x "$APP_DIR/mcpobs" ]; then
     # untouched when nothing about that server changed, so on a quiet night
     # this stages a few hundred small files, not thirty thousand.
     git add docs/data/s docs/data/badge docs/data/scan.json docs/data/peers 2>/dev/null || true
+    # The rule history: every night since the first census, replayed from the
+    # archived bytes. Verdicts are cached by (surface, host) under a key
+    # derived from the rule set, so a quiet night costs minutes, and a rule
+    # edited tomorrow is re-asked of the whole history. One file, rewritten
+    # nightly; the scan page reads it.
+    # Two replays appending to one cache file would interleave their lines;
+    # if one is already running (a manual replay), tonight's refresh waits
+    # for tomorrow rather than racing it.
+    if pgrep -f "mcpobs .*--since" >/dev/null 2>&1; then
+      log "rule history replay already running; skipped tonight"
+    elif "$APP_DIR/mcpobs" --data "$APP_DIR/data" --since 2026-08-30 --scan-json "$CLONE/docs/data/scan-history.json" scan >/dev/null 2>>"$APP_DIR/scan-history.log"; then
+      git add docs/data/scan-history.json 2>/dev/null || true
+    else
+      log "rule history replay failed; see scan-history.log"
+    fi
     last=$(git log -1 --format=%ct -- docs/data/servers.json 2>/dev/null || echo 0)
     if [ "$(( ($(date +%s) - last) / 86400 ))" -ge 7 ]; then
       git add docs/data/servers.json 2>/dev/null || true
