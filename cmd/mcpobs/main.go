@@ -40,6 +40,7 @@ func main() {
 	from := flag.String("from", "", "evidence: first night to include (YYYY-MM-DD)")
 	to := flag.String("to", "", "evidence: last night to include (YYYY-MM-DD)")
 	out := flag.String("out", "", "evidence: output file (default evidence-<slug>-<from>-<to>.json)")
+	servicePub := flag.String("service-pubkey", "", "verify-evidence: pin the key a hosted service signs its packs with")
 	flag.Parse()
 
 	if *logDir == "" {
@@ -84,7 +85,7 @@ func main() {
 		if len(args) != 2 {
 			fatal("usage: mcpobs [--heads dir] [--pubkey file] verify-evidence <bundle.json>")
 		}
-		err = cmdVerifyEvidence(args[1], *pubKey, *headsDir)
+		err = cmdVerifyEvidence(args[1], *pubKey, *headsDir, *servicePub)
 	case "scan":
 		run := ""
 		if len(args) >= 2 {

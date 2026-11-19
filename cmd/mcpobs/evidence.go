@@ -8,6 +8,7 @@ import (
 
 	"github.com/yassinht/mcp-transparency-log/pkg/evidence"
 	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/pack"
 )
 
 // cmdEvidence is the operator side: it needs the archive. The output is the
@@ -50,7 +51,7 @@ func cmdEvidence(dataDir, logDir, headsDir, endpoint, from, to, out string) erro
 // cmdVerifyEvidence is what the recipient runs. It needs the bundle and, to
 // get the strongest result, a clone of the public repository for the heads
 // and the key; without one it falls back to the key pinned in this build.
-func cmdVerifyEvidence(path, pubPath, headsDir string) error {
+func cmdVerifyEvidence(path, pubPath, headsDir, servicePub string) error {
 	raw, err := os.ReadFile(path)
 	if err != nil {
 		return err
@@ -65,6 +66,9 @@ func cmdVerifyEvidence(path, pubPath, headsDir string) error {
 	}
 	if peek.Format == evidence.CheckFormat {
 		return verifyCheckFile(raw, pubPath, headsDir)
+	}
+	if peek.Format == pack.Format {
+		return verifyPackFile(raw, pubPath, servicePub)
 	}
 	var b evidence.Bundle
 	if err := json.Unmarshal(raw, &b); err != nil {
@@ -144,5 +148,61 @@ func verifyCheckFile(raw []byte, pubPath, headsDir string) error {
 		return fmt.Errorf("FAILED  %d check(s) did not pass; the text in this file is not what its hashes say", rep.Failed)
 	}
 	fmt.Printf("VERIFIED  the recorded text matches every hash; %d changed server(s) with their diff. This file is the CI runner's own record, not an observation of the public log.\n", rep.Verified)
+	return nil
+}
+
+// verifyPackFile handles a hosted service's evidence pack. The service key
+// is pinned with --service-pubkey; without it the key named in the pack is
+// used and printed, for the reader to compare with the key the service
+// publishes.
+func verifyPackFile(raw []byte, pubPath, servicePub string) error {
+	var p pack.Pack
+	if err := json.Unmarshal(raw, &p); err != nil {
+		return err
+	}
+	opt := pack.Options{}
+	if servicePub != "" {
+		k, err := mlog.LoadPublicKey(servicePub)
+		if err != nil {
+			return fmt.Errorf("service key: %w", err)
+		}
+		opt.TrustedKey = k
+		fmt.Printf("trusting the service key in %s\n", servicePub)
+	} else {
+		fmt.Printf("no --service-pubkey: the key named in the pack is used and shown below\n")
+	}
+	if k, err := mlog.LoadPublicKey(pubPath); err == nil {
+		opt.OperatorKey = k
+	}
+	fmt.Printf("evidence pack for %s (%s), %s to %s, %d checks, generated %s by %s\n\n",
+		p.Server.Name, p.Server.Endpoint, p.Range.From, p.Range.To, p.Range.Checks, p.GeneratedAt, p.GeneratedBy)
+	rep := pack.Verify(&p, opt)
+	okByName := map[string]int{}
+	var order []string
+	for _, c := range rep.Checks {
+		if c.OK {
+			if _, seen := okByName[c.Name]; !seen {
+				order = append(order, c.Name)
+			}
+			okByName[c.Name]++
+			if c.Name == "signature" {
+				fmt.Printf("  ok    %-15s %s\n", c.Name, c.Detail)
+			}
+			continue
+		}
+		fmt.Printf("  FAIL  %-15s %s  %s\n", c.Name, c.Ref, c.Detail)
+	}
+	for _, name := range order {
+		if name == "signature" {
+			continue
+		}
+		fmt.Printf("  ok    %-15s %d checks\n", name, okByName[name])
+	}
+	fmt.Println()
+	if !rep.OK() {
+		return fmt.Errorf("FAILED  %d check(s) did not pass; do not rely on this pack", rep.Failed)
+	}
+	fmt.Printf("VERIFIED  %d checks of %s with %d versions and %d decisions; every hash, diff and grade recomputed from the text\n",
+		rep.Verified, p.Server.Endpoint, len(p.Versions), len(p.Decisions))
 	return nil
 }
