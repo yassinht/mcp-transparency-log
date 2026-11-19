@@ -282,3 +282,17 @@ func (l *Log) AppendHashes(hashes []tlog.Hash) (int64, error) {
 
 var _ tlog.HashReader = (*Log)(nil)
 var _ = io.Discard
+
+// ProveRecordAt builds an inclusion proof for leaf i against the tree as it
+// stood at size n, which is the size named in a published head. Proving
+// against the current size instead would hand a reader a proof for a root
+// nobody has signed yet; the proof must match the head they can check.
+func (l *Log) ProveRecordAt(n, i int64) (tlog.RecordProof, error) {
+	if n <= 0 || n > l.n {
+		return nil, fmt.Errorf("mlog: tree size %d out of range (size %d)", n, l.n)
+	}
+	if i < 0 || i >= n {
+		return nil, fmt.Errorf("mlog: leaf %d out of range (size %d)", i, n)
+	}
+	return tlog.ProveRecord(n, i, l)
+}

@@ -33,13 +33,15 @@ mcpobs lock context7=https://mcp.context7.com/mcp exa=https://mcp.exa.ai/mcp
 git add mcp.lock
 ```
 
-Each entry records the server's canonical surface hash ([specified with test vectors](docs/spec/surface-hash.md)) and the jcs-v1 tool-set digest (RFC 8785) that other registry observers share, so a lock written here can be compared with their records. `mcpobs check` re-probes every locked server and exits 1 when one no longer serves what was reviewed (2 when it could not complete, for instance a missing credential). Servers that need credentials take a header from `MCPOBS_HEADER_<NAME>`; the lockfile records only `"auth": "env:…"`, never a value. In CI:
+Each entry records the server's canonical surface hash ([specified with test vectors](docs/spec/surface-hash.md)) and the jcs-v1 tool-set digest (RFC 8785) that other registry observers share, so a lock written here can be compared with their records. `mcpobs check` re-probes every locked server and exits 1 when one no longer serves what was reviewed (2 when it could not complete, for instance a missing credential). Servers that need credentials take a header from `MCPOBS_HEADER_<NAME>`; the lockfile records only `"auth": "env:…"`, never a value. Beside the lockfile, `mcp.lock.d/` keeps the tool text each hash was computed over, indented, so the pull request that accepts a change carries the exact diff of the text. In CI:
 
 ```yaml
 - uses: yassinht/mcp-transparency-log@v1
 ```
 
-The Action fails the job and opens an issue with the diff: tools added, removed, or edited in place under the same names. This repository runs it against its own [`mcp.lock`](mcp.lock) every morning; the issues it opens are the demo. [Setup in four steps](https://yassinht.github.io/mcp-transparency-log/lock.html).
+The Action fails the job and opens an issue with the diff: tools added, removed, or edited in place under the same names, with the old and new description quoted. It also keeps an evidence file as a build artifact (`--check-evidence`): the text before and after every change, the diff, and the public log's newest head as a timestamp anchor; `mcpobs verify-evidence` recomputes every hash in it. This repository runs it against its own [`mcp.lock`](mcp.lock) every morning; the issues it opens are the demo. [Setup in four steps](https://yassinht.github.io/mcp-transparency-log/lock.html).
+
+**Hand over evidence.** `mcpobs evidence <endpoint> --from 2026-10-01` writes one file with every night the log observed a server: each observation as the exact line the crawler wrote, an inclusion proof against the newest signed head, the archived response bytes, the distinct tool surfaces and the diff between them down to the sentence. `mcpobs verify-evidence <file>` checks it offline, with a clone of this repository for the heads and the key: signature, every proof, every byte, and the summary, which it recomputes rather than trusts. A one-byte change anywhere in the file fails the check and names the leaf. Built and verified on the real log for context7 over 48 nights (3 surfaces, 2 in-place edits) on 2026-11-19.
 
 **Scan tool text.** `mcpobs scan` runs thirteen regular expressions over every description, title and schema description in a census, looking for text addressed to the model rather than the user: "ignore previous instructions", "forward the conversation", hidden bidi characters. No model judges; every match is quoted and none is called malicious. [Rules, numbers and one example each](https://yassinht.github.io/mcp-transparency-log/scan.html).
 

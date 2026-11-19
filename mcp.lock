@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-17T22:36:12Z",
+  "generated": "2026-11-19T00:45:30Z",
   "log": "https://github.com/yassinht/mcp-transparency-log",
   "servers": [
     {
@@ -12,7 +12,7 @@
         "migrate_pages_to_workers_guide",
         "search_cloudflare_documentation"
       ],
-      "locked_at": "2026-11-17T22:36:12Z",
+      "locked_at": "2026-11-19T00:45:30Z",
       "transport": "streamable-http"
     },
     {
@@ -24,7 +24,7 @@
         "query-docs",
         "resolve-library-id"
       ],
-      "locked_at": "2026-11-17T22:36:12Z",
+      "locked_at": "2026-11-19T00:45:30Z",
       "transport": "streamable-http"
     },
     {
@@ -36,7 +36,7 @@
         "web_fetch_exa",
         "web_search_exa"
       ],
-      "locked_at": "2026-11-17T22:36:12Z",
+      "locked_at": "2026-11-19T00:45:30Z",
       "transport": "streamable-http"
     },
     {
@@ -59,7 +59,7 @@
         "search_docs",
         "warmup_docs_cache"
       ],
-      "locked_at": "2026-11-17T22:36:12Z",
+      "locked_at": "2026-11-19T00:45:30Z",
       "transport": "streamable-http"
     }
   ]

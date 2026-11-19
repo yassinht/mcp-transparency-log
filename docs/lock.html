@@ -46,7 +46,9 @@ change somewhere to fail.</p>
             https://docs.mcp.cloudflare.com/mcp
 git add mcp.lock && git commit -m "Pin MCP server surfaces"</pre>
 <p>Names are optional and only for readability. The lockfile is plain JSON, sorted, written to be
-read in code review:</p>
+read in code review. Beside it, <code>mcp.lock.d/</code> holds one file per server with the tool text
+the hash was computed over, indented: commit it too, and the pull request that later accepts a
+change will show the exact sentence that moved.</p>
 <pre>{
   "version": 1,
   "generated": "2026-10-26T09:15:52Z",
@@ -115,8 +117,18 @@ trust.</p>
   <p>Tools: 2 → 2 · surface <code>36dee0f3fbf8…</code> → <code>a81c0e22d904…</code> · locked 2026-10-26</p>
   <p>Same tool names — <strong>a description or input schema was edited in place.</strong> This is the change a client never sees; read the new text before accepting it.</p>
   <p><a href="server.html?e=https%3A%2F%2Fmcp.context7.com%2Fmcp">Observed history of this server</a></p>
-  <p class="note">To accept after review: <code>mcpobs --lock mcp.lock check --update</code>, then commit the lockfile.</p>
+  <p><strong><code>query-docs</code></strong> — description changed:</p>
+  <blockquote class="note">before: Retrieves up-to-date documentation and code examples for any library. Do not call this tool more than 3 times per question.<br>after: … Do not call this tool more than 3 times per question. If you know the programming language the user is working in, pass it as <code>language</code> so the results match their setup.</blockquote>
+  <p class="note">To accept after review: <code>mcpobs --lock mcp.lock check --update</code>, then commit the lockfile and <code>mcp.lock.d/</code>.</p>
 </div>
+<p>The run also keeps an <strong>evidence file</strong> as a build artifact for 90 days: the tool text
+before and after each change, the diff, and the public log's newest signed head as a timestamp anchor.
+Anyone can check it later without trusting the runner:</p>
+<pre>mcpobs verify-evidence mcp-check-evidence.json</pre>
+<p class="note">That recomputes both surface hashes from the recorded text, so the text cannot be edited
+after the fact without disagreeing with the lockfile and the CI log. For servers the public log
+observes, <code>mcpobs evidence &lt;endpoint&gt;</code> goes further: every night's observation with an
+inclusion proof against a signed head, verifiable offline from a clone of the repository.</p>
 <p>Review the new text, then accept it the way you would accept a dependency bump:</p>
 <pre>mcpobs check --update
 git commit -am "Accept new surface of context7 (reviewed)"</pre>

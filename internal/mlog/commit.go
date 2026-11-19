@@ -210,3 +210,32 @@ func Recompute(logDir, dataDir string) (int64, string, error) {
 	}
 	return l.Size(), root.String(), nil
 }
+
+// IndexLines returns a run's index as the exact leaf records committed to the
+// tree, in leaf order. Evidence building needs the same line-by-line rule as
+// CommitRun (empty and invalid lines skipped), or a leaf index computed from
+// the file would point at the wrong record.
+func IndexLines(dataDir, runID string) ([][]byte, error) {
+	return readIndexLines(dataDir, runID)
+}
+
+// LeafIndexOf maps line k of a run's index to its position in the tree. A run
+// resumed after an interruption is committed in several ranges, so the mapping
+// walks the manifest entries for that run in order.
+func LeafIndexOf(logDir, runID string, k int64) (int64, error) {
+	man, err := ReadManifest(logDir)
+	if err != nil {
+		return 0, err
+	}
+	var seen int64
+	for _, e := range man {
+		if e.RunID != runID {
+			continue
+		}
+		if k < seen+e.Leaves {
+			return e.FirstLeaf + (k - seen), nil
+		}
+		seen += e.Leaves
+	}
+	return 0, fmt.Errorf("run %s line %d is not committed to the tree", runID, k)
+}

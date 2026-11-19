@@ -24,6 +24,10 @@ inputs:
     description: Label used to find and tag the drift issue.
     required: false
     default: mcp-surface-drift
+  evidence-retention-days:
+    description: How many days to keep the evidence artifact (1-90).
+    required: false
+    default: "90"
 
 outputs:
   status:
@@ -54,6 +58,7 @@ runs:
         "$RUNNER_TEMP/mcpobs" --lock "${{ inputs.lock }}" \
           --check-json "$RUNNER_TEMP/mcp-check.json" \
           --check-md   "$RUNNER_TEMP/mcp-check.md" \
+          --check-evidence "$RUNNER_TEMP/mcp-check-evidence.json" \
           check
         code=$?
         echo "status=$code" >> "$GITHUB_OUTPUT"
@@ -61,6 +66,17 @@ runs:
           cat "$RUNNER_TEMP/mcp-check.md" >> "$GITHUB_STEP_SUMMARY"
         fi
         exit 0
+
+    - name: Keep the evidence file
+      # The tool text before and after every change, the diff, and the public
+      # log's newest head. Verify it later with `mcpobs verify-evidence`.
+      if: always() && steps.check.outputs.status != ''
+      uses: actions/upload-artifact@v4
+      with:
+        name: mcp-check-evidence
+        path: ${{ runner.temp }}/mcp-check-evidence.json
+        retention-days: ${{ inputs.evidence-retention-days }}
+        if-no-files-found: ignore
 
     - name: Open or update the drift issue
       if: steps.check.outputs.status == '1' && inputs.open-issue == 'true' && github.event_name != 'pull_request'

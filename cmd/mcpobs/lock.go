@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/yassinht/mcp-transparency-log/internal/canon"
+	"github.com/yassinht/mcp-transparency-log/internal/evidence"
 	"github.com/yassinht/mcp-transparency-log/internal/probe"
 )
 
@@ -29,7 +30,9 @@ import (
 // issue the Action opens links to the server's history page.
 //
 // Format is deliberately boring JSON. A lockfile is read by humans in code
-// review far more often than by machines, and it must diff cleanly.
+// review far more often than by machines, and it must diff cleanly. The tool
+// text itself lives beside it in <lock>.d/ (see snapshot.go), so the diff of
+// a change is the diff of the text.
 
 const lockVersion = 1
 
@@ -70,6 +73,9 @@ type probed struct {
 	ToolsSRI  string
 	Tools     []string
 	Transport string
+	// Canonical is the sorted, canonicalised tool list the hash was computed
+	// over: what the snapshot stores and the evidence file shows.
+	Canonical []json.RawMessage
 }
 
 func probeSurface(endpoint string, hdr http.Header) (*probed, error) {
@@ -91,7 +97,7 @@ func probeSurface(endpoint string, hdr http.Header) (*probed, error) {
 	if err != nil {
 		return &probed{Transport: res.Transport}, fmt.Errorf("canonicalize: %w", err)
 	}
-	out := &probed{Surface: s.SurfaceSHA256, Tools: s.ToolNames, Transport: res.Transport}
+	out := &probed{Surface: s.SurfaceSHA256, Tools: s.ToolNames, Transport: res.Transport, Canonical: s.Tools}
 	var all []json.RawMessage
 	for _, page := range res.ToolPages {
 		all = append(all, page...)
@@ -183,6 +189,11 @@ func cmdLock(path string, endpoints []string) error {
 			byEndpoint[endpoint] = len(lf.Servers)
 			lf.Servers = append(lf.Servers, entry)
 		}
+		if rel, serr := writeSnapshot(path, entry, pr.Canonical); serr != nil {
+			fmt.Fprintf(os.Stderr, "  snapshot not written: %v\n", serr)
+		} else {
+			fmt.Fprintf(os.Stderr, "  text recorded in %s\n", rel)
+		}
 	}
 	lf.Generated = now
 	if err := writeLock(path, lf); err != nil {
@@ -196,9 +207,10 @@ func cmdLock(path string, endpoints []string) error {
 }
 
 // cmdCheck re-probes every locked server and reports drift. It prints a
-// human-readable report to stdout and, with --json, a machine-readable one
-// the GitHub Action turns into an issue.
-func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
+// human-readable report to stdout and, with the matching flags, a JSON
+// result, a Markdown report the GitHub Action posts as an issue, and an
+// evidence file with the tool text before and after (see evidence.CheckFormat).
+func cmdCheck(path string, jsonOut, mdOut, evidenceOut string, update bool) error {
 	lf, err := readLock(path)
 	if err != nil {
 		return err
@@ -209,16 +221,22 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 
 	type result struct {
 		Entry     lockEntry `json:"entry"`
-		Status    string    `json:"status"` // ok | changed | unreachable
+		Status    string    `json:"status"` // ok | changed | unreachable | misconfigured
 		Surface   string    `json:"surface_now,omitempty"`
 		Tools     []string  `json:"tools_now,omitempty"`
 		Added     []string  `json:"added,omitempty"`
 		Removed   []string  `json:"removed,omitempty"`
 		Error     string    `json:"error,omitempty"`
 		Transport string    `json:"transport,omitempty"`
+		// Edited is filled when the locked text is on hand: which members of
+		// which tools changed, with the old and new description.
+		Edited   []evidence.EditedTool `json:"edited,omitempty"`
+		Snapshot string                `json:"snapshot,omitempty"`
+		Note     string                `json:"note,omitempty"`
 	}
 	var (
 		results                             []result
+		evServers                           []evidence.CheckedServer
 		changed, unreachable, misconfigured int
 		now                                 = time.Now().UTC().Format(time.RFC3339)
 	)
@@ -226,6 +244,7 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 	fmt.Printf("%s: %d server(s)\n\n", path, len(lf.Servers))
 	for i, e := range lf.Servers {
 		r := result{Entry: e}
+		ev := evidence.CheckedServer{Name: e.Name, Endpoint: e.Endpoint, LockedAt: e.LockedAt, Auth: e.Auth, SurfaceLocked: e.Surface, JCSLocked: e.ToolsSRI}
 		label := e.Name
 		if label == "" {
 			label = e.Endpoint
@@ -243,6 +262,8 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 			misconfigured++
 			fmt.Printf("  MISCONFIGURED %s\n               %s\n", label, r.Error)
 			results = append(results, r)
+			ev.Status, ev.Error = r.Status, r.Error
+			evServers = append(evServers, ev)
 			continue
 		}
 		pr, perr := probeSurface(e.Endpoint, hdr)
@@ -272,11 +293,37 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 				fmt.Printf("               same tool names; a description or schema was edited in place\n")
 			}
 			fmt.Printf("               surface %s -> %s\n", e.Surface[:12], surface[:12])
+
+			// With the locked text on hand, say exactly what moved.
+			ev.SurfaceNow, ev.JCSNow, ev.ToolsAfter = surface, pr.ToolsSRI, pr.Canonical
+			if snap, rel, serr := readSnapshot(path, e); serr != nil {
+				r.Note = serr.Error()
+				ev.Note = serr.Error()
+				fmt.Printf("               (%s)\n", serr)
+			} else {
+				r.Snapshot, ev.Snapshot, ev.ToolsBefore = rel, rel, snap.Tools
+				_, _, r.Edited = evidence.DiffTools(snap.Tools, pr.Canonical)
+				ev.Added, ev.Removed, ev.Edited = evidence.DiffTools(snap.Tools, pr.Canonical)
+				for _, ed := range r.Edited {
+					fmt.Printf("               ~ %s: %s changed\n", ed.Tool, strings.Join(ed.Fields, ", "))
+				}
+			}
 			if update {
 				lf.Servers[i] = lockEntry{Name: e.Name, Endpoint: e.Endpoint, Surface: surface, ToolsSRI: pr.ToolsSRI, Tools: tools, LockedAt: now, Transport: transport, Auth: e.Auth}
+				if _, serr := writeSnapshot(path, lf.Servers[i], pr.Canonical); serr != nil {
+					fmt.Printf("               snapshot not written: %v\n", serr)
+				}
 			}
 		}
 		results = append(results, r)
+		ev.Status, ev.Error = r.Status, r.Error
+		if ev.Added == nil {
+			ev.Added = r.Added
+		}
+		if ev.Removed == nil {
+			ev.Removed = r.Removed
+		}
+		evServers = append(evServers, ev)
 	}
 
 	fmt.Printf("\n%d ok, %d changed, %d unreachable, %d misconfigured\n", len(lf.Servers)-changed-unreachable-misconfigured, changed, unreachable, misconfigured)
@@ -315,6 +362,16 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 				if len(r.Removed) > 0 {
 					fmt.Fprintf(&b, "Removed: `%s`\n\n", strings.Join(r.Removed, "`, `"))
 				}
+				for _, ed := range r.Edited {
+					fmt.Fprintf(&b, "**`%s`** — %s changed", ed.Tool, strings.Join(ed.Fields, ", "))
+					if ed.DescriptionBefore != ed.DescriptionAfter {
+						fmt.Fprintf(&b, ":\n\n> before: %s\n>\n> after: %s\n", quoteClip(ed.DescriptionBefore), quoteClip(ed.DescriptionAfter))
+					}
+					fmt.Fprintf(&b, "\n")
+				}
+				if r.Note != "" {
+					fmt.Fprintf(&b, "_%s_\n\n", r.Note)
+				}
 				fmt.Fprintf(&b, "[Observed history of this server](%s)\n\n", hist)
 			case "unreachable":
 				fmt.Fprintf(&b, "### %s — unreachable\n\n`%s` · %s\n\nNot counted as drift; the lock could not be verified this run.\n\n", label, r.Entry.Endpoint, r.Error)
@@ -322,11 +379,36 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 				fmt.Fprintf(&b, "### %s — not checked\n\n`%s` · %s\n\nThis entry was locked with a credential. Set that variable on the step that runs the check (from a repository secret in GitHub Actions).\n\n", label, r.Entry.Endpoint, r.Error)
 			}
 		}
-		fmt.Fprintf(&b, "---\n\nTo accept after review: `mcpobs --lock %s check --update`, then commit the lockfile.\n\n", path)
+		fmt.Fprintf(&b, "---\n\nTo accept after review: `mcpobs --lock %s check --update`, then commit the lockfile and `%s/`.\n\n", path, snapshotDir(path))
 		fmt.Fprintf(&b, "Every nightly observation behind the history links is in a signed, independently verifiable log: `mcpobs verify --leaves docs/data/leaves --heads heads --pubkey heads/key.pub` in a clone of https://github.com/yassinht/mcp-transparency-log.\n")
 		if err := os.WriteFile(mdOut, []byte(b.String()), 0o644); err != nil {
 			return err
 		}
+	}
+	// The evidence file: the text before and after for every changed server,
+	// the diff, and the newest public head as a freshness anchor. Verified
+	// later with `mcpobs verify-evidence`.
+	if evidenceOut != "" {
+		ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+		head, note := fetchPublicHead(ctx)
+		cancel()
+		ce := evidence.CheckEvidence{
+			Format: evidence.CheckFormat, CheckedAt: now,
+			Lock:      evidence.LockRef{Path: path, Generated: lf.Generated},
+			PublicLog: head, Servers: evServers,
+			Notes: []string{
+				"Produced by `mcpobs check` in the environment that ran it. The public log never saw these servers: there is no inclusion proof here, and this file proves nothing about the probe itself.",
+				"What it holds is the tool text at lock time (from the snapshot beside the lockfile) and at check time, with the exact diff. `mcpobs verify-evidence` recomputes both surface hashes from the text, so the text cannot be edited afterwards without disagreeing with the lockfile and the CI log.",
+				"The public head, when present, was fetched at check time and anchors this file in time: it was produced after that head was published.",
+			},
+		}
+		if note != "" {
+			ce.Notes = append(ce.Notes, note)
+		}
+		if err := writeJSON(evidenceOut, ce); err != nil {
+			return err
+		}
+		fmt.Printf("evidence written to %s\n", evidenceOut)
 	}
 	if update && changed > 0 {
 		lf.Generated = now
@@ -343,6 +425,18 @@ func cmdCheck(path string, jsonOut, mdOut string, update bool) error {
 		return fmt.Errorf("%d locked server(s) need a credential that is not set; the check is incomplete", misconfigured)
 	}
 	return nil
+}
+
+// quoteClip keeps a description readable inside a Markdown quote.
+func quoteClip(s string) string {
+	s = strings.ReplaceAll(strings.TrimSpace(s), "\n", " ")
+	if len(s) > 400 {
+		s = s[:400] + "…"
+	}
+	if s == "" {
+		return "(empty)"
+	}
+	return s
 }
 
 // splitNameEndpoint accepts "name=https://..." or a bare URL.

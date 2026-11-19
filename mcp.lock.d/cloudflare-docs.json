@@ -1,0 +1,82 @@
+{
+  "endpoint": "https://docs.mcp.cloudflare.com/mcp",
+  "locked_at": "2026-11-19T00:45:30Z",
+  "surface_sha256": "2887f1944f655625b0360f8d0a25a0648eea261560b467caabe00bd651ec10c0",
+  "jcs_v1_tools_sha256": "sha256-GqUyi0vc/Gc1Yb0+T0wNocyaytCWTrjjMWvLOuOPOz4=",
+  "tools": [
+    {
+      "annotations": {
+        "readOnlyHint": true,
+        "title": "Get Pages migration guide"
+      },
+      "description": "ALWAYS read this guide before migrating Pages projects to Workers.",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {},
+        "type": "object"
+      },
+      "name": "migrate_pages_to_workers_guide"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true,
+        "title": "Search Cloudflare docs"
+      },
+      "description": "Search the Cloudflare documentation.\n\n\t\tThis tool should be used to answer any question about Cloudflare products or features, including:\n\t\t- Workers, Pages, R2, Images, Stream, D1, Durable Objects, KV, Workflows, Hyperdrive, Queues\n\t\t- AI Search, Workers AI, Vectorize, AI Gateway, Browser Run\n\t\t- Zero Trust, Access, Tunnel, Gateway, Browser Isolation, WARP, DDOS, Magic Transit, Magic WAN\n\t\t- CDN, Cache, DNS, Zaraz, Argo, Rulesets, Terraform, Account and Billing\n\n\t\tResults are returned as semantically similar chunks to the query.\n\t\t",
+      "inputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "name": "search_cloudflare_documentation",
+      "outputSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "additionalProperties": false,
+        "properties": {
+          "results": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "similarity": {
+                  "description": "Similarity score from AI Search",
+                  "type": "number"
+                },
+                "text": {
+                  "description": "Matching documentation chunk text",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Documentation page title",
+                  "type": "string"
+                },
+                "url": {
+                  "description": "Developer documentation URL",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "similarity",
+                "url",
+                "title",
+                "text"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "results"
+        ],
+        "type": "object"
+      }
+    }
+  ]
+}

@@ -32,7 +32,11 @@ func main() {
 	lockPath := flag.String("lock", "mcp.lock", "lock/check: path of the lockfile")
 	checkJSON := flag.String("check-json", "", "check: also write results to this JSON file")
 	checkMD := flag.String("check-md", "", "check: also write a Markdown drift report (what the GitHub Action posts)")
+	checkEv := flag.String("check-evidence", "", "check: also write an evidence file with the tool text before and after each change")
 	update := flag.Bool("update", false, "check: rewrite the lockfile to the current surfaces after reporting")
+	from := flag.String("from", "", "evidence: first night to include (YYYY-MM-DD)")
+	to := flag.String("to", "", "evidence: last night to include (YYYY-MM-DD)")
+	out := flag.String("out", "", "evidence: output file (default evidence-<slug>-<from>-<to>.json)")
 	flag.Parse()
 
 	if *logDir == "" {
@@ -68,6 +72,16 @@ func main() {
 		err = cmdVerify(*dataDir, *logDir, *headsDir, *pubKey, *leaves)
 	case "heads":
 		err = cmdHeads(*headsDir)
+	case "evidence":
+		if len(args) != 2 {
+			fatal("usage: mcpobs [--from YYYY-MM-DD] [--to YYYY-MM-DD] [--out file] evidence <endpoint>")
+		}
+		err = cmdEvidence(*dataDir, *logDir, *headsDir, args[1], *from, *to, *out)
+	case "verify-evidence":
+		if len(args) != 2 {
+			fatal("usage: mcpobs [--heads dir] [--pubkey file] verify-evidence <bundle.json>")
+		}
+		err = cmdVerifyEvidence(args[1], *pubKey, *headsDir)
 	case "scan":
 		run := ""
 		if len(args) >= 2 {
@@ -77,7 +91,7 @@ func main() {
 	case "lock":
 		err = cmdLock(*lockPath, args[1:])
 	case "check":
-		err = cmdCheck(*lockPath, *checkJSON, *checkMD, *update)
+		err = cmdCheck(*lockPath, *checkJSON, *checkMD, *checkEv, *update)
 	case "export":
 		out := "docs"
 		if len(args) == 2 {
@@ -110,10 +124,16 @@ func usage() {
   mcpobs verify                rebuild the tree from the records and check
                                it against every signed head
   mcpobs heads                 list the published tree heads
+  mcpobs evidence <endpoint>   every observation of one server between --from
+                               and --to, its archived tool text, and an inclusion
+                               proof per observation against the newest head
+  mcpobs verify-evidence <f>   check an evidence bundle offline: key, head,
+                               every proof, every byte, and the summary
   mcpobs scan [run]            rule-based scan of tool text for model-directed
                                instructions, steering, exfil, secrets, hidden content
   mcpobs lock <endpoint>...    pin each server's current tool surface in mcp.lock
   mcpobs check                 re-probe every locked server; exit 1 on drift
+                               (--check-evidence f: the text before and after)
   mcpobs export [dir]          write static JSON for the site (default "docs")
 
 flags:
@@ -122,6 +142,8 @@ flags:
   --heads <dir>                signed heads (default "heads")
   --pubkey <file>              signing public key (default "heads/key.pub")
   --leaves <dir>               published leaf hashes; verify with no archive
+  --from, --to <YYYY-MM-DD>    evidence: nights to include (inclusive)
+  --out <file>                 evidence: where to write the bundle
 
 credentials (lock/check):
   MCPOBS_HEADER_<NAME>="Header-Name: value"   one header per line, for the entry
