@@ -1,0 +1,1 @@
+{"slug":"e3d3cb9770ed1c08","names":["app.airsurf/airsurf"],"host":"airsurf.app","endpoint":"https://airsurf.app/api/v1/eco/mcp","first_seen":"2026-11-20","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-20","kind":"first_seen","outcome":"auth_required"}]}

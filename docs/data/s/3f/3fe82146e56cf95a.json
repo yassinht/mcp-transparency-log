@@ -1,1 +1,1 @@
-{"slug":"3fe82146e56cf95a","names":["com.raltan/raltan"],"host":"raltan.com","endpoint":"https://raltan.com/mcp","first_seen":"2026-10-05","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}
+{"slug":"3fe82146e56cf95a","names":["com.raltan/raltan"],"host":"raltan.com","endpoint":"https://raltan.com/mcp","first_seen":"2026-10-05","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-05","kind":"first_seen","outcome":"auth_required"}]}

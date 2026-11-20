@@ -1,0 +1,1 @@
+{"slug":"85489df0f118a6ee","names":["com.monitive/mcp","com.uptimemonitoring/mcp"],"host":"api.monitive.com","endpoint":"https://api.monitive.com/mcp","first_seen":"2026-11-20","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-20","kind":"first_seen","outcome":"auth_required"}]}

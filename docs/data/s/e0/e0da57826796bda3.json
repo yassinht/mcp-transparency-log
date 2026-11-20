@@ -1,0 +1,1 @@
+{"slug":"e0da57826796bda3","names":["br.com.perpetuus/crm"],"host":"perpetuus-crm-mcp.services.perpetuus.com.br","endpoint":"https://perpetuus-crm-mcp.services.perpetuus.com.br/mcp","first_seen":"2026-11-20","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-20","kind":"first_seen","outcome":"auth_required"}]}

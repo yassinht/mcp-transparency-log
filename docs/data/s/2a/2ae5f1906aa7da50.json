@@ -1,0 +1,1 @@
+{"slug":"2ae5f1906aa7da50","names":["com.licitacionesapi/mcp"],"host":"api.licitacionesapi.com","endpoint":"https://api.licitacionesapi.com/mcp","first_seen":"2026-11-20","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-20","kind":"first_seen","outcome":"auth_required"}]}
