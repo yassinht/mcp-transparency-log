@@ -1,0 +1,1 @@
+{"slug":"507d098b78e1336b","names":["eu.gdprregister/gdpr-register"],"host":"mcp.gdprregister.eu","endpoint":"https://mcp.gdprregister.eu/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

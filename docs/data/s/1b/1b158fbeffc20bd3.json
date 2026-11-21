@@ -1,0 +1,1 @@
+{"slug":"1b158fbeffc20bd3","names":["io.github.sumitrmardy/yahoo-finance-scraper"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=sumitr_mardy/yahoo-finance-scraper","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

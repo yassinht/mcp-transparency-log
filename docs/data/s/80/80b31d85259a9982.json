@@ -1,0 +1,1 @@
+{"slug":"80b31d85259a9982","names":["com.ihateposting/mcp"],"host":"app.ihateposting.com","endpoint":"https://app.ihateposting.com/mcp/oauth","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"a9dd135c9a3bea5e","names":["ca.net3000/account-agents"],"host":"account-agents.net3000.ca","endpoint":"https://account-agents.net3000.ca/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

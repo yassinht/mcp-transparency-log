@@ -1,0 +1,1 @@
+{"slug":"05843260bd5f6b4b","names":["se.kontiq/bokforing"],"host":"kontiq.se","endpoint":"https://kontiq.se/api/mcp.php","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

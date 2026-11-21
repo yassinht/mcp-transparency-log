@@ -1,0 +1,1 @@
+{"slug":"c8cce1ac827968e6","names":["com.beamfar/website-monitoring"],"host":"api.beamfar.com","endpoint":"https://api.beamfar.com/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

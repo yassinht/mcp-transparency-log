@@ -1,0 +1,1 @@
+{"slug":"02dde48ced96a239","names":["com.gethinto/hinto"],"host":"api.gethinto.com","endpoint":"https://api.gethinto.com/v1/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

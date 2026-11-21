@@ -1,0 +1,1 @@
+{"slug":"ffd6ee94c597ec04","names":["com.getliquify/liquify"],"host":"api.getliquify.com","endpoint":"https://api.getliquify.com/v1/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

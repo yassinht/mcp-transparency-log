@@ -1,0 +1,1 @@
+{"slug":"6e106aace078109e","names":["app.lilysecurity/lily"],"host":"my.lilysecurity.app","endpoint":"https://my.lilysecurity.app/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

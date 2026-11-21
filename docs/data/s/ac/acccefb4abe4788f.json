@@ -1,0 +1,1 @@
+{"slug":"acccefb4abe4788f","names":["io.github.lergassy/flights-mcp-server"],"host":"lergassy--flights-mcp-server.apify.actor","endpoint":"https://lergassy--flights-mcp-server.apify.actor/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}

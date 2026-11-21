@@ -1,0 +1,1 @@
+{"slug":"ac8c53440295a2b6","names":["io.meldoc/mcp"],"host":"api.meldoc.io","endpoint":"https://api.meldoc.io/mcp","first_seen":"2026-11-21","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-21","kind":"first_seen","outcome":"auth_required"}]}
