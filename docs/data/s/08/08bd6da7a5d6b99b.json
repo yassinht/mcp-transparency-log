@@ -1,0 +1,1 @@
+{"slug":"08bd6da7a5d6b99b","names":["app.samestay/direct-site-finder"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?actors=samestay/samestay-direct-site-finder","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

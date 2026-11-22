@@ -1,0 +1,1 @@
+{"slug":"7612b2e13b6031e1","names":["de.innov-ai-tive.support-ai-ze/supportaize"],"host":"support-ai-ze.innov-ai-tive.de","endpoint":"https://support-ai-ze.innov-ai-tive.de/functions/v1/mcp-server","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

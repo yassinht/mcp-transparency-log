@@ -1,0 +1,1 @@
+{"slug":"1d8bc948fe6b4d44","names":["report.extension/extension-report"],"host":"mcp.extension.report","endpoint":"https://mcp.extension.report","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

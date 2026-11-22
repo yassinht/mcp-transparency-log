@@ -1,0 +1,1 @@
+{"slug":"695e6b808c43669d","names":["io.github.patrikjaeger/motosale"],"host":"mcp.motosale.ch","endpoint":"https://mcp.motosale.ch/mcp/account","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"4b353b407fe61a4a","names":["ai.gleap/mcp"],"host":"mcp.gleap.ai","endpoint":"https://mcp.gleap.ai/mcp","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

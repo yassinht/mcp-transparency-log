@@ -1,0 +1,1 @@
+{"slug":"734316d85b3cd493","names":["com.trysunnyside/sunnyside-ai"],"host":"api.trysunnyside.com","endpoint":"https://api.trysunnyside.com/mcp","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

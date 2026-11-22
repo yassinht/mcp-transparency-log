@@ -1,0 +1,1 @@
+{"slug":"52d5b9ef7d9d0306","names":["com.ilinxa/edge"],"host":"edge.ilinxa.com","endpoint":"https://edge.ilinxa.com/mcp","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

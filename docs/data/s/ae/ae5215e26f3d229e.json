@@ -1,0 +1,1 @@
+{"slug":"ae5215e26f3d229e","names":["ai.qaf/qaf"],"host":"api.qaf.ai","endpoint":"https://api.qaf.ai/mcp","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

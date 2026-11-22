@@ -1,0 +1,1 @@
+{"slug":"d94b49c7789f04fb","names":["de.innov-ai-tive.rescueaize/rescueaize"],"host":"rescueaize.innov-ai-tive.de","endpoint":"https://rescueaize.innov-ai-tive.de/functions/v1/mcp-server","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}

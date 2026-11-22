@@ -1,0 +1,1 @@
+{"slug":"b1520a691988869b","names":["sa.directfn/market-data"],"host":"dfn-mcp.directfn.sa","endpoint":"https://dfn-mcp.directfn.sa/mcp","first_seen":"2026-11-22","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-22","kind":"first_seen","outcome":"auth_required"}]}
