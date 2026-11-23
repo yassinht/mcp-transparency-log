@@ -1,0 +1,1 @@
+{"slug":"e630390e9868f16d","names":["io.github.memeanalyst/batch-voiceover-studio-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=fetch-actor-details,magnova/batch-voiceover-studio","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

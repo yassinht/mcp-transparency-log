@@ -1,0 +1,1 @@
+{"slug":"5ffa2d68efec8d6b","names":["io.github.leeway-run/leeway"],"host":"app.leeway.run","endpoint":"https://app.leeway.run/api/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

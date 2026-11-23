@@ -1,0 +1,1 @@
+{"slug":"8d52c13e0c8bb348","names":["io.github.yeah013/isud-ip"],"host":"app.isud.cn","endpoint":"https://app.isud.cn/api/v1/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

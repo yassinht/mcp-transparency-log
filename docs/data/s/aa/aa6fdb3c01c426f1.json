@@ -1,0 +1,1 @@
+{"slug":"aa6fdb3c01c426f1","names":["ai.bakedbot/bakedbot-distribution"],"host":"bakedbot.ai","endpoint":"https://bakedbot.ai/api/public/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

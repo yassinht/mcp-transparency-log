@@ -1,0 +1,1 @@
+{"slug":"c54158a1e564a496","names":["com.asklucien/lucien"],"host":"app.asklucien.com","endpoint":"https://app.asklucien.com/api/claude/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"53fae0b9af44fca6","names":["com.fivesocket/mt5"],"host":"api.fivesocket.com","endpoint":"https://api.fivesocket.com/mcp/read","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

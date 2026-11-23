@@ -1,0 +1,1 @@
+{"slug":"63feec09806705b0","names":["io.github.qubrics/qubrics-mcp"],"host":"mcp.qubrics.com","endpoint":"https://mcp.qubrics.com/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

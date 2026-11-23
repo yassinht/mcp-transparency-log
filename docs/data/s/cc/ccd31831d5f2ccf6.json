@@ -1,0 +1,1 @@
+{"slug":"ccd31831d5f2ccf6","names":["io.github.PublicFreeSuffix/free-domains"],"host":"s.eus","endpoint":"https://s.eus/api/mcp/pfs","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

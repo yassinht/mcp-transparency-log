@@ -1,0 +1,1 @@
+{"slug":"b1d382c851a8f252","names":["cloud.freshleads/freshleads"],"host":"freshleads.cloud","endpoint":"https://freshleads.cloud/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

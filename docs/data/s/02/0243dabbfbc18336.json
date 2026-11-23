@@ -1,0 +1,1 @@
+{"slug":"0243dabbfbc18336","names":["app.dayroute/planner"],"host":"my.dayroute.app","endpoint":"https://my.dayroute.app/api/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

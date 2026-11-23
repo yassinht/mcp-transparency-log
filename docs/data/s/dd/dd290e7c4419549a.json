@@ -1,0 +1,1 @@
+{"slug":"dd290e7c4419549a","names":["si.mediaatlas/dobitnik"],"host":"dobitnik.mediaatlas.si","endpoint":"https://dobitnik.mediaatlas.si/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}

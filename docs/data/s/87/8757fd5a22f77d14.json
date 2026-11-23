@@ -1,0 +1,1 @@
+{"slug":"8757fd5a22f77d14","names":["io.github.dev-shiki/pkg-risk-radar"],"host":"shikitoka--pkg-risk-radar.apify.actor","endpoint":"https://shikitoka--pkg-risk-radar.apify.actor/mcp","first_seen":"2026-11-23","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-23","kind":"first_seen","outcome":"auth_required"}]}
