@@ -1,0 +1,1 @@
+{"slug":"97c1b95488ff5ea5","names":["express.jobs/jobs-express"],"host":"mcp.jobs.express","endpoint":"https://mcp.jobs.express/","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

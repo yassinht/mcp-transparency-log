@@ -1,0 +1,1 @@
+{"slug":"db416cfd87869530","names":["io.github.Quality-Max/qualitymax-cloud"],"host":"app.qualitymax.io","endpoint":"https://app.qualitymax.io/api/mcp/","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

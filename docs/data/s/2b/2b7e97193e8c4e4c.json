@@ -1,0 +1,1 @@
+{"slug":"2b7e97193e8c4e4c","names":["cloud.estiba/estiba"],"host":"app.estiba.cloud","endpoint":"https://app.estiba.cloud/mcp","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

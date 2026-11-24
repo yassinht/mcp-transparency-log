@@ -1,0 +1,1 @@
+{"slug":"ada8296c42766db5","names":["io.github.GeminiGeorge22/legistar-council-meetings-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=publicrecords/legistar-meetings-scraper","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

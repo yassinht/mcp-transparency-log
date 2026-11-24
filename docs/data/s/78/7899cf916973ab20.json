@@ -1,0 +1,1 @@
+{"slug":"7899cf916973ab20","names":["ai.ticketdesk/mcp"],"host":"api.ticketdesk.ai","endpoint":"https://api.ticketdesk.ai/mcp","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

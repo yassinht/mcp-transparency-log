@@ -1,0 +1,1 @@
+{"slug":"a89e452ea48cc7a8","names":["com.devaito/admin"],"host":"www.devaito.com","endpoint":"https://www.devaito.com/mcp/admin","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

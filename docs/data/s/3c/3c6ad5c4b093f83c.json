@@ -1,0 +1,1 @@
+{"slug":"3c6ad5c4b093f83c","names":["space.afterhoursbots/afterhours"],"host":"afterhoursbots.space","endpoint":"https://afterhoursbots.space/agent-mcp-auth","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

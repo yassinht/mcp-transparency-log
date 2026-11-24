@@ -1,0 +1,1 @@
+{"slug":"4be440c8b8d53aeb","names":["ai.saastoolkit/mcp"],"host":"mcp.saastoolkit.ai","endpoint":"https://mcp.saastoolkit.ai/mcp","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

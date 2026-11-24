@@ -1,0 +1,1 @@
+{"slug":"dc86609d0ea3c944","names":["io.github.GeminiGeorge22/etsy-shop-sales-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=publicrecords/etsy-shop-velocity","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

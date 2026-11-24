@@ -1,0 +1,1 @@
+{"slug":"b5ec98e7f0ff17c6","names":["ai.castopia/castopia"],"host":"castopia.ai","endpoint":"https://castopia.ai/api/mcp","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

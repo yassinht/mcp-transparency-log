@@ -1,0 +1,1 @@
+{"slug":"147f1d6940547f0d","names":["io.github.vantagecompute/vantage-compute"],"host":"ai.vantagecompute.ai","endpoint":"https://ai.vantagecompute.ai/mcp","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

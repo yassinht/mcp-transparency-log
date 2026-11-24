@@ -1,0 +1,1 @@
+{"slug":"24cd1197a4235b60","names":["ai.chatlily/apple-ads"],"host":"www.chatlily.ai","endpoint":"https://www.chatlily.ai/api/mcp/apple-ads/bot","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

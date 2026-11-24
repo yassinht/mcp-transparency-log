@@ -1,0 +1,1 @@
+{"slug":"a2f3a3d9929ec6de","names":["com.badgermaps/badger-maps-mcp-v3"],"host":"go.mcp.badgermapping.com","endpoint":"https://go.mcp.badgermapping.com/mcp","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}

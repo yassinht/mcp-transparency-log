@@ -1,0 +1,1 @@
+{"slug":"2adf60151e793f09","names":["io.github.GeminiGeorge22/ashby-jobs-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=publicrecords/ashby-jobs-scraper","first_seen":"2026-11-24","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-24","kind":"first_seen","outcome":"auth_required"}]}
