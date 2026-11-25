@@ -1,0 +1,1 @@
+{"slug":"0800236825d2d7f7","names":["org.levelsports/level"],"host":"levelsports.org","endpoint":"https://levelsports.org/api/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

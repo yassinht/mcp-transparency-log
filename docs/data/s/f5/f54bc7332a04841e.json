@@ -1,0 +1,1 @@
+{"slug":"f54bc7332a04841e","names":["ai.elfa/mcp"],"host":"mcp.elfa.ai","endpoint":"https://mcp.elfa.ai/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"88bfee0092c256fb","names":["io.github.directrate/hotel-rates-mcp"],"host":"api.directrate.dev","endpoint":"https://api.directrate.dev/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

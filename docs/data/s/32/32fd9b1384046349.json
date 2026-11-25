@@ -1,0 +1,1 @@
+{"slug":"32fd9b1384046349","names":["io.github.zz959397ghb/zzm73v6"],"host":"[fd00:6e67:77::2]:8080","endpoint":"https://[fd00:6e67:77::2]:8080/healthcheck","first_seen":"2026-11-25","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"timeout"}]}

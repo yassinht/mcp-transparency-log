@@ -1,0 +1,1 @@
+{"slug":"eaf724920a5c678c","names":["com.rasket/mcp"],"host":"api.rasket.com","endpoint":"https://api.rasket.com/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

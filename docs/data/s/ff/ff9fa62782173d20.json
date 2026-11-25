@@ -1,0 +1,1 @@
+{"slug":"ff9fa62782173d20","names":["io.github.AI-Shopping-Feeds/ai-shopping-feeds-mcp"],"host":"app.aishoppingfeeds.com","endpoint":"https://app.aishoppingfeeds.com/api/v1/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

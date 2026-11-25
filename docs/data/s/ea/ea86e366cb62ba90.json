@@ -1,0 +1,1 @@
+{"slug":"ea86e366cb62ba90","names":["io.github.johnisanerd/linkedin-jobs"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=call-actor,fetch-actor-details,johnvc/linkedin-jobs-api","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

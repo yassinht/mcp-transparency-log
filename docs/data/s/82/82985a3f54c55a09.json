@@ -1,0 +1,1 @@
+{"slug":"82985a3f54c55a09","names":["com.posteck/mcp"],"host":"api.posteck.com","endpoint":"https://api.posteck.com/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

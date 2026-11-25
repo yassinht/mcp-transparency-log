@@ -1,0 +1,1 @@
+{"slug":"f27b21eb7423db29","names":["io.prufi/prufi"],"host":"prufi.io","endpoint":"https://prufi.io/api/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

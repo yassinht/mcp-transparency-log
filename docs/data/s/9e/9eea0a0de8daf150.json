@@ -1,0 +1,1 @@
+{"slug":"9eea0a0de8daf150","names":["io.github.zk16k123-svg/prediction-market-arbitrage"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=conscious_chuckwalla/prediction-market-arb-intel","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"546e01ae5528b5be","names":["app.sharek/sharek"],"host":"dash.sharek.app","endpoint":"https://dash.sharek.app/mcp-oauth-dynamic","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"dbaf9b810aa8a56c","names":["cloud.fullstacked/mcp"],"host":"mcp.fullstacked.cloud","endpoint":"https://mcp.fullstacked.cloud/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"cbd8c1e9fd9a9990","names":["net.dealsagent/deals-agent"],"host":"dealsagent.net","endpoint":"https://dealsagent.net/mcp","first_seen":"2026-11-25","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"protocol_error"}]}

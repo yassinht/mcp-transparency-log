@@ -1,0 +1,1 @@
+{"slug":"2931493ab6fa3937","names":["io.github.Shoomaii/saas-pricing-monitor"],"host":"shoomaii--saas-pricing-monitor.apify.actor","endpoint":"https://shoomaii--saas-pricing-monitor.apify.actor/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

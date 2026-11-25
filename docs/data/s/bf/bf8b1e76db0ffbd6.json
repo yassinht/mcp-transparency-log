@@ -1,0 +1,1 @@
+{"slug":"bf8b1e76db0ffbd6","names":["io.github.yourpilla/pilla"],"host":"yourpilla.com","endpoint":"https://yourpilla.com/api/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

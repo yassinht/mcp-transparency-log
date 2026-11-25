@@ -1,0 +1,1 @@
+{"slug":"02e73bc5d1b4b57c","names":["io.github.storewatch-tools/website-change-monitor"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=fabricable_steel/website-change-monitor","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

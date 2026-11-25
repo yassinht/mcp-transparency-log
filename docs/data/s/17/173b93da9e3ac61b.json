@@ -1,0 +1,1 @@
+{"slug":"173b93da9e3ac61b","names":["com.marketpounce/mcp"],"host":"www.marketpounce.com","endpoint":"https://www.marketpounce.com/api/ops/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

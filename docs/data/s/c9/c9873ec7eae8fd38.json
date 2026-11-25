@@ -1,0 +1,1 @@
+{"slug":"c9873ec7eae8fd38","names":["com.wanngo/bookmuse"],"host":"bookmuse-api.wanngo.com","endpoint":"https://bookmuse-api.wanngo.com/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

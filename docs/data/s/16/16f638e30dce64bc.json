@@ -1,0 +1,1 @@
+{"slug":"16f638e30dce64bc","names":["io.github.KonstantinRogozhkin/spy2money"],"host":"mcp.spy2money.com","endpoint":"https://mcp.spy2money.com/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

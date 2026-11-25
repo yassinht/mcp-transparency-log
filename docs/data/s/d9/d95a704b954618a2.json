@@ -1,0 +1,1 @@
+{"slug":"d95a704b954618a2","names":["ai.thunderduck/thunderduck"],"host":"mcp.thunderduck.ai","endpoint":"https://mcp.thunderduck.ai/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"3230eaa5b22d6077","names":["com.strateda/agent"],"host":"app.strateda.com","endpoint":"https://app.strateda.com/mcp/agent","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

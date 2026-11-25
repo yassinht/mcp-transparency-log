@@ -1,0 +1,1 @@
+{"slug":"2fabffbcb9b37d4b","names":["io.improvado/mcp"],"host":"ai.improvado.io","endpoint":"https://ai.improvado.io/experimental/agent/api/mcp-customer/v1/invoke/","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"7e38dc95e74618e1","names":["co.webcite/webcite"],"host":"api.webcite.co","endpoint":"https://api.webcite.co/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

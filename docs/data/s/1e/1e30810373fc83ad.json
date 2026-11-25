@@ -1,0 +1,1 @@
+{"slug":"1e30810373fc83ad","names":["com.gokaching/mcp"],"host":"app.gokaching.com","endpoint":"https://app.gokaching.com/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

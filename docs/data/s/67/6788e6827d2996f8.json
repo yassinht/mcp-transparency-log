@@ -1,0 +1,1 @@
+{"slug":"6788e6827d2996f8","names":["com.starveilai/comic-webtoon-studio","com.starveilai/star-veil-ai"],"host":"starveilai.com","endpoint":"https://starveilai.com/api/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

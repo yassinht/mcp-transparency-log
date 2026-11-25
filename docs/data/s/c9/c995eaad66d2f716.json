@@ -1,1 +1,1 @@
-{"slug":"c995eaad66d2f716","names":["com.domaroo/domaroo"],"host":"domaroo.com","endpoint":"https://domaroo.com/api/mcp","first_seen":"2026-11-19","listed":true,"outcome":"timeout","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"timeout"}]}
+{"slug":"c995eaad66d2f716","names":["com.domaroo/domaroo"],"host":"domaroo.com","endpoint":"https://domaroo.com/api/mcp","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"timeout"}]}

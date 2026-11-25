@@ -1,0 +1,1 @@
+{"slug":"417c146a3822dc11","names":["com.radaricp/radar-icp"],"host":"radaricp.com","endpoint":"https://radaricp.com/api/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}

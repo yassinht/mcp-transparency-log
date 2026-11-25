@@ -1,0 +1,1 @@
+{"slug":"f2228927d32cac9b","names":["app.funfreak/funfreak"],"host":"funfreak.app","endpoint":"https://funfreak.app/api/mcp","first_seen":"2026-11-25","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-25","kind":"first_seen","outcome":"auth_required"}]}
