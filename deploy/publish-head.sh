@@ -88,6 +88,44 @@ git fetch -q origin 2>/dev/null && git rebase -q origin/HEAD 2>/dev/null || git 
 # impossible. Four days of signed heads sat committed and unpublished.
 unpushed=$(git rev-list --count @{u}..HEAD 2>/dev/null || echo 0)
 
+# Checkpoints and witnesses (c2sp.org/tlog-checkpoint, c2sp.org/tlog-witness).
+# Every head is also published as a standard checkpoint, signed with the same
+# key, so that witnesses run by other people can cosign it. That is the only
+# thing that answers "what if the operator shows different readers different
+# histories": a witness remembers the last tree it saw and only cosigns trees
+# that extend it. This runs after the rebase so a witness a human just added to
+# heads/witnesses in the repo is asked tonight, not tomorrow. A witness that is
+# down costs one night of its cosignature, never the head: failures are logged
+# to witness.log and the publish carries on.
+if [ -x "$APP_DIR/mcpobs" ]; then
+  if "$APP_DIR/mcpobs" --heads "$HEADS_DIR" --pubkey "$HEADS_DIR/key.pub" checkpoint >>"$APP_DIR/witness.log" 2>&1; then
+    if [ -s "$CLONE/heads/witnesses" ]; then
+      "$APP_DIR/mcpobs" --data "$APP_DIR/data" --heads "$HEADS_DIR" --pubkey "$HEADS_DIR/key.pub" \
+        --witnesses "$CLONE/heads/witnesses" witness >>"$APP_DIR/witness.log" 2>&1 \
+        || log "no witness cosigned tonight; see witness.log"
+    fi
+    # Named explicitly, like the heads above: nothing from this directory but
+    # public files ever reaches the clone.
+    mkdir -p "$CLONE/heads/checkpoints"
+    for f in "$HEADS_DIR"/checkpoints/*.txt; do
+      [ -e "$f" ] || continue
+      if ! cmp -s "$f" "$CLONE/heads/checkpoints/$(basename "$f")"; then
+        cp "$f" "$CLONE/heads/checkpoints/"
+        copied=$((copied + 1))
+      fi
+    done
+    for f in checkpoint key.vkey; do
+      [ -e "$HEADS_DIR/$f" ] || continue
+      if ! cmp -s "$HEADS_DIR/$f" "$CLONE/heads/$f"; then
+        cp "$HEADS_DIR/$f" "$CLONE/heads/$f"
+        copied=$((copied + 1))
+      fi
+    done
+  else
+    log "checkpoint failed; see witness.log"
+  fi
+fi
+
 # Regenerate the static site data. census.json and the per-day change files are
 # small enough to commit every night. servers.json is a few megabytes and every
 # row carries a last-seen date, so it rewrites completely every day -- committing

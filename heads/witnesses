@@ -1,0 +1,8 @@
+# Witnesses this log asks to cosign each night's checkpoint (c2sp.org/tlog-witness).
+# One per line: the witness's cosignature key in vkey form, then its submission prefix:
+#
+#   <name>+<key hash>+<key> https://<submission prefix>
+#
+# A cosignature counts only if its key is listed here. mcpobs verify-checkpoint
+# reads this file, and the nightly job asks every witness in it.
+# Empty until a witness operator agrees to cosign this log.
