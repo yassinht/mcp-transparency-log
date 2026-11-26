@@ -1,0 +1,107 @@
+{
+ "kind": "mcp-transparency-log-peer-list-dated",
+ "v": 1,
+ "note": "One entry per distinct nightly copy of data/peers/tool-digests-latest.jsonl, newest first. url is pinned to the commit that first published that copy and never changes; a fetched copy must hash to sha256. date, run, rows and with_digest come from the index.json in the same commit.",
+ "nights": [
+  {
+   "date": "2026-11-26",
+   "run": "2026-11-26T030707Z",
+   "rows": 51525,
+   "with_digest": 30356,
+   "sha256": "91961eda65c4b680a72165b0ceaf1c0d49ef66c26cad83336b7428234fba092a",
+   "bytes": 9592749,
+   "commit": "c67286e4f51c3358debd5d2b6972c81144ea0559",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/c67286e4f51c3358debd5d2b6972c81144ea0559/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-25",
+   "run": "2026-11-25T030237Z",
+   "rows": 50550,
+   "with_digest": 29764,
+   "sha256": "aee6f0a19f8fa705d8de89081d3ed94ace0e79c6e24340b3a18e77f07c7934d7",
+   "bytes": 9405832,
+   "commit": "0fe6668ee00f70084de2bd487eccd8aea3547236",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/0fe6668ee00f70084de2bd487eccd8aea3547236/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-24",
+   "run": "2026-11-24T030802Z",
+   "rows": 49917,
+   "with_digest": 29406,
+   "sha256": "b2b5fceec573dfb498012c14852bf288c44f8544845a36aa6029f716cedf755d",
+   "bytes": 9287935,
+   "commit": "bea9d91d60db36f543c06cb07b741b61f2d0dacd",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/bea9d91d60db36f543c06cb07b741b61f2d0dacd/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-23",
+   "run": "2026-11-23T030315Z",
+   "rows": 48961,
+   "with_digest": 28701,
+   "sha256": "387bf1672058a6b1239aab2983e3e6a1ce8a7d300dd8f9acfd94adca79672cc2",
+   "bytes": 9108417,
+   "commit": "5a33a044bf2ef7209749bb4787f88ba0200c489c",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/5a33a044bf2ef7209749bb4787f88ba0200c489c/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-22",
+   "run": "2026-11-22T030037Z",
+   "rows": 48491,
+   "with_digest": 28430,
+   "sha256": "74b02b3bbbe3d67a7c3d4e6508eb8bc7c5b7a7145d4024921000f5fe38a2716f",
+   "bytes": 9027328,
+   "commit": "520bf0bdcd20c0bd06ec9c7cbf586241877b3b35",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/520bf0bdcd20c0bd06ec9c7cbf586241877b3b35/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-21",
+   "run": "2026-11-21T030924Z",
+   "rows": 48020,
+   "with_digest": 28176,
+   "sha256": "723c0af5b31d1240714195f8b3c942b961302739ef9145d4a6253541283b6d8f",
+   "bytes": 8940525,
+   "commit": "8a34f2962ce0768c0f2a16d40c8f24be347da3fd",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/8a34f2962ce0768c0f2a16d40c8f24be347da3fd/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-20",
+   "run": "2026-11-20T030924Z",
+   "rows": 47434,
+   "with_digest": 27874,
+   "sha256": "8f5d9764b40f331e8bb96442fb64ee3438cbbe2e13d6c183acece36dd7d866a9",
+   "bytes": 8823915,
+   "commit": "4d38bd91dee0efbe0ac351a11901fdcd2ad65be1",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/4d38bd91dee0efbe0ac351a11901fdcd2ad65be1/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-19",
+   "run": "2026-11-19T030824Z",
+   "rows": 46675,
+   "with_digest": 27464,
+   "sha256": "5fcd22df878a5ff57079b6f3bd83df2c2f0e46bd939fa0be6fccd98cdfbd4cf7",
+   "bytes": 8681676,
+   "commit": "ecf5dcb67addf43a1b20f3c7146dbc2e57a27755",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/ecf5dcb67addf43a1b20f3c7146dbc2e57a27755/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-18",
+   "run": "2026-11-18T030855Z",
+   "rows": 46109,
+   "with_digest": 24797,
+   "sha256": "7c1759e3024d30dd7228575f5b75d59480bfd43b0bab1c1faa4cc928693d514b",
+   "bytes": 8501971,
+   "commit": "88564cccc38c737928fb66d6e1c3e56cec26a3be",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/88564cccc38c737928fb66d6e1c3e56cec26a3be/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
+   "date": "2026-11-17",
+   "run": "2026-11-17T030358Z",
+   "rows": 45490,
+   "with_digest": 26911,
+   "sha256": "d529eda2658adb3c3b4372d9501833198b57696628e2641287a22c6b864469e1",
+   "bytes": 8468220,
+   "commit": "4b28233c1b0ccb70f14cfe81cce9732a8d9476a7",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/4b28233c1b0ccb70f14cfe81cce9732a8d9476a7/docs/data/peers/tool-digests-latest.jsonl"
+  }
+ ]
+}
