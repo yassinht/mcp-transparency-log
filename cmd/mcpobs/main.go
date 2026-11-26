@@ -27,6 +27,9 @@ func main() {
 	logDir := flag.String("tlog", "", "merkle log directory (default <data>/tlog)")
 	headsDir := flag.String("heads", "heads", "directory of signed tree heads")
 	pubKey := flag.String("pubkey", "heads/key.pub", "public key that signs the heads")
+	keyPath := flag.String("key", "", "checkpoint: private signing key (default <heads>/key)")
+	witnessList := flag.String("witnesses", "", "witness/verify-checkpoint: witness list (default <heads>/witnesses)")
+	witnessState := flag.String("witness-state", "", "witness: last size each witness cosigned (default <data>/witness-state.json)")
 	leaves := flag.String("leaves", "", "published leaf-hash directory; verify from these instead of the records")
 	scanJSON := flag.String("scan-json", "", "scan: also write per-server flags to this JSON file")
 	since := flag.String("since", "", "scan: replay the rules over every night from this date (YYYY-MM-DD)")
@@ -106,6 +109,31 @@ func main() {
 			out = args[1]
 		}
 		err = cmdExport(*dataDir, out)
+	case "checkpoint":
+		key := *keyPath
+		if key == "" {
+			key = filepath.Join(*headsDir, "key")
+		}
+		err = cmdCheckpoint(*headsDir, *pubKey, key)
+	case "witness":
+		list, st := *witnessList, *witnessState
+		if list == "" {
+			list = filepath.Join(*headsDir, "witnesses")
+		}
+		if st == "" {
+			st = filepath.Join(*dataDir, "witness-state.json")
+		}
+		err = cmdWitness(*dataDir, *logDir, *headsDir, *pubKey, list, st)
+	case "verify-checkpoint":
+		list := *witnessList
+		if list == "" {
+			list = filepath.Join(*headsDir, "witnesses")
+		}
+		cp := filepath.Join(*headsDir, "checkpoint")
+		if len(args) == 2 {
+			cp = args[1]
+		}
+		err = cmdVerifyCheckpoint(cp, *headsDir, *pubKey, list)
 	case "peers-dated":
 		clone := "."
 		if len(args) == 2 {
@@ -151,6 +179,11 @@ func usage() {
   mcpobs check                 re-probe every locked server; exit 1 on drift
                                (--check-evidence f: the text before and after)
   mcpobs export [dir]          write static JSON for the site (default "docs")
+  mcpobs checkpoint            derive a C2SP checkpoint (c2sp.org/tlog-checkpoint)
+                               from every signed head, with the same key
+  mcpobs witness               ask the listed witnesses to cosign the latest
+                               checkpoint (c2sp.org/tlog-witness)
+  mcpobs verify-checkpoint [f] check a checkpoint, its head and its cosignatures
   mcpobs peers-dated [clone]   index every nightly copy of the peer list by the
                                commit that published it, with its SHA-256
 

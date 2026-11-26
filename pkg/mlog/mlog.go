@@ -283,6 +283,20 @@ func (l *Log) AppendHashes(hashes []tlog.Hash) (int64, error) {
 var _ tlog.HashReader = (*Log)(nil)
 var _ = io.Discard
 
+// ProveTreeAt builds a consistency proof from size oldN to size n, where n is
+// the size named in a published head or checkpoint. A witness checks the proof
+// against the checkpoint it is shown, so the proof must end at that size, not
+// at whatever the tree has grown to since.
+func (l *Log) ProveTreeAt(n, oldN int64) (tlog.TreeProof, error) {
+	if n <= 0 || n > l.n {
+		return nil, fmt.Errorf("mlog: tree size %d out of range (size %d)", n, l.n)
+	}
+	if oldN <= 0 || oldN > n {
+		return nil, fmt.Errorf("mlog: old size %d out of range (size %d)", oldN, n)
+	}
+	return tlog.ProveTree(n, oldN, l)
+}
+
 // ProveRecordAt builds an inclusion proof for leaf i against the tree as it
 // stood at size n, which is the size named in a published head. Proving
 // against the current size instead would hand a reader a proof for a root

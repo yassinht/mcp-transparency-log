@@ -244,11 +244,21 @@ That rebuilds the whole tree from those hashes and checks the root against every
 
 `verify` rebuilds the tree from the observation records and checks the result against every published head. It deliberately ignores the stored hash file: verifying a log against hashes its own operator wrote proves nothing, since the hashes and the lie would come from the same hand. It also rejects any head that shrinks the log, because publishing fewer observations than yesterday is a deletion of history that no valid signature excuses.
 
-The tree is what makes the operator — me — untrusted rather than trusted. A signature alone cannot do this: I hold the key, so a forged head will always verify under it. What cannot be forged is the tree. If I edit one archived observation from last month, the records stop reproducing the root I signed at the time, and anyone holding that older head can prove it. [`internal/mlog/commit_test.go`](internal/mlog/commit_test.go) is that scenario as an executable test.
+The tree is what makes the operator — me — untrusted rather than trusted. A signature alone cannot do this: I hold the key, so a forged head will always verify under it. What cannot be forged is the tree. If I edit one archived observation from last month, the records stop reproducing the root I signed at the time, and anyone holding that older head can prove it. [`pkg/mlog/commit_test.go`](pkg/mlog/commit_test.go) is that scenario as an executable test.
+
+### Witnesses
+
+The tree stops the operator from rewriting history in place. It does not stop the operator from showing one reader one history and another reader a different one. Witnesses close that gap. Every head is also published as a standard checkpoint ([c2sp.org/tlog-checkpoint](https://c2sp.org/tlog-checkpoint)) in [`heads/checkpoint`](heads/checkpoint), one file per night in [`heads/checkpoints/`](heads/checkpoints/). It names the same tree as the head and is signed with the same key, published in vkey form in [`heads/key.vkey`](heads/key.vkey). Each night the log sends the checkpoint and a consistency proof to the witnesses listed in [`heads/witnesses`](heads/witnesses) ([c2sp.org/tlog-witness](https://c2sp.org/tlog-witness)). A witness run by someone else cosigns only a tree that extends the last one it saw, and its cosignature is added to the checkpoint.
+
+```bash
+mcpobs verify-checkpoint
+```
+
+That checks the log signature, finds the signed head that names the same tree, and checks every cosignature against the witness list. Until a witness is listed, checkpoints carry the log's own signature only.
 
 ### What verification does not establish
 
-Rebuilding the tree proves the log has not been rewritten. It does not prove the observations are genuine: nothing here stops an operator from inventing a consistent history and signing it. Only independent observation closes that gap, which is what witnesses are for and why they are on the roadmap rather than done.
+Rebuilding the tree proves the log has not been rewritten, and witness cosignatures prove it was not forked. Neither proves the observations are genuine: nothing here stops an operator from inventing a consistent history and signing it, and a witness would cosign that history too, because it checks consistency, not truth. Only independent observation closes that gap: another crawler reading the same servers and comparing. The nightly peer list in [`docs/data/peers/`](docs/data/peers/) exists for that comparison.
 
 Until the leaf hashes were published, this was worse than it needed to be — an outsider could verify that a head carried a valid signature and nothing else, which proves only that the operator owns a key. That limitation stood for a month before someone asked the right question about it.
 

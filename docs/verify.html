@@ -53,6 +53,17 @@ go run ./cmd/mcpobs verify --leaves docs/data/leaves --heads heads --pubkey head
 head's size, recomputes the root, checks the signature with the public key, and prints
 <code>VERIFIED</code> or says exactly which head disagrees. It takes a minute on a laptop.</p>
 
+<h2>Witnesses</h2>
+<p>The tree stops a rewrite of history. It does not stop an operator from showing different
+readers different histories. So each head is also published as a standard
+<a href="https://c2sp.org/tlog-checkpoint">checkpoint</a> in
+<a href="https://github.com/yassinht/mcp-transparency-log/blob/main/heads/checkpoint">heads/checkpoint</a>,
+signed with the same key, and sent each night to the witnesses listed in
+<a href="https://github.com/yassinht/mcp-transparency-log/blob/main/heads/witnesses">heads/witnesses</a>.
+A witness run by someone else cosigns only a tree that extends the last one it saw.</p>
+<pre>go run ./cmd/mcpobs verify-checkpoint</pre>
+<p class="note" id="witnesses">Loading heads/checkpoint…</p>
+
 <h2>What that proves, and what it does not</h2>
 <div class="cols">
   <div class="card">
@@ -64,9 +75,10 @@ head's size, recomputes the root, checks the signature with the public key, and 
   <div class="card">
     <h3>It does not prove</h3>
     <p>That the leaves describe reality. A single operator could log an observation that never
-    happened and sign it consistently. Catching that needs a second party running its own crawler
-    against the same servers and signing what it sees: a witness. That is the unbuilt phase, and
-    it cannot be built alone.</p>
+    happened and sign it consistently, and a witness would cosign it, because a witness checks
+    consistency, not truth. Catching that needs a second party running its own crawler against
+    the same servers and comparing. The nightly <a href="data/peers/index.json">peer list</a>
+    exists for that comparison.</p>
   </div>
 </div>
 
@@ -86,7 +98,7 @@ the difference tonight, and so will anyone who runs the same command.</p>
 
 <footer>
   <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/cmd/mcpobs/verify.go">verify.go</a>
-  · <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/internal/mlog/leaves.go">leaves.go</a>
+  · <a href="https://github.com/yassinht/mcp-transparency-log/blob/main/pkg/mlog/leaves.go">leaves.go</a>
   · <a href="https://github.com/yassinht/mcp-transparency-log">Source</a>
 </footer>
 
@@ -97,6 +109,19 @@ const RAW = 'https://raw.githubusercontent.com/yassinht/mcp-transparency-log/mai
 fetch(RAW + 'heads/key.pub').then(r => r.ok ? r.text() : Promise.reject())
   .then(t => { document.getElementById('key').textContent = t.trim(); })
   .catch(() => { document.getElementById('key').innerHTML = '<a href="https://github.com/yassinht/mcp-transparency-log/blob/main/heads/key.pub">heads/key.pub on GitHub</a>'; });
+fetch(RAW + 'heads/checkpoint').then(r => r.ok ? r.text() : Promise.reject())
+  .then(t => {
+    const lines = t.split('
+');
+    const origin = lines[0];
+    const at = lines.indexOf('');
+    const names = lines.slice(at + 1).filter(l => l.startsWith('— ')).map(l => l.split(' ')[1]).filter(nm => nm !== origin);
+    const size = Number(lines[1]).toLocaleString('en-US');
+    document.getElementById('witnesses').textContent = names.length
+      ? `The latest checkpoint (size ${size}) carries cosignatures from ${names.join(', ')}. The command above checks them.`
+      : `The latest checkpoint (size ${size}) carries the log's signature only. No witness has cosigned it yet.`;
+  })
+  .catch(() => { document.getElementById('witnesses').textContent = 'heads/checkpoint is not published yet.'; });
 fetch('https://api.github.com/repos/yassinht/mcp-transparency-log/contents/heads').then(r => r.ok ? r.json() : Promise.reject())
   .then(list => {
     const heads = list.filter(f => f.name.endsWith('.txt')).map(f => f.name).sort();
