@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-19T00:45:30Z",
+  "generated": "2026-11-26T20:58:06Z",
   "log": "https://github.com/yassinht/mcp-transparency-log",
   "servers": [
     {
@@ -18,25 +18,25 @@
     {
       "name": "context7",
       "endpoint": "https://mcp.context7.com/mcp",
-      "surface_sha256": "36dee0f3fbf80c4ed815e2b82cdfeb444188e7e941177d3124e31a3e0d6d91d6",
-      "jcs_v1_tools_sha256": "sha256-XpeSi1ir5PNF5yunuB1mfnHR+1IpBb5+X+N+JhSTt8E=",
+      "surface_sha256": "019fd88e138503d2862395a12d0b99d768b2e59c75ea7637a4c5903fba40d5a0",
+      "jcs_v1_tools_sha256": "sha256-tPwALEx1m2b94rbTYzyFZO74bLf1t2PbnbODyMJ0/60=",
       "tools": [
         "query-docs",
         "resolve-library-id"
       ],
-      "locked_at": "2026-11-19T00:45:30Z",
+      "locked_at": "2026-11-26T20:58:08Z",
       "transport": "streamable-http"
     },
     {
       "name": "exa",
       "endpoint": "https://mcp.exa.ai/mcp",
-      "surface_sha256": "f7de8833772a4a7f0dab1c76291b2f87401c6e7d543f644028337894a954dbb7",
+      "surface_sha256": "b3539128fb76282f20ce03a6d00aa13fb4514b2b1f2620636c2fa4f6a6aff21d",
       "jcs_v1_tools_sha256": "sha256-hSLFkS6M+tt1bHtSu7UGTO9WhnNyASoOGkFJgn3VZuc=",
       "tools": [
         "web_fetch_exa",
         "web_search_exa"
       ],
-      "locked_at": "2026-11-19T00:45:30Z",
+      "locked_at": "2026-11-26T20:58:08Z",
       "transport": "streamable-http"
     },
     {
