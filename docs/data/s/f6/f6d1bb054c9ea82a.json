@@ -1,0 +1,1 @@
+{"slug":"f6d1bb054c9ea82a","names":["com.flujoschat/flujoschat"],"host":"api.flujoschat.com","endpoint":"https://api.flujoschat.com/api/v1/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"3b52ca2e10f17af8","names":["hk.agenticos/workspace"],"host":"api-v2.agenticos.hk","endpoint":"https://api-v2.agenticos.hk/mcp/workspace","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"8d22f3d9f6eb256c","names":["com.cobaltcapture/cobalt"],"host":"cobaltcapture.com","endpoint":"https://cobaltcapture.com/mcp/account","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

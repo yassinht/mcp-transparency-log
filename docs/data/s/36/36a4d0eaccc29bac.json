@@ -1,0 +1,1 @@
+{"slug":"36a4d0eaccc29bac","names":["app.coinspay/shop"],"host":"coinspay.app","endpoint":"https://coinspay.app/mcp/shop","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

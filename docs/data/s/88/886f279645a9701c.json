@@ -1,0 +1,1 @@
+{"slug":"886f279645a9701c","names":["app.wendung/analytics"],"host":"api.wendung.app","endpoint":"https://api.wendung.app/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

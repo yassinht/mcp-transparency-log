@@ -1,0 +1,1 @@
+{"slug":"fbb807f3870904df","names":["com.vidext/vidext"],"host":"app.vidext.com","endpoint":"https://app.vidext.com/api/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

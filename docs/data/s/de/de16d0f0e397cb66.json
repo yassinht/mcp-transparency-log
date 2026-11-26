@@ -1,0 +1,1 @@
+{"slug":"de16d0f0e397cb66","names":["io.github.SadikMohamud/mimic"],"host":"mimic.snurm.dev","endpoint":"https://mimic.snurm.dev/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

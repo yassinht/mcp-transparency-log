@@ -1,0 +1,1 @@
+{"slug":"2be6e2e77ae748c6","names":["io.brandlife/brandlife"],"host":"app.brandlife.io","endpoint":"https://app.brandlife.io/api/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

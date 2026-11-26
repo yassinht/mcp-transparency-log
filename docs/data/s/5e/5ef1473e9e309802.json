@@ -1,0 +1,1 @@
+{"slug":"5ef1473e9e309802","names":["one.fullspectrum/fullspectrum"],"host":"fullspectrum.one","endpoint":"https://fullspectrum.one/api/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"6464e939abc8302f","names":["io.github.deapi-ai/mcp-server-deapi"],"host":"mcp.deapi.ai","endpoint":"https://mcp.deapi.ai/mcp?source=mcp-registry","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

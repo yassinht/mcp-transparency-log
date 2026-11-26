@@ -1,0 +1,1 @@
+{"slug":"f83b62ec18382bd7","names":["io.github.motorical-smtp/motorical"],"host":"mcp.motorical.com","endpoint":"https://mcp.motorical.com/v1/motorical/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

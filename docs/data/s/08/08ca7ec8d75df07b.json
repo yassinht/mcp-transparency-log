@@ -1,0 +1,1 @@
+{"slug":"08ca7ec8d75df07b","names":["com.superrelay/superrelay"],"host":"api.superrelay.com","endpoint":"https://api.superrelay.com/v1/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}

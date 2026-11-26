@@ -1,0 +1,1 @@
+{"slug":"6eabfa0a3dcd014b","names":["com.extwatch/chrome-extension-data","com.extwatch/chrome-web-store"],"host":"app.extwatch.com","endpoint":"https://app.extwatch.com/api/mcp","first_seen":"2026-11-26","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-26","kind":"first_seen","outcome":"auth_required"}]}
