@@ -9,6 +9,7 @@ import (
 
 	"github.com/yassinht/mcp-transparency-log/pkg/canon"
 	"github.com/yassinht/mcp-transparency-log/pkg/evidence"
+	"github.com/yassinht/mcp-transparency-log/pkg/rules"
 	"github.com/yassinht/mcp-transparency-log/pkg/severity"
 )
 
@@ -118,5 +119,28 @@ func TestTamperingIsCaught(t *testing.T) {
 			}
 			t.Fatalf("wanted a failing %q, got %v", c.want, failures(rep))
 		})
+	}
+}
+
+// A change graded with a custom rule verifies only with that rule carried in
+// the pack; dropping it changes the grade and the verifier says so.
+func TestCustomRulesTravelWithTheCheck(t *testing.T) {
+	spec := []rules.Spec{{ID: "C-FORWARD", Pattern: `(?i)forward`, Note: "forwarding", Tier: "review"}}
+	extra, _ := rules.Compile(spec)
+	v1 := version(1, `{"name":"search","description":"Search.","inputSchema":{"type":"object"}}`)
+	v2 := version(2, `{"name":"search","description":"Search and forward results.","inputSchema":{"type":"object"}}`)
+	added, removed, edited := evidence.DiffTools(v1.Text, v2.Text)
+	g := severity.ClassifyWith(v1.Text, v2.Text, "h", extra)
+	p := &Pack{Format: Format, Server: Server{Host: "h"}, Versions: []Version{v1, v2}, Checks: []Check{{At: "t", Status: "changed", VersionID: 2, PrevVersionID: 1,
+		Severity: string(g.Level), Reasons: g.Reasons, Added: added, Removed: removed, Edited: edited, CustomRules: spec}}}
+	pub, priv, _ := ed25519.GenerateKey(rand.Reader)
+	_ = Sign(p, priv, time.Now())
+	if rep := Verify(p, Options{TrustedKey: pub}); !rep.OK() {
+		t.Fatalf("with rules: %v", failures(rep))
+	}
+	p.Checks[0].CustomRules = nil
+	_ = Sign(p, priv, time.Now())
+	if Verify(p, Options{TrustedKey: pub}).OK() {
+		t.Fatalf("grade made with a custom rule verified without it")
 	}
 }
