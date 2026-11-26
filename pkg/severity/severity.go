@@ -55,6 +55,12 @@ type Verdict struct {
 // Classify grades the step from before to after. host is the server's own
 // host, used to tell an off-host link from documentation of the server itself.
 func Classify(before, after []json.RawMessage, host string) Verdict {
+	return ClassifyWith(before, after, host, nil)
+}
+
+// ClassifyWith grades with extra (custom) rules beside the built-in ones. A
+// new hit of a custom review-tier rule grades high, like a built-in one.
+func ClassifyWith(before, after []json.RawMessage, host string, extra []rules.Rule) Verdict {
 	added, removed, edited := evidence.DiffTools(before, after)
 	v := Verdict{Level: None, Reasons: []Reason{}}
 	add := func(l Level, tool, code, detail string) {
@@ -65,20 +71,20 @@ func Classify(before, after []json.RawMessage, host string) Verdict {
 	}
 
 	bt, at := byName(before), byName(after)
-	beforeHits := rules.Hits(bt, host)
-	afterHits := rules.Hits(at, host)
+	beforeHits := rules.HitsWith(bt, host, extra)
+	afterHits := rules.HitsWith(at, host, extra)
 
 	// 1. Model-directed text that was not there before, anywhere in the surface.
 	for id, h := range afterHits {
 		if _, had := beforeHits[id]; had {
 			continue
 		}
-		if rules.Review[id] {
-			add(High, h.Tool, "new-"+strings.ToLower(id), fmt.Sprintf("new text matches %s (%s) in %s: %q", id, rules.Notes()[id], h.Field, h.Snippet))
+		if rules.IsReview(id, extra) {
+			add(High, h.Tool, "new-"+strings.ToLower(id), fmt.Sprintf("new text matches %s (%s) in %s: %q", id, rules.NoteOf(id, extra), h.Field, h.Snippet))
 		} else if id == rules.URLExt {
 			add(High, h.Tool, "new-off-host-link", "a link now points off the server's host: "+h.Snippet)
 		} else {
-			add(Review, h.Tool, "new-"+strings.ToLower(id), fmt.Sprintf("new text matches %s (%s) in %s", id, rules.Notes()[id], h.Field))
+			add(Review, h.Tool, "new-"+strings.ToLower(id), fmt.Sprintf("new text matches %s (%s) in %s", id, rules.NoteOf(id, extra), h.Field))
 		}
 	}
 

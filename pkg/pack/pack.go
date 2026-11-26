@@ -27,6 +27,7 @@ import (
 	"github.com/yassinht/mcp-transparency-log/pkg/canon"
 	"github.com/yassinht/mcp-transparency-log/pkg/evidence"
 	"github.com/yassinht/mcp-transparency-log/pkg/mlog"
+	"github.com/yassinht/mcp-transparency-log/pkg/rules"
 	"github.com/yassinht/mcp-transparency-log/pkg/severity"
 )
 
@@ -89,6 +90,9 @@ type Check struct {
 	Removed       []string              `json:"removed,omitempty"`
 	Edited        []evidence.EditedTool `json:"edited,omitempty"`
 	Error         string                `json:"error,omitempty"`
+	// CustomRules are the workspace's own rules in effect when this change
+	// was graded; the verifier grades with the same set.
+	CustomRules []rules.Spec `json:"custom_rules,omitempty"`
 }
 
 type Decision struct {
@@ -252,7 +256,12 @@ func Verify(p *Pack, opt Options) *evidence.Report {
 			add("check diff", ref, false, "the listed diff is not the diff of the two texts")
 			continue
 		}
-		v := severity.Classify(prev.Text, cur.Text, p.Server.Host)
+		extra, rerr := rules.Compile(c.CustomRules)
+		if rerr != nil {
+			add("check rules", ref, false, "a custom rule in the pack does not compile: "+rerr.Error())
+			continue
+		}
+		v := severity.ClassifyWith(prev.Text, cur.Text, p.Server.Host, extra)
 		if string(v.Level) != c.Severity || !sameCodes(v.Reasons, c.Reasons) {
 			add("check severity", ref, false, fmt.Sprintf("rules grade this change %s, the pack says %s", v.Level, c.Severity))
 			continue

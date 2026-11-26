@@ -301,6 +301,15 @@ func Snippet(s string, loc []int) string {
 // the same whoever runs it, which is what makes the result cacheable and
 // comparable between observers.
 func Hits(tools map[string]json.RawMessage, host string) map[string]Hit {
+	return HitsWith(tools, host, nil)
+}
+
+// HitsWith is Hits with extra (custom) rules evaluated beside the built-ins.
+func HitsWith(tools map[string]json.RawMessage, host string, extra []Rule) map[string]Hit {
+	all := Rules
+	if len(extra) > 0 {
+		all = append(append([]Rule(nil), Rules...), extra...)
+	}
 	host = strings.ToLower(host)
 	hits := map[string]Hit{}
 	names := make([]string, 0, len(tools))
@@ -311,7 +320,7 @@ func Hits(tools map[string]json.RawMessage, host string) map[string]Hit {
 	for _, name := range names {
 		raw := tools[name]
 		for _, f := range TextFields(raw) {
-			for _, r := range Rules {
+			for _, r := range all {
 				if _, seen := hits[r.ID]; seen {
 					continue
 				}
