@@ -2,6 +2,8 @@ package main
 
 import (
 	"bytes"
+	"crypto/sha256"
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"os"
@@ -479,6 +481,7 @@ func writePeersList(dataOut, runID string, latest map[string]obs, rep *scanRepor
 	if err := os.WriteFile(filepath.Join(dir, "tool-digests-latest.jsonl"), buf.Bytes(), 0o644); err != nil {
 		return 0, err
 	}
+	sum := sha256.Sum256(buf.Bytes())
 	index := map[string]any{
 		"kind":         "mcp-transparency-log-peer-list",
 		"v":            1,
@@ -491,10 +494,14 @@ func writePeersList(dataOut, runID string, latest map[string]obs, rep *scanRepor
 		"since":        "2026-11-17",
 		"rows":         len(rows),
 		"with_digest":  len(rep.Digests),
+		"sha256":       hex.EncodeToString(sum[:]),
 		"sources": []map[string]string{{
 			"name": "list",
 			"url":  "https://yassinht.github.io/mcp-transparency-log/data/peers/tool-digests-latest.jsonl",
 		}},
+		// Tonight's copy cannot name its own commit, so the pinned links live
+		// in a second file written after the nightly commit exists.
+		"dated":   peersDatedURL,
 		"log":     "https://github.com/yassinht/mcp-transparency-log",
 		"contact": "https://github.com/yassinht/mcp-transparency-log/issues",
 	}

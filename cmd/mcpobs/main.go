@@ -106,6 +106,12 @@ func main() {
 			out = args[1]
 		}
 		err = cmdExport(*dataDir, out)
+	case "peers-dated":
+		clone := "."
+		if len(args) == 2 {
+			clone = args[1]
+		}
+		err = cmdPeersDated(clone)
 	default:
 		usage()
 		os.Exit(2)
@@ -145,6 +151,8 @@ func usage() {
   mcpobs check                 re-probe every locked server; exit 1 on drift
                                (--check-evidence f: the text before and after)
   mcpobs export [dir]          write static JSON for the site (default "docs")
+  mcpobs peers-dated [clone]   index every nightly copy of the peer list by the
+                               commit that published it, with its SHA-256
 
 flags:
   --data <dir>                 observation directory (default "data")

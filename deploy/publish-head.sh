@@ -39,6 +39,22 @@ stuck_or_exit() {
   exit 0
 }
 
+# The dated peer index names the commit that carried each night's peer list,
+# so it can only be written once that commit exists. It runs before every
+# push, not only after a fresh commit: a rebase over a human's push rewrites
+# the ids of nights that never left this machine, and the index must follow.
+# A failure here costs the index one night, never the heads.
+index_dated() {
+  [ -x "$APP_DIR/mcpobs" ] || return 0
+  if ! "$APP_DIR/mcpobs" peers-dated "$CLONE" >/dev/null 2>>"$APP_DIR/peers-dated.log"; then
+    log "dated peer index failed; see peers-dated.log"
+    return 0
+  fi
+  git add docs/data/peers/dated.json 2>/dev/null || return 0
+  git diff --cached --quiet && return 0
+  git commit -q -m "Index dated peer lists $(date -u +%Y-%m-%d)" || true
+}
+
 [ -d "$CLONE/.git" ] || { log "no clone at $CLONE; skipping"; exit 0; }
 
 # Only ever copy the public artefacts. The private key lives beside them and
@@ -123,6 +139,7 @@ if [ "$copied" -eq 0 ] && [ "$unpushed" -eq 0 ]; then
 fi
 if [ "$copied" -eq 0 ]; then
   log "no new heads, but $unpushed unpushed commit(s); retrying push"
+  index_dated
   if git push -q origin HEAD 2>&1; then
     log "pushed $unpushed pending commit(s)"
     exit 0
@@ -146,6 +163,7 @@ fi
 
 size=$(grep -h '^size ' heads/*.txt 2>/dev/null | tail -1 | awk '{print $2}')
 git commit -q -m "Publish tree head $(date -u +%Y-%m-%d) (${size:-?} observations)" || exit 0
+index_dated
 
 if git push -q origin HEAD 2>&1; then
   log "published $copied file(s), tree size ${size:-?}"
