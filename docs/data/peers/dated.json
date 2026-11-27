@@ -4,6 +4,16 @@
  "note": "One entry per distinct nightly copy of data/peers/tool-digests-latest.jsonl, newest first. url is pinned to the commit that first published that copy and never changes; a fetched copy must hash to sha256. date, run, rows and with_digest come from the index.json in the same commit.",
  "nights": [
   {
+   "date": "2026-11-27",
+   "run": "2026-11-27T030808Z",
+   "rows": 52326,
+   "with_digest": 30868,
+   "sha256": "a406c4f9db213db8b2070b4fa24695635d2aaaa1962ed4fee191a62dac0930fb",
+   "bytes": 9740347,
+   "commit": "07207e3ff30bf9f88e610aaf5250394518a48213",
+   "url": "https://raw.githubusercontent.com/yassinht/mcp-transparency-log/07207e3ff30bf9f88e610aaf5250394518a48213/docs/data/peers/tool-digests-latest.jsonl"
+  },
+  {
    "date": "2026-11-26",
    "run": "2026-11-26T030707Z",
    "rows": 51525,
