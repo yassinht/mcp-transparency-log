@@ -209,7 +209,11 @@ func cmdVerifyCheckpoint(path, headsDir, pubPath, listPath string) error {
 	fmt.Printf("origin   %s\nsize     %d\nroot     %s\n", checkpoint.Origin, c.Size, c.Root)
 	fmt.Println("log      signature verifies under key.pub")
 
-	if heads, err := loadHeads(headsDir); err == nil {
+	if heads, err := loadHeads(headsDir); err != nil {
+		// Say so rather than skip quietly: a check that silently does not run
+		// reads exactly like one that passed.
+		fmt.Printf("head     not checked: %v\n", err)
+	} else {
 		match := ""
 		for _, h := range heads {
 			if h.head.Size == c.Size && h.head.Root == c.Root {
@@ -244,7 +248,7 @@ func cmdVerifyCheckpoint(path, headsDir, pubPath, listPath string) error {
 	}
 	switch {
 	case len(ws) == 0:
-		fmt.Println("result   log signature only; no witness list to check cosignatures against")
+		fmt.Println("result   log signature only; no witnesses are listed yet")
 	case cosigned == 0:
 		fmt.Printf("result   no cosignature from the %d listed witness(es)\n", len(ws))
 	default:
