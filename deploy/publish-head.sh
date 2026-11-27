@@ -15,6 +15,13 @@ set -uo pipefail
 APP_DIR=${APP_DIR:-/opt/mcp-observatory}
 HEADS_DIR="$APP_DIR/heads"
 CLONE="$APP_DIR/publish"
+# Logs live under data/, because the unit runs with ProtectSystem=strict and
+# only data/, heads/ and publish/ are writable. Logs written straight into
+# $APP_DIR failed with "Read-only file system", and a failed redirect stops
+# the command before it starts: the rule-history replay silently did not run
+# from 2026-11-20 to 2026-11-27, and the page kept showing the 19th.
+LOG_DIR="$APP_DIR/data/logs"
+mkdir -p "$LOG_DIR" 2>/dev/null || true
 
 log() { echo "publish-head: $*"; }
 
@@ -46,7 +53,7 @@ stuck_or_exit() {
 # A failure here costs the index one night, never the heads.
 index_dated() {
   [ -x "$APP_DIR/mcpobs" ] || return 0
-  if ! "$APP_DIR/mcpobs" peers-dated "$CLONE" >/dev/null 2>>"$APP_DIR/peers-dated.log"; then
+  if ! "$APP_DIR/mcpobs" peers-dated "$CLONE" >/dev/null 2>>"$LOG_DIR/peers-dated.log"; then
     log "dated peer index failed; see peers-dated.log"
     return 0
   fi
@@ -98,10 +105,10 @@ unpushed=$(git rev-list --count @{u}..HEAD 2>/dev/null || echo 0)
 # down costs one night of its cosignature, never the head: failures are logged
 # to witness.log and the publish carries on.
 if [ -x "$APP_DIR/mcpobs" ]; then
-  if "$APP_DIR/mcpobs" --heads "$HEADS_DIR" --pubkey "$HEADS_DIR/key.pub" checkpoint >>"$APP_DIR/witness.log" 2>&1; then
+  if "$APP_DIR/mcpobs" --heads "$HEADS_DIR" --pubkey "$HEADS_DIR/key.pub" checkpoint >>"$LOG_DIR/witness.log" 2>&1; then
     if [ -s "$CLONE/heads/witnesses" ]; then
       "$APP_DIR/mcpobs" --data "$APP_DIR/data" --heads "$HEADS_DIR" --pubkey "$HEADS_DIR/key.pub" \
-        --witnesses "$CLONE/heads/witnesses" witness >>"$APP_DIR/witness.log" 2>&1 \
+        --witnesses "$CLONE/heads/witnesses" witness >>"$LOG_DIR/witness.log" 2>&1 \
         || log "no witness cosigned tonight; see witness.log"
     fi
     # Named explicitly, like the heads above: nothing from this directory but
@@ -153,7 +160,7 @@ if [ -x "$APP_DIR/mcpobs" ]; then
     # for tomorrow rather than racing it.
     if pgrep -f "mcpobs .*--since" >/dev/null 2>&1; then
       log "rule history replay already running; skipped tonight"
-    elif "$APP_DIR/mcpobs" --data "$APP_DIR/data" --since 2026-08-30 --scan-json "$CLONE/docs/data/scan-history.json" scan >/dev/null 2>>"$APP_DIR/scan-history.log"; then
+    elif "$APP_DIR/mcpobs" --data "$APP_DIR/data" --since 2026-08-30 --scan-json "$CLONE/docs/data/scan-history.json" scan >/dev/null 2>>"$LOG_DIR/scan-history.log"; then
       git add docs/data/scan-history.json 2>/dev/null || true
     else
       log "rule history replay failed; see scan-history.log"
