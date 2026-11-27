@@ -111,8 +111,7 @@ fetch(RAW + 'heads/key.pub').then(r => r.ok ? r.text() : Promise.reject())
   .catch(() => { document.getElementById('key').innerHTML = '<a href="https://github.com/yassinht/mcp-transparency-log/blob/main/heads/key.pub">heads/key.pub on GitHub</a>'; });
 fetch(RAW + 'heads/checkpoint').then(r => r.ok ? r.text() : Promise.reject())
   .then(t => {
-    const lines = t.split('
-');
+    const lines = t.split('\n');
     const origin = lines[0];
     const at = lines.indexOf('');
     const names = lines.slice(at + 1).filter(l => l.startsWith('— ')).map(l => l.split(' ')[1]).filter(nm => nm !== origin);
