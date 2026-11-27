@@ -1,0 +1,1 @@
+{"slug":"f3c578cf0b069953","names":["ai.applyguy/apply-guy"],"host":"api.applyguy.ai","endpoint":"https://api.applyguy.ai/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

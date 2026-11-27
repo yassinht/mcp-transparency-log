@@ -1,0 +1,1 @@
+{"slug":"070b97a55b7a42c7","names":["dev.cotlet/rosie"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/rosie/connect","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

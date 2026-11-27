@@ -1,0 +1,1 @@
+{"slug":"7ec90a3c8f6d0afa","names":["io.kelma/kelma"],"host":"api.kelma.io","endpoint":"https://api.kelma.io/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

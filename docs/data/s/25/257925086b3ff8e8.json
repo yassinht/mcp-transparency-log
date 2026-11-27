@@ -1,0 +1,1 @@
+{"slug":"257925086b3ff8e8","names":["tech.vythos/mcp"],"host":"api.vythos.tech","endpoint":"https://api.vythos.tech/api/mcp/sse","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"939f19854752af92","names":["games.lootzi/tacticsarena"],"host":"api.lootzi.games","endpoint":"https://api.lootzi.games/mcp/play","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

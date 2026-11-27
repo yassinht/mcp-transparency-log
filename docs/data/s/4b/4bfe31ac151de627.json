@@ -1,1 +1,1 @@
-{"slug":"4bfe31ac151de627","names":["io.otofi/mcp"],"host":"api.otofi.io","endpoint":"https://api.otofi.io/mcp","first_seen":"2026-10-20","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-20","kind":"first_seen","outcome":"unreachable"}]}
+{"slug":"4bfe31ac151de627","names":["io.otofi/mcp"],"host":"api.otofi.io","endpoint":"https://api.otofi.io/mcp","first_seen":"2026-10-20","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-10-20","kind":"first_seen","outcome":"unreachable"}]}

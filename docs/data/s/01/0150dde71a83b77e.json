@@ -1,0 +1,1 @@
+{"slug":"0150dde71a83b77e","names":["io.github.truonggiang0111/app-reviews-bug-spy-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?actors=ttyan0111/app-store-play-reviews-spy","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"29b623e0d930926d","names":["app.purrkey/purrkey"],"host":"api.purrkey.app","endpoint":"https://api.purrkey.app/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

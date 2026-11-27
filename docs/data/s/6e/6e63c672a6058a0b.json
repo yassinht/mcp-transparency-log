@@ -1,0 +1,1 @@
+{"slug":"6e63c672a6058a0b","names":["ai.hypestudio/video-studio"],"host":"hypestudio.ai","endpoint":"https://hypestudio.ai/api/video-studio/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

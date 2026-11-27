@@ -1,0 +1,1 @@
+{"slug":"2fa1d42bd11fa502","names":["io.github.AgentLoom/agentloom"],"host":"api.agent-loom.com","endpoint":"https://api.agent-loom.com/api/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

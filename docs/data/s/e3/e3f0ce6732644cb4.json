@@ -1,0 +1,1 @@
+{"slug":"e3f0ce6732644cb4","names":["one.finan/finanone"],"host":"app.finan.one","endpoint":"https://app.finan.one/api/v0/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"70a332ccd1e78dd7","names":["com.chatacademia/chatacademia"],"host":"api.chatacademia.com","endpoint":"https://api.chatacademia.com/mcp/registry","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

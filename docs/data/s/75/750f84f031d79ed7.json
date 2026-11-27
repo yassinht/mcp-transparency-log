@@ -1,1 +1,1 @@
-{"slug":"750f84f031d79ed7","names":["ai.thirds/thirds"],"host":"thirds.ai","endpoint":"https://thirds.ai/mcp","first_seen":"2026-09-29","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"auth_required"}]}
+{"slug":"750f84f031d79ed7","names":["ai.thirds/thirds"],"host":"thirds.ai","endpoint":"https://thirds.ai/mcp","first_seen":"2026-09-29","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-09-29","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"cdb3d971fb111e57","names":["io.github.coderabbitai/coderabbit"],"host":"mcp.coderabbit.ai","endpoint":"https://mcp.coderabbit.ai/","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

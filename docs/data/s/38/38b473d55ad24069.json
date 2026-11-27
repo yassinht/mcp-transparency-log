@@ -1,0 +1,1 @@
+{"slug":"38b473d55ad24069","names":["org.jaios-governance.grows-mcp/ai-grows-program"],"host":"grows-mcp.jaios-governance.org","endpoint":"https://grows-mcp.jaios-governance.org/api/mcp/workspace","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

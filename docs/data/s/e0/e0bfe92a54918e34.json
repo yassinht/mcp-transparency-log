@@ -1,0 +1,1 @@
+{"slug":"e0bfe92a54918e34","names":["trading.sidechair/sidechair"],"host":"sidechair.trading","endpoint":"https://sidechair.trading/edu-api/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

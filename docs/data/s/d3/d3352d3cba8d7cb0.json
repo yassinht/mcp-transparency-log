@@ -1,0 +1,1 @@
+{"slug":"d3352d3cba8d7cb0","names":["com.moogili/evaluation"],"host":"moogili.com","endpoint":"https://moogili.com/evaluation/v1/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

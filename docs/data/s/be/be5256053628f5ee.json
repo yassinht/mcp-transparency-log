@@ -1,0 +1,1 @@
+{"slug":"be5256053628f5ee","names":["com.ferryphone/ferry"],"host":"api.ferryphone.com","endpoint":"https://api.ferryphone.com/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

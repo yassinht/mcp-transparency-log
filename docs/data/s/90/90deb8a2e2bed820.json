@@ -1,0 +1,1 @@
+{"slug":"90deb8a2e2bed820","names":["dev.workers.pomlabs.pom-data-api/amazon-reviews-deep"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=pomlabs/amazon-reviews-deep","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

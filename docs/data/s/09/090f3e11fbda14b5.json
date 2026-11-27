@@ -1,0 +1,1 @@
+{"slug":"090f3e11fbda14b5","names":["com.edifabric/edifabric-mcp"],"host":"mcp.edifabric.com","endpoint":"https://mcp.edifabric.com/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

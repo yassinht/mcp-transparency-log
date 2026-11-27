@@ -1,0 +1,1 @@
+{"slug":"2c8203560bc9d5b3","names":["io.github.truonggiang0111/google-ads-transparency-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?actors=ttyan0111/google-ads-transparency-spy","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

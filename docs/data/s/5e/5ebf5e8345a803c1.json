@@ -1,0 +1,1 @@
+{"slug":"5ebf5e8345a803c1","names":["markets.hypr.app/operator"],"host":"app.hypr.markets","endpoint":"https://app.hypr.markets/api/mcp/oauth","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

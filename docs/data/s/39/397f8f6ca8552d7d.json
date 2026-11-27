@@ -1,0 +1,1 @@
+{"slug":"397f8f6ca8552d7d","names":["io.github.mettini/weather-forecast"],"host":"emttn--weather-forecast.apify.actor","endpoint":"https://emttn--weather-forecast.apify.actor/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

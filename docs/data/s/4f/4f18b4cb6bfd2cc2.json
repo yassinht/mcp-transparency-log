@@ -1,0 +1,1 @@
+{"slug":"4f18b4cb6bfd2cc2","names":["io.promptexpert/prompt-expert"],"host":"api.promptexpert.io","endpoint":"https://api.promptexpert.io/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

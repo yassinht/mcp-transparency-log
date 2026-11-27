@@ -1,0 +1,1 @@
+{"slug":"aad5d48a0c4bcfa3","names":["dk.tjekr/monitoring"],"host":"tjekr.dk","endpoint":"https://tjekr.dk/mcp","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

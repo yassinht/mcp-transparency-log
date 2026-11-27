@@ -1,0 +1,1 @@
+{"slug":"f2ae70656971a338","names":["dev.cotlet/rightmove-plus"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/rightmove-plus/connect","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}

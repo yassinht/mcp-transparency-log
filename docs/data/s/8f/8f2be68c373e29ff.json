@@ -1,0 +1,1 @@
+{"slug":"8f2be68c373e29ff","names":["io.github.truonggiang0111/reed-uk-jobs-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?actors=ttyan0111/reed-uk-jobs-hiring-signals","first_seen":"2026-11-27","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-27","kind":"first_seen","outcome":"auth_required"}]}
