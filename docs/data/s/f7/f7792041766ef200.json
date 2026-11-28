@@ -1,1 +1,1 @@
-{"slug":"f7792041766ef200","names":["io.re0/re0"],"host":"re0.io","endpoint":"https://re0.io/api/mcp","first_seen":"2026-11-19","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}
+{"slug":"f7792041766ef200","names":["io.re0/re0"],"host":"re0.io","endpoint":"https://re0.io/api/mcp","first_seen":"2026-11-19","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-19","kind":"first_seen","outcome":"auth_required"}]}

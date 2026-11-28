@@ -1,0 +1,1 @@
+{"slug":"179fe4a9ed2d97f0","names":["com.adworkin/adworkin"],"host":"app.adworkin.com","endpoint":"https://app.adworkin.com/api/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

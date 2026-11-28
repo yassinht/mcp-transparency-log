@@ -1,0 +1,1 @@
+{"slug":"7b2fabc7b001c4cd","names":["dev.workers.pomlabs.pom-data-api/trustpilot-reviews-scraper"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=pomlabs/trustpilot-reviews-scraper","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

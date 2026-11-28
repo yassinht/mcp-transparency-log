@@ -1,0 +1,1 @@
+{"slug":"eebe12f9bc5288ee","names":["io.github.thenexlabs/nixguard"],"host":"app.nixguard.com","endpoint":"https://app.nixguard.com/api/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

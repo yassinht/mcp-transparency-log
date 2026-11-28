@@ -1,0 +1,1 @@
+{"slug":"ca9f8c2b6fe4393f","names":["fr.fint/comptabilite"],"host":"app.fint.fr","endpoint":"https://app.fint.fr/api/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

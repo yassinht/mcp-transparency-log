@@ -1,0 +1,1 @@
+{"slug":"411e32d7fa9f983f","names":["im.starport/gps-jamming-monitor"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=starport/gps-jamming-spoofing-monitor","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

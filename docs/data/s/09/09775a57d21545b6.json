@@ -1,0 +1,1 @@
+{"slug":"09775a57d21545b6","names":["com.mr-bridge/todoist-ai-assistant"],"host":"mrbridge--todoist-ai-assistant.apify.actor","endpoint":"https://mrbridge--todoist-ai-assistant.apify.actor/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

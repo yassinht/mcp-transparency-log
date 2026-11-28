@@ -1,0 +1,1 @@
+{"slug":"9d5df8ebf9b780a8","names":["com.kaiterra/mcp"],"host":"app.kaiterra.com","endpoint":"https://app.kaiterra.com/ai/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

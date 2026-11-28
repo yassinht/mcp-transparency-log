@@ -1,0 +1,1 @@
+{"slug":"31ce8bb05c4f42be","names":["io.github.worktual-mcp/worktual-crm"],"host":"crm-mcp-server.worktual.com","endpoint":"https://crm-mcp-server.worktual.com/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

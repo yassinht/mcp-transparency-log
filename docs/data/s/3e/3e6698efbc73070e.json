@@ -1,0 +1,1 @@
+{"slug":"3e6698efbc73070e","names":["io.github.bipa-app/bipa-business"],"host":"mcp.bipa.app","endpoint":"https://mcp.bipa.app/business/connector/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

@@ -1,0 +1,1 @@
+{"slug":"a9a8a1e6a8c8166f","names":["dev.cotlet/eposnow"],"host":"cotlet.dev","endpoint":"https://cotlet.dev/mcp/v1/eposnow/connect","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

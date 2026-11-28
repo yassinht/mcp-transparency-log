@@ -1,1 +1,1 @@
-{"slug":"3a58404e330ea482","names":["io.dowit/dowit"],"host":"dowit.io","endpoint":"https://dowit.io/api/mcp","first_seen":"2026-11-11","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-11","kind":"first_seen","outcome":"auth_required"}]}
+{"slug":"3a58404e330ea482","names":["io.dowit/dowit"],"host":"dowit.io","endpoint":"https://dowit.io/api/mcp","first_seen":"2026-11-11","listed":true,"outcome":"protocol_error","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-11","kind":"first_seen","outcome":"auth_required"}]}

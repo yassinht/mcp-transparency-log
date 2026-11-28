@@ -1,0 +1,1 @@
+{"slug":"3bd4eb9488a390d5","names":["io.github.GeminiGeorge22/crossref-papers-doi-lookup-mcp"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com?tools=publicrecords/crossref-papers-doi-lookup","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

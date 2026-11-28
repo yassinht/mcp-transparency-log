@@ -1,0 +1,1 @@
+{"slug":"33967cbf5fe0c7c6","names":["com.ejiapi/finance"],"host":"fin.ejiapi.com","endpoint":"https://fin.ejiapi.com/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

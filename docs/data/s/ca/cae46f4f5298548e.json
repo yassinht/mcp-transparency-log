@@ -1,0 +1,1 @@
+{"slug":"cae46f4f5298548e","names":["cz.vidimus/vidimus"],"host":"vidimus.cz","endpoint":"https://vidimus.cz/api/v1/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

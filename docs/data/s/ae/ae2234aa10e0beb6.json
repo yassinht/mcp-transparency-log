@@ -1,0 +1,1 @@
+{"slug":"ae2234aa10e0beb6","names":["io.kosts/kosts"],"host":"app.kosts.io","endpoint":"https://app.kosts.io/api/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

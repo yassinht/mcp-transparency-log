@@ -1,0 +1,1 @@
+{"slug":"c96d5c91ff60d231","names":["com.signalloomdata/email-domain-health"],"host":"mcp.apify.com","endpoint":"https://mcp.apify.com/?tools=signalloom/email-domain-health-audit","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}

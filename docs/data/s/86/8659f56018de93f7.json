@@ -1,0 +1,1 @@
+{"slug":"8659f56018de93f7","names":["com.mr-bridge/france-map-mcp-server"],"host":"mrbridge--france-map-mcp-server.apify.actor","endpoint":"https://mrbridge--france-map-mcp-server.apify.actor/mcp","first_seen":"2026-11-28","listed":true,"outcome":"auth_required","tools":0,"changes":0,"flags":[],"events":[{"date":"2026-11-28","kind":"first_seen","outcome":"auth_required"}]}
